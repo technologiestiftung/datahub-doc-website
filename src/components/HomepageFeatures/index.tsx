@@ -1,7 +1,8 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import '../../css/tailwind.css';
 
 type FeatureItem = {
   title: string;
@@ -27,6 +28,9 @@ const FeatureList: FeatureItem[] = [
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
         ahead and move your docs into the <code>docs</code> directory.
+        <span className="bg-green-600 text-white p-6 rounded-lg">
+          TESTSTSTSTSTSTS{' '}
+        </span>
       </>
     ),
   },
