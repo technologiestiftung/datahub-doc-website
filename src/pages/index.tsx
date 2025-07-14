@@ -1,36 +1,11 @@
 import type { ReactNode } from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import HeaderAnimation from '@site/src/components/HeaderAnimation';
 
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
-// import '../css/tailwind.css';
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import MainTools from '@site/src/components/HomepageMainTools';
+import HomepageHeader from '@site/src/components/HomepageHeader';
+import HomepageLogin from '@site/src/components/HomepageLogin';
+import AnimatedBlocks from '@site/src/components/AnimatedBlocks';
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
@@ -40,9 +15,20 @@ export default function Home(): ReactNode {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-      <HeaderAnimation></HeaderAnimation>
+      <div className="bg-dh-background h-12 py-2 overflow-hidden">
+        {Array.from({ length: 50 }).map((_, i) => (
+          <span key={'ss' + i} className="px-4  whitespace-nowrap">
+            PILOTPROJEKT 2025
+          </span>
+        ))}
+      </div>
+
       <main>
-        <HomepageFeatures />
+        <AnimatedBlocks />
+        <HomepageLogin />
+
+        <MainTools />
+        {/* <AnimatedBlocks /> */}
       </main>
     </Layout>
   );

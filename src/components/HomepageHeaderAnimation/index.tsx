@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Vector3 } from 'three';
+import { Edges } from '@react-three/drei';
 
 interface TrailBlock {
   id: number;
@@ -15,8 +16,8 @@ interface TrailBlock {
   cubeColors?: string[];
 }
 
-export default function Page() {
-  const [useCombinedCubes, setUseCombinedCubes] = useState(true);
+export default function HomepageHeaderAnimation() {
+  const [useCombinedCubes, setUseCombinedCubes] = useState(false);
   const [isInInteractionArea, setIsInInteractionArea] = useState(false);
   const interactionAreaRef = useRef<HTMLDivElement>(null);
 
@@ -38,20 +39,18 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="w-full h-[500px] bg-white relative">
-      <div
-        ref={interactionAreaRef}
-        className="w-full h-full relative bg-red-100/20"
-      >
+    <div className="w-full h-full relative">
+      <div ref={interactionAreaRef} className="w-full h-full relative">
         <Canvas
           className="w-full h-full"
           camera={{ position: [0, 0, 5], fov: 75 }}
           dpr={[1, 1.5]}
-          gl={{ antialias: false }}
+          gl={{ antialias: true }}
           shadows={false}
         >
-          <ambientLight intensity={1.2} />
-          <directionalLight position={[5, 5, 5]} intensity={1.0} />
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[0, 8, 5]} intensity={1.8} />
+          <pointLight position={[0, 5, 5]} intensity={1.5} />
           <CursorTrail
             useCombinedCubes={useCombinedCubes}
             isInInteractionArea={isInInteractionArea}
@@ -81,33 +80,28 @@ function CursorTrail({
 
   const screenToWorld = (x: number, y: number) => {
     if (!containerRef.current) return new Vector3();
-
     const rect = containerRef.current.getBoundingClientRect();
     const localX = x - rect.left;
     const localY = y - rect.top;
 
-    const vector = new Vector3();
-    vector.set(
+    const vector = new Vector3(
       (localX / rect.width) * 2 - 1,
       -(localY / rect.height) * 2 + 1,
       0.5
-    );
-    vector.unproject(camera);
+    ).unproject(camera);
 
     const dir = vector.sub(camera.position).normalize();
     const distance = -camera.position.z / dir.z;
-    const pos = camera.position.clone().add(dir.multiplyScalar(distance));
-
-    // Slight randomness for more organic look
-    // pos.x += (Math.random() - 0.5) * 0.2;
-    // pos.y += (Math.random() - 0.5) * 0.2;
-    // pos.z += (Math.random() - 0.5) * 0.1;
-
-    pos.x += (Math.random() - 0.5) * 0.8;
-    pos.y += (Math.random() - 0.5) * 0.8;
-    pos.z += (Math.random() - 0.5) * 0.6;
-
-    return pos;
+    return camera.position
+      .clone()
+      .add(dir.multiplyScalar(distance))
+      .add(
+        new Vector3(
+          (Math.random() - 0.5) * 0.8,
+          (Math.random() - 0.5) * 0.8,
+          (Math.random() - 0.5) * 0.6
+        )
+      );
   };
 
   const generateCubeCombination = (
@@ -123,14 +117,14 @@ function CursorTrail({
     cubeColors.push(colors[Math.floor(Math.random() * colors.length)]);
 
     for (let i = 1; i < numCubes; i++) {
-      let validPosition = false;
-      let newPos: Vector3 | null = null;
+      let newPos: Vector3;
+      let valid = false;
       let attempts = 0;
 
-      while (!validPosition && attempts < 20) {
-        const attachTo =
+      while (!valid && attempts < 20) {
+        const base =
           cubePositions[Math.floor(Math.random() * cubePositions.length)];
-        const direction = [
+        const offset = [
           new Vector3(1, 0, 0),
           new Vector3(-1, 0, 0),
           new Vector3(0, 1, 0),
@@ -138,17 +132,11 @@ function CursorTrail({
           new Vector3(0, 0, 1),
           new Vector3(0, 0, -1),
         ][Math.floor(Math.random() * 6)];
-
-        newPos = new Vector3(
-          attachTo.x + direction.x,
-          attachTo.y + direction.y,
-          attachTo.z + direction.z
-        );
-        validPosition = !cubePositions.some((pos) => pos.equals(newPos!));
+        newPos = base.clone().add(offset);
+        valid = !cubePositions.some((pos) => pos.equals(newPos!));
         attempts++;
       }
 
-      if (!validPosition) newPos = new Vector3(i, 0, 0); // fallback
       cubePositions.push(newPos!);
       cubeColors.push(colors[Math.floor(Math.random() * colors.length)]);
     }
@@ -159,7 +147,7 @@ function CursorTrail({
   const createBlock = (x: number, y: number) => {
     const worldPos = screenToWorld(x, y);
     const colors = ['#1074D5', '#C10648', '#3C2593'];
-    const sizes = [0.1, 0.15, 0.2];
+    const sizes = [0.12, 0.16, 0.2];
     const size = sizes[Math.floor(Math.random() * sizes.length)];
     const color = colors[Math.floor(Math.random() * colors.length)];
 
@@ -192,29 +180,26 @@ function CursorTrail({
     const handlePointerMove = (event: PointerEvent) => {
       const currentX = event.clientX;
       const currentY = event.clientY;
-
       mousePos.current = { x: currentX, y: currentY };
 
       if (isInInteractionArea) {
-        const deltaX = currentX - prevMousePos.current.x;
-        const deltaY = currentY - prevMousePos.current.y;
-        const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+        const dx = currentX - prevMousePos.current.x;
+        const dy = currentY - prevMousePos.current.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
         accumulatedDistance.current += distance;
 
-        const distanceThreshold = 35;
-        const blocksToCreate = Math.floor(
-          accumulatedDistance.current / distanceThreshold
-        );
+        const threshold = 35;
+        const steps = Math.floor(accumulatedDistance.current / threshold);
 
-        if (blocksToCreate > 0) {
-          for (let i = 0; i < blocksToCreate; i++) {
-            const progress = (i + 1) / blocksToCreate;
-            const interpolatedX = prevMousePos.current.x + deltaX * progress;
-            const interpolatedY = prevMousePos.current.y + deltaY * progress;
-            createBlock(interpolatedX, interpolatedY);
-          }
-          accumulatedDistance.current -= blocksToCreate * distanceThreshold;
+        for (let i = 0; i < steps; i++) {
+          const t = (i + 1) / steps;
+          createBlock(
+            prevMousePos.current.x + dx * t,
+            prevMousePos.current.y + dy * t
+          );
         }
+
+        accumulatedDistance.current -= steps * threshold;
       }
 
       prevMousePos.current = { x: currentX, y: currentY };
@@ -222,7 +207,7 @@ function CursorTrail({
 
     window.addEventListener('pointermove', handlePointerMove);
     return () => window.removeEventListener('pointermove', handlePointerMove);
-  }, [size, camera, useCombinedCubes, isInInteractionArea]);
+  }, [useCombinedCubes, isInInteractionArea]);
 
   useFrame((_, delta) => {
     setTrail((prev) =>
@@ -250,8 +235,6 @@ function TrailBlock({ block }: { block: TrailBlock }) {
 
   useFrame((_, delta) => {
     if (meshRef.current) {
-      const opacity = block.age < 2 ? 1 : Math.max(0, 1 - (block.age - 2));
-      meshRef.current.material.opacity = opacity;
       meshRef.current.rotation.x += delta * block.rotationSpeed.x;
       meshRef.current.rotation.y += delta * block.rotationSpeed.y;
       meshRef.current.rotation.z += delta * block.rotationSpeed.z;
@@ -264,27 +247,21 @@ function TrailBlock({ block }: { block: TrailBlock }) {
     <mesh
       ref={meshRef}
       position={[block.position.x, block.position.y, block.position.z]}
-      scale={[block.size, block.size, block.size]}
+      scale={block.size}
     >
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={block.color} transparent opacity={1} />
+      <meshStandardMaterial color={block.color} flatShading={true} />
+      <Edges scale={1.01} color={block.color} />
     </mesh>
   );
 }
 
 function CombinedCubesBlock({ block }: { block: TrailBlock }) {
   const groupRef = useRef<any>();
-  const cubeSize = block.size * 1.3;
+  const cubeSize = block.size * 2.1;
 
   useFrame((_, delta) => {
     if (groupRef.current) {
-      const opacity = block.age < 2 ? 1 : Math.max(0, 1 - (block.age - 2));
-      groupRef.current.children.forEach((child: any) => {
-        if (child.material) {
-          child.material.opacity = opacity;
-        }
-      });
-
       groupRef.current.rotation.x += delta * block.rotationSpeed.x;
       groupRef.current.rotation.y += delta * block.rotationSpeed.y;
       groupRef.current.rotation.z += delta * block.rotationSpeed.z;
@@ -298,18 +275,18 @@ function CombinedCubesBlock({ block }: { block: TrailBlock }) {
       ref={groupRef}
       position={[block.position.x, block.position.y, block.position.z]}
     >
-      {block.cubePositions?.map((pos, index) => (
+      {block.cubePositions?.map((pos, i) => (
         <mesh
-          key={index}
+          key={i}
           position={[pos.x * cubeSize, pos.y * cubeSize, pos.z * cubeSize]}
-          scale={[cubeSize, cubeSize, cubeSize]}
+          scale={cubeSize}
         >
           <boxGeometry args={[1, 1, 1]} />
           <meshStandardMaterial
-            color={block.cubeColors?.[index] || block.color}
-            transparent
-            opacity={1}
+            color={block.cubeColors?.[i] || block.color}
+            flatShading={true}
           />
+          <Edges scale={1.01} color={block.cubeColors?.[i] || block.color} />
         </mesh>
       ))}
     </group>
