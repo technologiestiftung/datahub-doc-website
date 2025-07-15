@@ -1,6 +1,5 @@
 // import { ArrowRight } from 'lucide-react';
-// import { Button } from '@/components/ui/button';
-import Link from '@docusaurus/Link';
+import { Button } from '@site/src/components/UI/Button';
 
 import '../../css/tailwind.css';
 
@@ -21,16 +20,17 @@ const toolList = [
 
 export default function HomepageMainTools() {
   return (
-    <div className="min-h-screen bg-dh-background py-16 px-4">
+    <div className="min-h-screen bg-dhub-background py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#222222] mb-6 leading-tight">
+          <h2 className="md:text-4xl font-bold">
             Richtige Bausteine. Unendliche Möglichkeiten
-          </h1>
-          <p className="text-lg leading-relaxed space-y-4">
+          </h2>
+          <h3 className="md:text-2xl font-normal">
+            {' '}
             Das bietet der Data Hub Berlin
-          </p>
+          </h3>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-16">
           {toolList.map((d) => {
@@ -62,12 +62,7 @@ export default function HomepageMainTools() {
         </div>
         {/* CTA Button */}
         <div className="text-center">
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            zum Wissensspeicher
-          </Link>
+          <Button label="zum Wissensspeicher" slug="/docs/intro"></Button>
         </div>
       </div>
     </div>

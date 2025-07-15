@@ -20,7 +20,8 @@ module.exports = {
         'purple-final': '#9185BE',
         'blue-final': '#1074D5',
         'red-final': '#C10648',
-        'dh-background': '#FAF9FE',
+        'dhub-background': '#FAF9FE',
+        'dhub-black': '#222222',
       },
       keyframes: {
         rise: {

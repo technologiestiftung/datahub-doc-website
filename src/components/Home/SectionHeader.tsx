@@ -1,4 +1,4 @@
-import HomepageHeaderAnimation from '@site/src/components/HomepageHeaderAnimation';
+import HomepageHeaderAnimation from '@site/src/components/Home/HeaderAnimation';
 
 export default function HomepageHeader() {
   return (
@@ -18,9 +18,11 @@ export default function HomepageHeader() {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
           Data Hub Berlin
         </h1>
-        <p className="text-xl md:text-2xl font-medium">
-          Modulare Open Source Dateninfrastruktur für die Berliner Verwaltung
-        </p>
+        <h3 className="md:text-2xl font-normal">
+          Modulare Open Source Dateninfrastruktur
+          <br />
+          für die Berliner Verwaltung
+        </h3>
       </div>
     </section>
   );

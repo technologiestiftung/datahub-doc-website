@@ -202,9 +202,7 @@ export default function Component() {
 
           {/* Right Side - Text Content */}
           <div className="space-y-6">
-            <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
-              Wunderbar modular
-            </h1>
+            <h3 className="md:text-2xl font-bold">Wunderbar modular</h3>
             <div className="text-lg leading-relaxed space-y-4">
               <p>
                 Der Data Hub ist ein modulares Stecksystem. Unterschiedlichen

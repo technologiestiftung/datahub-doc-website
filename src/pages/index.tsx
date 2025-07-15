@@ -2,10 +2,12 @@ import type { ReactNode } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
-import MainTools from '@site/src/components/HomepageMainTools';
-import HomepageHeader from '@site/src/components/HomepageHeader';
-import HomepageLogin from '@site/src/components/HomepageLogin';
+import SectionTools from '@site/src/components/Home/SectionTools';
+import SectionHeader from '@site/src/components/Home/SectionHeader';
+import SectionLogin from '@site/src/components/Home/SectionLogin';
 import AnimatedBlocks from '@site/src/components/AnimatedBlocks';
+import SectionCarousel from '@site/src/components/Home/SectionCarousel';
+import SectionContact from '@site/src/components/Home/SectionContact';
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
@@ -14,8 +16,8 @@ export default function Home(): ReactNode {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <HomepageHeader />
-      <div className="bg-dh-background h-12 py-2 overflow-hidden">
+      <SectionHeader />
+      <div className="bg-dhub-background py-4 overflow-hidden">
         {Array.from({ length: 50 }).map((_, i) => (
           <span key={'ss' + i} className="px-4  whitespace-nowrap">
             PILOTPROJEKT 2025
@@ -25,10 +27,10 @@ export default function Home(): ReactNode {
 
       <main>
         <AnimatedBlocks />
-        <HomepageLogin />
-
-        <MainTools />
-        {/* <AnimatedBlocks /> */}
+        <SectionCarousel />
+        <SectionLogin />
+        <SectionTools />
+        <SectionContact />
       </main>
     </Layout>
   );
