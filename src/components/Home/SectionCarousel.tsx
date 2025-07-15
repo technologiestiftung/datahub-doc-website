@@ -10,7 +10,7 @@ const slides = [
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
     image: '/img/blocks.svg',
-    slug: 'test',
+    slug: 'about',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const slides = [
     description:
       'Lorem ipsum dolor sit amet, adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
     image: '/img/blocks.svg',
-    slug: 'test',
+    slug: 'about',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const slides = [
     description:
       'Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus.',
     image: '/img/blocks.svg',
-    slug: 'test',
+    slug: 'about',
   },
 ];
 
