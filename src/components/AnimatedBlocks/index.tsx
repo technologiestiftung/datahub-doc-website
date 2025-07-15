@@ -202,29 +202,29 @@ export default function Component() {
 
           {/* Right Side - Text Content */}
           <div className="space-y-6">
-            <h3 className="md:text-2xl font-bold">Wunderbar modular</h3>
+            <h3 className="md:text-2xl font-bold">
+              Vom Datensatz zum Datenprodukt
+            </h3>
             <div className="text-lg leading-relaxed space-y-4">
               <p>
-                Der Data Hub ist ein modulares Stecksystem. Unterschiedlichen
-                Softwarekomponenten aus{' '}
+                Ob{' '}
                 <span className="font-semibold text-[#1074d5]">
-                  DATENSPEICHERUNG
+                  Datenablage
                 </span>
                 ,{' '}
                 <span className="font-semibold text-[#c10648]">
-                  DATENVERARBEITUNG
+                  Datenverarbeitung
                 </span>{' '}
-                und{' '}
+                oder{' '}
                 <span className="font-semibold text-[#1074d5]">
-                  DATENVISUALISIERUNG
+                  Datenvisualisierung
                 </span>{' '}
-                bilden die einzelnen Bausteine.
-              </p>
-              <p>
-                Jeder Baustein erfüllt einen eigenen Zweck und ermöglicht das
-                gewünschte Projekt! Die einzelnen Komponenten lassen sich
-                systematisch und nacheinander zusammenstecken/führen. Diverse
-                Schnittstellen und Input-Output-Wandler machen es möglich.
+                – Mit dem Data Hub kann die Berliner Verwaltung souverän,
+                kostenfrei und nachhaltig arbeiten. Der Data Hub bietet eine
+                Sammlung von Software-Bausteinen, die in Kombination ein
+                passgenaues Datenmanagement und das Erstellen von Datenprodukten
+                wie Karten und Dashboards ermöglichen - genau so, wie es
+                gebraucht wird.
               </p>
             </div>
           </div>

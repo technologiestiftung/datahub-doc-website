@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Button } from '@site/src/components/UI/Button';
 import '../../css/tailwind.css';
 
@@ -37,15 +37,21 @@ export default function SectionCarousel() {
 
   const scrollToIndex = (index) => {
     const container = scrollRef.current;
-    const child = container.children[index];
+    const child = container?.children[index];
     if (child) {
       child.scrollIntoView({ behavior: 'smooth', inline: 'center' });
     }
   };
 
+  // Scroll to center slide on mount
+  useEffect(() => {
+    const middleIndex = Math.floor(slides.length / 2);
+    scrollToIndex(middleIndex);
+  }, []);
+
   return (
     <section className="py-12 px-4 bg-dhub-background">
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-4xl font-bold">
             Drei Show Use Cases

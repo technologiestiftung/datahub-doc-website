@@ -19,9 +19,8 @@ export default function HomepageHeader() {
           Data Hub Berlin
         </h1>
         <h3 className="md:text-2xl font-normal">
-          Modulare Open Source Dateninfrastruktur
-          <br />
-          für die Berliner Verwaltung
+          Gemeinsam Daten nutzbar machen <br /> offen, modular, für eine
+          digitale Verwaltung, die wirkt.
         </h3>
       </div>
     </section>
