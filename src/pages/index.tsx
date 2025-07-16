@@ -8,6 +8,7 @@ import SectionLogin from '@site/src/components/Home/SectionLogin';
 import AnimatedBlocks from '@site/src/components/AnimatedBlocks';
 import SectionCarousel from '@site/src/components/Home/SectionCarousel';
 import SectionContact from '@site/src/components/Home/SectionContact';
+import SectionWissensspeicher from '@site/src/components/Home/SectionWissensspeicher';
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
@@ -30,6 +31,7 @@ export default function Home(): ReactNode {
         <SectionCarousel />
         <SectionLogin />
         <SectionTools />
+        <SectionWissensspeicher />
         <SectionContact />
       </main>
     </Layout>
