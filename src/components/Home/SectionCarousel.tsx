@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Button } from '@site/src/components/UI/Button';
 import '../../css/tailwind.css';
 
@@ -30,6 +30,8 @@ const slides = [
 ];
 
 export default function SectionCarousel() {
+  const [carouselIndex, setCarouselIndex] = useState(2);
+
   const scrollRef = useRef(null);
 
   const scrollToIndex = (index) => {
@@ -47,12 +49,45 @@ export default function SectionCarousel() {
         behavior: 'smooth',
       });
     }
+    setCarouselIndex(index);
   };
 
   // Scroll to center slide on mount
   useEffect(() => {
     const middleIndex = Math.floor(slides.length / 2);
+    setCarouselIndex(middleIndex);
     scrollToIndex(middleIndex);
+  }, []);
+
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      const containerRect = container.getBoundingClientRect();
+      let closestIndex = 0;
+      let closestDistance = Infinity;
+
+      Array.from(container.children).forEach((child, index) => {
+        const childRect = child.getBoundingClientRect();
+        const childCenter = childRect.left + childRect.width / 2;
+        const containerCenter = containerRect.left + containerRect.width / 2;
+        const distance = Math.abs(childCenter - containerCenter);
+
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
+        }
+      });
+
+      setCarouselIndex(closestIndex);
+    };
+
+    container.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      container.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
@@ -73,7 +108,9 @@ export default function SectionCarousel() {
           {slides.map((slide, index) => (
             <div
               key={slide.id}
-              className="w-[90%] sm:w-[80%] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01]"
+              className={`${
+                slide.id !== carouselIndex + 1 ? 'opacity-50' : ''
+              } w-[90%] sm:w-[50%] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01]`}
               onClick={() => scrollToIndex(index)}
             >
               <SlideCard data={slide} />
@@ -87,7 +124,9 @@ export default function SectionCarousel() {
             <button
               key={i}
               onClick={() => scrollToIndex(i)}
-              className="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-500"
+              className={`${
+                i !== carouselIndex ? 'opacity-50' : ''
+              } w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-500`}
             />
           ))}
         </div>
