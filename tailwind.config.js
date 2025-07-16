@@ -32,6 +32,9 @@ module.exports = {
       animation: {
         rise: 'rise 1.5s ease-out forwards',
       },
+      fontFamily: {
+        grotesk: ['"Host Grotesk"', 'sans-serif'],
+      },
     },
   },
   plugins: [],
