@@ -6,7 +6,6 @@ const slides = [
   {
     id: 1,
     title: 'Bibliotheksdashboard Pankow',
-    subtitle: '1. Use Case',
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
     image: '/img/blocks.svg',
@@ -15,7 +14,6 @@ const slides = [
   {
     id: 2,
     title: 'Masterdata',
-    subtitle: '2. Usecase',
     description:
       'Lorem ipsum dolor sit amet, adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
     image: '/img/blocks.svg',
@@ -24,7 +22,6 @@ const slides = [
   {
     id: 3,
     title: 'Data Explorer',
-    subtitle: '3. Use Case',
     description:
       'Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus.',
     image: '/img/blocks.svg',
@@ -38,8 +35,17 @@ export default function SectionCarousel() {
   const scrollToIndex = (index) => {
     const container = scrollRef.current;
     const child = container?.children[index];
-    if (child) {
-      child.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+    if (container && child) {
+      const containerRect = container.getBoundingClientRect();
+      const childRect = child.getBoundingClientRect();
+      const offset = childRect.left - containerRect.left;
+      const scrollOffset =
+        offset - container.offsetWidth / 2 + child.offsetWidth / 2;
+
+      container.scrollTo({
+        left: container.scrollLeft + scrollOffset,
+        behavior: 'smooth',
+      });
     }
   };
 
@@ -100,7 +106,6 @@ function SlideCard({ data }) {
           className="w-24 h-24 object-contain"
         />
         <div className="text-left w-full break-words">
-          <p className="text-sm font-bold text-gray-500">{data.subtitle}</p>
           <h3 className="text-xl md:text-2xl font-bold text-gray-800">
             {data.title}
           </h3>
