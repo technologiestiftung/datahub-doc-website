@@ -2,7 +2,11 @@
 
 import { useEffect, useRef } from 'react';
 
-export default function CanvasCubeTrail() {
+export default function CanvasCubeTrail({
+  parentRef,
+}: {
+  parentRef: React.RefObject<HTMLDivElement>;
+}) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const trailRef = useRef<any[]>([]);
   const mouse = useRef({ x: 0, y: 0 });
@@ -12,12 +16,12 @@ export default function CanvasCubeTrail() {
   useEffect(() => {
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext('2d')!;
-    let width = (canvas.width = window.innerWidth);
-    let height = (canvas.height = window.innerHeight);
+    let width = (canvas.width = parentRef.current!.clientWidth);
+    let height = (canvas.height = parentRef.current!.clientHeight);
 
     const resize = () => {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
+      width = canvas.width = parentRef.current!.clientWidth;
+      height = canvas.height = parentRef.current!.clientHeight;
     };
     window.addEventListener('resize', resize);
 
@@ -26,44 +30,41 @@ export default function CanvasCubeTrail() {
       return {
         x: x * scale + width / 2,
         y: y * scale + height / 2,
+        z,
       };
     };
 
-    function hexToRgba(hex: string, alpha: number) {
-      const r = parseInt(hex.slice(1, 3), 16);
-      const g = parseInt(hex.slice(3, 5), 16);
-      const b = parseInt(hex.slice(5, 7), 16);
-      return `rgba(${r},${g},${b},${alpha})`;
-    }
-
     const createCube = (x: number, y: number) => {
-      const size = 10 + Math.random() * 40; // 10–50 px
+      const size = 14 + Math.random() * 14; // 14–50px
       const color = ['#aac9e7', '#9185be', '#f5b4cb'][
         Math.floor(Math.random() * 3)
       ];
-      const rotationSpeed = {
-        x: (Math.random() - 0.5) * 0.04,
-        y: (Math.random() - 0.5) * 0.04,
-        z: (Math.random() - 0.5) * 0.04,
-      };
 
+      const spread = () => (Math.random() - 0.5) * 50;
       const cube = {
-        pos: { x: x - width / 2, y: y - height / 2, z: 0 },
+        pos: {
+          x: x - width / 2 + spread(),
+          y: y - height / 2 + spread(),
+          z: spread(),
+        },
         size,
         color,
         rotation: { x: 0, y: 0, z: 0 },
-        rotationSpeed,
+        rotationSpeed: {
+          x: (Math.random() - 0.5) * 0.03,
+          y: (Math.random() - 0.5) * 0.03,
+          z: (Math.random() - 0.5) * 0.03,
+        },
         age: 0,
-        life: 2.5,
+        life: 5 + Math.random() * 2, // 5–7 seconds
       };
 
       trailRef.current.push(cube);
-      if (trailRef.current.length > 80) trailRef.current.shift();
+      if (trailRef.current.length > 100) trailRef.current.shift();
     };
 
     const drawCube = (cube: any) => {
-      const { size, rotation, pos, color, age, life } = cube;
-      const alpha = 1 - age / life;
+      const { size, rotation, pos, color } = cube;
       const half = size / 2;
 
       const vertices = [
@@ -78,7 +79,7 @@ export default function CanvasCubeTrail() {
       ];
 
       const rotate3D = ([x, y, z]: number[]) => {
-        // Rotate X
+        // Rotate around x
         let cos = Math.cos(rotation.x),
           sin = Math.sin(rotation.x);
         let y1 = y * cos - z * sin,
@@ -86,7 +87,7 @@ export default function CanvasCubeTrail() {
         y = y1;
         z = z1;
 
-        // Rotate Y
+        // Rotate around y
         cos = Math.cos(rotation.y);
         sin = Math.sin(rotation.y);
         let x1 = x * cos + z * sin;
@@ -94,7 +95,7 @@ export default function CanvasCubeTrail() {
         x = x1;
         z = z1;
 
-        // Rotate Z
+        // Rotate around z
         cos = Math.cos(rotation.z);
         sin = Math.sin(rotation.z);
         x1 = x * cos - y * sin;
@@ -105,60 +106,45 @@ export default function CanvasCubeTrail() {
         return [x + pos.x, y + pos.y, z + pos.z];
       };
 
-      const projected = vertices
-        .map(rotate3D)
-        .map(([x, y, z]) => project(x, y, z));
+      const projected = vertices.map(rotate3D).map((v) => project(...v));
 
       const faces = [
-        [0, 1, 2, 3], // back
-        [4, 5, 6, 7], // front
-        [0, 1, 5, 4], // bottom
-        [2, 3, 7, 6], // top
-        [1, 2, 6, 5], // right
-        [0, 3, 7, 4], // left
+        [0, 1, 2, 3],
+        [4, 5, 6, 7],
+        [0, 1, 5, 4],
+        [2, 3, 7, 6],
+        [1, 2, 6, 5],
+        [0, 3, 7, 4],
       ];
 
-      const faceNormals = [
-        [0, 0, -1],
-        [0, 0, 1],
-        [0, -1, 0],
-        [0, 1, 0],
-        [1, 0, 0],
-        [-1, 0, 0],
-      ];
+      // Sort faces by average Z (back to front)
+      faces.sort((a, b) => {
+        const za = a.reduce((sum, idx) => sum + projected[idx].z, 0) / 4;
+        const zb = b.reduce((sum, idx) => sum + projected[idx].z, 0) / 4;
+        return zb - za;
+      });
 
-      const lightDir = [0.3, 0.5, 1];
-      const dot = (a: number[], b: number[]) =>
-        a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
-
-      ctx.save();
-      ctx.globalAlpha = alpha;
-
-      for (let i = 0; i < faces.length; i++) {
-        const face = faces[i];
-        const normal = faceNormals[i];
-        const brightness = Math.max(0.2, dot(normal, lightDir));
-
+      for (const face of faces) {
         ctx.beginPath();
-        face.forEach((vIdx, j) => {
+        face.forEach((vIdx, i) => {
           const v = projected[vIdx];
-          if (j === 0) ctx.moveTo(v.x, v.y);
+          if (i === 0) ctx.moveTo(v.x, v.y);
           else ctx.lineTo(v.x, v.y);
         });
         ctx.closePath();
 
-        ctx.fillStyle = hexToRgba(color, brightness * alpha);
+        ctx.fillStyle = color;
         ctx.fill();
-        ctx.strokeStyle = `rgba(0,0,0,${0.2 * alpha})`;
+        ctx.strokeStyle = '#000';
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+        ctx.lineWidth = 1.2;
         ctx.stroke();
       }
-
-      ctx.restore();
     };
 
     const tick = () => {
       ctx.clearRect(0, 0, width, height);
-
       trailRef.current = trailRef.current.filter((cube) => {
         cube.age += 0.016;
         cube.rotation.x += cube.rotationSpeed.x;
@@ -167,31 +153,30 @@ export default function CanvasCubeTrail() {
         drawCube(cube);
         return cube.age < cube.life;
       });
-
       requestAnimationFrame(tick);
     };
     requestAnimationFrame(tick);
 
     const handleMouseMove = (e: MouseEvent) => {
-      const curr = { x: e.clientX, y: e.clientY };
-      const prev = prevMouse.current;
-      const dx = curr.x - prev.x;
-      const dy = curr.y - prev.y;
+      const bounds = parentRef.current!.getBoundingClientRect();
+      const mx = e.clientX - bounds.left;
+      const my = e.clientY - bounds.top;
+
+      const dx = mx - prevMouse.current.x;
+      const dy = my - prevMouse.current.y;
       const dist = Math.sqrt(dx * dx + dy * dy);
       accumulatedDistance.current += dist;
 
-      const step = 15;
+      const step = 18;
       const steps = Math.floor(accumulatedDistance.current / step);
       for (let i = 0; i < steps; i++) {
         const t = (i + 1) / steps;
-        const interpX = prev.x + dx * t;
-        const interpY = prev.y + dy * t;
-        createCube(interpX, interpY);
+        createCube(prevMouse.current.x + dx * t, prevMouse.current.y + dy * t);
       }
 
       accumulatedDistance.current -= steps * step;
-      prevMouse.current = curr;
-      mouse.current = curr;
+      prevMouse.current = { x: mx, y: my };
+      mouse.current = { x: mx, y: my };
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -199,20 +184,19 @@ export default function CanvasCubeTrail() {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('resize', resize);
     };
-  }, []);
+  }, [parentRef]);
 
   return (
     <canvas
       ref={canvasRef}
       style={{
-        position: 'fixed',
+        position: 'absolute',
         top: 0,
         left: 0,
-        width: '100vw',
-        height: '100vh',
-        display: 'block',
-        zIndex: 10,
+        width: '100%',
+        height: '100%',
         pointerEvents: 'none',
+        zIndex: 0,
       }}
     />
   );

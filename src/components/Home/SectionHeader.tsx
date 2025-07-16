@@ -1,8 +1,14 @@
 import HomepageHeaderAnimation from '@site/src/components/Home/HeaderAnimation';
+import { useEffect, useRef } from 'react';
 
 export default function HomepageHeader() {
+  const containerRef = useRef<HTMLElement | null>(null);
+
   return (
-    <section className="relative w-full overflow-hidden py-32">
+    <section
+      className="relative w-full overflow-hidden py-32"
+      ref={containerRef}
+    >
       <img
         src="img/header_cubes.svg"
         alt=""
@@ -10,7 +16,7 @@ export default function HomepageHeader() {
       />
 
       <div className="absolute inset-0 z-10">
-        <HomepageHeaderAnimation />
+        <HomepageHeaderAnimation parentRef={containerRef} />
       </div>
 
       {/* Content layer is relative so it defines height */}
