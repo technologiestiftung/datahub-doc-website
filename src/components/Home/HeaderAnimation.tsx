@@ -48,9 +48,6 @@ export default function HomepageHeaderAnimation() {
           gl={{ antialias: true }}
           shadows={false}
         >
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[0, 8, 5]} intensity={1.8} />
-          <pointLight position={[0, 5, 5]} intensity={1.5} />
           <CursorTrail
             useCombinedCubes={useCombinedCubes}
             isInInteractionArea={isInInteractionArea}
@@ -71,7 +68,7 @@ function CursorTrail({
   isInInteractionArea: boolean;
   containerRef: React.RefObject<HTMLDivElement>;
 }) {
-  const { size, camera } = useThree();
+  const { camera } = useThree();
   const [trail, setTrail] = useState<TrailBlock[]>([]);
   const mousePos = useRef({ x: 0, y: 0 });
   const prevMousePos = useRef({ x: 0, y: 0 });
@@ -111,7 +108,7 @@ function CursorTrail({
     const numCubes = Math.floor(Math.random() * 5) + 2;
     const cubePositions: Vector3[] = [];
     const cubeColors: string[] = [];
-    const colors = ['#1074D5', '#C10648', '#3C2593'];
+    const colors = ['#aac9e7', '#9185be', '#f5b4cb'];
 
     cubePositions.push(new Vector3(0, 0, 0));
     cubeColors.push(colors[Math.floor(Math.random() * colors.length)]);
@@ -146,9 +143,8 @@ function CursorTrail({
 
   const createBlock = (x: number, y: number) => {
     const worldPos = screenToWorld(x, y);
-    const colors = ['#1074D5', '#C10648', '#3C2593'];
-    const sizes = [0.12, 0.16, 0.2];
-    const size = sizes[Math.floor(Math.random() * sizes.length)];
+    const colors = ['#aac9e7', '#9185be', '#f5b4cb'];
+    const size = [0.12, 0.16, 0.2][Math.floor(Math.random() * 3)];
     const color = colors[Math.floor(Math.random() * colors.length)];
 
     const combination = useCombinedCubes
@@ -250,8 +246,8 @@ function TrailBlock({ block }: { block: TrailBlock }) {
       scale={block.size}
     >
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={block.color} flatShading={true} />
-      <Edges scale={1.01} color={block.color} />
+      <meshBasicMaterial color={block.color} />
+      <Edges scale={1.01} color="black" />
     </mesh>
   );
 }
@@ -282,11 +278,8 @@ function CombinedCubesBlock({ block }: { block: TrailBlock }) {
           scale={cubeSize}
         >
           <boxGeometry args={[1, 1, 1]} />
-          <meshStandardMaterial
-            color={block.cubeColors?.[i] || block.color}
-            flatShading={true}
-          />
-          <Edges scale={1.01} color={block.cubeColors?.[i] || block.color} />
+          <meshBasicMaterial color={block.cubeColors?.[i] || block.color} />
+          <Edges scale={1.01} color="black" />
         </mesh>
       ))}
     </group>
