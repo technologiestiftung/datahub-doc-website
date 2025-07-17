@@ -13,9 +13,9 @@ const slides = [
   },
   {
     id: 2,
-    title: 'Masterdata',
+    title: 'Bibliotheksdashboard Pankow',
     description:
-      'Lorem ipsum dolor sit amet, adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
+      'Wie viele Medien wurden ausgeliehen? Welche Standorte sind besonders gefragt? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow bereitet aktuelle Nutzungszahlen übersichtlich auf.',
     image: '/img/blocks.svg',
     slug: 'about',
   },

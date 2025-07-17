@@ -20,7 +20,7 @@ const toolList = [
 
 export default function HomepageMainTools() {
   return (
-    <section className="min-h-screen bg-dhub-background py-16 px-4">
+    <section className="min-h-screen bg-dhub-background px-16 py-6">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -29,11 +29,13 @@ export default function HomepageMainTools() {
             Im Browser nutzbar, vielfach erprobt{' '}
           </h3>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-16">
+
+        {/* 12er Grid mit 20px Gutter */}
+        <div className="grid grid-cols-12 gap-[20px] mb-16">
           {toolList.map((d) => {
             return (
               <div
-                className="flex items-center justify-center h-20"
+                className="col-span-6 sm:col-span-4 lg:col-span-3 flex items-center justify-center h-20"
                 key={d.name}
               >
                 <div className="flex items-center gap-3">
@@ -48,7 +50,7 @@ export default function HomepageMainTools() {
           })}
         </div>
 
-        {/* Description Text */}
+        {/* Beschreibung */}
         <div className="max-w-4xl mx-auto text-center mb-12">
           <p className="text-lg leading-relaxed space-y-4">
             Bei den Data Hub Software-Bausteinen handelt es sich ausschließlich
@@ -57,6 +59,7 @@ export default function HomepageMainTools() {
             sich im Wissensspeicher.
           </p>
         </div>
+
         {/* CTA Button */}
         <div className="text-center">
           <Button label="zum Wissensspeicher" slug="/docs/intro"></Button>

@@ -1,11 +1,11 @@
-import '../../css/tailwind.css';
 import { Button } from '@site/src/components/UI/Button';
+import '../../css/tailwind.css';
 
 export default function SectionWissensspeicher() {
   return (
     <section className="relative z-10 max-w-7xl mx-auto px-16 py-6">
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
-        <div className="relative">
+      <div className="grid grid-cols-12 gap-[20px] items-center">
+        <div className="relative col-span-12 lg:col-span-6">
           <h3 className="md:text-2xl font-bold">Wissensspeicher</h3>
           <div className="text-lg leading-relaxed space-y-4">
             <p>
@@ -21,7 +21,7 @@ export default function SectionWissensspeicher() {
         </div>
 
         {/* Right Side - Text Content */}
-        <div className="text-center">
+        <div className="col-span-12 lg:col-span-6 text-center">
           <img src="/img/wissen.svg" alt="Colorful blocks" />
         </div>
       </div>

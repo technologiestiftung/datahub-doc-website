@@ -3,8 +3,8 @@ import '../../css/tailwind.css';
 export default function HomepageLogin() {
   return (
     <section className="relative z-10 max-w-7xl mx-auto px-16 py-6">
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
-        <div className="relative">
+      <div className="grid grid-cols-12 gap-[20px] items-center">
+        <div className="relative col-span-12 lg:col-span-6">
           <h3 className="md:text-2xl font-bold">Zugang zum Data Hub</h3>
           <div className="text-lg leading-relaxed space-y-4">
             <p>
@@ -24,7 +24,7 @@ export default function HomepageLogin() {
         </div>
 
         {/* Right Side - Text Content */}
-        <div className="">
+        <div className="col-span-12 lg:col-span-6">
           <img src="/img/blockbox.svg" alt="bunte blöcke" />
         </div>
       </div>

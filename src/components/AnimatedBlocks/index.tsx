@@ -84,7 +84,7 @@ export default function Component() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden">
+    <section className="relative z-10 max-w-7xl mx-auto px-16 py-6">
       <style jsx>{`
         .animate-cube-1,
         .animate-cube-2,
@@ -100,10 +100,9 @@ export default function Component() {
           transition: fill 0.3s ease-out;
         }
       `}</style>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 ">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Side - SVG */}
+      <div className="grid grid-cols-12 gap-[20px] items-center">
+        {/* Right Side - Text Content */}
+        <div className="col-span-12 lg:col-span-6">
           <div className="relative" ref={containerRef}>
             <div className="relative w-full h-auto" ref={triggerRef}>
               <svg
@@ -199,25 +198,32 @@ export default function Component() {
               </svg>
             </div>
           </div>
-
-          {/* Right Side - Text Content */}
-          <div className="space-y-6 max-w-[40rem]">
-            <h3 className="md:text-2xl font-bold">
-              Vom Datensatz zum Datenprodukt
-            </h3>
-            <div className="text-lg leading-relaxed space-y-4">
-              <p className="">
-                Ob Datenablage, Datenverarbeitung oder Datenvisualisierung – Mit
-                dem Data Hub kann die Berliner Verwaltung souverän, kostenfrei
-                und nachhaltig arbeiten. Der Data Hub bietet eine Sammlung von
-                Software-Bausteinen, die in Kombination ein passgenaues
-                Datenmanagement und das Erstellen von Datenprodukten wie Karten
-                und Dashboards ermöglichen - genau so, wie es gebraucht wird.
-              </p>
-            </div>
+        </div>
+        <div className="relative col-span-12 lg:col-span-6">
+          <h3 className="md:text-2xl font-bold">
+            Vom Datensatz zum Datenprodukt
+          </h3>
+          <div className="text-lg leading-relaxed space-y-4">
+            <p className="">
+              Ob{' '}
+              <span className="text-berlin-purple font-bold">Datenablage</span>,{' '}
+              <span className="text-berlin-pink font-bold">
+                Datenverarbeitung
+              </span>{' '}
+              oder{' '}
+              <span className="text-berlin-light-blue font-bold">
+                Datenvisualisierung
+              </span>{' '}
+              – Mit dem Data Hub kann die Berliner Verwaltung souverän,
+              kostenfrei und nachhaltig arbeiten. Der Data Hub bietet eine
+              Sammlung von Software-Bausteinen, die in Kombination ein
+              passgenaues Datenmanagement und das Erstellen von Datenprodukten
+              wie Karten und Dashboards ermöglichen - genau so, wie es gebraucht
+              wird.
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
