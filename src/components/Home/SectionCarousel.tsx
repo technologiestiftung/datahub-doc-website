@@ -80,6 +80,10 @@ export default function SectionCarousel() {
         }
       });
 
+      //   if (closestIndex === carouselIndex) {
+      //     return;
+      //   }
+
       setCarouselIndex(closestIndex);
     };
 
@@ -91,7 +95,7 @@ export default function SectionCarousel() {
   }, []);
 
   return (
-    <section className="py-12 px-4 bg-dhub-background">
+    <section className="py-12 px-4 bg-berlin-yellow">
       <div className="mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-4xl font-bold">

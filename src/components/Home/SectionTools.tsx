@@ -20,16 +20,13 @@ const toolList = [
 
 export default function HomepageMainTools() {
   return (
-    <div className="min-h-screen bg-dhub-background py-16 px-4">
+    <section className="min-h-screen bg-dhub-background py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="md:text-4xl font-bold">
-            Richtige Bausteine. Unendliche Möglichkeiten
-          </h2>
+          <h2 className="md:text-4xl font-bold">Open Source Tool </h2>
           <h3 className="md:text-2xl font-normal">
-            {' '}
-            Das bietet der Data Hub Berlin
+            Im Browser nutzbar, vielfach erprobt{' '}
           </h3>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-16">
@@ -65,6 +62,6 @@ export default function HomepageMainTools() {
           <Button label="zum Wissensspeicher" slug="/docs/intro"></Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

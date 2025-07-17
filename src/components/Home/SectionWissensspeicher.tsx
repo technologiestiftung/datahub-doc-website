@@ -3,7 +3,7 @@ import { Button } from '@site/src/components/UI/Button';
 
 export default function SectionWissensspeicher() {
   return (
-    <div className="relative z-10 max-w-7xl mx-auto px-16 py-6">
+    <section className="relative z-10 max-w-7xl mx-auto px-16 py-6">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div className="relative">
           <h3 className="md:text-2xl font-bold">Wissensspeicher</h3>
@@ -21,10 +21,10 @@ export default function SectionWissensspeicher() {
         </div>
 
         {/* Right Side - Text Content */}
-        <div className="">
+        <div className="text-center">
           <img src="/img/wissen.svg" alt="Colorful blocks" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

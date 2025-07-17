@@ -201,30 +201,18 @@ export default function Component() {
           </div>
 
           {/* Right Side - Text Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 max-w-[40rem]">
             <h3 className="md:text-2xl font-bold">
               Vom Datensatz zum Datenprodukt
             </h3>
             <div className="text-lg leading-relaxed space-y-4">
-              <p>
-                Ob{' '}
-                <span className="font-semibold text-[#1074d5]">
-                  Datenablage
-                </span>
-                ,{' '}
-                <span className="font-semibold text-[#c10648]">
-                  Datenverarbeitung
-                </span>{' '}
-                oder{' '}
-                <span className="font-semibold text-[#1074d5]">
-                  Datenvisualisierung
-                </span>{' '}
-                – Mit dem Data Hub kann die Berliner Verwaltung souverän,
-                kostenfrei und nachhaltig arbeiten. Der Data Hub bietet eine
-                Sammlung von Software-Bausteinen, die in Kombination ein
-                passgenaues Datenmanagement und das Erstellen von Datenprodukten
-                wie Karten und Dashboards ermöglichen - genau so, wie es
-                gebraucht wird.
+              <p className="">
+                Ob Datenablage, Datenverarbeitung oder Datenvisualisierung – Mit
+                dem Data Hub kann die Berliner Verwaltung souverän, kostenfrei
+                und nachhaltig arbeiten. Der Data Hub bietet eine Sammlung von
+                Software-Bausteinen, die in Kombination ein passgenaues
+                Datenmanagement und das Erstellen von Datenprodukten wie Karten
+                und Dashboards ermöglichen - genau so, wie es gebraucht wird.
               </p>
             </div>
           </div>

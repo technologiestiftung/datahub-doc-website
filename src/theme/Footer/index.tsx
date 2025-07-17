@@ -8,13 +8,20 @@ export default function Footer() {
         <div className="md:w-2/3">
           <div className="flex flex-wrap gap-4 items-center mb-4">
             <img
-              src="/img/datahub_logo.svg"
+              src="/img/logos/datahub.svg"
               alt="Datahub Logo"
               className="h-10"
             />
-            <img src="/img/logo2.png" alt="Logo 2" className="h-10" />
-            <img src="/img/logo3.png" alt="Logo 3" className="h-10" />
-            <img src="/img/logo4.png" alt="Logo 4" className="h-10" />
+            <img
+              src="/img/logos/tsb.svg"
+              alt="Technologiestiftung Berlin Logo"
+              className="h-10"
+            />
+            <img
+              src="/img/logos/senatskanzlei_berlin.svg"
+              alt="Senatskanlei Berlin Logos"
+              className="h-10"
+            />
           </div>
           <p className="text-gray-600 text-sm">
             Ein Projekt der Technologiestiftung Berlin. Gefördert von der
@@ -27,7 +34,7 @@ export default function Footer() {
           <div className="flex space-x-4">
             <a href="#">
               <img
-                src="/img/icon-github.png"
+                src="/img/logos/github.svg"
                 alt="GitHub"
                 className="h-5 w-5"
               />

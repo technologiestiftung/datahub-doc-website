@@ -10,17 +10,17 @@ interface ButtonType {
 
 export const Button: FC<ButtonType> = ({ label, slug, accented = true }) => {
   return (
-    <div className="inline-block border border-dhub-black border-solid">
+    <div className="inline-block border border-berlin-black border-solid">
       <Link
         to={slug}
-        className="flex items-stretch text-dhub-black font-semibold"
+        className="flex items-stretch text-berlin-black font-semibold"
       >
         <div className="px-6 py-3 bg-white flex items-center text-sm">
           {label}
         </div>
         <div
           className={`${
-            accented && 'bg-dhub-black'
+            accented && 'bg-berlin-black'
           } px-4 py-3 flex items-center justify-center`}
         >
           <svg
@@ -30,7 +30,7 @@ export const Button: FC<ButtonType> = ({ label, slug, accented = true }) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={`w-5 h-5 ${
-              accented ? 'stroke-white' : 'stroke-dhub-black'
+              accented ? 'stroke-white' : 'stroke-berlin-black'
             }`}
           >
             <path

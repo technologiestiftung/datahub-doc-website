@@ -17,11 +17,16 @@ module.exports = {
     // },
     extend: {
       colors: {
-        'purple-final': '#9185BE',
-        'blue-final': '#1074D5',
-        'red-final': '#C10648',
-        'dhub-background': '#FAF9FE',
-        'dhub-black': '#222222',
+        'berlin-background': '#FAF9FE',
+        'berlin-black': '#222222',
+        'berlin-pink': '#f5b4cb',
+        'berlin-light-blue': '#aac9e7',
+        'berlin-blue': '#4f90cd',
+        'berlin-light-green': '#9bcfaf',
+        'berlin-green': '#00aa84',
+        'berlin-yellow': '#ffe70e',
+        'berlin-orange': '#f39300',
+        'berlin-purple': '#9185be',
       },
       keyframes: {
         rise: {

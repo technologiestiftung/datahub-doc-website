@@ -77,7 +77,7 @@ const config: Config = {
       title: '',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/datahub_logo.svg',
+        src: 'img/logos/datahub.svg',
       },
       items: [
         {

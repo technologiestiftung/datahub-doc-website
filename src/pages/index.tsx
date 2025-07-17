@@ -18,9 +18,12 @@ export default function Home(): ReactNode {
       description="Description will go into a meta tag in <head />"
     >
       <SectionHeader />
-      <div className="bg-dhub-background py-4 overflow-hidden">
+      <div className="bg-berlin-black py-4 overflow-hidden">
         {Array.from({ length: 50 }).map((_, i) => (
-          <span key={'ss' + i} className="px-4  whitespace-nowrap">
+          <span
+            key={'ss' + i}
+            className="px-4 text-white whitespace-nowrap font-bold"
+          >
             PILOTPROJEKT 2025
           </span>
         ))}
