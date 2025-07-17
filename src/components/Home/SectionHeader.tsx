@@ -6,20 +6,22 @@ export default function HomepageHeader() {
 
   return (
     <section
-      className="relative w-full overflow-hidden py-32"
+      className="relative w-full overflow-hidden h-[calc(100vh-120px)] flex items-center justify-center"
       ref={containerRef}
     >
+      {/* Background image */}
       <img
         src="img/header_cubes.svg"
         alt=""
         className="absolute inset-0 w-full h-full object-cover pointer-events-none z-10"
       />
 
+      {/* Animation layer */}
       <div className="absolute inset-0 z-10">
         <HomepageHeaderAnimation parentRef={containerRef} />
       </div>
 
-      {/* Content layer is relative so it defines height */}
+      {/* Vertically centered content */}
       <div className="relative z-20 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
           Data Hub Berlin

@@ -5,27 +5,35 @@ import '../../css/tailwind.css';
 const slides = [
   {
     id: 1,
-    title: 'Bibliotheksdashboard Pankow',
+    title: 'Landesgleichstellung',
     description:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
-    image: '/img/blocks.svg',
-    slug: 'about',
+      'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Einrichtungen? Ein zentrales Dashboard ersetzt das bisher manuelle Berichtswesen und ermöglicht eine Auswertung der Gleichstellungsmaßnahmen.',
+    image: '/img/example1.svg',
+    slug: 'https://odis-berlin.de/',
   },
   {
     id: 2,
-    title: 'Bibliotheksdashboard Pankow',
+    title: 'Akteure im Kiez sichtbar machen',
     description:
-      'Wie viele Medien wurden ausgeliehen? Welche Standorte sind besonders gefragt? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow bereitet aktuelle Nutzungszahlen übersichtlich auf.',
-    image: '/img/blocks.svg',
-    slug: 'about',
+      'Wo engagieren sich Träger, Initiativen und soziale Programme in Neukölln? Mit einem Mapping-Tool können Akteure außerhalb der Verwaltung ihre Angebote selbst erfassen und aktuell halten.',
+    image: '/img/example2.svg',
+    slug: 'https://odis-berlin.de/',
   },
   {
     id: 3,
-    title: 'Data Explorer',
+    title: 'Bibliotheksdashboard Pankow',
     description:
-      'Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus.',
-    image: '/img/blocks.svg',
-    slug: 'about',
+      'Wie viele Medien wurden ausgeliehen? Welche Standorte sind besonders gefragt? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow bereitet aktuelle Nutzungszahlen übersichtlich auf.',
+    image: '/img/example3.svg',
+    slug: 'https://odis-berlin.de/',
+  },
+  {
+    id: 2,
+    title: 'Effiziente Bezirksregionenprofile',
+    description:
+      'Bezirksregionenprofile sind ein zentrales Instrument der Stadtentwicklung. Mit Datenbanken und Dashboard-Templates wird der Prozess zur Erstellung effizienter und einheitlicher.',
+    image: '/img/example4.svg',
+    slug: 'https://odis-berlin.de/',
   },
 ];
 
@@ -114,7 +122,7 @@ export default function SectionCarousel() {
               key={slide.id}
               className={`${
                 slide.id !== carouselIndex + 1 ? 'opacity-50' : ''
-              } w-[90%] sm:w-[50%] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01]`}
+              } w-[90%] sm:w-[50%] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
               onClick={() => scrollToIndex(index)}
             >
               <SlideCard data={slide} />
@@ -123,14 +131,14 @@ export default function SectionCarousel() {
         </div>
 
         {/* Mobile Dots */}
-        <div className="mt-6 flex justify-center gap-3 md:hidden">
+        <div className="mt-6 flex justify-center gap-3">
           {slides.map((_, i) => (
             <button
               key={i}
               onClick={() => scrollToIndex(i)}
               className={`${
                 i !== carouselIndex ? 'opacity-50' : ''
-              } w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-500`}
+              } w-3 h-3 rounded-full bg-black hover:bg-gray-500`}
             />
           ))}
         </div>

@@ -52,7 +52,8 @@ export default function HomepageMainTools() {
 
         {/* Beschreibung */}
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <p className="text-lg leading-relaxed space-y-4">
+          <p className="text-lg leading-relaxed space-y-4 max-w-[566px] mx-auto">
+            {' '}
             Bei den Data Hub Software-Bausteinen handelt es sich ausschließlich
             um Open Source Software. Eine breit aufgestellte Community sorgt für
             Updates und Support. Detailinformationen und Dokumentationen finden
