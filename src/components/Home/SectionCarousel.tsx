@@ -28,7 +28,7 @@ const slides = [
     slug: 'https://odis-berlin.de/',
   },
   {
-    id: 2,
+    id: 4,
     title: 'Effiziente Bezirksregionenprofile',
     description:
       'Bezirksregionenprofile sind ein zentrales Instrument der Stadtentwicklung. Mit Datenbanken und Dashboard-Templates wird der Prozess zur Erstellung effizienter und einheitlicher.',
@@ -38,13 +38,14 @@ const slides = [
 ];
 
 export default function SectionCarousel() {
-  const [carouselIndex, setCarouselIndex] = useState(2);
-
+  const [carouselIndex, setCarouselIndex] = useState(0);
+  const [scrollLock, setScrollLock] = useState(false);
   const scrollRef = useRef(null);
 
   const scrollToIndex = (index) => {
     const container = scrollRef.current;
     const child = container?.children[index];
+
     if (container && child) {
       const containerRect = container.getBoundingClientRect();
       const childRect = child.getBoundingClientRect();
@@ -52,15 +53,21 @@ export default function SectionCarousel() {
       const scrollOffset =
         offset - container.offsetWidth / 2 + child.offsetWidth / 2;
 
+      setScrollLock(true); // Prevent scroll handler temporarily
       container.scrollTo({
         left: container.scrollLeft + scrollOffset,
         behavior: 'smooth',
       });
+
+      // Wait for scroll to finish, then unlock
+      setTimeout(() => {
+        setScrollLock(false);
+      }, 1000);
     }
+
     setCarouselIndex(index);
   };
 
-  // Scroll to center slide on mount
   useEffect(() => {
     const middleIndex = Math.floor(slides.length / 2);
     setCarouselIndex(middleIndex);
@@ -72,6 +79,8 @@ export default function SectionCarousel() {
     if (!container) return;
 
     const handleScroll = () => {
+      if (scrollLock) return;
+
       const containerRect = container.getBoundingClientRect();
       let closestIndex = 0;
       let closestDistance = Infinity;
@@ -88,22 +97,15 @@ export default function SectionCarousel() {
         }
       });
 
-      //   if (closestIndex === carouselIndex) {
-      //     return;
-      //   }
-
       setCarouselIndex(closestIndex);
     };
 
     container.addEventListener('scroll', handleScroll, { passive: true });
-
-    return () => {
-      container.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    return () => container.removeEventListener('scroll', handleScroll);
+  }, [scrollLock]);
 
   return (
-    <section className="py-12 px-4 bg-berlin-yellow">
+    <section className="py-12 bg-berlin-yellow">
       <div className="mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-4xl font-bold">
@@ -119,10 +121,12 @@ export default function SectionCarousel() {
         >
           {slides.map((slide, index) => (
             <div
-              key={slide.id}
-              className={`${
-                slide.id !== carouselIndex + 1 ? 'opacity-50' : ''
-              } w-[90%] sm:w-[50%] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
+              key={index}
+              className={`${index !== carouselIndex ? 'opacity-50 ' : ''} ${
+                index === 0 ? 'ml-4 ' : ''
+              }${
+                index === 3 ? 'bg-red ' : ''
+              }w-[90%] sm:w-[50%] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
               onClick={() => scrollToIndex(index)}
             >
               <SlideCard data={slide} />
@@ -130,15 +134,15 @@ export default function SectionCarousel() {
           ))}
         </div>
 
-        {/* Mobile Dots */}
+        {/* Dots */}
         <div className="mt-6 flex justify-center gap-3">
           {slides.map((_, i) => (
-            <button
+            <div
               key={i}
               onClick={() => scrollToIndex(i)}
-              className={`${
-                i !== carouselIndex ? 'opacity-50' : ''
-              } w-3 h-3 rounded-full bg-black hover:bg-gray-500`}
+              className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
+                i === carouselIndex ? 'bg-black' : 'bg-white'
+              }`}
             />
           ))}
         </div>
