@@ -53,13 +53,12 @@ export default function SectionCarousel() {
       const scrollOffset =
         offset - container.offsetWidth / 2 + child.offsetWidth / 2;
 
-      setScrollLock(true); // Prevent scroll handler temporarily
+      setScrollLock(true);
       container.scrollTo({
         left: container.scrollLeft + scrollOffset,
         behavior: 'smooth',
       });
 
-      // Wait for scroll to finish, then unlock
       setTimeout(() => {
         setScrollLock(false);
       }, 1000);
@@ -104,6 +103,46 @@ export default function SectionCarousel() {
     return () => container.removeEventListener('scroll', handleScroll);
   }, [scrollLock]);
 
+  // Auto-slide logic
+  useEffect(() => {
+    let autoSlideInterval;
+    let userInteractionTimeout;
+
+    const startAutoSlide = () => {
+      autoSlideInterval = setInterval(() => {
+        setCarouselIndex((prevIndex) => {
+          const nextIndex = (prevIndex + 1) % slides.length;
+          scrollToIndex(nextIndex);
+          return nextIndex;
+        });
+      }, 1000);
+    };
+
+    const resetUserInteraction = () => {
+      clearInterval(autoSlideInterval);
+      clearTimeout(userInteractionTimeout);
+
+      userInteractionTimeout = setTimeout(() => {
+        startAutoSlide();
+      }, 1000);
+    };
+
+    const interactionEvents = ['click', 'mousemove', 'touchstart', 'scroll'];
+    interactionEvents.forEach((event) =>
+      scrollRef.current.addEventListener(event, resetUserInteraction)
+    );
+
+    startAutoSlide();
+
+    return () => {
+      clearInterval(autoSlideInterval);
+      clearTimeout(userInteractionTimeout);
+      interactionEvents.forEach((event) =>
+        scrollRef.current.removeEventListener(event, resetUserInteraction)
+      );
+    };
+  }, []);
+
   return (
     <section className="py-12 bg-berlin-yellow">
       <div className="mx-auto">
@@ -123,9 +162,9 @@ export default function SectionCarousel() {
             <div
               key={index}
               className={`${index !== carouselIndex ? 'opacity-50 ' : ''} ${
-                index === 0 ? 'ml-4 ' : ''
+                index === 0 ? 'ml-[25%] ' : ''
               }${
-                index === 3 ? 'bg-red ' : ''
+                index === 3 ? '!mr-[25%] ' : ''
               }w-[90%] sm:w-[50%] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
               onClick={() => scrollToIndex(index)}
             >
