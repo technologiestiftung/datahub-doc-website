@@ -4,8 +4,8 @@ import { Button } from '@site/src/components/UI/Button';
 export default function SectionAboutText() {
   return (
     <section className="w-full md:py-12 px-16 py-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="col-span-12 max-w-[873px]">
+      <div className="max-w-7xl ">
+        <div className="col-span-12 max-w-[489px] lg:max-w-[873px] max-w-[489px] mx-auto">
           <h1 className="pt-12 text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Über den Data Hub
           </h1>

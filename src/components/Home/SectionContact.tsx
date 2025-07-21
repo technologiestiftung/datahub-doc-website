@@ -9,7 +9,7 @@ export default function SectionContact({
   bgColor = 'bg-white',
 }: SectionContactProps) {
   return (
-    <section className={`w-full ${bgColor} py-4 md:py-12`}>
+    <section className={`w-full ${bgColor} py-8 md:py-12 px-16 md:px-0`}>
       <div className="max-w-7xl mx-auto px-4 md:px-16">
         <div className="grid grid-cols-12 gap-[20px]">
           <div className="col-span-12">
