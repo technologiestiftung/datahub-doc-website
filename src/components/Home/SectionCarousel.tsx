@@ -137,9 +137,11 @@ export default function SectionCarousel() {
     return () => {
       clearInterval(autoSlideInterval);
       clearTimeout(userInteractionTimeout);
-      interactionEvents.forEach((event) =>
-        scrollRef.current.removeEventListener(event, resetUserInteraction)
-      );
+      if (scrollRef.current) {
+        interactionEvents.forEach((event) =>
+          scrollRef.current.removeEventListener(event, resetUserInteraction)
+        );
+      }
     };
   }, []);
 
