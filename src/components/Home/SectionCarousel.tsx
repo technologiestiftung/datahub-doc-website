@@ -167,7 +167,7 @@ export default function SectionCarousel() {
                 index === 0 ? 'ml-[25%] ' : ''
               }${
                 index === 3 ? '!mr-[25%] ' : ''
-              }w-[90%] sm:w-[50%] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
+              }w-[90%] sm:w-[70%] lg:w-[746px] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
               onClick={() => scrollToIndex(index)}
             >
               <SlideCard data={slide} />
