@@ -33,7 +33,7 @@ export default function Home(): ReactNode {
         <SectionLogin />
         <SectionTools />
         <SectionWissensspeicher />
-        <SectionContact />
+        <SectionContact bgColor="bg-berlin-yellow" />
       </main>
     </Layout>
   );

@@ -1,9 +1,15 @@
 import '../../css/tailwind.css';
 import { Button } from '@site/src/components/UI/Button';
 
-export default function SectionContact() {
+type SectionContactProps = {
+  bgColor?: string;
+};
+
+export default function SectionContact({
+  bgColor = 'bg-white',
+}: SectionContactProps) {
   return (
-    <section className="w-full bg-berlin-yellow py-4 md:py-12">
+    <section className={`w-full ${bgColor} py-4 md:py-12`}>
       <div className="max-w-7xl mx-auto px-4 md:px-16">
         <div className="grid grid-cols-12 gap-[20px]">
           <div className="col-span-12">
