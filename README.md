@@ -26,6 +26,10 @@ tbd...
 
 npm run build
 
+## Write Docs
+
+[Docusaurus](https://docusaurus.io/docs/3.7.0/create-doc)
+
 ## Contributing
 
 Before you create a pull request, write an issue so we can discuss your changes.

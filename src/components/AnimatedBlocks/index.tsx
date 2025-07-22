@@ -1,210 +1,204 @@
-'use client';
-import { useEffect, useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 
-export default function Component() {
-  const containerRef = useRef<HTMLElement | null>(null);
-  const triggerRef = useRef<HTMLElement | null>(null);
+const DataHubSection = () => {
+  const svgWrapperRef = useRef(null);
+  const pathRefPurple = useRef(null); // purple rail
+  const pathRefBlue = useRef(null); // blue rail
+  const pathRefPink = useRef(null); // pink rail
+  const cubePurpleRef = useRef(null);
+  const cubeBlueRef = useRef(null);
+  const cubePinkRef = useRef(null);
 
   useEffect(() => {
-    const cube1 = document.querySelector('.animate-cube-1') as HTMLElement;
-    const cube2 = document.querySelector('.animate-cube-2') as HTMLElement;
-    const cube3 = document.querySelector('.animate-cube-3') as HTMLElement;
-
-    const handleScroll = () => {
-      if (!triggerRef.current || !containerRef.current) return;
-
-      const rect = triggerRef.current.getBoundingClientRect();
-      const viewportHeight =
-        containerRef.current.getBoundingClientRect().height;
-
-      const scrollProgress = 1 - rect.top / viewportHeight;
-      const clampedProgress = Math.max(0, Math.min(1, scrollProgress));
-
-      // Animate Cube 1 (Left -> Center Purple)
-      if (cube1) {
-        const progress = Math.max(0, Math.min(1, (clampedProgress - 0.1) * 3));
-
-        const startX = 0;
-        const startY = 0;
-        const endX = 175;
-        const endY = 100;
-
-        const translateX = startX + progress * (endX - startX);
-        const translateY = startY + progress * (endY - startY);
-
-        cube1.style.transform = `translate(${translateX}px, ${translateY}px)`;
-        cube1.style.opacity = (0.3 + progress * 0.7).toString();
-      }
-
-      // Animate Cube 2 (Top -> Center Blue)
-      if (cube2) {
-        const progress = Math.max(0, Math.min(1, (clampedProgress - 0.2) * 3));
-
-        const startY = 0;
-        const endY = 290;
-
-        const translateY = startY + progress * (endY - startY);
-        // cube2.style.transform = `translateY(${translateY}px)`;
-        cube2.style.transform = `translate(${-30}px, ${translateY}px)`;
-
-        cube2.style.opacity = (0.3 + progress * 0.7).toString();
-      }
-
-      // Animate Cube 3 (Right -> Center Red)
-      if (cube3) {
-        const progress = Math.max(0, Math.min(1, (clampedProgress - 0.3) * 3));
-
-        const startX = 0;
-        const startY = 0;
-        const endX = -277;
-        const endY = 121;
-
-        const translateX = startX + progress * (endX - startX);
-        const translateY = startY + progress * (endY - startY);
-
-        cube3.style.transform = `translate(${translateX}px, ${translateY}px)`;
-        cube3.style.opacity = (0.3 + progress * 0.7).toString();
-      }
+    const cubes = {
+      purple: {
+        path: pathRefPurple.current,
+        group: cubePurpleRef.current,
+        color: '#9185be',
+        delay: 0.2,
+      },
+      blue: {
+        path: pathRefBlue.current,
+        group: cubeBlueRef.current,
+        color: '#aac9e7',
+        delay: 0.1,
+      },
+      pink: {
+        path: pathRefPink.current,
+        group: cubePinkRef.current,
+        color: '#f5b4cb',
+        delay: 0,
+      },
     };
 
-    let ticking = false;
-    const onScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          handleScroll();
-          ticking = false;
-        });
-        ticking = true;
+    // compute each cube’s rail-start + center-end, init off-rail & white
+    Object.values(cubes).forEach((c) => {
+      if (c === cubes.purple) {
+        c.start = { x: 1.93, y: 145.33 }; // visually confirmed rail start
+      } else if (c === cubes.pink) {
+        c.start = { x: 345.28, y: 145.33 }; // visually confirmed rail start
+      } else {
+        // fallback to default for blue
+        const startPt = c.path.getPointAtLength(0);
+        c.start = { x: startPt.x, y: startPt.y / 1.4 };
       }
+      const bb = c.group.getBBox();
+      c.end = { x: bb.x + bb.width / 2, y: bb.y + bb.height / 2 };
+      c.origTransform = c.group.getAttribute('transform') || '';
+      const dx = c.start.x - c.end.x;
+      const dy = c.start.y - c.end.y;
+      c.group.setAttribute(
+        'transform',
+        `${c.origTransform} translate(${dx},${dy})`
+      );
+      c.group
+        .querySelectorAll('path')
+        .forEach((p) => p.setAttribute('fill', '#ffffff'));
+    });
+
+    const onScroll = () => {
+      if (!svgWrapperRef.current) return;
+      const rect = svgWrapperRef.current.getBoundingClientRect();
+      const vh = window.innerHeight;
+
+      // p = 0 when SVG top == bottom of viewport (just entering)
+      // p = 1 when SVG top has moved up by half its height
+      // Add a delay threshold to control when animation starts
+      const animationStartOffset = 0.8; // increase this for a later start
+      let p = (vh - rect.top) / (rect.height / 1.1) - animationStartOffset;
+      p = Math.max(0, Math.min(1, p));
+
+      // let p = (vh - rect.top) / (rect.height / 1.1);
+      // p = Math.max(0, Math.min(1, p));
+
+      Object.values(cubes).forEach((c) => {
+        // per-cube eased progress
+        let t = (p - c.delay) / (1 - c.delay);
+        t = Math.max(0, Math.min(1, t));
+        const dx = c.start.x - c.end.x;
+        const dy = c.start.y - c.end.y;
+        const tx = dx * (1 - t);
+        const ty = dy * (1 - t);
+        c.group.setAttribute(
+          'transform',
+          `${c.origTransform} translate(${tx},${ty})`
+        );
+        const fill = t >= 1 ? c.color : '#ffffff';
+        c.group
+          .querySelectorAll('path')
+          .forEach((pth) => pth.setAttribute('fill', fill));
+      });
     };
 
     window.addEventListener('scroll', onScroll);
-    handleScroll();
+    onScroll(); // init in case already in view
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
-    <section className="relative z-10 max-w-7xl mx-auto px-16 py-6">
+    <section className="relative z-10 max-w-7xl mx-auto px-16 py-16">
       <style jsx>{`
-        .animate-cube-1,
-        .animate-cube-2,
-        .animate-cube-3 {
+        g {
           transition: transform 0.1s ease-out, opacity 0.1s ease-out;
-          opacity: 1;
-          transform-origin: center;
-        }
-
-        .animate-cube-1 polygon,
-        .animate-cube-2 polygon,
-        .animate-cube-3 polygon {
-          transition: fill 0.3s ease-out;
         }
       `}</style>
-      <div className="grid grid-cols-12 gap-[20px] items-center">
-        {/* Right Side - Text Content */}
-        <div className="col-span-12 lg:col-span-6">
-          <div className="relative" ref={containerRef}>
-            <div className="relative w-full h-auto" ref={triggerRef}>
-              <svg
-                width="629"
-                height="608"
-                viewBox="0 0 629 608"
+      <div className="grid grid-cols-12 gap-[20px] items-start">
+        {/* Left Side – SVG */}
+        <div className="col-span-12 lg:col-span-6" ref={svgWrapperRef}>
+          <div className="w-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 344.27814 299.20319"
+              className="w-full overflow-visible p-10"
+            >
+              {/* all slanted lines + rails */}
+              <g
+                transform="translate(-1.5018584 -23.3418)"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-full h-auto"
-                preserveAspectRatio="xMidYMid meet"
+                stroke="#141414"
+                strokeWidth="4"
+                strokeLinecap="round"
+                stroke-dasharray="6 8"
               >
-                {/* Dotted lines showing cube paths */}
-                <line
-                  x1="70"
-                  y1="220"
-                  x2="244"
-                  y2="403"
-                  stroke="#3C2593"
-                  strokeDasharray="4"
-                />
-                <line
-                  x1="310"
-                  y1="80"
-                  x2="311"
-                  y2="363"
-                  stroke="#1074D5"
-                  strokeDasharray="4"
-                />
-                <line
-                  x1="558"
-                  y1="220"
-                  x2="379"
-                  y2="403"
-                  stroke="#C10648"
-                  strokeDasharray="4"
+                {/* PURPLE rail (center) */}
+                <path d="M39.1548,123.832 L300.705,276.28" />
+                <path d="M1.93445,145.33  L268.781,299.993" />
+                <path
+                  ref={pathRefPurple}
+                  d="M1.93439,188.313 L232.107,322.045"
                 />
 
-                {/* Cube 1 - Purple */}
-                <g className="animate-cube-1">
-                  <polygon
-                    points="69,300 104.5,280 140,300 104.5,320"
-                    fill="#EAE7F9"
-                    stroke="#3C2593"
-                  />
-                  <polygon
-                    points="69,300 104.5,320 104.5,370 69,350"
-                    fill="#3C2593"
-                    stroke="#3C2593"
-                  />
-                  <polygon
-                    points="140,300 104.5,320 104.5,370 140,350"
-                    fill="#9185BE"
-                    stroke="#3C2593"
-                  />
-                </g>
+                {/* BLUE rail (center) */}
+                <path d="M135.096,23.8499 L135.095,266.063" />
+                <path ref={pathRefBlue} d="M172.316,45.332 V287.577" />
+                <path d="M209.536,23.8418 V266.063" />
 
-                {/* Cube 3 - Red */}
-                <g className="animate-cube-3">
-                  <polygon
-                    points="558,300 593.5,280 629,300 593.5,320"
-                    fill="#FEE7EF"
-                    stroke="#C10648"
-                  />
-                  <polygon
-                    points="558,300 593.5,320 593.5,370 558,350"
-                    fill="#C10648"
-                    stroke="#C10648"
-                  />
-                  <polygon
-                    points="629,300 593.5,320 593.5,370 629,350"
-                    fill="#F5B4CB"
-                    stroke="#C10648"
-                  />
-                </g>
-                {/* Cube 2 - Blue */}
-                <g className="animate-cube-2">
-                  <polygon
-                    points="311,80 346.5,60 382,80 346.5,100"
-                    fill="#EBF5FF"
-                    stroke="#1074D5"
-                  />
-                  <polygon
-                    points="311,80 346.5,100 346.5,150 311,130"
-                    fill="#1074D5"
-                    stroke="#1074D5"
-                  />
-                  <polygon
-                    points="382,80 346.5,100 346.5,150 382,130"
-                    fill="#AAC9E7"
-                    stroke="#1074D5"
-                  />
-                </g>
-              </svg>
-            </div>
+                {/* PINK rail (center) */}
+                <path d="M42.7872,276.28  L308.06,123.832" />
+                <path d="M345.28,145.33  L76.764,299.993" />
+                <path ref={pathRefPink} d="M345.28,188.296 L112.994,322.045" />
+              </g>
+
+              {/* purple cube */}
+              <g
+                id="g22"
+                ref={cubePurpleRef}
+                transform="translate(-1.5018584 -23.3418)"
+                stroke="#141414"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m172.323,244.797 -37.22,21.499 -37.2208,-21.499 37.2208,-21.498 z" />
+                <path d="m172.323,244.797 -37.22,21.499 -37.2208,-21.499 37.2208,-21.498 z" />
+                <path d="m172.323,201.817 -37.22,21.498 -37.2207,-21.498 37.2207,-21.499 z" />
+                <path d="M135.103,223.307 V266.28 L97.8822,244.782 v-42.973 z" />
+                <path d="m172.323,201.809 v42.973 l-37.221,21.498 v-42.973 z" />
+              </g>
+              {/* pink cube */}
+              <g
+                id="g36"
+                ref={cubePinkRef}
+                transform="translate(-1.5018584 -23.3418)"
+                stroke="#141414"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m209.536,266.078 -37.22,21.499 -37.221,-21.499 37.221,-21.498 z" />
+                <path d="m209.536,266.078 -37.22,21.499 -37.221,-21.499 37.221,-21.498 z" />
+                <path d="m209.536,223.098 -37.22,21.498 -37.22,-21.498 37.22,-21.498 z" />
+                <path d="m172.316,244.588 v42.974 L135.095,266.063 V223.09 Z" />
+                <path d="m209.536,223.09 v42.973 l-37.22,21.499 v-42.974 z" />
+              </g>
+
+              {/* blue cube */}
+              <g
+                id="g41"
+                ref={cubeBlueRef}
+                transform="translate(-1.5018584 -23.3418)"
+                stroke="#141414"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m209.536,223.09 -37.22,21.498 -37.221,-21.498 37.221,-21.498 z" />
+                <path d="m209.536,223.09 -37.22,21.498 -37.221,-21.498 37.221,-21.498 z" />
+                <path d="m209.536,180.11 -37.22,21.498 -37.221,-21.498 37.221,-21.499 z" />
+                <path d="m172.316,201.602 v42.973 l-37.221,-21.498 v-42.973 z" />
+                <path d="m209.536,180.104 v42.973 l-37.22,21.498 v-42.973 z" />
+              </g>
+            </svg>
           </div>
         </div>
-        <div className="relative col-span-12 lg:col-span-6">
-          <h3 className="md:text-2xl font-bold">
+
+        {/* Right Side – Text */}
+        <div className="col-span-12 lg:col-span-6">
+          <h3 className="md:text-2xl font-bold mb-4">
             Vom Datensatz zum Datenprodukt
           </h3>
           <div className="text-lg leading-relaxed space-y-4">
-            <p className="">
+            <p>
               Ob{' '}
               <span className="text-berlin-purple font-bold">Datenablage</span>,{' '}
               <span className="text-berlin-pink font-bold">
@@ -218,7 +212,7 @@ export default function Component() {
               kostenfrei und nachhaltig arbeiten. Der Data Hub bietet eine
               Sammlung von Software-Bausteinen, die in Kombination ein
               passgenaues Datenmanagement und das Erstellen von Datenprodukten
-              wie Karten und Dashboards ermöglichen - genau so, wie es gebraucht
+              wie Karten und Dashboards ermöglichen – genau so, wie es gebraucht
               wird.
             </p>
           </div>
@@ -226,4 +220,6 @@ export default function Component() {
       </div>
     </section>
   );
-}
+};
+
+export default DataHubSection;
