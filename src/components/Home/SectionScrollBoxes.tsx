@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-const DataHubSection = () => {
+export default function SectionScrollBoxes() {
   const svgWrapperRef = useRef(null);
   const pathRefPurple = useRef(null); // purple rail
   const pathRefBlue = useRef(null); // blue rail
@@ -21,7 +21,7 @@ const DataHubSection = () => {
         path: pathRefBlue.current,
         group: cubeBlueRef.current,
         color: '#aac9e7',
-        delay: 0.1,
+        delay: 0.4,
       },
       pink: {
         path: pathRefPink.current,
@@ -64,12 +64,9 @@ const DataHubSection = () => {
       // p = 0 when SVG top == bottom of viewport (just entering)
       // p = 1 when SVG top has moved up by half its height
       // Add a delay threshold to control when animation starts
-      const animationStartOffset = 0.8; // increase this for a later start
+      const animationStartOffset = 0.5; // increase this for a later start
       let p = (vh - rect.top) / (rect.height / 1.1) - animationStartOffset;
       p = Math.max(0, Math.min(1, p));
-
-      // let p = (vh - rect.top) / (rect.height / 1.1);
-      // p = Math.max(0, Math.min(1, p));
 
       Object.values(cubes).forEach((c) => {
         // per-cube eased progress
@@ -102,23 +99,23 @@ const DataHubSection = () => {
           transition: transform 0.1s ease-out, opacity 0.1s ease-out;
         }
       `}</style>
-      <div className="grid grid-cols-12 gap-[20px] items-start">
+      <div className="grid grid-cols-12 gap-[20px] items-center">
         {/* Left Side – SVG */}
         <div className="col-span-12 lg:col-span-6" ref={svgWrapperRef}>
           <div className="w-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 344.27814 299.20319"
-              className="w-full overflow-visible p-10"
+              className="w-full overflow-visible p-12"
             >
-              {/* all slanted lines + rails */}
+              all slanted lines + rails
               <g
                 transform="translate(-1.5018584 -23.3418)"
                 fill="none"
                 stroke="#141414"
                 strokeWidth="4"
                 strokeLinecap="round"
-                stroke-dasharray="6 8"
+                strokeDasharray="6 8"
               >
                 {/* PURPLE rail (center) */}
                 <path d="M39.1548,123.832 L300.705,276.28" />
@@ -138,10 +135,8 @@ const DataHubSection = () => {
                 <path d="M345.28,145.33  L76.764,299.993" />
                 <path ref={pathRefPink} d="M345.28,188.296 L112.994,322.045" />
               </g>
-
               {/* purple cube */}
               <g
-                id="g22"
                 ref={cubePurpleRef}
                 transform="translate(-1.5018584 -23.3418)"
                 stroke="#141414"
@@ -157,7 +152,6 @@ const DataHubSection = () => {
               </g>
               {/* pink cube */}
               <g
-                id="g36"
                 ref={cubePinkRef}
                 transform="translate(-1.5018584 -23.3418)"
                 stroke="#141414"
@@ -171,10 +165,8 @@ const DataHubSection = () => {
                 <path d="m172.316,244.588 v42.974 L135.095,266.063 V223.09 Z" />
                 <path d="m209.536,223.09 v42.973 l-37.22,21.499 v-42.974 z" />
               </g>
-
               {/* blue cube */}
               <g
-                id="g41"
                 ref={cubeBlueRef}
                 transform="translate(-1.5018584 -23.3418)"
                 stroke="#141414"
@@ -193,7 +185,7 @@ const DataHubSection = () => {
         </div>
 
         {/* Right Side – Text */}
-        <div className="col-span-12 lg:col-span-6">
+        <div className="col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
           <h3 className="md:text-2xl font-bold mb-4">
             Vom Datensatz zum Datenprodukt
           </h3>
@@ -220,6 +212,4 @@ const DataHubSection = () => {
       </div>
     </section>
   );
-};
-
-export default DataHubSection;
+}

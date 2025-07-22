@@ -81,6 +81,12 @@ const config: Config = {
       },
       items: [
         {
+          to: '/',
+          label: 'Bausteine',
+          position: 'right',
+          activeBaseRegex: '^/$',
+        },
+        {
           to: '/about',
           label: 'Über das Projekt',
           position: 'right',
@@ -91,6 +97,11 @@ const config: Config = {
           position: 'right',
           label: 'Wissensbibliothek',
         },
+        // {
+        //   to: '/docs/category/tutorial---extras',
+        //   label: 'FAQ',
+        //   position: 'right',
+        // },
         {
           type: 'search',
           position: 'right',

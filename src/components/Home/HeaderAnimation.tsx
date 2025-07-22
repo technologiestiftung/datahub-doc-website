@@ -35,7 +35,7 @@ export default function CanvasCubeTrail({
     };
 
     const createCube = (x: number, y: number) => {
-      const size = 14 + Math.random() * 14; // 14–50px
+      const size = 2 + Math.random() * 14; // 14–50px
       const color = ['#aac9e7', '#9185be', '#f5b4cb'][
         Math.floor(Math.random() * 3)
       ];

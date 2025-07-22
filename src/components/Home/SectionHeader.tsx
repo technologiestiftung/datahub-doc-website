@@ -1,5 +1,6 @@
 import HomepageHeaderAnimation from '@site/src/components/Home/HeaderAnimation';
 import { useEffect, useRef } from 'react';
+// import HeaderSVG from '/img/header_cubes.svg';
 
 export default function HomepageHeader() {
   const containerRef = useRef<HTMLElement | null>(null);

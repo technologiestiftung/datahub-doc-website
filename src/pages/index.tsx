@@ -5,7 +5,7 @@ import Layout from '@theme/Layout';
 import SectionTools from '@site/src/components/Home/SectionTools';
 import SectionHeader from '@site/src/components/Home/SectionHeader';
 import SectionLogin from '@site/src/components/Home/SectionLogin';
-import AnimatedBlocks from '@site/src/components/AnimatedBlocks';
+import SectionScrollBoxes from '@site/src/components/Home/SectionScrollBoxes';
 import SectionCarousel from '@site/src/components/Home/SectionCarousel';
 import SectionContact from '@site/src/components/Home/SectionContact';
 import SectionWissensspeicher from '@site/src/components/Home/SectionWissensspeicher';
@@ -28,7 +28,7 @@ export default function Home(): ReactNode {
         </div>
       </div>
       <main>
-        <AnimatedBlocks />
+        <SectionScrollBoxes />
         <SectionCarousel />
         <SectionLogin />
         <SectionTools />

@@ -5,7 +5,7 @@ export default function SectionWissensspeicher() {
   return (
     <section className="relative z-10 max-w-7xl mx-auto px-16 py-6">
       <div className="grid grid-cols-12 gap-[20px] items-center">
-        <div className="relative col-span-12 lg:col-span-6">
+        <div className="relative col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
           <h3 className="md:text-2xl font-bold">Wissensspeicher</h3>
           <div className="text-lg leading-relaxed space-y-4">
             <p>

@@ -23,6 +23,10 @@
   color: #222222;
 }
 
+.navbar__item {
+  cursor: pointer;
+}
+
 .navbar__link--active {
   background-color: #222222;
   color: #fff;
