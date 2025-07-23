@@ -29,11 +29,12 @@ export const Button: FC<ButtonType> = ({ label, slug, accented = true }) => {
             viewBox="0 0 20 19"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={`w-5 h-5 ${
+            className={` w-5 h-5 ${
               accented ? 'stroke-white' : 'stroke-berlin-black'
             }`}
           >
             <path
+              className="arrow"
               d="M0.292969 9.5536H17.4596M9.33826 17.9277L17.743 9.55326L9.33826 1.17969"
               stroke-width="3"
             />

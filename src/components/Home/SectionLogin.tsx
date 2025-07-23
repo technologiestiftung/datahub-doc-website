@@ -1,4 +1,5 @@
 import '../../css/tailwind.css';
+import BlockboxSVG from '/img/blockbox.svg';
 
 export default function HomepageLogin() {
   return (
@@ -25,7 +26,10 @@ export default function HomepageLogin() {
 
         {/* Right Side - Text Content */}
         <div className="col-span-12 lg:col-span-6">
-          <img src="/img/blockbox.svg" alt="bunte blöcke" />
+          {' '}
+          <div className="max-w-[495px] mx-auto">
+            <BlockboxSVG></BlockboxSVG>
+          </div>
         </div>
       </div>
     </section>

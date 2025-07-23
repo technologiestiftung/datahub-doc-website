@@ -40,3 +40,23 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* styles.css */
+#__docusaurus_skipToContent_fallback svg,
+#__docusaurus_skipToContent_fallback svg g,
+#__docusaurus_skipToContent_fallback svg path {
+  stroke-width: 6;
+  vector-effect: non-scaling-stroke;
+}
+
+@media (max-width: 390px) {
+  #__docusaurus_skipToContent_fallback svg,
+  #__docusaurus_skipToContent_fallback svg g,
+  #__docusaurus_skipToContent_fallback svg path {
+    stroke-width: 3.5;
+  }
+}
+
+.arrow {
+  stroke-width: 3 !important;
+}

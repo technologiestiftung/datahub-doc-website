@@ -1,5 +1,6 @@
 import { Button } from '@site/src/components/UI/Button';
 import '../../css/tailwind.css';
+import WissenSVG from '/img/wissen.svg';
 
 export default function SectionWissensspeicher() {
   return (
@@ -21,8 +22,12 @@ export default function SectionWissensspeicher() {
         </div>
 
         {/* Right Side - Text Content */}
-        <div className="col-span-12 lg:col-span-6 text-center">
-          <img src="/img/wissen.svg" alt="Colorful blocks" />
+        <div className="col-span-12 lg:col-span-6 text-center ">
+          <div className="w-full h-auto overflow-hidden">
+            <div className="max-w-[439px] mx-auto">
+              <WissenSVG></WissenSVG>
+            </div>
+          </div>
         </div>
       </div>
     </section>

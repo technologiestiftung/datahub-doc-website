@@ -138,7 +138,7 @@ export default function CanvasCubeTrail({
         ctx.strokeStyle = '#000';
         ctx.lineJoin = 'round';
         ctx.lineCap = 'round';
-        ctx.lineWidth = 1.2;
+        ctx.lineWidth = 3;
         ctx.stroke();
       }
     };

@@ -1,6 +1,6 @@
 import HomepageHeaderAnimation from '@site/src/components/Home/HeaderAnimation';
 import { useEffect, useRef } from 'react';
-// import HeaderSVG from '/img/header_cubes.svg';
+import HeaderSVG from '/img/header_cubes.svg';
 
 export default function HomepageHeader() {
   const containerRef = useRef<HTMLElement | null>(null);
@@ -10,12 +10,12 @@ export default function HomepageHeader() {
       className="relative w-full overflow-hidden h-[calc(100vh-120px)] flex items-center justify-center"
       ref={containerRef}
     >
-      {/* Background image */}
-      <img
-        src="img/header_cubes.svg"
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover pointer-events-none z-10"
-      />
+      <div className="absolute inset-0 w-full h-full object-cover pointer-events-none z-10">
+        <HeaderSVG
+          className="w-full h-full"
+          preserveAspectRatio="xMidYMid slice"
+        ></HeaderSVG>
+      </div>
 
       {/* Animation layer */}
       <div className="absolute inset-0 z-10">
