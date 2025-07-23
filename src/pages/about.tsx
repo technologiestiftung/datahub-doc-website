@@ -8,8 +8,8 @@ export default function MyReactPage() {
   return (
     <Layout>
       <SectionAboutText />
-      <SectionContact />
       <SectionTeam />
+      <SectionContact />
     </Layout>
   );
 }
