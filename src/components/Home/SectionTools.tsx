@@ -20,7 +20,7 @@ const toolList = [
 
 export default function HomepageMainTools() {
   return (
-    <section className="min-h-screen bg-dhub-background px-16 py-6">
+    <section className="min-h-screen bg-dhub-background px-6 md:px-16  py-6">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">

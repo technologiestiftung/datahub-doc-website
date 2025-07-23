@@ -93,7 +93,7 @@ export default function SectionScrollBoxes() {
   }, []);
 
   return (
-    <section className="relative z-10 max-w-7xl mx-auto px-16 py-16">
+    <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-16">
       <style jsx>{`
         g {
           transition: transform 0.1s ease-out, opacity 0.1s ease-out;
@@ -108,7 +108,7 @@ export default function SectionScrollBoxes() {
               viewBox="0 0 344.27814 299.20319"
               className="w-full overflow-visible p-12"
             >
-              all slanted lines + rails
+              {/* all slanted lines + rails */}
               <g
                 transform="translate(-1.5018584 -23.3418)"
                 fill="none"

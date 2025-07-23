@@ -2,7 +2,7 @@ import '../../css/tailwind.css';
 
 export default function SectionTeam() {
   return (
-    <section className="w-full md:py-12 px-16 py-6">
+    <section className="w-full md:py-12 px-6 py-6">
       <div className="max-w-screen-xl mx-auto grid grid-cols-12 gap-5 items-center">
         {/* Title Section */}
         <div className="col-span-12 text-center">

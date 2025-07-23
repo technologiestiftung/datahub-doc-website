@@ -2,7 +2,7 @@ import '../../css/tailwind.css';
 
 export default function HomepageLogin() {
   return (
-    <section className="relative z-10 max-w-7xl mx-auto px-16 py-6">
+    <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16  py-6">
       <div className="grid grid-cols-12 gap-[20px] items-center">
         <div className="relative col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
           <h3 className="md:text-2xl font-bold">Zugang zum Data Hub</h3>
