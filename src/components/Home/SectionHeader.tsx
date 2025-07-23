@@ -18,9 +18,9 @@ export default function HomepageHeader() {
       </div>
 
       {/* Animation layer */}
-      <div className="absolute inset-0 z-10">
+      {/* <div className="absolute inset-0 z-10">
         <HomepageHeaderAnimation parentRef={containerRef} />
-      </div>
+      </div> */}
 
       {/* Vertically centered content */}
       <div className="relative z-20 text-center">
