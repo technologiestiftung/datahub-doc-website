@@ -1,5 +1,20 @@
 import '../../css/tailwind.css';
+
 // import { Button } from '@site/src/components/UI/Button';
+const toolList = [
+  { name: 'grafana', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+  { name: 'master_portal', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+  { name: 'superset', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+  { name: 'appsmith', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+  { name: 'airflow', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+  { name: 'jupiter', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+  { name: 'gravitee', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+  { name: 'node_red', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+  { name: 'geoserver', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+  { name: 'minio', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+  { name: 'pgadmin', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+  { name: 'piveau', size: 'w-32 h-32', bgColor: 'berlin-yellow' },
+];
 
 export default function Bausteine() {
   return (
@@ -13,6 +28,27 @@ export default function Bausteine() {
             Alle Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et,
             id ipsam.
           </h3>
+
+          <div>
+            <div className="grid grid-cols-12 gap-[20px] mb-16">
+              {toolList.map((d) => {
+                return (
+                  <div
+                    className={`bg-${d.bgColor} col-span-6 sm:col-span-4 lg:col-span-3 flex items-center justify-center h-20`}
+                    key={d.name}
+                  >
+                    <div className="flex items-center gap-3">
+                      <img
+                        src={`img/logos/${d.name}.svg`}
+                        alt={d.name}
+                        className={d.size}
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>
