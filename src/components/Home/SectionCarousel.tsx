@@ -40,6 +40,7 @@ const slides = [
 export default function SectionCarousel() {
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [scrollLock, setScrollLock] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
   const scrollRef = useRef(null);
 
   const scrollToIndex = (index) => {
@@ -70,7 +71,7 @@ export default function SectionCarousel() {
   useEffect(() => {
     const middleIndex = Math.floor(slides.length / 2);
     setCarouselIndex(middleIndex);
-    scrollToIndex(middleIndex);
+    requestAnimationFrame(() => scrollToIndex(middleIndex));
   }, []);
 
   useEffect(() => {
@@ -103,47 +104,19 @@ export default function SectionCarousel() {
     return () => container.removeEventListener('scroll', handleScroll);
   }, [scrollLock]);
 
-  // Auto-slide logic
   useEffect(() => {
-    let autoSlideInterval;
-    let userInteractionTimeout;
+    if (isHovering) return;
 
-    const startAutoSlide = () => {
-      autoSlideInterval = setInterval(() => {
-        setCarouselIndex((prevIndex) => {
-          const nextIndex = (prevIndex + 1) % slides.length;
-          scrollToIndex(nextIndex);
-          return nextIndex;
-        });
-      }, 1000);
-    };
+    const interval = setInterval(() => {
+      setCarouselIndex((prevIndex) => {
+        const nextIndex = (prevIndex + 1) % slides.length;
+        scrollToIndex(nextIndex);
+        return nextIndex;
+      });
+    }, 3000);
 
-    const resetUserInteraction = () => {
-      clearInterval(autoSlideInterval);
-      clearTimeout(userInteractionTimeout);
-
-      userInteractionTimeout = setTimeout(() => {
-        startAutoSlide();
-      }, 1000);
-    };
-
-    const interactionEvents = ['click', 'mousemove', 'touchstart', 'scroll'];
-    interactionEvents.forEach((event) =>
-      scrollRef.current.addEventListener(event, resetUserInteraction)
-    );
-
-    startAutoSlide();
-
-    return () => {
-      clearInterval(autoSlideInterval);
-      clearTimeout(userInteractionTimeout);
-      if (scrollRef.current) {
-        interactionEvents.forEach((event) =>
-          scrollRef.current.removeEventListener(event, resetUserInteraction)
-        );
-      }
-    };
-  }, []);
+    return () => clearInterval(interval);
+  }, [isHovering]);
 
   return (
     <section className="py-12 bg-berlin-yellow">
@@ -168,9 +141,11 @@ export default function SectionCarousel() {
               className={`${index !== carouselIndex ? 'opacity-50 ' : ''} ${
                 index === 0 ? 'ml-[25%] ' : ''
               }${
-                index === 3 ? '!mr-[25%] ' : ''
+                index === slides.length - 1 ? '!mr-[25%] ' : ''
               }w-[90%] sm:w-[70%] lg:w-[746px] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
               onClick={() => scrollToIndex(index)}
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
             >
               <SlideCard data={slide} />
             </div>
