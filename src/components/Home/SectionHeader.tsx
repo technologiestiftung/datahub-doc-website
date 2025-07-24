@@ -7,7 +7,7 @@ export default function HomepageHeader() {
 
   return (
     <section
-      className="relative w-full overflow-hidden h-[calc(100vh-120px)] flex items-center justify-center"
+      className="relative w-full overflow-hidden h-[calc(100vh-118px)] flex items-center justify-center"
       ref={containerRef}
     >
       <div className="absolute inset-0 w-full h-full object-cover pointer-events-none z-10">
@@ -24,10 +24,10 @@ export default function HomepageHeader() {
 
       {/* Vertically centered content */}
       <div className="relative z-20 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+        <h1 className="text-6xl md:text-6xl lg:text-8xl font-bold mb-6 leading-tight">
           Data Hub Berlin
         </h1>
-        <h3 className="md:text-2xl font-normal">
+        <h3 className="text-2xl md:text-3xl font-normal">
           Gemeinsam Daten nutzbar machen <br /> offen, modular, für eine
           digitale Verwaltung, die wirkt.
         </h3>

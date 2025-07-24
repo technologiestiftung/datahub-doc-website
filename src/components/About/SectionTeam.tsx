@@ -6,8 +6,8 @@ export default function SectionTeam() {
       <div className="max-w-screen-xl mx-auto grid grid-cols-12 gap-5 items-center">
         {/* Title Section */}
         <div className="col-span-12 text-center">
-          <h2 className="text-2xl md:text-4xl font-bold">Unser Team</h2>
-          <p className="text-lg">
+          <h2 className="text-2xl md:text-5xl font-bold">Unser Team</h2>
+          <p className="text-md md:text-lg">
             Das sind die Menschen hinter dem Data Hub Berlin
           </p>
         </div>
@@ -22,9 +22,9 @@ export default function SectionTeam() {
 
         {/* Text Info */}
         <div className="col-span-12 lg:col-span-6">
-          <div className="flex flex-col md:flex-row lg:flex-col md:px-20 lg:px-0">
+          <div className="flex flex-col md:flex-row lg:flex-col md:px-20 lg:px-0 text-md md:text-lg">
             <div className="md:w-1/2">
-              <p>
+              <p className="">
                 <span className="font-semibold">Lisa Stubert</span>
                 <br />
                 Projektleitung Data Hub <br />

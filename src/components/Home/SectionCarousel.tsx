@@ -61,7 +61,7 @@ export default function SectionCarousel() {
 
       setTimeout(() => {
         setScrollLock(false);
-      }, 1000);
+      }, 3000);
     }
 
     setCarouselIndex(index);
@@ -149,10 +149,12 @@ export default function SectionCarousel() {
     <section className="py-12 bg-berlin-yellow">
       <div className="mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-4xl font-bold">
-            Drei Show Use Cases
+          <h2 className="text-2xl md:text-5xl font-bold">
+            Erste Anwendungsfälle
           </h2>
-          <p className="text-lg">Hier kommt der Data Hub bereits zum Einsatz</p>
+          <p className="text-xl md:text-3xl">
+            So nutzt die Berliner Verwaltung den Data Hub bereits heute
+          </p>
         </div>
 
         {/* Scrollable container */}
@@ -202,10 +204,10 @@ function SlideCard({ data }) {
           className="w-24 h-24 object-contain"
         />
         <div className="text-left w-full break-words">
-          <h3 className="text-xl md:text-2xl font-bold text-gray-800">
+          <h3 className="text-xl md:text-3xl font-bold text-gray-800">
             {data.title}
           </h3>
-          <p className="mb-4 text-sm md:text-base text-gray-600">
+          <p className="mb-4 text-base md:text-lg text-gray-600">
             {data.description}
           </p>
           <Button label="Mehr erfahren" slug={data.slug} accented={false} />

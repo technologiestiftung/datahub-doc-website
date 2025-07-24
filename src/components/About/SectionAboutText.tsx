@@ -6,19 +6,19 @@ export default function SectionAboutText() {
     <section className="w-full md:py-12 px-6 md:px-16 py-6">
       <div className="max-w-7xl ">
         <div className="col-span-12 max-w-[489px] lg:max-w-[873px] max-w-[489px] mx-auto lg:mx-0">
-          <h1 className="pt-12 text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="pt-12 text-6xl lg:text-8xl font-bold mb-6 leading-tight">
             Über den Data Hub
           </h1>
-          <h3 className="md:text-2xl font-normal mb-8">
+          <h3 className="text-xl md:text-3xl font-normal mb-8">
             Mit dem Data Hub wird eine zentrale, urbane Datenplattform für das
             Land Berlin bereitgestellt. Erfahre mehr über die Pilotphase, die
             Hintergründe und die Personen hinter dem Data Hub.
           </h3>
-          <h3 className="md:text-2xl font-bold">
+          <h3 className="text-2xl md:text-5xl font-bold pt-2">
             Urbane Datenplattform – fest verankert in Berlins Smart
             City-Strategie
           </h3>
-          <p>
+          <p className="text-md md:text-lg">
             Der Aufbau des Data Hubs ist keine neue Einzelinitiative, sondern
             eine seit einigen Jahren angestrebte und zentrale Maßnahme der
             Strategie „Gemeinsam Digital: Berlin“. Er baut auf den langfristigen
@@ -31,10 +31,10 @@ export default function SectionAboutText() {
             bestehende IT-Landschaft Berlins ergänzen und datengetriebene
             Prozesse nachhaltig und nutzerorientiert fördern.
           </p>{' '}
-          <h3 className="md:text-2xl font-bold">
+          <h3 className="text-2xl md:text-5xl font-bold pt-2">
             Prototyp – praxisnah Anforderungen explorieren in der Pilotphase
           </h3>
-          <p>
+          <p className="text-md md:text-lg">
             Die Entwicklung eines so umfassenden IT-Infrastrukturprojektes
             erfordert agile Prozesse und eine enge Zusammenarbeit mit der
             Praxis. In einer Pilotphase wurde der Data Hub daher prototypisch
@@ -47,10 +47,10 @@ export default function SectionAboutText() {
             reale Datenprojekte umgesetzt, um die Plattform praxisnah zu testen
             und weiterzuentwickeln.
           </p>
-          <h3 className="md:text-2xl font-bold">
+          <h3 className="text-2xl md:text-5xl font-bold pt-2">
             Teamarbeit – Technologiestiftung Berlin und Berliner Senatskanzlei
           </h3>
-          <p>
+          <p className="text-md md:text-lg">
             Die Pilotphase des Data Hubs wird von der Technologiestiftung Berlin
             und der Berliner Senatskanzlei partnerschaftlich koordiniert. Die
             Technologiestiftung begleitet die Pilotprojekte fachlich und

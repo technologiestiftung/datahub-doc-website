@@ -11,12 +11,12 @@ export default function Footer() {
               <img
                 src="/img/logos/datahub.svg"
                 alt="Datahub Logo"
-                className="h-10"
+                className="h-10 pr-10"
               />
               <img
                 src="/img/logos/tsb.svg"
                 alt="Technologiestiftung Berlin Logo"
-                className="h-10"
+                className="h-10 pr-10"
               />
               <img
                 src="/img/logos/senatskanzlei_berlin.svg"
@@ -24,7 +24,7 @@ export default function Footer() {
                 className="h-10"
               />
             </div>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 text-base">
               Ein Projekt der Technologiestiftung Berlin. Gefördert von der
               Senatskanzlei Berlin aus den Mitteln des Landes Berlin.
             </p>
@@ -69,7 +69,7 @@ export default function Footer() {
                 />
               </a>
             </div>
-            <div className="flex space-x-6 font-semibold text-black">
+            <div className="flex space-x-6 font-semibold text-black text-base">
               <a href="#" className="underline underline-offset-8 decoration-2">
                 Kontakt
               </a>

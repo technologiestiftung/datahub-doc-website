@@ -60,3 +60,10 @@
 .arrow {
   stroke-width: 3 !important;
 }
+
+/* tialwind text-lg */
+.navbar__inner,
+.menu__list-item {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}

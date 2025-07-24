@@ -188,10 +188,10 @@ export default function SectionScrollBoxes() {
 
         {/* Right Side – Text */}
         <div className="col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
-          <h3 className="md:text-2xl font-bold mb-4">
+          <h3 className="text-2xl md:text-5xl font-bold mb-4">
             Vom Datensatz zum Datenprodukt
           </h3>
-          <div className="text-lg leading-relaxed space-y-4">
+          <div className="text-md md:text-xl leading-relaxed space-y-4">
             <p>
               Ob{' '}
               <span className="text-berlin-purple font-bold">Datenablage</span>,{' '}

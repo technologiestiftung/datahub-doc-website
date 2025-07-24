@@ -24,10 +24,10 @@ export default function HomepageMainTools() {
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="md:text-4xl font-bold">Open Source Tool </h2>
-          <h3 className="md:text-2xl font-normal">
+          <h3 className="text-2xl md:text-5xl font-bold">Open Source Tool </h3>
+          <h5 className="text-xl md:text-3xl md:text-5xl font-normal">
             Im Browser nutzbar, vielfach erprobt{' '}
-          </h3>
+          </h5>
         </div>
 
         {/* 12er Grid mit 20px Gutter */}
@@ -52,7 +52,7 @@ export default function HomepageMainTools() {
 
         {/* Beschreibung */}
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <p className="text-lg leading-relaxed space-y-4 max-w-[566px] mx-auto">
+          <p className="text-md md:text-xl leading-relaxed space-y-4 max-w-[566px] mx-auto">
             {' '}
             Bei den Data Hub Software-Bausteinen handelt es sich ausschließlich
             um Open Source Software. Eine breit aufgestellte Community sorgt für
