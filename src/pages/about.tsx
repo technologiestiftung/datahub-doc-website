@@ -4,7 +4,7 @@ import SectionContact from '@site/src/components/Home/SectionContact';
 import SectionAboutText from '@site/src/components/About/SectionAboutText';
 import SectionTeam from '@site/src/components/About/SectionTeam';
 
-export default function MyReactPage() {
+export default function About() {
   return (
     <Layout>
       <SectionAboutText />

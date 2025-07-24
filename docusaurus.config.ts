@@ -81,10 +81,10 @@ const config: Config = {
       },
       items: [
         {
-          to: '/',
+          to: '/bausteine',
           label: 'Bausteine',
           position: 'right',
-          activeBaseRegex: '^/$',
+          // activeBaseRegex: '^/$',
         },
         {
           to: '/about',

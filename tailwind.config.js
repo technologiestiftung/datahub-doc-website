@@ -27,6 +27,7 @@ module.exports = {
         'berlin-yellow': '#ffe70e',
         'berlin-orange': '#f39300',
         'berlin-purple': '#9185be',
+        'berlin-gray': '#e6e6e6',
       },
       keyframes: {
         rise: {

@@ -25,14 +25,17 @@
 
 .navbar__item {
   cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .navbar__item:hover {
-  background-color: #ffe70e;
+  background-color: #e6e6e6;
 }
 
 .navbar__link--active:hover {
-  background-color: #222222;
+  background-color: #ffe70e;
+  color: #222222;
 }
 
 .navbar__link--active {
