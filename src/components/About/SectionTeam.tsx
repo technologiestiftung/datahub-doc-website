@@ -2,7 +2,7 @@ import '../../css/tailwind.css';
 
 export default function SectionTeam() {
   return (
-    <section className="w-full md:py-12 px-6 py-6 bg-berlin-yellow">
+    <section className="w-full md:py-12 px-12 py-6 bg-berlin-yellow">
       <div className="max-w-screen-xl mx-auto grid grid-cols-12 gap-5 items-center">
         {/* Title Section */}
         <div className="col-span-12 text-center">
@@ -15,9 +15,10 @@ export default function SectionTeam() {
         {/* Image Placeholder */}
         <div className="col-span-12 lg:col-span-6">
           {/* Replace with actual image tag later */}
-          <div className="w-full h-64 bg-gray-800 text-white flex items-center justify-center">
+          {/* <div className="w-full h-64 bg-gray-800 text-white flex items-center justify-center">
             [Bild]
-          </div>
+          </div> */}
+          <img src="./img/team.png"></img>
         </div>
 
         {/* Text Info */}

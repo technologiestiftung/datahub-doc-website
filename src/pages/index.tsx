@@ -19,12 +19,8 @@ export default function Home(): ReactNode {
     >
       <SectionHeader />
       <div className="bg-berlin-black py-4 overflow-hidden w-full">
-        <div className="flex whitespace-nowrap">
-          {Array.from({ length: 50 }).map((_, i) => (
-            <span key={'ss' + i} className="px-4 text-white font-bold">
-              PILOTPROJEKT 2025
-            </span>
-          ))}
+        <div className="text-center text-white font-bold text-xl md:text-3xl">
+          2025 IST DER DATA HUB EIN PILOTPROJEKT
         </div>
       </div>
       <main>

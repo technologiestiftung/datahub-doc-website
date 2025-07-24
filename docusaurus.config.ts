@@ -96,12 +96,19 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'right',
           label: 'Wissensbibliothek',
+          // activeBaseRegex: '^/$',
         },
         // {
         //   to: '/docs/category/tutorial---extras',
         //   label: 'FAQ',
         //   position: 'right',
         // },
+        {
+          to: '/docs/faq',
+          label: 'FAQ',
+          position: 'right',
+          // activeBaseRegex: '^/$',
+        },
         {
           type: 'search',
           position: 'right',

@@ -27,6 +27,14 @@
   cursor: pointer;
 }
 
+.navbar__item:hover {
+  background-color: #ffe70e;
+}
+
+.navbar__link--active:hover {
+  background-color: #222222;
+}
+
 .navbar__link--active {
   background-color: #222222;
   color: #fff;
