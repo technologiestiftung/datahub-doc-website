@@ -204,7 +204,7 @@ export default function SectionScrollBoxes() {
               </span>{' '}
               – Mit dem Data Hub kann die Berliner Verwaltung souverän,
               kostenfrei und nachhaltig arbeiten. Der Data Hub bietet eine
-              Sammlung von Software-Bausteinen, die in Kombination ein
+              Sammlung von Softwarebausteinen, die in Kombination ein
               passgenaues Datenmanagement und das Erstellen von Datenprodukten
               wie Karten und Dashboards ermöglichen – genau so, wie es gebraucht
               wird.
