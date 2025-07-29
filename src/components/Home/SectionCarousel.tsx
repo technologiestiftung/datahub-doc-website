@@ -41,6 +41,7 @@ export default function SectionCarousel() {
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [scrollLock, setScrollLock] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
+  const [direction, setDirection] = useState<'forward' | 'backward'>('forward');
   const scrollRef = useRef(null);
 
   const scrollToIndex = (index) => {
@@ -48,15 +49,15 @@ export default function SectionCarousel() {
     const child = container?.children[index];
 
     if (container && child) {
-      const containerRect = container.getBoundingClientRect();
-      const childRect = child.getBoundingClientRect();
-      const offset = childRect.left - containerRect.left;
       const scrollOffset =
-        offset - container.offsetWidth / 2 + child.offsetWidth / 2;
+        child.offsetLeft - container.offsetWidth / 2 + child.offsetWidth / 2;
+
+      const maxScroll = container.scrollWidth - container.clientWidth;
+      const targetScroll = Math.min(scrollOffset, maxScroll);
 
       setScrollLock(true);
       container.scrollTo({
-        left: container.scrollLeft + scrollOffset,
+        left: targetScroll,
         behavior: 'smooth',
       });
 
@@ -69,9 +70,9 @@ export default function SectionCarousel() {
   };
 
   useEffect(() => {
-    const middleIndex = Math.floor(slides.length / 2);
-    setCarouselIndex(middleIndex);
-    requestAnimationFrame(() => scrollToIndex(middleIndex));
+    const startIndex = 1;
+    setCarouselIndex(startIndex);
+    requestAnimationFrame(() => scrollToIndex(startIndex));
   }, []);
 
   useEffect(() => {
@@ -109,17 +110,31 @@ export default function SectionCarousel() {
 
     const interval = setInterval(() => {
       setCarouselIndex((prevIndex) => {
-        if (prevIndex < slides.length - 1) {
-          const nextIndex = prevIndex + 1;
-          scrollToIndex(nextIndex);
-          return nextIndex;
+        let nextIndex = prevIndex;
+
+        if (direction === 'forward') {
+          if (prevIndex < slides.length - 1) {
+            nextIndex = prevIndex + 1;
+          } else {
+            setDirection('backward');
+            nextIndex = prevIndex - 1;
+          }
+        } else {
+          if (prevIndex > 0) {
+            nextIndex = prevIndex - 1;
+          } else {
+            setDirection('forward');
+            nextIndex = prevIndex + 1;
+          }
         }
-        return prevIndex; // nicht mehr weiterschalten
+
+        scrollToIndex(nextIndex);
+        return nextIndex;
       });
-    }, 5000); // 5 Sekunden
+    }, 5000);
 
     return () => clearInterval(interval);
-  }, [isHovering]);
+  }, [isHovering, direction]);
 
   return (
     <section className="py-12 bg-berlin-yellow">
@@ -133,19 +148,17 @@ export default function SectionCarousel() {
           </p>
         </div>
 
-        {/* Scrollable container */}
+        {/* Scrollable container mit horizontalem Padding */}
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto snap-x snap-mandatory space-x-6 px-2 md:px-0 hide-scrollbar scroll-smooth"
+          className="flex overflow-x-auto snap-x snap-mandatory space-x-6 px-[20%] hide-scrollbar scroll-smooth"
         >
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`${index !== carouselIndex ? 'opacity-50 ' : ''} ${
-                index === 0 ? 'ml-[25%] ' : ''
-              }${
-                index === slides.length - 1 ? '!mr-[25%] ' : ''
-              }w-[90%] sm:w-[70%] lg:w-[746px] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
+              className={`${
+                index !== carouselIndex ? 'opacity-50 ' : ''
+              } w-[90%] sm:w-[70%] lg:w-[746px] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
               onClick={() => scrollToIndex(index)}
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
