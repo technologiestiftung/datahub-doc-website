@@ -8,7 +8,7 @@ export default function SectionTeam() {
         <div className="col-span-12 text-center">
           <h2 className="text-3xl md:text-5xl font-bold">Unser Team</h2>
           <p className="text-xl md:text-3xl">
-            Das sind die Menschen hinter dem Data Hub Berlin
+            Das sind die Menschen hinter dem Data Hub Prototypen
           </p>
         </div>
         <div className="col-span-12">
