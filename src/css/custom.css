@@ -34,13 +34,13 @@
 }
 
 .navbar__link--active:hover {
-  background-color: #ffe70e;
+  background-color: #e6e6e6;
   color: #222222;
 }
 
 .navbar__link--active {
-  background-color: #222222;
-  color: #fff;
+  background-color: #ffe70e;
+  color: #222222;
 }
 
 .hide-scrollbar::-webkit-scrollbar {
