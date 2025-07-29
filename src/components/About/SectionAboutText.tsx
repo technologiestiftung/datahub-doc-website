@@ -3,7 +3,7 @@ import AboutBlockSVG from '/img/cubes_ueber_projekt_6pt.svg';
 
 export default function SectionAboutText() {
   return (
-    <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16  py-6">
+    <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-6">
       <div className="grid grid-cols-12 gap-[20px] items-center">
         <div className="relative col-span-12 lg:col-span-9 max-w-[489px] md:max-w-none mx-auto">
           <h1 className="pt-12 text-6xl lg:text-8xl font-bold mb-6 leading-tight">

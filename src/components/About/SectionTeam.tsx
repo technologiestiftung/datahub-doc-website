@@ -2,8 +2,8 @@ import '../../css/tailwind.css';
 
 export default function SectionTeam() {
   return (
-    <section className="w-full md:py-12 px-12 py-6 bg-berlin-yellow">
-      <div className="max-w-screen-xl mx-auto grid grid-cols-12 gap-5 items-center">
+    <section className={`w-full bg-berlin-yellow `}>
+      <div className="grid grid-cols-12 gap-[20px] items-center z-10 max-w-7xl mx-auto px-6 md:px-16 py-20">
         {/* Title Section */}
         <div className="col-span-12 text-center">
           <h2 className="text-2xl md:text-5xl font-bold">Unser Team</h2>
@@ -11,35 +11,29 @@ export default function SectionTeam() {
             Das sind die Menschen hinter dem Data Hub Berlin
           </p>
         </div>
-
-        {/* Image Placeholder */}
-        <div className="col-span-12 lg:col-span-6">
-          {/* Replace with actual image tag later */}
-          {/* <div className="w-full h-64 bg-gray-800 text-white flex items-center justify-center">
-            [Bild]
-          </div> */}
+        <div className="col-span-12">
           <img src="./img/team.png"></img>
         </div>
-
-        {/* Text Info */}
-        <div className="col-span-12 lg:col-span-6">
-          <div className="flex flex-col md:flex-row lg:flex-col md:px-20 lg:px-0 text-md md:text-lg">
-            <div className="md:w-1/2">
-              <p className="">
+        <div className="col-span-12 text-center">
+          <div className="flex flex-col md:flex-row justify-center md:gap-20 gap-2 text-md md:text-lg max-w-4xl mx-auto">
+            <div className="text-left">
+              <p>
                 <span className="font-semibold">Lisa Stubert</span>
                 <br />
-                Projektleitung Data Hub <br />
+                Projektleitung Data Hub Prototyp <br />
                 CityLAB Berlin
                 <br />
                 Technologiestiftung Berlin
               </p>
             </div>
-            <div className="md:w-1/2">
+            <div className="text-left">
               <p>
-                <span className="font-semibold">Martina Kuhhaupt</span>
+                <span className="font-semibold">Martina Kuhaupt</span>
                 <br />
-                Stv. Leiterin Smart City und <br />
-                Datenmanagement Senatskanzlei Berlin
+                Stv. Leiterin Smart City <br />
+                und Datenmanagement
+                <br />
+                Senatskanzlei Berlin, Abteilung 6
               </p>
             </div>
           </div>
