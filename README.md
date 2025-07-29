@@ -20,7 +20,7 @@ npm install
 
 ## Usage or Deployment
 
-tbd...
+npm run start
 
 ## Development
 
