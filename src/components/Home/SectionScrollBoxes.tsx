@@ -193,21 +193,12 @@ export default function SectionScrollBoxes() {
           </h3>
           <div className="text-md md:text-xl leading-relaxed space-y-4">
             <p>
-              Ob{' '}
-              <span className="text-berlin-purple font-bold">Datenablage</span>,{' '}
-              <span className="text-berlin-pink font-bold">
-                Datenverarbeitung
-              </span>{' '}
-              oder{' '}
-              <span className="text-berlin-light-blue font-bold">
-                Datenvisualisierung
-              </span>{' '}
-              – Mit dem Data Hub kann die Berliner Verwaltung souverän,
-              kostenfrei und nachhaltig arbeiten. Der Data Hub bietet eine
-              Sammlung von Softwarebausteinen, die in Kombination ein
-              passgenaues Datenmanagement und das Erstellen von Datenprodukten
-              wie Karten und Dashboards ermöglichen – genau so, wie es gebraucht
-              wird.
+              Ob Datenablage, Datenverarbeitung oder Datenvisualisierung – Mit
+              dem Data Hub kann die Berliner Verwaltung souverän, kostenfrei und
+              nachhaltig arbeiten. Der Data Hub bietet eine Sammlung von
+              Softwarebausteinen, die in Kombination ein passgenaues
+              Datenmanagement und das Erstellen von Datenprodukten wie Karten
+              und Dashboards ermöglichen – genau so, wie es gebraucht wird.
             </p>
           </div>
         </div>

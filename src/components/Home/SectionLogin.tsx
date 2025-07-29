@@ -20,8 +20,8 @@ export default function HomepageLogin() {
               werden koordiniert und fachlich begleitet, um Plattform und
               Begleitprozesse praxisnah weiterzuentwickeln.
             </p>
-            <p className="font-bold text-berlin-purple">
-              2025 läuft der Data Hub noch als Pilotprojekt.{' '}
+            <p>
+              <strong>2025 läuft der Data Hub noch als Pilotprojekt.</strong>
             </p>
           </div>
         </div>

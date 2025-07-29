@@ -5,7 +5,7 @@ import '../../css/tailwind.css';
 const slides = [
   {
     id: 1,
-    title: 'Landesgleichstellung',
+    title: 'Landesgleichstellung auf einen Blick',
     description:
       'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Einrichtungen? Ein zentrales Dashboard ersetzt das bisher manuelle Berichtswesen und ermöglicht eine Auswertung der Gleichstellungsmaßnahmen.',
     image: '/img/example1.svg',
