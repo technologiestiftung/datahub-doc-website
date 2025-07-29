@@ -1,11 +1,11 @@
 import '../../css/tailwind.css';
-import { Button } from '@site/src/components/UI/Button';
+import AboutBlockSVG from '/img/cubes_ueber_projekt_6pt.svg';
 
 export default function SectionAboutText() {
   return (
-    <section className="w-full md:py-12 px-6 md:px-16 py-6">
-      <div className="max-w-7xl ">
-        <div className="col-span-12 max-w-[489px] lg:max-w-[873px] max-w-[489px] mx-auto lg:mx-0">
+    <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16  py-6">
+      <div className="grid grid-cols-12 gap-[20px] items-center">
+        <div className="relative col-span-12 lg:col-span-9 max-w-[489px] md:max-w-none mx-auto">
           <h1 className="pt-12 text-6xl lg:text-8xl font-bold mb-6 leading-tight">
             Über den Data Hub
           </h1>
@@ -63,6 +63,13 @@ export default function SectionAboutText() {
             zur Pilotphase bereitet die Senatskanzlei die Verstetigung des Data
             Hubs als dauerhafte Dateninfrastruktur für das Land Berlin vor.
           </p>
+        </div>
+        {/* Right Side - Text Content */}
+        <div className="lg:col-span-2 hidden lg:block">
+          {' '}
+          <div className="max-w-[495px] mx-auto">
+            <AboutBlockSVG></AboutBlockSVG>
+          </div>
         </div>
       </div>
     </section>
