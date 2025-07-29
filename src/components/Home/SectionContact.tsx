@@ -17,7 +17,7 @@ export default function SectionContact({
             <p>
               Du willst mehr über den Data Hub erfahren oder mit uns einen
               möglichen Anwendungsfall besprechen? Nimm Kontakt zum Data Hub
-              Team auf!
+              Team der Technologiestiftung Berlin auf!
             </p>
           </div>
         </div>

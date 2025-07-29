@@ -12,16 +12,19 @@ export default function HomepageLogin() {
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4">
             <p>
               Der Data Hub steht grundsätzlich allen Mitarbeitenden der Berliner
-              Verwaltung offen. Über eine fein abgestufte
-              Berechtigungs-steuerung wird sichergestellt, dass Daten und
-              Projekte jederzeit geschützt bleiben. Aktuell befindet sich der
-              Data Hub in der Prototypenphase: Erste Pilotnutzende erhalten
-              Zugang und erproben konkrete Anwendungsfälle. Diese Projekte
-              werden koordiniert und fachlich begleitet, um Plattform und
-              Begleitprozesse praxisnah weiterzuentwickeln.
+              Verwaltung offen. Über eine fein abgestufte Berechtigungssteuerung
+              wird sichergestellt, dass Daten und Projekte jederzeit geschützt
+              bleiben. Aktuell befindet sich der Data Hub in der
+              Prototypenphase: Erste Pilotnutzende erhalten Zugang und erproben
+              konkrete Anwendungsfälle. Diese Projekte werden koordiniert und
+              fachlich begleitet, um Plattform und Begleitprozesse praxisnah
+              weiterzuentwickeln.
             </p>
             <p>
-              <strong>2025 läuft der Data Hub noch als Pilotprojekt.</strong>
+              <strong>
+                2025 läuft der Data Hub noch als Prototyp mit ausgewählten
+                Pilotnutzenden der Berliner Verwaltung.
+              </strong>
             </p>
           </div>
         </div>

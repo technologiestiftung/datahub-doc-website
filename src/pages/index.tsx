@@ -19,9 +19,9 @@ export default function Home(): ReactNode {
     >
       <SectionHeader />
       <div className="bg-berlin-black py-4 overflow-hidden w-full">
-        <div className="text-center text-white font-bold text-xl md:text-3xl">
-          2025 ist der Data Hub ein Pilotprojekt der Technologiestiftung Berlin
-          und Senatskanzlei Berlin
+        <div className="whitespace-nowrap text-white font-bold text-xl md:text-3xl animate-marquee">
+          Der Data Hub läuft derzeit als prototypisches Pilotprojekt der
+          Technologiestiftung Berlin und der Senatskanzlei Berlin.
         </div>
       </div>
       <main>
