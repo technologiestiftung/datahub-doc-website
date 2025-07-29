@@ -15,7 +15,7 @@ export const Button: FC<ButtonType> = ({ label, slug, accented = true }) => {
         to={slug}
         className="flex items-stretch text-berlin-black font-semibold"
       >
-        <div className="px-6 py-3 bg-white flex items-center text-lg">
+        <div className="px-6 py-3 bg-white flex items-center text-base md:text-lg">
           {label}
         </div>
         <div

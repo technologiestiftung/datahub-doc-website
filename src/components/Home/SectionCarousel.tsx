@@ -140,10 +140,10 @@ export default function SectionCarousel() {
     <section className="py-12 bg-berlin-yellow">
       <div className="mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-5xl font-bold">
+          <h2 className="text-3xl md:text-5xl font-bold">
             Erste Anwendungsfälle
           </h2>
-          <p className="text-xl md:text-3xl">
+          <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
             So nutzt die Berliner Verwaltung den Data Hub bereits heute
           </p>
         </div>
@@ -158,7 +158,7 @@ export default function SectionCarousel() {
               key={index}
               className={`${
                 index !== carouselIndex ? 'opacity-50 ' : ''
-              } w-[90%] sm:w-[70%] lg:w-[746px] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
+              } w-[150%] md:w-[100%] lg:w-[746px] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
               onClick={() => scrollToIndex(index)}
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
@@ -188,17 +188,17 @@ export default function SectionCarousel() {
 function SlideCard({ data }) {
   return (
     <div className="bg-white p-6 h-full">
-      <div className="flex flex-col sm:flex-row items-center gap-6">
+      <div className="flex flex-col lg:flex-row items-center gap-6">
         <img
           src={data.image}
           alt={data.title}
           className="w-24 h-24 object-contain"
         />
         <div className="text-left w-full break-words">
-          <h3 className="text-xl md:text-3xl font-bold text-gray-800">
+          <h3 className="text-xl md:text-3xl font-bold leading-6 md:leading-relaxed text-berlin-black">
             {data.title}
           </h3>
-          <p className="mb-4 text-base md:text-lg text-gray-600">
+          <p className="mb-4 text-sm md:text-lg leading-6 md:leading-relaxed text-berlin-black">
             {data.description}
           </p>
           <Button label="Mehr erfahren" slug={data.slug} accented={false} />

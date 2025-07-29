@@ -12,14 +12,12 @@ export default function SectionContact({
     <section className={`w-full ${bgColor} `}>
       <div className="grid grid-cols-12 gap-[20px] items-center z-10 max-w-7xl mx-auto px-6 md:px-16 py-20">
         <div className="relative col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
-          <h3 className="text-2xl md:text-5xl font-bold">
-            Nimm Kontakt zum Data Hub Team auf
-          </h3>
-          <div className="text-md md:text-xl leading-relaxed space-y-4">
+          <h3 className="text-3xl md:text-5xl font-bold">Nimm Kontakt auf!</h3>
+          <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4">
             <p>
               Du willst mehr über den Data Hub erfahren oder mit uns einen
-              möglichen Anwendungsfall besprechen? <br />
-              Nimm Kontakt zum Data Hub Team auf!
+              möglichen Anwendungsfall besprechen? Nimm Kontakt zum Data Hub
+              Team auf!
             </p>
           </div>
         </div>
@@ -28,10 +26,7 @@ export default function SectionContact({
         <div className="col-span-12 lg:col-span-6">
           {' '}
           <div className="max-w-[495px] mx-auto flex justify-center">
-            <Button
-              label="Kontaktiere uns"
-              slug="https://www.vbb.de/fahrinfo/"
-            />
+            <Button label="Kontaktiere uns" slug="mailto:datahub@ts.berlin" />
           </div>
         </div>
       </div>

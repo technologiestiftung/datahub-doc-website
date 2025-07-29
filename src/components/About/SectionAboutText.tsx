@@ -6,15 +6,15 @@ export default function SectionAboutText() {
     <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-6">
       <div className="grid grid-cols-12 gap-[20px] items-center">
         <div className="relative col-span-12 lg:col-span-9 max-w-[489px] md:max-w-none mx-auto">
-          <h1 className="pt-12 text-6xl lg:text-8xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl md:text-6xl lg:text-6xl font-bold mb-2">
             Über den Data Hub
           </h1>
-          <h3 className="text-xl md:text-3xl font-normal mb-8">
+          <p className="text-lg md:text-xl lg:text-2xl font-normal">
             Mit dem Data Hub wird eine zentrale, urbane Datenplattform für das
             Land Berlin bereitgestellt. Erfahre mehr über die Pilotphase, die
             Hintergründe und die Personen hinter dem Data Hub.
-          </h3>
-          <h3 className="text-2xl md:text-5xl font-bold pt-2">
+          </p>
+          <h3 className="text-1xl md:text-3xl font-bold pt-2">
             Urbane Datenplattform – fest verankert in Berlins Smart
             City-Strategie
           </h3>
@@ -31,7 +31,7 @@ export default function SectionAboutText() {
             bestehende IT-Landschaft Berlins ergänzen und datengetriebene
             Prozesse nachhaltig und nutzerorientiert fördern.
           </p>{' '}
-          <h3 className="text-2xl md:text-5xl font-bold pt-2">
+          <h3 className="text-1xl md:text-3xl font-bold pt-2">
             Prototyp – praxisnah Anforderungen explorieren in der Pilotphase
           </h3>
           <p className="text-md md:text-lg">
@@ -47,7 +47,7 @@ export default function SectionAboutText() {
             reale Datenprojekte umgesetzt, um die Plattform praxisnah zu testen
             und weiterzuentwickeln.
           </p>
-          <h3 className="text-2xl md:text-5xl font-bold pt-2">
+          <h3 className="text-1xl md:text-3xl font-bold pt-2">
             Teamarbeit – Technologiestiftung Berlin und Berliner Senatskanzlei
           </h3>
           <p className="text-md md:text-lg">
