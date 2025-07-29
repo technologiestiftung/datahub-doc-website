@@ -17,7 +17,7 @@ export default function SectionWissensspeicher() {
               Hub. So werden Informationen und Erfahrungen geteilt und wirksam
               eingesetzt.
             </p>
-            <Button label="zum Wissensspeicher" slug="/docs/intro"></Button>
+            <Button label="Zum Wissensspeicher" slug="/docs/intro"></Button>
           </div>
         </div>
 

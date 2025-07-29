@@ -63,7 +63,7 @@ export default function HomepageMainTools() {
 
         {/* CTA Button */}
         <div className="text-center">
-          <Button label="zu den Bausteinen" slug="/docs/intro"></Button>
+          <Button label="Zu den Bausteinen" slug="/docs/intro"></Button>
         </div>
       </div>
     </section>
