@@ -109,11 +109,14 @@ export default function SectionCarousel() {
 
     const interval = setInterval(() => {
       setCarouselIndex((prevIndex) => {
-        const nextIndex = (prevIndex + 1) % slides.length;
-        scrollToIndex(nextIndex);
-        return nextIndex;
+        if (prevIndex < slides.length - 1) {
+          const nextIndex = prevIndex + 1;
+          scrollToIndex(nextIndex);
+          return nextIndex;
+        }
+        return prevIndex; // nicht mehr weiterschalten
       });
-    }, 3000);
+    }, 5000); // 5 Sekunden
 
     return () => clearInterval(interval);
   }, [isHovering]);
