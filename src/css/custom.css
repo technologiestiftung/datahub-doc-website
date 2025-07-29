@@ -42,6 +42,14 @@
   background-color: #ffe70e;
   color: #222222;
 }
+.navbar__link--portal {
+  background-color: #222222;
+  color: #fff;
+}
+.navbar__link--portal:hover {
+  background-color: #ffe70e;
+  color: #222222;
+}
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;

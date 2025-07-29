@@ -80,12 +80,13 @@ const config: Config = {
         src: 'img/logos/datahub.svg',
       },
       items: [
-        {
-          to: '/bausteine',
-          label: 'Bausteine',
-          position: 'right',
-          // activeBaseRegex: '^/$',
-        },
+        // {
+        //   to: 'https://portal.data-hub.berlin',
+        //   label: 'Portal',
+        //   position: 'right',
+        //   className: 'navbar__link--portal',
+        //   // activeBaseRegex: '^/$',
+        // },
         {
           to: '/about',
           label: 'Über das Projekt',
