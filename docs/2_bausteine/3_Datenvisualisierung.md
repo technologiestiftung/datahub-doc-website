@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Datenvisualisierung
+# Daten visualisieren
 
 Intro text
 

@@ -1,6 +1,6 @@
 {
-  "label": "Bausteine & Tools",
-  "position": 2,
+  "label": "Rechte & Rollen",
+  "position": 3,
   "link": {
     "type": "generated-index",
     "description": "Die Datahub Bausteine"

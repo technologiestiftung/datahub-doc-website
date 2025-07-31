@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Use Cases
+# Projekte umsetzen
 
 ## Bezirksregionenprofile
 **Wie entwickelt sich die Altersstruktur in meinem Bezirk? Wie sieht es eigentlich mit Grünflächen aus? Und wie viele Kitaplätze sind in meiner Nachbarschaft belegt? Für jede Bezirksregion gibt es eine Art Steckbrief, der solche solche Zahlen und Entwicklungen übersichtlich zusammenfasst — die [Bezirgsregionenprofile](https://bezirksregionenprofile-ts.netlify.app/) (BZRP).**<br />
