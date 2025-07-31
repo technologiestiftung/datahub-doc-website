@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# Einführung
+# Einführung zum Data Hub
 
 ## Getting Started

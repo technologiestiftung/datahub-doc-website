@@ -74,7 +74,52 @@
 
 /* tialwind text-lg */
 .navbar__inner,
+
 .menu__list-item {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+
+/* Aktiver Link */
+.menu__list-item > .menu__link.menu__link--active {
+  background-color: #ffe70e;
+  color: #222222;
+}
+
+.menu__list-item > .menu__link.menu__link:hover {
+  background-color: #e6e6e6;
+}
+
+.menu__list-item-collapsible--active {
+  background-color: #ffe70e;
+}
+.menu__list-item-collapsible--active:hover {
+  background-color: #e6e6e6;
+}
+
+.menu__list-item-collapsible--active > .menu__link.menu__link--sublist.menu__link--active {
+  color: #222222;
+}
+
+.menu__list-item-collapsible:hover > .menu__link.menu__link--sublist.menu__link--active {
+  background-color: #e6e6e6;
+} 
+
+.menu__list-item-collapsible--active:hover > .menu__link.menu__link--sublist.menu__link--active {
+  color: #222222;
+}
+
+.breadcrumbs__link {
+  background-color: #e6e6e6;
+}
+
+input[class*="searchInput"] {
+  background-color: #e6e6e6 !important;
+}
+
+.navbar__search input::placeholder {
+  color: #222222;
+}
+
+
+
