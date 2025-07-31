@@ -1,20 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 
-// tailwind.config.js
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx,mdx}',
     './docs/**/*.{md,mdx}',
     './blog/**/*.{md,mdx}',
   ],
-  // content: ["./src/components/HomepageFeatures/index.tsx"],
   theme: {
-    // fontFamily: {
-    // //   nunito: ['Nunito Sans', 'Arial'],
-    // //   robot: ['IBMPlexMono-Regular', 'Arial'],
-    // //   'robot-bold': ['IBMPlexMono-Bold', 'Arial'],
-    // //   'robot-light': ['IBMPlexMono-Light', 'Arial'],
-    // },
     extend: {
       colors: {
         'berlin-background': '#FAF9FE',
@@ -34,9 +26,14 @@ module.exports = {
           '0%': { transform: 'translateY(100px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
         rise: 'rise 1.5s ease-out forwards',
+        marquee: 'marquee 24s linear infinite',
       },
       fontFamily: {
         grotesk: ['"Host Grotesk"', 'sans-serif'],
