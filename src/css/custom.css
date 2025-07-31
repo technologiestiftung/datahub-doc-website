@@ -27,6 +27,7 @@
   cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 3px;
 }
 
 .navbar__item:hover {
@@ -109,7 +110,7 @@
   color: #222222;
 }
 
-.menu__list-item-collapsible:hover > .menu__link.menu__link--sublist.menu__link--active {
+.menu__list-item-collapsible:hover {
   background-color: #e6e6e6;
 } 
 

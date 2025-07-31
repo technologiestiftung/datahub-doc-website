@@ -7,7 +7,7 @@ export default function HomepageLogin() {
       <div className="grid grid-cols-12 gap-[20px] items-center">
         <div className="order-2 lg:order-1 relative col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold">
-            Zugang zum Data Hub
+            Projekte umsetzen mit dem Data Hub
           </h2>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4">
             <p>

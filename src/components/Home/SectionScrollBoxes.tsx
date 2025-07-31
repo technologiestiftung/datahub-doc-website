@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { ButtonSimple } from '@site/src/components/UI/ButtonSimple';
 
 export default function SectionScrollBoxes() {
   const svgWrapperRef = useRef(null);
@@ -242,6 +243,24 @@ export default function SectionScrollBoxes() {
               dem Data Hub kann die Berliner Verwaltung souverän, kostenfrei und
               nachhaltig arbeiten.
             </p>
+            {/* Drei farbige Buttons */}
+            <div className="flex flex-col md:flex-row gap-4 mt-8">
+              <ButtonSimple
+                label="Daten ablegen"
+                slug="/docs/bausteine/datenspeicherung"
+                color="bg-berlin-purple"
+              />
+              <ButtonSimple
+                label="Daten verarbeiten"
+                slug="/docs/bausteine/datenverarbeitung"
+                color="bg-berlin-pink"
+              />
+              <ButtonSimple
+                label="Daten visualisieren"
+                slug="/docs/bausteine/datenvisualisierung"
+                color="bg-berlin-light-blue"
+              />
+            </div>
             <p>
               Der Data Hub bietet eine Sammlung von Softwarebausteinen, die in
               Kombination ein passgenaues Datenmanagement und das Erstellen von
