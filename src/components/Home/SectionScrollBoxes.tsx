@@ -239,9 +239,9 @@ export default function SectionScrollBoxes() {
           </h2>
           <div className="text-base md:text-xl md:leading-relaxed space-y-4">
             <p>
-              Ob Datenablage, Datenverarbeitung oder Datenvisualisierung – Mit
-              dem Data Hub kann die Berliner Verwaltung souverän, kostenfrei und
-              nachhaltig arbeiten.
+              Im Baukastenprinzip. Ob Datenablage, Datenverarbeitung oder
+              Datenvisualisierung – Mit dem Data Hub kann die Berliner
+              Verwaltung souverän, kostenfrei und nachhaltig arbeiten.
             </p>
             {/* Drei farbige Buttons */}
             <div className="flex flex-col md:flex-row gap-4 mt-8">

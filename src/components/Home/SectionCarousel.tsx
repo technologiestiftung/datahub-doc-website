@@ -144,7 +144,8 @@ export default function SectionCarousel() {
             Erste Anwendungsfälle
           </h2>
           <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
-            So nutzt die Berliner Verwaltung den Data Hub bereits heute
+            Die Berliner Verwaltung baut derzeit die ersten Pilotprojekte im
+            Data Hub.
           </p>
         </div>
 

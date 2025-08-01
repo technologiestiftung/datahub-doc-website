@@ -28,8 +28,8 @@ export default function HomepageHeader() {
           Data Hub Berlin
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl font-normal">
-          Gemeinsam Daten nutzbar machen <br /> offen & modular – für eine
-          digitale Verwaltung, die wirkt
+          Die zentrale & modulare Infrastruktur für Datenprojekte. <br /> Für
+          eine digitale Verwaltung, die wirkt.
         </p>
       </div>
     </section>
