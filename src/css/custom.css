@@ -121,6 +121,9 @@
 .breadcrumbs__link {
   background-color: #e6e6e6;
 }
+.breadcrumbs__link:hover {
+  background-color: #ffe70e;
+}
 
 input[class*="searchInput"] {
   background-color: #e6e6e6 !important;
@@ -130,5 +133,22 @@ input[class*="searchInput"] {
   color: #222222;
 }
 
+[class*="cardContainer_"] {
+  border-color: #222222 !important;
+  border-radius: 2px;
+  border-width: 1.5px;
+  box-shadow: none !important;
+}
 
+[class*="cardContainer_"] h2 {
+  transition: text-decoration 0.2s ease;
+}
+
+[class*="cardContainer_"]:hover h2 {
+  text-decoration: underline;
+}
+
+.pagination-nav {
+  display: none !important;
+}
 
