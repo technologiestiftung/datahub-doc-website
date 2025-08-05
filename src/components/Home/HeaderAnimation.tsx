@@ -106,7 +106,9 @@ export default function CanvasCubeTrail({
         return [x + pos.x, y + pos.y, z + pos.z];
       };
 
-      const projected = vertices.map(rotate3D).map((v) => project(...v));
+      const projected = vertices
+        .map(rotate3D)
+        .map((v) => project(v[0], v[1], v[2]));
 
       const faces = [
         [0, 1, 2, 3],
