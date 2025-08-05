@@ -57,22 +57,22 @@ function CardContainer({
 function CardLayout({
   className,
   href,
-  icon,
+  iconUrl,
   title,
   description,
 }: {
   className?: string;
   href: string;
-  icon: ReactNode;
+  iconUrl?: string; // <- Wichtig: explizit als string
   title: string;
   description?: string;
 }): ReactNode {
   return (
     <CardContainer href={href} className={className}>
       <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
-        {icon && (
+        {iconUrl && (
           <img
-            src={icon}
+            src={iconUrl}
             alt=""
             style={{ width: 70, height: 75, flexShrink: 0 }}
           />
@@ -112,7 +112,6 @@ function CardCategory({ item }: { item: PropSidebarItemCategory }): ReactNode {
     <CardLayout
       className={item.className}
       href={href}
-      icon="🗃️"
       title={item.label}
       description={item.description ?? categoryItemsPlural(item.items.length)}
     />
@@ -120,14 +119,17 @@ function CardCategory({ item }: { item: PropSidebarItemCategory }): ReactNode {
 }
 
 function CardLink({ item }: { item: PropSidebarItemLink }): ReactNode {
-  const icon =
-    item?.customProps?.iconUrl ?? (isInternalUrl(item.href) ? '📄️' : '🔗');
   const doc = useDocById(item.docId ?? undefined);
+  const iconUrl =
+    typeof item?.customProps?.iconUrl === 'string'
+      ? item.customProps.iconUrl
+      : undefined;
+
   return (
     <CardLayout
       className={item.className}
       href={item.href}
-      icon={icon}
+      iconUrl={iconUrl}
       title={item.label}
       description={item.description ?? doc?.description}
     />
