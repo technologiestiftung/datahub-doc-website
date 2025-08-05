@@ -257,17 +257,17 @@ export default function SectionScrollBoxes() {
             <div className="flex flex-col md:flex-row gap-4 mt-8">
               <ButtonSimple
                 label="Daten ablegen"
-                slug="/docs/bausteine/datenspeicherung"
+                slug="/docs/2_bausteine/datenspeicherung"
                 color="bg-berlin-purple"
               />
               <ButtonSimple
                 label="Daten verarbeiten"
-                slug="/docs/bausteine/datenverarbeitung"
+                slug="/docs/2_bausteine/datenverarbeitung"
                 color="bg-berlin-pink"
               />
               <ButtonSimple
                 label="Daten visualisieren"
-                slug="/docs/bausteine/datenvisualisierung"
+                slug="/docs/2_bausteine/datenvisualisierung"
                 color="bg-berlin-light-blue"
               />
             </div>
