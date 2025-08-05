@@ -44,7 +44,7 @@ export default function SectionCarousel() {
   const [direction, setDirection] = useState<'forward' | 'backward'>('forward');
   const scrollRef = useRef(null);
 
-  const scrollToIndex = (index) => {
+  const scrollToIndex = (index: number): void => {
     const container = scrollRef.current;
     const child = container?.children[index];
 
@@ -87,7 +87,8 @@ export default function SectionCarousel() {
       let closestDistance = Infinity;
 
       Array.from(container.children).forEach((child, index) => {
-        const childRect = child.getBoundingClientRect();
+        const childElement = child as HTMLElement;
+        const childRect = childElement.getBoundingClientRect();
         const childCenter = childRect.left + childRect.width / 2;
         const containerCenter = containerRect.left + containerRect.width / 2;
         const distance = Math.abs(childCenter - containerCenter);
