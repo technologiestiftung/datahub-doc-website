@@ -151,4 +151,10 @@ input[class*="searchInput"] {
 .pagination-nav {
   display: none !important;
 }
+.custom-no-underline {
+  text-decoration: none !important;
+}
 
+.custom-no-underline:hover {
+  text-decoration: none !important;
+}
