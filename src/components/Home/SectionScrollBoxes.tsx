@@ -11,8 +11,18 @@ export default function SectionScrollBoxes() {
   const cubePinkRef = useRef(null);
   const allRailPathsRef = useRef<SVGPathElement[]>([]);
 
+  interface Cube {
+    path: SVGPathElement | null;
+    group: SVGGElement | null;
+    color: string;
+    delay: number;
+    origTransform?: string;
+    start?: { x: number; y: number };
+    end?: { x: number; y: number };
+  }
+
   useEffect(() => {
-    const cubes = {
+    const cubes: Record<'purple' | 'blue' | 'pink', Cube> = {
       purple: {
         path: pathRefPurple.current,
         group: cubePurpleRef.current,
@@ -105,7 +115,7 @@ export default function SectionScrollBoxes() {
 
   return (
     <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-16">
-      <style jsx>{`
+      <style>{`
         path[data-rail] {
           stroke-width: 2;
           stroke-opacity: var(--rail-opacity, 1);
