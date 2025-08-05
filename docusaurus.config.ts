@@ -96,7 +96,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'right',
-          label: 'Wissensbibliothek',
+          label: 'Wissensspeicher',
           // activeBaseRegex: '^/$',
         },
         {
