@@ -76,8 +76,8 @@ const config: Config = {
     navbar: {
       title: '',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logos/datahub.svg',
+        alt: 'Data Hub Logo',
+        src: 'img/logos/DataHub-Logo-Prototyp-transparent-RGB.svg',
       },
       items: [
         // {
