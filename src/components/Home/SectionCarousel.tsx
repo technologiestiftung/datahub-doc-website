@@ -141,7 +141,7 @@ export default function SectionCarousel() {
     <section className="py-20 bg-berlin-yellow">
       <div className="mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-5xl font-bold">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
             Erste Anwendungsfälle
           </h2>
           <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">

@@ -6,7 +6,9 @@ export default function SectionTeam() {
       <div className="grid grid-cols-12 gap-[20px] items-center z-10 max-w-7xl mx-auto px-6 md:px-16 py-16 md:py-20">
         {/* Title Section */}
         <div className="col-span-12 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold">Unser Team</h2>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
+            Unser Team
+          </h2>
           <p className="text-xl md:text-3xl">
             Das sind die Menschen hinter dem Data Hub Prototypen
           </p>
