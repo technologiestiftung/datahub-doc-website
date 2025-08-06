@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { ButtonSimple } from '@site/src/components/UI/ButtonSimple';
 
 export default function SectionScrollBoxes() {
   const svgWrapperRef = useRef(null);
@@ -10,8 +11,18 @@ export default function SectionScrollBoxes() {
   const cubePinkRef = useRef(null);
   const allRailPathsRef = useRef<SVGPathElement[]>([]);
 
+  interface Cube {
+    path: SVGPathElement | null;
+    group: SVGGElement | null;
+    color: string;
+    delay: number;
+    origTransform?: string;
+    start?: { x: number; y: number };
+    end?: { x: number; y: number };
+  }
+
   useEffect(() => {
-    const cubes = {
+    const cubes: Record<'purple' | 'blue' | 'pink', Cube> = {
       purple: {
         path: pathRefPurple.current,
         group: cubePurpleRef.current,
@@ -104,7 +115,7 @@ export default function SectionScrollBoxes() {
 
   return (
     <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-16">
-      <style jsx>{`
+      <style>{`
         path[data-rail] {
           stroke-width: 2;
           stroke-opacity: var(--rail-opacity, 1);
@@ -233,21 +244,37 @@ export default function SectionScrollBoxes() {
 
         {/* Text section */}
         <div className="col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wide">
             Vom Datensatz zum Datenprodukt
           </h2>
           <div className="text-base md:text-xl md:leading-relaxed space-y-4">
             <p>
-              Ob Datenablage, Datenverarbeitung oder Datenvisualisierung – Mit
-              dem Data Hub kann die Berliner Verwaltung souverän, kostenfrei und
-              nachhaltig arbeiten.
-            </p>
-            <p>
-              Der Data Hub bietet eine Sammlung von Softwarebausteinen, die in
+              Im Baukastenprinzip. Ob Datenablage, Datenverarbeitung oder
+              Datenvisualisierung – Mit dem Data Hub kann die Berliner
+              Verwaltung souverän, kostenfrei und nachhaltig arbeiten. Der Data
+              Hub bietet eine Sammlung von Softwarebausteinen, die in
               Kombination ein passgenaues Datenmanagement und das Erstellen von
               Datenprodukten wie Karten und Dashboards ermöglichen – genau so,
               wie es gebraucht wird.
             </p>
+            {/* Drei farbige Buttons */}
+            <div className="flex flex-col md:flex-row gap-4 mt-8">
+              <ButtonSimple
+                label="Daten ablegen"
+                slug="/docs/intro"
+                color="bg-berlin-purple"
+              />
+              <ButtonSimple
+                label="Daten verarbeiten"
+                slug="/docs/intro"
+                color="bg-berlin-pink"
+              />
+              <ButtonSimple
+                label="Daten visualisieren"
+                slug="/docs/intro"
+                color="bg-berlin-light-blue"
+              />
+            </div>
           </div>
         </div>
       </div>

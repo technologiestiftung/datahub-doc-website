@@ -44,7 +44,7 @@ export default function SectionCarousel() {
   const [direction, setDirection] = useState<'forward' | 'backward'>('forward');
   const scrollRef = useRef(null);
 
-  const scrollToIndex = (index) => {
+  const scrollToIndex = (index: number): void => {
     const container = scrollRef.current;
     const child = container?.children[index];
 
@@ -87,7 +87,8 @@ export default function SectionCarousel() {
       let closestDistance = Infinity;
 
       Array.from(container.children).forEach((child, index) => {
-        const childRect = child.getBoundingClientRect();
+        const childElement = child as HTMLElement;
+        const childRect = childElement.getBoundingClientRect();
         const childCenter = childRect.left + childRect.width / 2;
         const containerCenter = containerRect.left + containerRect.width / 2;
         const distance = Math.abs(childCenter - containerCenter);
@@ -137,14 +138,15 @@ export default function SectionCarousel() {
   }, [isHovering, direction]);
 
   return (
-    <section className="py-12 bg-berlin-yellow">
+    <section className="py-20 bg-berlin-yellow">
       <div className="mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-5xl font-bold">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
             Erste Anwendungsfälle
           </h2>
           <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
-            So nutzt die Berliner Verwaltung den Data Hub bereits heute
+            Die Berliner Verwaltung baut derzeit die ersten Pilotprojekte
+            <br /> im Data Hub Berlin.
           </p>
         </div>
 
@@ -158,7 +160,7 @@ export default function SectionCarousel() {
               key={index}
               className={`${
                 index !== carouselIndex ? 'opacity-50 ' : ''
-              } w-[150%] md:w-[100%] lg:w-[746px] snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
+              } w-[150%] md:w-[100%] lg:w-[746px] lg:px-6 md:px-3 snap-center cursor-pointer flex-shrink-0 transition-transform hover:scale-[1.01] !max-w-[746px]`}
               onClick={() => scrollToIndex(index)}
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
@@ -187,7 +189,7 @@ export default function SectionCarousel() {
 
 function SlideCard({ data }) {
   return (
-    <div className="bg-white p-6 h-full">
+    <div className="bg-white h-full p-6 px-10 lg:px-12 lg:pt-12 lg:pb-10">
       <div className="flex flex-col lg:flex-row items-center gap-6">
         <img
           src={data.image}
@@ -195,13 +197,13 @@ function SlideCard({ data }) {
           className="w-24 h-24 object-contain"
         />
         <div className="text-left w-full break-words">
-          <h3 className="text-xl md:text-3xl font-bold leading-6 md:leading-relaxed text-berlin-black">
+          <h3 className="text-xl md:text-3xl font-bold leading-6 lg:leading-relaxed text-berlin-black">
             {data.title}
           </h3>
-          <p className="mb-4 text-sm md:text-lg leading-6 md:leading-relaxed text-berlin-black">
+          <p className="mb-8 text-sm md:text-lg leading-6 md:leading-relaxed text-berlin-black">
             {data.description}
           </p>
-          <Button label="Mehr erfahren" slug={data.slug} accented={false} />
+          <Button label="Mehr erfahren" slug={data.slug} />
         </div>
       </div>
     </div>

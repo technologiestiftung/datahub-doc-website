@@ -24,9 +24,12 @@ export default function HomepageMainTools() {
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold">Open Source Tools </h2>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
+            Software-Bausteine{' '}
+          </h2>
           <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
-            Im Browser nutzbar, vielfach erprobt{' '}
+            Ausschließlich Open Source, keine Installation, unendliche
+            Möglichkeiten.{' '}
           </p>
         </div>
 

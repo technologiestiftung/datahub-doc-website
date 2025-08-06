@@ -27,6 +27,7 @@
   cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 3px;
 }
 
 .navbar__item:hover {
@@ -82,7 +83,78 @@
 
 /* tialwind text-lg */
 .navbar__inner,
+
 .menu__list-item {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+/* Aktiver Link */
+.menu__list-item > .menu__link.menu__link--active {
+  background-color: #ffe70e;
+  color: #222222;
+}
+
+.menu__list-item > .menu__link.menu__link:hover {
+  background-color: #e6e6e6;
+}
+
+.menu__list-item-collapsible--active {
+  background-color: #ffe70e;
+}
+.menu__list-item-collapsible--active:hover {
+  background-color: #e6e6e6;
+}
+
+.menu__list-item-collapsible--active > .menu__link.menu__link--sublist.menu__link--active {
+  color: #222222;
+}
+
+.menu__list-item-collapsible:hover {
+  background-color: #e6e6e6;
+} 
+
+.menu__list-item-collapsible--active:hover > .menu__link.menu__link--sublist.menu__link--active {
+  color: #222222;
+}
+
+.breadcrumbs__link {
+  background-color: #e6e6e6;
+}
+.breadcrumbs__link:hover {
+  background-color: #ffe70e;
+}
+
+input[class*="searchInput"] {
+  background-color: #e6e6e6 !important;
+}
+
+.navbar__search input::placeholder {
+  color: #222222;
+}
+
+[class*="cardContainer_"] {
+  border-color: #222222 !important;
+  border-radius: 2px;
+  border-width: 1.5px;
+  box-shadow: none !important;
+}
+
+[class*="cardContainer_"] h2 {
+  transition: text-decoration 0.2s ease;
+}
+
+[class*="cardContainer_"]:hover h2 {
+  text-decoration: underline;
+}
+
+.pagination-nav {
+  display: none !important;
+}
+.custom-no-underline {
+  text-decoration: none !important;
+}
+
+.custom-no-underline:hover {
+  text-decoration: none !important;
 }

@@ -1,6 +1,6 @@
 {
-  "label": "Bausteine",
-  "position": 3,
+  "label": "Pilotanwendungen",
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "Die Datahub Bausteine"

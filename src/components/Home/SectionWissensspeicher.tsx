@@ -4,7 +4,7 @@ import WissenSVG from '/img/wissen.svg';
 
 export default function SectionWissensspeicher() {
   return (
-    <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16  py-6">
+    <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-16">
       <div className="grid grid-cols-12 gap-[20px] items-center">
         <div className="order-2 lg:order-1 relative col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
           <h3 className="text-3xl md:text-5xl font-bold">Wissensspeicher</h3>
@@ -24,7 +24,7 @@ export default function SectionWissensspeicher() {
         {/* Right Side - Text Content */}
         <div className="order-1 lg:order-2 col-span-12 lg:col-span-6 text-center ">
           <div className="w-full h-auto overflow-hidden">
-            <div className="max-w-[439px] mx-auto">
+            <div className="max-w-[339px] mb-10 md:mb-0 mx-auto">
               <WissenSVG></WissenSVG>
             </div>
           </div>

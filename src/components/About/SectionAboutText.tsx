@@ -3,7 +3,7 @@ import AboutBlockSVG from '/img/cubes_ueber_projekt_6pt.svg';
 
 export default function SectionAboutText() {
   return (
-    <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-6">
+    <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-12 lg:py-6">
       <div className="grid grid-cols-12 gap-[20px] items-center">
         <div className="relative col-span-12 lg:col-span-9 max-w-[489px] md:max-w-none mx-auto">
           <h1 className="text-3xl md:text-6xl lg:text-6xl font-bold mb-2">
@@ -14,7 +14,7 @@ export default function SectionAboutText() {
             Land Berlin bereitgestellt. Erfahre mehr über die Pilotphase, die
             Hintergründe und die Personen hinter dem Data Hub.
           </p>
-          <h3 className="text-1xl md:text-3xl font-bold pt-2">
+          <h3 className="text-1xl md:text-3xl font-bold pt-6 lg:pt-2">
             Urbane Datenplattform – fest verankert in Berlins Smart
             City-Strategie
           </h3>
@@ -31,7 +31,7 @@ export default function SectionAboutText() {
             bestehende IT-Landschaft Berlins ergänzen und datengetriebene
             Prozesse nachhaltig und nutzerorientiert fördern.
           </p>{' '}
-          <h3 className="text-1xl md:text-3xl font-bold pt-2">
+          <h3 className="text-1xl md:text-3xl font-bold pt-6 lg:pt-2">
             Prototyp – praxisnah Anforderungen explorieren in der Pilotphase
           </h3>
           <p className="text-md md:text-lg">
@@ -47,7 +47,7 @@ export default function SectionAboutText() {
             reale Datenprojekte umgesetzt, um die Plattform praxisnah zu testen
             und weiterzuentwickeln.
           </p>
-          <h3 className="text-1xl md:text-3xl font-bold pt-2">
+          <h3 className="text-1xl md:text-3xl font-bold pt-6 lg:pt-2">
             Teamarbeit – Technologiestiftung Berlin und Berliner Senatskanzlei
           </h3>
           <p className="text-md md:text-lg">
