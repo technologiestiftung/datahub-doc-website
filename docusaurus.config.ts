@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Data Hub Berlin - Prototyp',
+  title: 'Data Hub Berlin Prototyp',
   tagline: 'Die Infrastruktur für Datenmanagement in der Berliner Verwaltung',
   favicon: 'img/favicon.ico',
 
@@ -80,13 +80,13 @@ const config: Config = {
         src: 'img/logos/DataHub-Logo-Prototyp-transparent-RGB.svg',
       },
       items: [
-        // {
-        //   to: 'https://portal.data-hub.berlin',
-        //   label: 'Portal',
-        //   position: 'right',
-        //   className: 'navbar__link--portal',
-        //   // activeBaseRegex: '^/$',
-        // },
+        {
+          to: 'https://portal.data-hub.berlin',
+          label: 'Portal',
+          position: 'right',
+          className: 'navbar__link--portal',
+          // activeBaseRegex: '^/$',
+        },
         {
           to: '/about',
           label: 'Über das Projekt',
