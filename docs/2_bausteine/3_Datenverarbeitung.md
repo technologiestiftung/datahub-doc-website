@@ -2,28 +2,26 @@
 sidebar_position: 3
 ---
 
-# Architekturübersicht
+# Daten verarbeiten
 
 Intro text
 
-## Grafana
+## Apache Airflow
 
-**Eine Open-Source-Plattform für Monitoring und Beobachtbarkeit, die leistungsstarke Visualisierungsfunktionen bietet.**
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-## Superset
-
-**Eine moderne Plattform zur Datenexploration und -visualisierung, die visuell, intuitiv und interaktiv ist.**
+**Apache Airflow ist eine Plattform zur Erstellung, Planung und Überwachung von Datenpipelines, mit der sich komplexe Datenverarbeitungs- und Transformationsprozesse als gerichtete azyklische Graphen (DAGs) automatisieren lassen.**
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
-## appsmith
+## jupyter
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
-## Masterportal
+## Node-RED
 
-**Ein umfassender geospatialer Kartenbetrachter zur Visualisierung und Interaktion mit Geodaten.**
+**Node-RED ist eine visuelle Programmierumgebung, mit der man mithilfe von Flussdiagrammen Logik und Datenflüsse zwischen Geräten, APIs und Online-Diensten einfach erstellen kann.**
+
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+## piveau
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
