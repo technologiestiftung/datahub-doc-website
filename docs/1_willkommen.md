@@ -6,7 +6,7 @@ sidebar_position: 1
 import React from 'react';
 import styles from './welcome.module.css';
 
-:::danger
+:::danger[Warnung]
 Work in progress 
 :::
 <div className={styles.hero}>
