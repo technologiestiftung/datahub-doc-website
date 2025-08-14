@@ -69,3 +69,20 @@ Alle Inhalte sind unter der **[Creative Commons Namensnennung 4.0 International 
 Das bedeutet: Du darfst die Inhalte frei teilen, anpassen und weiterverwenden – solange die ursprüngliche Quelle genannt wird.
 
 :::
+
+
+:::info
+
+Der Wissensspeicher ist **Open Source**.  
+Alle Inhalte sind unter der **[Creative Commons Namensnennung 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.de)**-Lizenz veröffentlicht.  
+Das bedeutet: Du darfst die Inhalte frei teilen, anpassen und weiterverwenden – solange die ursprüngliche Quelle genannt wird.
+
+:::
+
+:::note
+
+Der Wissensspeicher ist **Open Source**.  
+Alle Inhalte sind unter der **[Creative Commons Namensnennung 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.de)**-Lizenz veröffentlicht.  
+Das bedeutet: Du darfst die Inhalte frei teilen, anpassen und weiterverwenden – solange die ursprüngliche Quelle genannt wird.
+
+:::

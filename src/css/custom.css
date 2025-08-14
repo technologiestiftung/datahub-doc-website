@@ -158,3 +158,45 @@ input[class*="searchInput"] {
 .custom-no-underline:hover {
   text-decoration: none !important;
 }
+
+.faq-accordion {
+  background-color: #fff; /* berlin-background */
+  border: 3px solid #ffe70e; /* berlin-gray */
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+.faq-accordion summary {
+  font-weight: bold;
+  color: #ffe70e; /* berlin-black */
+  cursor: pointer;
+  list-style: none; /* entfernt Standard-Dreieck */
+  position: relative;
+  padding-left: 1.5em;
+  color: #141414;
+}
+
+.faq-accordion summary::marker {
+  content: none; /* Firefox Pfeil entfernen */
+}
+
+.faq-accordion summary::before {
+
+  border-color: transparent transparent transparent #141414 !important;
+
+}
+
+.faq-accordion[open] summary::before {
+  transform: rotate(90deg);
+  border-color: transparent transparent transparent #ffe70e !important;
+}
+
+.faq-accordion .faq-content {
+  margin-top: 0.5em;
+  color: #141414; /* illustration-black */
+}
