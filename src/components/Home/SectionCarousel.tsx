@@ -7,7 +7,7 @@ const slides = [
     id: 1,
     title: 'Landesgleichstellung auf einen Blick',
     description:
-      'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Einrichtungen? Ein zentrales Dashboard ersetzt das bisher manuelle Berichtswesen und ermöglicht eine Auswertung der Gleichstellungsmaßnahmen.',
+      'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Einrichtungen? Ein zentrales Dashboard ersetzt das bisher aufwendige manuelle Berichtswesen und ermöglicht eine datenbasierte Auswertung der Gleichstellungsmaßnahmen.',
     image: '/img/example1.svg',
     slug: 'https://odis-berlin.de/',
   },
@@ -15,7 +15,7 @@ const slides = [
     id: 2,
     title: 'Akteure im Kiez sichtbar machen',
     description:
-      'Wo engagieren sich Träger, Initiativen und soziale Programme in Neukölln? Mit einem Mapping-Tool können Akteure außerhalb der Verwaltung ihre Angebote selbst erfassen und aktuell halten.',
+      'Wo engagieren sich Träger, Initiativen und soziale Programme in Neukölln? Mit einem Mapping-Tool können Akteure außerhalb der Verwaltung ihre Angebote selbst erfassen, aktuell halten und der Stadtplanung zur Verfügung stellen.',
     image: '/img/example2.svg',
     slug: 'https://odis-berlin.de/',
   },
@@ -23,7 +23,7 @@ const slides = [
     id: 3,
     title: 'Bibliotheksdashboard Pankow',
     description:
-      'Wie viele Medien wurden ausgeliehen? Welche Standorte sind besonders gefragt? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow bereitet aktuelle Nutzungszahlen übersichtlich auf.',
+      'Wie viele Medien wurden ausgeliehen? Wer leiht was? Wie können Geld und Raum effizient genutzt werden? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow soll künftig Bedarfserfassung und Makulatur datenbasiert vereinfachen.',
     image: '/img/example3.svg',
     slug: 'https://odis-berlin.de/',
   },
@@ -31,7 +31,7 @@ const slides = [
     id: 4,
     title: 'Effiziente Bezirksregionenprofile',
     description:
-      'Bezirksregionenprofile sind ein zentrales Instrument der Stadtentwicklung. Mit Datenbanken und Dashboard-Templates wird der Prozess zur Erstellung effizienter und einheitlicher.',
+      'Wie entwickeln sich demographische und soziale Strukturen in Bezirksregionen? Mit Datenbanken und Dashboard-Templates wird der Prozess zur Erstellung zentraler Instrumente der Stadtentwicklung effizienter und einheitlicher.',
     image: '/img/example4.svg',
     slug: 'https://odis-berlin.de/',
   },

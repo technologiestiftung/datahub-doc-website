@@ -25,11 +25,10 @@ export default function HomepageMainTools() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
-            Software-Bausteine{' '}
+            Software-Tools im Baukasten{' '}
           </h2>
           <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
-            Ausschließlich Open Source, keine Installation, unendliche
-            Möglichkeiten.{' '}
+            Konsequent Open Source, direkt nutzbar, flexibel kombinierbar.{' '}
           </p>
         </div>
 
@@ -57,10 +56,12 @@ export default function HomepageMainTools() {
         <div className="max-w-4xl mx-auto text-center mb-12">
           <p className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 max-w-[566px] mx-auto">
             {' '}
-            Bei den Data Hub Softwarebausteinen handelt es sich ausschließlich
-            um Open Source Software. Eine breit aufgestellte Community sorgt für
-            Updates und Support. Detailinformationen und Dokumentationen finden
-            sich im Wissensspeicher.
+            Der Data Hub ergänzt die bestehende IT-Landschaft Berlins durch eine
+            moderne, offene Architektur und setzt dabei konsequent auf Open
+            Source Tools. Der Prototyp wird speziell an die Bedarfe der Berliner
+            Verwaltung angepasst und in einem iterativen Prozess
+            weiterentwickelt. So stärkt der Data Hub die digitale Souveränität
+            der Hauptstadt.
           </p>
         </div>
 

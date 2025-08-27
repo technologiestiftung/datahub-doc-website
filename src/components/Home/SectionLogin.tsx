@@ -7,18 +7,18 @@ export default function HomepageLogin() {
       <div className="grid grid-cols-12 gap-[20px] items-center">
         <div className="order-2 lg:order-1 relative col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold lg:pt-6 tracking-wide">
-            Projekte umsetzen mit dem Data Hub
+            Herzstück des Berliner Datenmanagements
           </h2>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4">
             <p>
-              Der Data Hub steht grundsätzlich allen Mitarbeitenden der Berliner
-              Verwaltung offen. Über eine fein abgestufte Berechtigungssteuerung
-              wird sichergestellt, dass Daten und Projekte jederzeit geschützt
-              bleiben. Aktuell befindet sich der Data Hub in der
-              Prototypenphase: Erste Pilotnutzende erhalten Zugang und erproben
-              konkrete Anwendungsfälle. Diese Projekte werden koordiniert und
-              fachlich begleitet, um Plattform und Begleitprozesse praxisnah
-              weiterzuentwickeln.
+              Der Data Hub ergänzt bestehende Systeme und dockt dort an, wo
+              Daten weiterverarbeitet, verknüpft oder gezielt geteilt werden
+              sollen – um daraus neue Datenprodukte zu entwickeln. Eine
+              Berichtigungssteuerung stellt sicher das Daten und Projekte
+              geschützt sind. So entsteht die technische Grundlage, Daten
+              professionell aufzubereiten, zu analysieren und für
+              evidenzbasierte Entscheidungen zu nutzen – und zugleich ein Motor
+              für Innovation, Zusammenarbeit und Souveränität.
             </p>
             <p>
               <strong>

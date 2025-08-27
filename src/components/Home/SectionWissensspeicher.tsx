@@ -10,12 +10,12 @@ export default function SectionWissensspeicher() {
           <h3 className="text-3xl md:text-5xl font-bold">Wissensspeicher</h3>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4">
             <p>
-              Der Wissensspeicher ist eine wachsende Online-Dokumentation. Hier
-              finden sich weitere Informationen zu den einzelnen Bausteinen,
-              Erläuterungen zu bereits umgesetzten Anwendungsfällen, sowie
-              praktische Hilfestellung zur Umsetzung von Datenvorhaben im Data
-              Hub. So werden Informationen und Erfahrungen geteilt und wirksam
-              eingesetzt.
+              Der Wissensspeicher ist eine wachsende Online-Dokumentation. Er
+              bietet leicht verständliche Informationen zu den
+              Software-Bausteinen, zeigt, wie sie eingesetzt werden können, und
+              liefert Einblicke in bereits umgesetzte Projekte. Der
+              Wissensspeicher wird kontinuierlich erweitert, sobald neue
+              Erfahrungen und Anwendungsfälle aus der Pilotphase hinzukommen.
             </p>
             <Button label="Zum Wissensspeicher" slug="/docs/intro"></Button>
           </div>

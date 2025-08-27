@@ -249,13 +249,13 @@ export default function SectionScrollBoxes() {
           </h2>
           <div className="text-base md:text-xl md:leading-relaxed space-y-4">
             <p>
-              Im Baukastenprinzip. Ob Datenablage, Datenverarbeitung oder
-              Datenvisualisierung – Mit dem Data Hub kann die Berliner
-              Verwaltung souverän, kostenfrei und nachhaltig arbeiten. Der Data
-              Hub bietet eine Sammlung von Softwarebausteinen, die in
-              Kombination ein passgenaues Datenmanagement und das Erstellen von
-              Datenprodukten wie Karten und Dashboards ermöglichen – genau so,
-              wie es gebraucht wird.
+              Ob Ablage, Verarbeitung oder Visualisierung: Der Data Hub Berlin
+              stellt der Verwaltung vielseitige Tools zur Arbeit mit Daten
+              bereit. Dank modularer Architektur und intelligenter
+              Schnittstellen lassen sich die einzelnen Tools wie Bausteine
+              kombinieren – und somit maßgeschneiderte Lösungen für
+              unterschiedlichste Anwendungsfälle zusammenbauen. Vom komplexen
+              Datenverarbeitungsprozess bis hin zum interaktiven Dashboard.
             </p>
             {/* Drei farbige Buttons */}
             <div className="flex flex-col md:flex-row gap-4 mt-8">

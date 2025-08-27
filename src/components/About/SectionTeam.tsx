@@ -10,7 +10,7 @@ export default function SectionTeam() {
             Unser Team
           </h2>
           <p className="text-xl md:text-3xl">
-            Das sind die Menschen hinter dem Data Hub Prototypen
+            Das sind die Menschen hinter dem Data Hub Berlin Prototypen.
           </p>
         </div>
         <div className="col-span-12">
@@ -35,7 +35,7 @@ export default function SectionTeam() {
                 Stv. Leiterin Smart City <br />
                 und Datenmanagement
                 <br />
-                Senatskanzlei Berlin, Abteilung 6
+                Senatskanzlei Berlin
               </p>
             </div>
           </div>
