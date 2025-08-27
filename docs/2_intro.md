@@ -1,7 +1,7 @@
 ---
 title: Einführung zum Data Hub
 hide_title: true
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 <div style={{ display: 'flex', gap: '2rem', alignItems: 'center', flexWrap: 'wrap' }}>
