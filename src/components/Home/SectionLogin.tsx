@@ -13,8 +13,8 @@ export default function HomepageLogin() {
             <p>
               Der Data Hub ergänzt bestehende Systeme und dockt dort an, wo
               Daten weiterverarbeitet, verknüpft oder gezielt geteilt werden
-              sollen – um daraus neue Datenprodukte zu entwickeln. Eine
-              Berichtigungssteuerung stellt sicher das Daten und Projekte
+              sollen, um daraus neue Datenprodukte zu entwickeln. Eine
+              Berichtigungssteuerung stellt sicher, dass Daten und Projekte
               geschützt sind. So entsteht die technische Grundlage, Daten
               professionell aufzubereiten, zu analysieren und für
               evidenzbasierte Entscheidungen zu nutzen – und zugleich ein Motor

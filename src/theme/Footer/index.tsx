@@ -70,13 +70,22 @@ export default function Footer() {
               </a>
             </div>
             <div className="flex space-x-6 font-semibold text-berlin-black text-base">
-              <a href="#" className="underline underline-offset-8 decoration-2">
+              <a
+                href="../contact"
+                className="underline underline-offset-8 decoration-2"
+              >
                 Kontakt
               </a>
-              <a href="#" className="underline underline-offset-8 decoration-2">
+              <a
+                href="https://www.technologiestiftung-berlin.de/datenschutz"
+                className="underline underline-offset-8 decoration-2"
+              >
                 Datenschutz
               </a>
-              <a href="#" className="underline underline-offset-8 decoration-2">
+              <a
+                href="https://www.technologiestiftung-berlin.de/impressum"
+                className="underline underline-offset-8 decoration-2"
+              >
                 Impressum
               </a>
             </div>

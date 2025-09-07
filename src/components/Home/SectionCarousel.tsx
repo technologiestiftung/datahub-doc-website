@@ -7,7 +7,7 @@ const slides = [
     id: 1,
     title: 'Landesgleichstellung auf einen Blick',
     description:
-      'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Einrichtungen? Ein zentrales Dashboard ersetzt das bisher aufwendige manuelle Berichtswesen und ermöglicht eine datenbasierte Auswertung der Gleichstellungsmaßnahmen.',
+      'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Behörden? Ein zentrales Dashboard ersetzt das bisher aufwendige manuelle Berichtswesen und ermöglicht eine datenbasierte Auswertung der Gleichstellungsmaßnahmen.',
     image: '/img/example1.svg',
     slug: 'https://odis-berlin.de/',
   },
@@ -23,7 +23,7 @@ const slides = [
     id: 3,
     title: 'Bibliotheksdashboard Pankow',
     description:
-      'Wie viele Medien wurden ausgeliehen? Wer leiht was? Wie können Geld und Raum effizient genutzt werden? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow soll künftig Bedarfserfassung und Makulatur datenbasiert vereinfachen.',
+      'Wie viele Medien wurden ausgeliehen? Wer leiht was? Wie können Gelder und Räume effizient genutzt werden? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow, soll künftig Bedarfserfassung und Makulatur datenbasiert vereinfachen.',
     image: '/img/example3.svg',
     slug: 'https://odis-berlin.de/',
   },
