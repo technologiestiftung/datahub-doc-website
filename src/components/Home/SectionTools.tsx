@@ -58,8 +58,8 @@ export default function HomepageMainTools() {
             {' '}
             Der Data Hub ergänzt die bestehende IT-Landschaft Berlins durch eine
             moderne, offene Architektur und setzt dabei konsequent auf Open
-            Source Tools. Der Prototyp wird speziell an die Bedarfe der Berliner
-            Verwaltung angepasst und in einem iterativen Prozess
+            Source Software. Der Prototyp wird speziell an die Bedarfe der
+            Berliner Verwaltung angepasst und in einem iterativen Prozess
             weiterentwickelt. So stärkt der Data Hub die digitale Souveränität
             der Hauptstadt.
           </p>
