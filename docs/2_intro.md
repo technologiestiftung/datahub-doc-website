@@ -4,17 +4,35 @@ hide_title: true
 sidebar_position: 2
 ---
 
-<div style={{ display: 'flex', gap: '2rem', alignItems: 'center', flexWrap: 'wrap' }}>
+:::danger[Work in progress]
+Achtung diese Seite befindet sich noch im Aufbau!
+:::
 
-<div style={{ flex: 1 }}>
-  <h1>Einführung zum Data Hub</h1> 
-</div>
+# Einführung zum Data Hub Berlin
 
-<div style={{ flex: 1 }}>
-  <img src="/img/blockbox.svg" alt="Daten" style={{ width: '100%', maxWidth: '400px' }} />
-</div>
-</div>
+Introtext
 
-**Ein kurzer Überblick über das, was dich erwartet …**
+## Urbane Datenplattform als Dateninfrastruktur
 
-## Getting Started
+## Fest verankert in Berlins Smart City-Strategie
+Introtext
+
+### Gemeinsam Digital: Berlin
+### Open Data Strategie und Open Source Strategie
+### Richtlinien der Regierungspolitik
+
+
+## Praxisnah Anforderungen explorieren mit dem Prototypen
+Introtext
+
+### Was ist ein Prototyp?
+
+### Open Source Entwicklung
+- inkl. Erwähnung civitas core
+
+## Verantwortlichkeiten
+
+Introtext
+
+### Zuwendung der Berliner Senatskanzlei an die Berliner Technologiestiftung
+
