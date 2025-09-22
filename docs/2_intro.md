@@ -26,7 +26,7 @@ Mit dem Berliner Data Hub bestreitet nun auch das Land Berlin den Weg zu einer z
 
 ## Fest verankert in Berlins Smart City-Strategie
 
-Der Aufbau des Data Hub Berlin ist keine neue Einzelinitiative, sondern eine seit einigen Jahren angestrebte und zentrale Maßnahme der Strategie „Gemeinsam Digital: Berlin“, Teil der Berliner Digitalstrategie und der Richtline der Berliner Regierung zur Verwaltungsmodernisierung. 
+Der Aufbau des Data Hub Berlin ist keine neue Einzelinitiative, sondern eine seit einigen Jahren angestrebte und zentrale Maßnahme der Strategie [„Gemeinsam Digital: Berlin“](https://gemeinsamdigital.berlin.de/), Teil der Berliner Digitalstrategie und der [Richtline der Berliner Regierung zur Verwaltungsmodernisierung](https://www.berlin.de/rbmskzl/politik/senat/richtlinien-der-politik/#2). 
 
 ### Gemeinsam Digital:Berlin
 
