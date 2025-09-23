@@ -45,6 +45,7 @@ Seit April 2025 steht der *Data Hub* als prototypische Instanz zur Verfügung. Z
 Die Erkenntnisse aus den Use Cases fließen in die Weiterentwicklung des Berliner *Data Hub*. So stellen wir sicher, dass der *Data Hub* die Bedarfe der Berliner Verwaltung in der Arbeit mit Daten bestmöglich erfüllt. Gegebenenfalls können weitere Komponenten aus der CIVITA/CORE-Gemeinschaft in den Berliner *Data Hub* integriert werden.  
 
 ### Nachnutzung gewährleisten mit dem Wissensspeicher 
+
 Um einen Wissenstransfer zu ermöglichen und die Nutzung des *Data Hub* in die Breite zu tragen wird mit dem Wissensspeicher eine wachsende Online-Dokumentation verfolgt. Der Wissensspeicher bietet leicht verständliche Informationen zu den Software-Bausteinen, zeigt, wie sie eingesetzt werden können, und liefert Einblicke in bereits umgesetzte Projekte. Der Wissensspeicher wird kontinuierlich erweitert, sobald neue Erfahrungen und Anwendungsfälle aus der Pilotphase hinzukommen. 
 
 ## Verantwortlichkeiten
