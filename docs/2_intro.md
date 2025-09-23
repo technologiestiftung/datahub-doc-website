@@ -1,5 +1,5 @@
 ---
-title: Einführung zum *Data Hub*
+title: Einführung zum Data Hub
 hide_title: true
 sidebar_position: 2
 ---
