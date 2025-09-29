@@ -18,11 +18,11 @@ npm
 
 npm install
 
-## Usage or Deployment
+## Development
 
 npm run start
 
-## Development
+## Build
 
 npm run build
 

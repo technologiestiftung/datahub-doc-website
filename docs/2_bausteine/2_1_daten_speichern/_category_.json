@@ -1,0 +1,8 @@
+{
+  "label": "Daten speichern",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Hier geht es um die zentralen Ablageorte für Daten im Data Hub. Ob Tabellen, Geodaten oder Dokumente – diese Komponenten sorgen dafür, dass Daten sicher, strukturiert und zugänglich aufbewahrt werden."
+  }
+}

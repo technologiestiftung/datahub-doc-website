@@ -1,0 +1,8 @@
+{
+  "label": "Weitere",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "In dieser Kategorie finden sich Komponenten, die den Hub ergänzen und abrunden: von sicherem Zugang über gemeinsames Wissensmanagement bis zur technischen Steuerung von Schnittstellen."
+  }
+}
