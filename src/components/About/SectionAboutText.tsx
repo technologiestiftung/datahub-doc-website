@@ -7,7 +7,7 @@ export default function SectionAboutText() {
     <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-12 lg:py-6">
       <div className="grid grid-cols-12 gap-[20px] items-center">
         <div className="relative col-span-12 lg:col-span-9 max-w-[489px] md:max-w-none mx-auto">
-          <h1 className="text-3xl md:text-6xl lg:text-6xl font-bold mb-2">
+          <h1 className="text-3xl md:text-6xl lg:text-6xl font-bold mb-4">
             Über den Data Hub Berlin
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl font-normal">
@@ -16,6 +16,8 @@ export default function SectionAboutText() {
             legt mit dem Prototypen den Grundstein.
           </p>
           <h3 className="text-1xl md:text-3xl font-bold pt-6 lg:pt-2">
+            Der Hintergrund:
+            <br />
             Fest verankert in Berlins Smart City-Strategie
           </h3>
           <p className="text-md md:text-lg">
@@ -32,23 +34,28 @@ export default function SectionAboutText() {
             nutzerorientiert fördert.
           </p>{' '}
           <h3 className="text-1xl md:text-3xl font-bold pt-6 lg:pt-2">
+            Über die Pilotphase:
+            <br />
             Praxisnah Anforderungen explorieren mit dem Prototypen
           </h3>
           <p className="text-md md:text-lg">
             Die Entwicklung eines so umfassenden IT-Infrastrukturprojektes
             erfordert agile Prozesse und enge Zusammenarbeit mit der Praxis. In
-            einer Pilotphase wird der Data Hub prototypisch aufgebaut – also in
-            einer frühen Version, die gezielt getestet, erprobt und stetig
-            weiterentwickelt wird –, um alle Anforderungen für eine Verstetigung
-            und den Produktivbetrieb zu identifizieren. Dabei werden sowohl
-            technische als auch organisatorische Rahmenbedingungen betrachtet,
-            um nachhaltige Mehrwerte für ein breites Spektrum an Nutzenden zu
-            schaffen. Der Prototyp steht ausgewählten Pilotnutzenden aus der
-            Berliner Verwaltung zur Verfügung. Gemeinsam werden derzeit reale
+            einer Pilotphase wird der Data Hub zunächst prototypisch aufgebaut.
+            Diese frühe Version wird gezielt getestet, erprobt und
+            kontinuierlich weiterentwickelt. So lassen sich alle Anforderungen
+            für eine spätere Verstetigung und den Produktivbetrieb
+            identifizieren. Dabei werden sowohl technische als auch
+            organisatorische Rahmenbedingungen betrachtet, um nachhaltige
+            Mehrwerte für ein breites Spektrum an Nutzenden zu schaffen. Der
+            Prototyp steht ausgewählten Pilotnutzenden aus der Berliner
+            Verwaltung zur Verfügung. Gemeinsam werden derzeit reale
             Datenprojekte umgesetzt, um die Plattform praxisnah zu testen und
             weiterzuentwickeln.
           </p>
           <h3 className="text-1xl md:text-3xl font-bold pt-6 lg:pt-2">
+            Über das Team:
+            <br />
             Technologiestiftung Berlin und Berliner Senatskanzlei
           </h3>
           <p className="text-md md:text-lg">

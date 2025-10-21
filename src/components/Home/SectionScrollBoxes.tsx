@@ -120,6 +120,7 @@ export default function SectionScrollBoxes() {
           stroke-width: 2;
           stroke-opacity: var(--rail-opacity, 1);
           transition: stroke-opacity 0.6s ease-in-out;
+          stroke: #e6e6e6;
         }
         g {
           transition: transform 0.1s ease-out, opacity 0.1s ease-out;
@@ -249,13 +250,14 @@ export default function SectionScrollBoxes() {
           </h2>
           <div className="text-base md:text-xl md:leading-relaxed space-y-4">
             <p>
-              Ob Ablage, Verarbeitung oder Visualisierung: Der Data Hub Berlin
-              stellt der Verwaltung vielseitige Tools zur Arbeit mit Daten
-              bereit. Dank modularer Architektur und intelligenter
-              Schnittstellen lassen sich die einzelnen Tools wie Bausteine
-              kombinieren – und somit maßgeschneiderte Lösungen für
-              unterschiedlichste Anwendungsfälle zusammenbauen. Vom komplexen
-              Datenverarbeitungsprozess bis hin zum interaktiven Dashboard.
+              Ob für die Ablage, Verarbeitung oder Visualisierung von Daten: Der
+              Data Hub Berlin bietet der Verwaltung vielseitige Werkzeuge, um
+              Daten effizient zu nutzen. Seine modulare Architektur und
+              intelligente Schnittstellen ermöglichen es, Tools wie{' '}
+              <span className="font-bold">Bausteine zu kombinieren</span> und
+              für unterschiedlichste Anwendungsfälle passgenaue Lösungen zu
+              entwickeln – ein flexibles System, das Innovation, Zusammenarbeit
+              und digitale Souveränität stärkt.
             </p>
             {/* Drei farbige Buttons */}
             <div className="flex flex-col md:flex-row gap-4 mt-8">

@@ -142,11 +142,11 @@ export default function SectionCarousel() {
       <div className="mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
-            Erste Anwendungsfälle
+            Erste Schritte mit realen Anwendungsfällen
           </h2>
-          <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
-            Die Berliner Verwaltung baut derzeit die ersten Pilotprojekte
-            <br /> im Data Hub Berlin.
+          <p className="text-xl md:text-3xl leading-6 md:leading-relaxed px-[10%]">
+            Erste Pilotprojekte zeigen, wie Senatsverwaltungen und Bezirksämter
+            den Data Hub Schritt für Schritt in der Praxis implementieren.
           </p>
         </div>
 

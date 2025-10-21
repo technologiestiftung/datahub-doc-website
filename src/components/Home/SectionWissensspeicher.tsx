@@ -7,15 +7,17 @@ export default function SectionWissensspeicher() {
     <section className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-16">
       <div className="grid grid-cols-12 gap-[20px] items-center">
         <div className="order-2 lg:order-1 relative col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
-          <h3 className="text-3xl md:text-5xl font-bold">Wissensspeicher</h3>
+          <h3 className="text-3xl md:text-5xl font-bold">
+            Eine lebendige Dokumentation
+          </h3>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4">
             <p>
-              Der Wissensspeicher ist eine wachsende Online-Dokumentation. Er
-              bietet leicht verständliche Informationen zu den
-              Software-Bausteinen, zeigt, wie sie eingesetzt werden können, und
-              liefert Einblicke in bereits umgesetzte Projekte. Der
-              Wissensspeicher wird kontinuierlich erweitert, sobald neue
-              Erfahrungen und Anwendungsfälle aus der Pilotphase hinzukommen.
+              Im Wissensspeicher finden Interessierte alles Wissenswerte rund um
+              den Data Hub Berlin: von den Funktionen der einzelnen
+              Software-Bausteine über ihre Anwendungsmöglichkeiten bis hin zu
+              Einblicken in laufende Pilotprojekte. Mit jeder neuen Erfahrung
+              wächst die Dokumentation weiter und macht die Potenziale des
+              Projekts sichtbar.
             </p>
             <Button label="Zum Wissensspeicher" slug="/docs/intro"></Button>
           </div>

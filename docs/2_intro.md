@@ -60,7 +60,7 @@ Ansprechpersonen:
 - Martina Kuhaupt (Senatskanzlei Berlin) 
 - Lisa Stubert (Projektleitung CityLAB Berlin/Technologiestiftung Berlin) 
 
-Fragen zum *Data Hub Berlin* oder Ideen für mögliche Anwendungsfälle? Unser Team der Technologiestiftung Berlin nimmt Anfragen gern per Mail entgegen. 
+Sie haben Fragen zum *Data Hub Berlin* oder möchten Pilotnutzer:in werden? Unser Team der Technologiestiftung Berlin nimmt Anfragen gern per Mail entgegen. 
 E-Mail: datahub@ts.berlin 
 
 

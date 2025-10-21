@@ -12,12 +12,14 @@ export default function SectionContact({
     <section className={`w-full ${bgColor} `}>
       <div className="grid grid-cols-12 gap-[20px] items-center z-10 max-w-7xl mx-auto px-6 md:px-16 py-20">
         <div className="relative col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
-          <h3 className="text-3xl md:text-5xl font-bold">Nimm Kontakt auf!</h3>
+          <h3 className="text-3xl md:text-5xl font-bold">
+            Nehmen Sie Kontakt auf!
+          </h3>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4">
             <p>
-              Fragen zum Data Hub Berlin oder Ideen für mögliche
-              Anwendungsfälle? Unser Team der Technologiestiftung Berlin nimmt
-              Anfragen gern per Mail entgegen.
+              Sie haben Fragen zum Data Hub Berlin oder möchten Pilotnutzer:in
+              werden? Unser Team der Technologiestiftung Berlin nimmt Anfragen
+              gern per Mail entgegen.
             </p>
           </div>
         </div>
