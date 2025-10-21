@@ -9,6 +9,7 @@ import SectionScrollBoxes from '@site/src/components/Home/SectionScrollBoxes';
 import SectionCarousel from '@site/src/components/Home/SectionCarousel';
 import SectionContact from '@site/src/components/Home/SectionContact';
 import SectionWissensspeicher from '@site/src/components/Home/SectionWissensspeicher';
+import SectionEcosystem from '@site/src/components/Home/SectionEcosystem';
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
@@ -26,8 +27,8 @@ export default function Home(): ReactNode {
       </div>
       <main>
         <SectionScrollBoxes />
+        <SectionEcosystem />
         <SectionCarousel />
-        <SectionLogin />
         <SectionTools />
         <SectionWissensspeicher />
         <SectionContact bgColor="bg-berlin-yellow" />

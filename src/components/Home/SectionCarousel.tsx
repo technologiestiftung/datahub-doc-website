@@ -138,7 +138,7 @@ export default function SectionCarousel() {
   }, [isHovering, direction]);
 
   return (
-    <section className="py-20 bg-berlin-yellow">
+    <section className="py-20 bg-berlin-yellow mb-12 lg:mb-20">
       <div className="mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold tracking-wide">

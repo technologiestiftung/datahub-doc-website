@@ -20,12 +20,12 @@ export default function HomepageLogin() {
               evidenzbasierte Entscheidungen zu nutzen – und zugleich ein Motor
               für Innovation, Zusammenarbeit und Souveränität.
             </p>
-            <p>
+            {/*             <p>
               <strong>
                 2025 läuft der Data Hub noch als Prototyp mit ausgewählten
                 Pilotnutzenden der Berliner Verwaltung.
               </strong>
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -36,6 +36,13 @@ export default function HomepageLogin() {
             <BlockboxSVG></BlockboxSVG>
           </div>
         </div>
+      </div>
+      <div className="order-1 lg:order-2 col-span-12 lg:col-span-6">
+        <img
+          src="/img/landing_page_uebersichtgrafik.png"
+          alt="Darstellung des Berliner Data Hub"
+          className="lg:w-5/6 xl:w-3/4 h-auto rounded-2xl border border-gray-200 mx-auto block"
+        />
       </div>
     </section>
   );
