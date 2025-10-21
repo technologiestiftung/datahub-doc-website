@@ -19,7 +19,7 @@ export const ButtonSimple: FC<ButtonType> = ({
     >
       <Link
         to={slug}
-        className="flex items-stretch text-berlin-black font-semibold custom-no-underline"
+        className="block items-stretch text-berlin-black font-semibold custom-no-underline"
       >
         <div
           className={`px-4 py-3 flex items-center text-base md:text-lg group-hover:bg-berlin-gray`}

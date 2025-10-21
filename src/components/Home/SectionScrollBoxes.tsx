@@ -260,7 +260,7 @@ export default function SectionScrollBoxes() {
               und digitale Souveränität stärkt.
             </p>
             {/* Drei farbige Buttons */}
-            <div className="flex flex-col md:flex-row gap-4 mt-8">
+            <div className="flex flex-wrap gap-4 mt-8 whitespace-nowrap">
               <ButtonSimple
                 label="Daten ablegen"
                 slug="/docs/intro"
