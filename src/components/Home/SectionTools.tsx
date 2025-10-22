@@ -25,7 +25,7 @@ export default function HomepageMainTools() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
-            Cloud-Tools im Baukasten des Data Hubs{' '}
+            Tools im Baukasten des Data Hubs{' '}
           </h2>
           <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
             Open Source, direkt im Browser nutzbar und vielfältig kombinierbar.{' '}
