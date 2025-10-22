@@ -246,7 +246,7 @@ export default function SectionScrollBoxes() {
         {/* Text section */}
         <div className="col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wide">
-            Vom Datensatz zum Datenprodukt
+            Ein Baukasten für das Arbeiten mit Daten
           </h2>
           <div className="text-base md:text-xl md:leading-relaxed space-y-4">
             <p>

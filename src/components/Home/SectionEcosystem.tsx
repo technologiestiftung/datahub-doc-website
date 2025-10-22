@@ -25,10 +25,10 @@ export default function HomepageEcosystem() {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
-            Herzstück des Berliner Datenmanagements{' '}
+            Vom Datensatz zum Datenprodukt{' '}
           </h2>
           <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
-            Open Source, direkt im Browser nutzbar und vielfältig kombinierbar.{' '}
+            Der Data Hub als Herzstück des Berliner Datenmanagements{' '}
           </p>
         </div>
         {/* Beschreibung */}
@@ -43,13 +43,14 @@ export default function HomepageEcosystem() {
         <div className="max-w-4xl mx-auto text-center mb-12">
           <p className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 max-w-[566px] mx-auto">
             {' '}
-            Der Data Hub ergänzt bestehende Systeme und dockt dort an, wo Daten
-            weiterverarbeitet, verknüpft oder gezielt geteilt werden sollen, um
-            daraus neue Datenprodukte zu entwickeln. Eine Berichtigungssteuerung
-            stellt sicher, dass Daten und Projekte geschützt sind. So entsteht
-            die technische Grundlage, Daten professionell aufzubereiten, zu
-            analysieren und für evidenzbasierte Entscheidungen zu nutzen – und
-            zugleich ein Motor für Innovation, Zusammenarbeit und Souveränität.
+            Der Data Hub ergänzt die bestehende IT-Systeme und Datenportale im
+            Land Berlin. Er dockt dort an, wo Daten gezielt geteilt, verknüpft
+            oder weiterverarbeitet werden sollen. Er ermöglicht die Entwicklung
+            neuer Datenprodukte und Anwendungen – von Dashboards über
+            interaktive Karten bis zu veredelten Datensätzen. Eine
+            Berechtigungssteuerung schützt Daten und Projekte. So entsteht die
+            Grundlage, Daten professionell in Verwaltungsprozesse einzubinden
+            und für evidenzbasierte Entscheidungen zu nutzen.
           </p>
         </div>
       </div>
