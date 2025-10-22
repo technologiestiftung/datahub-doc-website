@@ -56,13 +56,15 @@ export default function HomepageMainTools() {
         <div className="max-w-4xl mx-auto text-center mb-12">
           <p className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 max-w-[566px] mx-auto">
             {' '}
-            Der Data Hub erweitert die bestehende IT-Landschaft Berlins um eine
-            moderne, in anderen Städten bereits erfolgreich erprobte Architektur
-            auf Basis von Open-Source-Software und intelligenten Schnittstellen.
-            Der Prototyp wird aktuell gezielt an die Bedarfe der Berliner
-            Verwaltung angepasst und in einem iterativen Prozess
-            weiterentwickelt. So stärkt der Data Hub künftig die digitale
-            Souveränität der Hauptstadt.
+            Der Data Hub bringt eine erprobte Architektur für urbane
+            Datenplattfomen nach Berlin, die vollständig auf cloudbetriebener
+            Open-Source-Software basiert. Der Prototyp wird derzeit gezielt an
+            die Anforderungen der Berliner Verwaltung angepasst und
+            weiterentwickelt. In diesem iterativen Prozess entsteht so nicht nur
+            ein{' '}
+            <span className="font-bold">moderner Stack aus Software-Tools</span>
+            , der flexibel und leicht skalierbar ist, sondern auch Innovation
+            fördert und die digitale Souveränität der Verwaltung stärkt.
           </p>
         </div>
 

@@ -250,14 +250,16 @@ export default function SectionScrollBoxes() {
           </h2>
           <div className="text-base md:text-xl md:leading-relaxed space-y-4">
             <p>
-              Ob für die Ablage, Verarbeitung oder Visualisierung von Daten: Der
-              Data Hub Berlin bietet der Verwaltung vielseitige Werkzeuge, um
-              Daten effizient zu nutzen. Seine modulare Architektur und
-              intelligente Schnittstellen ermöglichen es, Tools wie{' '}
-              <span className="font-bold">Bausteine zu kombinieren</span> und
-              für unterschiedlichste Anwendungsfälle passgenaue Lösungen zu
-              entwickeln – ein flexibles System, das Innovation, Zusammenarbeit
-              und digitale Souveränität stärkt.
+              Der Data Hub Berlin stellt der Verwaltung eine vielseitige und
+              zentrale Infrastruktur bereit, um effizient mit Daten zu arbeiten.
+              Seine modulare Architektur und intelligenten Schnittstellen
+              erlauben es,{' '}
+              <span className="font-bold">
+                Software-Tools wie Bausteine zu kombinieren
+              </span>
+              . Dadurch können passgenaue Lösungen für unterschiedlichste,
+              datenbezoge Anwendungsfälle entwickelt werden. Im Data Hub
+              existieren Bausteine für drei wesentliche Funktionsbereiche:
             </p>
             {/* Drei farbige Buttons */}
             <div className="flex flex-wrap gap-4 mt-8 whitespace-nowrap">

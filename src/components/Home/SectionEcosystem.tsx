@@ -28,12 +28,12 @@ export default function HomepageEcosystem() {
             Vom Datensatz zum Datenprodukt{' '}
           </h2>
           <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
-            Der Data Hub als Herzstück des Berliner Datenmanagements{' '}
+            Der Data Hub bildet das Herzstück des Berliner Datenmanagements.{' '}
           </p>
         </div>
         {/* Beschreibung */}
 
-        <div className="order-1 lg:order-2 col-span-12 lg:col-span-6 mb-12">
+        <div className="order-1 lg:order-2 col-span-12 lg:col-span-6 mb-10 md:mb-12">
           <img
             src="/img/landing_page_uebersichtgrafik.png"
             alt="Darstellung des Berliner Data Hub"
@@ -43,14 +43,17 @@ export default function HomepageEcosystem() {
         <div className="max-w-4xl mx-auto text-center mb-12">
           <p className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 max-w-[566px] mx-auto">
             {' '}
-            Der Data Hub ergänzt die bestehende IT-Systeme und Datenportale im
-            Land Berlin. Er dockt dort an, wo Daten gezielt geteilt, verknüpft
-            oder weiterverarbeitet werden sollen. Er ermöglicht die Entwicklung
-            neuer Datenprodukte und Anwendungen – von Dashboards über
-            interaktive Karten bis zu veredelten Datensätzen. Eine
-            Berechtigungssteuerung schützt Daten und Projekte. So entsteht die
-            Grundlage, Daten professionell in Verwaltungsprozesse einzubinden
-            und für evidenzbasierte Entscheidungen zu nutzen.
+            Der Data Hub ergänzt mit seinen Bausteinen die bestehenden
+            IT-Systeme und Datenportale im Land Berlin. Er dockt dort an, wo
+            Daten gezielt geteilt, verknüpft oder weiterverarbeitet werden
+            sollen. Er ermöglicht die Entwicklung neuer Datenprodukte und
+            Anwendungen – von{' '}
+            <span className="font-bold">
+              Dashboards über interaktive Karten bis zu veredelten Datensätzen
+            </span>
+            . Eine Berechtigungssteuerung schützt Daten und Projekte. So
+            entsteht die Grundlage, Daten professionell in Verwaltungsprozesse
+            einzubinden und für evidenzbasierte Entscheidungen zu nutzen.
           </p>
         </div>
       </div>
