@@ -1,51 +1,117 @@
-// import { ArrowRight } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@site/src/components/UI/Button';
-
 import '../../css/tailwind.css';
 
 const toolList = [
-  { name: 'grafana', size: 'w-32 h-32' },
-  { name: 'master_portal', size: 'w-32 h-32' },
-  { name: 'superset', size: 'w-32 h-32' },
-  { name: 'appsmith', size: 'w-32 h-32' },
-  { name: 'airflow', size: 'w-32 h-32' },
-  { name: 'jupiter', size: 'w-32 h-32' },
-  { name: 'gravitee', size: 'w-32 h-32' },
-  { name: 'node_red', size: 'w-32 h-32' },
-  { name: 'geoserver', size: 'w-32 h-32' },
-  { name: 'minio', size: 'w-32 h-32' },
-  { name: 'pgadmin', size: 'w-32 h-32' },
-  { name: 'piveau', size: 'w-32 h-32' },
+  { name: 'minio', size: 'w-32 h-32', placeholder: 'single_cube_purple.svg' },
+  { name: 'appsmith', size: 'w-32 h-32', placeholder: 'single_cube_pink.svg' },
+  { name: 'grafana', size: 'w-32 h-32', placeholder: 'single_cube_blue.svg' },
+  { name: 'pgadmin', size: 'w-32 h-32', placeholder: 'single_cube_purple.svg' },
+  { name: 'airflow', size: 'w-32 h-32', placeholder: 'single_cube_pink.svg' },
+  {
+    name: 'master_portal',
+    size: 'w-32 h-32',
+    placeholder: 'single_cube_blue.svg',
+  },
+  {
+    name: 'geoserver',
+    size: 'w-32 h-32',
+    placeholder: 'single_cube_purple.svg',
+  },
+  { name: 'node_red', size: 'w-32 h-32', placeholder: 'single_cube_pink.svg' },
+  { name: 'superset', size: 'w-32 h-32', placeholder: 'single_cube_blue.svg' },
+  { name: 'piveau', size: 'w-32 h-32', placeholder: 'single_cube_purple.svg' },
+  { name: 'jupiter', size: 'w-32 h-32', placeholder: 'single_cube_pink.svg' },
+  { name: 'misc', size: 'w-32 h-32', placeholder: 'single_cube_blue.svg' },
 ];
 
 export default function HomepageMainTools() {
+  const containerRef = useRef(null);
+  const [visibleTools, setVisibleTools] = useState([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          // Reihenfolge aus toolList beibehalten
+          const normalTools = toolList.filter((t) => t.name !== 'misc');
+
+          normalTools.forEach((tool, i) => {
+            setTimeout(() => {
+              setVisibleTools((prev) => [...prev, tool.name]);
+            }, i * 200); // nacheinander
+          });
+
+          // misc Text nach allen anderen
+          setTimeout(() => {
+            setVisibleTools((prev) => [...prev, 'misc']);
+          }, normalTools.length * 200 + 200);
+        } else {
+          setVisibleTools([]);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (containerRef.current) observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="min-h-screen bg-dhub-background px-6 md:px-16  py-6">
+    <section className="min-h-screen bg-dhub-background px-6 md:px-16 py-6">
       <div className="max-w-6xl mx-auto">
-        {/* Header Section */}
+        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
-            Tools im Baukasten des Data Hubs{' '}
+            Tools im Baukasten des Data Hubs
           </h2>
           <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
-            Open Source, direkt im Browser nutzbar und vielfältig kombinierbar.{' '}
+            Open Source, direkt im Browser nutzbar und vielfältig kombinierbar.
           </p>
         </div>
 
-        {/* 12er Grid mit 20px Gutter */}
-        <div className="grid grid-cols-12 gap-[20px] mb-16">
-          {toolList.map((d) => {
+        {/* Grid */}
+        <div ref={containerRef} className="grid grid-cols-12 gap-[20px] mb-16">
+          {toolList.map((tool) => {
+            const isVisible = visibleTools.includes(tool.name);
+
             return (
               <div
-                className="col-span-6 sm:col-span-4 lg:col-span-3 flex items-center justify-center h-20"
-                key={d.name}
+                key={tool.name}
+                className="col-span-4 lg:col-span-3 flex items-center justify-center h-32 group"
               >
-                <div className="flex items-center gap-3">
-                  <img
-                    src={`img/logos/${d.name}.svg`}
-                    alt={d.name}
-                    className={d.size}
-                  />
+                <div className="relative w-32 h-32">
+                  {/* Placeholder SVG */}
+                  {tool.name !== 'misc' && (
+                    <img
+                      src={`img/${tool.placeholder}`}
+                      alt="placeholder"
+                      className={`absolute inset-0 w-32 h-32 rounded-md transition-all duration-300
+          ${isVisible ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}
+          group-hover:opacity-100 group-hover:scale-100
+        `}
+                    />
+                  )}
+
+                  {/* Logo oder Text */}
+                  {tool.name === 'misc' ? (
+                    <p
+                      className={`text-lg font-semibold text-berlin-black italic flex items-center justify-center h-full w-full text-center opacity-80 tracking-wide transition-all duration-300 transform
+          ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}
+        `}
+                    >
+                      ... und Weitere
+                    </p>
+                  ) : (
+                    <img
+                      src={`img/logos/${tool.name}.svg`}
+                      alt={tool.name}
+                      className={`absolute inset-0 w-32 h-32 rounded-md transition-all duration-300 transform
+          ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}
+          group-hover:opacity-0 group-hover:scale-95
+        `}
+                    />
+                  )}
                 </div>
               </div>
             );
@@ -54,7 +120,7 @@ export default function HomepageMainTools() {
 
         {/* Beschreibung */}
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <p className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 max-w-[566px] mx-auto">
+          <p className="text-base text-left md:text-xl leading-6 md:leading-relaxed space-y-4 max-w-[566px] mx-auto">
             {' '}
             Der Data Hub bringt eine erprobte Architektur für urbane
             Datenplattfomen nach Berlin, die vollständig auf cloudbetriebener
