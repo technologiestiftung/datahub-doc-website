@@ -19,8 +19,8 @@ export default function Home(): ReactNode {
       description="Description will go into a meta tag in <head />"
     >
       <SectionHeader />
-      <div className="bg-berlin-black py-4 overflow-hidden w-full">
-        <div className="whitespace-nowrap text-white font-bold text-xl md:text-3xl animate-marquee">
+      <div className="bg-berlin-yellow py-4 overflow-hidden w-full">
+        <div className="whitespace-nowrap text-berlin-black font-bold text-xl md:text-3xl animate-marquee">
           Der Data Hub läuft derzeit als prototypisches Pilotprojekt der
           Technologiestiftung Berlin und der Senatskanzlei Berlin.
         </div>
