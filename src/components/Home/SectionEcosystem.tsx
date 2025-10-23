@@ -41,7 +41,7 @@ export default function HomepageEcosystem() {
           />
         </div>
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <p className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 max-w-[566px] mx-auto">
+          <p className="text-base text-left md:text-xl leading-6 md:leading-relaxed space-y-4 max-w-[566px] mx-auto">
             {' '}
             Der Data Hub ergänzt mit seinen Bausteinen die bestehenden
             IT-Systeme und Datenportale im Land Berlin. Er dockt dort an, wo
