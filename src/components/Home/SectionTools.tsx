@@ -80,13 +80,13 @@ export default function HomepageMainTools() {
                 key={tool.name}
                 className="col-span-4 lg:col-span-3 flex items-center justify-center h-24 group"
               >
-                <div className="relative w-32 h-32">
+                <div className="relative w-32 h-32 flex items-center justify-center">
                   {/* Placeholder SVG */}
                   {tool.name !== 'misc' && (
                     <img
                       src={`img/${tool.placeholder}`}
                       alt="placeholder"
-                      className={`absolute inset-0 w-32 h-32 rounded-md transition-all duration-300
+                      className={`absolute inset-0 w-32 h-32 rounded-md transition-all duration-300 overflow-visible
           ${isVisible ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}
           group-hover:opacity-100 group-hover:scale-100
         `}
@@ -96,7 +96,7 @@ export default function HomepageMainTools() {
                   {/* Logo oder Text */}
                   {tool.name === 'misc' ? (
                     <p
-                      className={`text-lg font-semibold text-berlin-black italic flex items-center justify-center h-full w-full text-center opacity-80 tracking-wide transition-all duration-300 transform
+                      className={`text-base md:text-xl leading-6 text-berlin-black flex items-center justify-center h-full w-full text-center transition-all duration-300 transform
           ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}
         `}
                     >

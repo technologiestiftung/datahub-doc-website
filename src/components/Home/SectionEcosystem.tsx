@@ -1,22 +1,4 @@
-// import { ArrowRight } from 'lucide-react';
-import { Button } from '@site/src/components/UI/Button';
-
 import '../../css/tailwind.css';
-
-const toolList = [
-  { name: 'grafana', size: 'w-32 h-32' },
-  { name: 'master_portal', size: 'w-32 h-32' },
-  { name: 'superset', size: 'w-32 h-32' },
-  { name: 'appsmith', size: 'w-32 h-32' },
-  { name: 'airflow', size: 'w-32 h-32' },
-  { name: 'jupiter', size: 'w-32 h-32' },
-  { name: 'gravitee', size: 'w-32 h-32' },
-  { name: 'node_red', size: 'w-32 h-32' },
-  { name: 'geoserver', size: 'w-32 h-32' },
-  { name: 'minio', size: 'w-32 h-32' },
-  { name: 'pgadmin', size: 'w-32 h-32' },
-  { name: 'piveau', size: 'w-32 h-32' },
-];
 
 export default function HomepageEcosystem() {
   return (
