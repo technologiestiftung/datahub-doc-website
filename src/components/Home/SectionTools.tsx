@@ -61,7 +61,7 @@ export default function HomepageMainTools() {
     <section className="min-h-screen bg-dhub-background px-6 md:px-16 py-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
             Tools im Baukasten des Data Hubs
           </h2>
@@ -78,7 +78,7 @@ export default function HomepageMainTools() {
             return (
               <div
                 key={tool.name}
-                className="col-span-4 lg:col-span-3 flex items-center justify-center h-32 group"
+                className="col-span-4 lg:col-span-3 flex items-center justify-center h-24 group"
               >
                 <div className="relative w-32 h-32">
                   {/* Placeholder SVG */}
