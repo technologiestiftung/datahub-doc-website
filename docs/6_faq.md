@@ -3,7 +3,7 @@ title: FAQ
 hide_title: true
 sidebar_position: 6
 ---
-import styles from './docsmodule.css';
+import styles from './docs.module.css';
 
 <div className={styles.doccontainer}>
 

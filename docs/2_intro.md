@@ -4,7 +4,7 @@ hide_title: true
 sidebar_position: 2
 ---
 import React from 'react';
-import styles from './docsmodule.css';
+import styles from './docs.module.css';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import './tabs-custom.css';
