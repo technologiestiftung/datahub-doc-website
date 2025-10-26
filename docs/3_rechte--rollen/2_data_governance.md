@@ -1,11 +1,27 @@
 ---
+title: Data Hub Governance
 sidebar_position: 2
+hide_title: true
 ---
 
-# Data Governance
+import styles from '../docs.module.css';
+
+<div className={styles.doccontainer}>
+
+  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-10 pt-16">
+ {/* <div className={styles.heroimage}>
+      <img src="/img/wissen.svg" alt="Wissensspeicher Logo" />
+    </div>  */}
+    <div>
+          <h1>Data Hub Governance</h1>
+      <p className="text-lg">
+        Damit der Data Hub fair, sicher und nachvollziehbar genutzt werden kann, brauch es einen klaren Rahmen für Zusammenarbeit und Verantwortung. Daher wird parallel zum Prototypen eine Governance erarbeitet, die Rollen, Prozesse und Prinzipien für den verantwortungsvollen Umgang mit Daten in der Berliner Verwaltung definiert.
+      </p>
+    </div>
+  </div>
 
 
-## Was ist Data Governance? 
+## Was ist eine Data Governance? 
 
 Unter dem Begriff Data Governance wird die Steuerung und Verwaltung von Daten mit dem Ziel der bestmöglichen Nutzbarmachung verstanden. Hierunter fallen unterschiedliche Richtlinien, Prozesse, Rollen und Standards. In öffentlichen Verwaltungen wird hierunter das Zusammenspiel zwischen strategischer Ebene (gesamtstädtische Zielsetzung zu Datennutzung) und operativem Datenmanagement (Datenerfassung, -pflege, -nutzung) verstanden. 
 
@@ -42,7 +58,6 @@ Dabei Zugriffe sind immer nur möglich, wenn sich die Nutzer:innen vorher authen
 
 ## Beispielhafter Ablauf einer Use-Case-Umsetzung 
 
-
 <img
   src={require('./assets/Use-Case-Umsetzung.png').default}
   alt="Rechte-und-Rollen"
@@ -69,4 +84,10 @@ Dabei Zugriffe sind immer nur möglich, wenn sich die Nutzer:innen vorher authen
 
 Perspektivisch wäre es empfehlenswert, in den Fach- und Bezirksverwaltungen datenbezogene Prozesse so weit institutionell zu standardisieren, dass jede Behörde über klare, verantwortliche Rollen (bspw. Daten-Stewards) verfügt, die das Zusammenarbeiten mit der Datenplattform Data Hub regeln, Standards gemeinsam aushandeln und weitere Use Cases entwickeln. 
 
+:::warning
 
+Bisher existiert noch keine offizielle abgestimmte Governance. Die hier dargestellten Prozesse, sind als erste Vorschläge und als ein Arbeitsstand für die jetzige Phase des prototypischen Betriebs zu verstehen.
+
+:::
+
+  </div>
