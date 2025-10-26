@@ -1,0 +1,46 @@
+
+.heroimage {
+  flex: 0 0 250px;
+}
+
+.heroimage img {
+  max-width: 90%;
+  height: auto;
+}
+
+.doccontainer {
+  padding-left: 2rem;   /* entspricht px-8 */
+  padding-right: 2rem;  /* entspricht px-8 */
+  margin-left: auto;    /* mx-auto */
+  margin-right: auto;   /* mx-auto */
+  width: 100%;
+
+  /* ab xl-Bildschirmgrößen */
+}
+
+@media (min-width: 1280px) {
+  .doccontainer {
+    padding-left: 0;     /* xl:px-0 */
+    padding-right: 0;    /* xl:px-0 */
+    width: 80%;          /* xl:w-4/5 */
+  }
+}
+
+p a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+p a:hover {
+  text-decoration-thickness: 3px;
+}
+
+h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+h3 {
+  margin-top: 2.75rem;
+  margin-bottom: 1.5rem;
+}

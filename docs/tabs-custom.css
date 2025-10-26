@@ -1,0 +1,71 @@
+/* Tabs - Grundlayout */
+.tabs-container {
+  margin-top: 1.5rem;
+  border-radius: 0.15rem;
+  background-color: #FAF9FE;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+}
+
+/* Tab-Leiste */
+.tabs {
+  display: flex;
+  border-bottom: 4px solid #0f172a;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  margin-bottom: 2rem;
+}
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+/* Einzelne Tabs */
+.tabs__item {
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-bottom: 0px solid transparent;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 0.15rem;
+}
+
+/* Hover-Effekt */
+.tabs__item:hover {
+  color: #0f172a;
+  background-color: #e6e6e6;
+}
+
+/* Aktiver Tab */
+.tabs__item--active {
+  color: #0f172a;
+  border-bottom-color: #ffe70e; /* blau */
+  background-color: #ffe70e;
+}
+
+/* Tab-Inhalt */
+.tabs__content {
+  padding-left: 0.5rem;
+}
+
+.tabs__content p {
+  color: #374151;
+  line-height: 1.6;
+}
+
+.tabs__content strong {
+  color: #111827;
+}
+
+.tabs__content a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.tabs__content a:hover {
+  text-decoration-thickness: 3px;
+}
+
