@@ -283,8 +283,16 @@ input[class*="searchInput"] {
 /* Border Infobox anpassen */
 .theme-admonition.theme-admonition-info,
 .theme-admonition.alert.alert--info {
-  --ifm-alert-border-color: #4f90cd;
-  border-left-color: #4f90cd !important;
+  --ifm-alert-border-color: #222222;
+  border-left-color: #222222 !important;
+  background-color: #FAF9FE;
+  box-shadow: none;
+}
+.theme-admonition.alert.alert--info a {
+  text-decoration-thickness: 2px;
+}
+.theme-admonition.alert.alert--info a:hover {
+  text-decoration-thickness: 3px;
 }
 
 /* Boder Dangerbox anpassen */

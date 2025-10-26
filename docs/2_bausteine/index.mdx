@@ -1,0 +1,113 @@
+---
+title: Bausteine & Tools
+sidebar_position: 4
+hide_title: true
+---
+
+import DocCard from '@theme/DocCard';
+import styles from '../welcome.module.css';
+import { BookOpenIcon, Cog6ToothIcon } from '@heroicons/react/24/solid';
+import { AcademicCapIcon, ShieldCheckIcon, Squares2X2Icon, BuildingOffice2Icon, RocketLaunchIcon, QuestionMarkCircleIcon } from '@heroicons/react/24/solid';
+import Link from '@docusaurus/Link';
+
+<div className={styles.doccontainer}>
+
+  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-10 pt-16">
+ {/* <div className={styles.heroimage}>
+      <img src="/img/wissen.svg" alt="Wissensspeicher Logo" />
+    </div>  */}
+    <div>
+          <h1>Bausteine & Tools</h1>
+      <p className="text-lg">
+        Der  Data Hub vereint verschiedene Tools zur Arbeit mit Verwaltungsdaten in einem zentralen, modularen System. 
+        Lerne die drei wesentlichen Funktionsbereiche kennen, in denen sich die Tools einordnen lassen.
+      </p>
+    </div>
+  </div>
+
+## Ein Baukasten für das Arbeiten mit Daten
+
+Der Data Hub besteht aus vielen einzelnen Software-Tools, die jeweils eine bestimmte Aufgabe übernehmen: Daten speichern und verwalten, verarbeiten und integrieren, sowie visualisieren. 
+Zusammen bilden diese Tools ein flexibles Ökosystem, das Fachabteilungen und Projektteams der Berliner Verwaltung unterstützt. Jeder Baustein ist für sich nützlich, doch erst im Zusammenspiel entfalten sie ihre volle Wirkung – wie Teile eines Baukastensystems, das modular erweitert werden kann. 
+
+Auf den folgenden Seiten findest du detaillierte Informationen zu den einzelnen Funktionsbereichen, den zugehörigen Bausteinen bzw. Software-Tools und ihren Anwendungsfällen. In der Architekturübersicht, siehst du wie die Komponenten miteinander in Verbindung stehen und wie der auf dem CIVITAS/CORE basierende Data Hub aufgebaut ist:
+
+{(() => {
+const cards = [
+  {
+    icon: <AcademicCapIcon className="h-8 w-8 text-white" />,
+    title: 'Daten speichern & verwalten',
+    description: 'Tools für das Erfassen, Strukturieren und Verwalten von Verwaltungsdaten im Data Hub, von Datenbanken bis zu Metadaten-Management.',
+    color: 'bg-blue-500',
+    link: '/docs/category/datenverwaltung'
+  },
+  {
+    icon: <ShieldCheckIcon className="h-8 w-8 text-white" />,
+    title: 'Daten verarbeiten & integrieren',
+    description: 'Werkzeuge zur Integration und Verarbeitung von Daten aus unterschiedlichen Quellen und Schnittstellen und zur Datenanalyse.',
+    color: 'bg-green-500',
+    link: '/docs/category/datenverarbeitung'
+  },
+  {
+    icon: <Squares2X2Icon className="h-8 w-8 text-white" />,
+    title: 'Daten visualisieren',
+    description: 'Tools für die Darstellung und Analyse von Daten: Dashboards, Kartenanwendungen, Statistiken und Monitoringberichte.',
+    color: 'bg-yellow-500',
+    link: '/docs/category/datenvisualisierung'
+  },
+  {
+    icon: <BuildingOffice2Icon className="h-8 w-8 text-white" />,
+    title: 'Weitere Tools',
+    description: 'Zusätzliche Module des Data Hubs, die spezifische Anwendungsfälle ermöglichen oder zum verzahnten Betrieb der Plattform notwendig sind.',
+    color: 'bg-purple-500',
+    link: '/docs/category/weitere-tools'
+  },
+    {
+    icon: <BuildingOffice2Icon className="h-8 w-8 text-white" />,
+    title: 'Architekturübersicht',
+    description: 'Eine Übersicht über die Architektur des Data Hubs basierend auf dem CIVITAS/CORE und die Interaktionen zwischen den verschiedenen Komponenten.',
+    color: 'bg-purple-500',
+    link: '/docs/category/architekturuebersicht'
+  }
+];
+
+
+
+  
+return (
+  <section className="pt-5 pb-3">
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-8">
+        {cards.map((card, idx) => (
+          <Link
+            key={idx}
+            to={card.link} // z.B. '/docs/einfuehrung'
+            className={`block border-3 border-solid border-berlin-black rounded-sm p-6 transition-colors duration-150 hover:bg-berlin-gray no-underline hover:no-underline'
+            `}
+          >
+            <div className="">
+              <div className="flex flex-col items-left mb-4">
+                <div
+                  className="rounded-full w-12 h-12 flex flex-col items-center justify-center text-white"
+                >
+                  {card.icon}
+                </div>
+                <h3 className="text-lg font-semibold align-content my-auto text-berlin-black">
+                  {card.title}
+                </h3>
+              </div>
+              <p className="text-berlin-black text-md leading-relaxed">
+                {card.description}
+              </p>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+})()}
+
+Die Berechtigungssteuerung ist ebenfalls ein wichtiger Teil der Data Hubs. Sie wird technisch durch die Software Keycloak geregelt. Mehr über Rechte und Rollenmanagement und [die Funktionsweise von Keycloak findest du auf dieser Seite](/docs/rechte--rollen/keycloak).
+
+</div>
