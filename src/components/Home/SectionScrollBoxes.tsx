@@ -264,18 +264,18 @@ export default function SectionScrollBoxes() {
             {/* Drei farbige Buttons */}
             <div className="flex flex-wrap gap-4 mt-8 whitespace-nowrap">
               <ButtonSimple
-                label="Daten ablegen"
-                slug="/docs/intro"
+                label="Datenverwaltung"
+                slug="/docs/category/datenverwaltung"
                 color="bg-berlin-purple"
               />
               <ButtonSimple
-                label="Daten verarbeiten"
-                slug="/docs/intro"
+                label="Datenverarbeitung"
+                slug="/docs/category/datenverarbeitung"
                 color="bg-berlin-pink"
               />
               <ButtonSimple
-                label="Daten visualisieren"
-                slug="/docs/intro"
+                label="Datenvisualisierung"
+                slug="/docs/category/datenvisualisierung"
                 color="bg-berlin-light-blue"
               />
             </div>
