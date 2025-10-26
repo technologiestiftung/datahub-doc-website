@@ -3,12 +3,24 @@ title: FAQ
 hide_title: true
 sidebar_position: 6
 ---
+import styles from './docsmodule.css';
 
-# FAQ - Häufig gestellte Fragen
+<div className={styles.doccontainer}>
 
-In diesem Abschnitt haben wir die wichtigsten Informationen zum Data Hub Prototypen zusammengestellt.
+  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-10 pt-16 pb-16">
+<!--     <div className={styles.heroimage}>
+      <img src="/img/wissen.svg" alt="Wissensspeicher Logo" />
+    </div> -->
+    <div>
+          <h1>FAQ: 
+    Häufig gestellte Fragen</h1>
+      <p className="text-lg">
+        Viele Fragen aber wenig Zeit? In diesem Abschnitt sind die wichtigsten Informationen zum Data Hub Prototypen zusammengestellt.
+      </p>
+    </div>
+  </div>
 
-
+<div className="pb-12">
 <details className="faq-accordion">
     <summary>1. Was ist der Data Hub?</summary>
         <div className="faq-content">
@@ -64,7 +76,9 @@ In diesem Abschnitt haben wir die wichtigsten Informationen zum Data Hub Prototy
        In der Pilotphase setzt die Technologiestiftung Berlin erste Anwendungsfälle um. Dazu gehören die digitale Visualisierung der Bezirksregionenprofile, die Digitalisierung des Berichts zum Landesgleichstellungsgesetzes oder die Datenerfassung von Akteuren im Sozialraum im Bezirk Neukölln. Weitere mögliche Anwendungsfälle sind digitale Kartenanwendungen, IoT-Projekte oder interaktive Monitoringberichte. Bei Ideen zu konkreten Anwendungsbeispielen für den Data Hub, freuen wir uns über eine E-Mail an datahub@ts.berlin
         </div>
 </details>
+</div>
 
 
+Noch nicht alle Fragen beantwortet? Über das Navigationsmenü und die Suche des Wissensspeichers stehen dir weitere tiefergehende Informationen zur Verfügung. Für alles weitere, kontaktiere uns: datahub@ts.berlin.
 
-Noch nicht alle Fragen beantwortet? Über das Navigationsmenü und die Suche des Wissensspeichers stehen dir weitere tiefergehende Informationen zur Verfügung. Für alles weitere, kontaktiere uns.
+</div>

@@ -3,65 +3,173 @@ title: Einführung zum Data Hub
 hide_title: true
 sidebar_position: 2
 ---
+import React from 'react';
+import styles from './docsmodule.css';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import './tabs-custom.css';
 
-# Einführung zum *Data Hub Berlin*
+import { BookOpenIcon, Cog6ToothIcon, PuzzlePieceIcon, BuildingLibraryIcon, LightBulbIcon } from '@heroicons/react/24/solid';
+import { DocumentTextIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid';
 
-Mit dem *Data Hub Berlin* entsteht eine **ressortübergreifende, zentrale Infrastruktur für die Berliner Verwaltung**, um effizient mit Daten arbeiten zu können. Erstmalig kann die Verwaltung somit auf passgenaue Software-Komponenten zurückgreifen, mit denen sich Daten verarbeiten und visualisieren lassen, zum Beispiel in Form von Dashboards. Der *Data Hub Berlin* ebnet damit den Weg zu einer datengetriebenen Verwaltung und soll langfristig den zentralen Knotenpunkt für die bestehenden dezentralen Systeme der Stadt bilden. Er ergänzt die bestehende IT-Landschaft Berlins.
+<div className={styles.doccontainer}>
 
-Von der Visualisierung über Statistiken und interne digitale Monitoringberichte bis hin zu Kartenanwendungen: In der Berliner Verwaltung gibt es eine Vielzahl an datenbasierten Aufgaben. Derzeit erarbeitet das Kompetenzteam hinter dem *Data Hub  Berlin* verschiedene Anwendungsfälle, um die vielfältigen Möglichkeiten des *Data Hub* zu erproben. 
+  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-10 xl:pl-16 pt-16">
+    <div className={styles.heroimage}>
+      <img src="/img/wissen.svg" alt="Wissensspeicher Logo" />
+    </div>
+    <div>
+      <h1>Einführung zum<br /> Data Hub Berlin</h1>
+      <p className="text-lg">
+        Daten sind die Grundlage für gutes Verwaltungshandeln, Planung und Innovation. Hier erfährst du, wie der Data Hub Berlin im Rahmen der bestehenden Strategien angesiedelt ist, eine gemeinsame, offene Infrastruktur aufbaut und wie durch einen prototypischen Ansatz erste Anwendungsfälle erprobt werden.
+      </p>
+    </div>
+  </div>
 
-## Eine urbane Datenplattform als Dateninfrastruktur
 
-Viele Städte entwickeln derzeit urbane Datenplattformen. Sie sollen eine zentrale digitale Infrastruktur bilden, die Daten aus verschiedenen Quellen einer Stadt oder Region bündeln, verknüpfen und zugänglich machen. Urbane Datenplattformen ermöglichen eine intelligentere und datengestützte Stadtentwicklung, indem sie Kommunen helfen, Daten aus unterschiedlichen Fachbereichen und für unterschiedliche Zielgruppen (Verwaltung, Wirtschaft, Zivilgesellschaft) bereitzustellen und daraus nützliche Dienste und Analysen zu entwickeln.  
+## Was ist der Data Hub Berlin?
 
-### Flexibel und modular mit dem CIVITAS/CORE - Teckstack
+Von der Visualisierung über Statistiken und interne digitale Monitoringberichte bis hin zu Kartenanwendungen: In der Berliner Verwaltung gibt es eine Vielzahl an datenbasierten Aufgaben. Mit dem Data Hub Berlin entsteht eine ressortübergreifende, zentrale Infrastruktur für die Berliner Verwaltung, um effizient mit Daten arbeiten zu können. Erstmalig kann die Verwaltung somit auf passgenaue Software-Komponenten zurückgreifen, mit denen sich Daten verarbeiten und visualisieren lassen, zum Beispiel in Form von Dashboards. Der Data Hub Berlin ebnet damit den Weg zu einer datengetriebenen Verwaltung. Er soll langfristig den zentralen Knotenpunkt für die bestehenden dezentralen Systeme der Stadt bilden und die bestehende IT-Landschaft Berlins ergänzen.
 
-Mit dem Berliner *Data Hub* bestreitet nun auch das Land Berlin den Weg zu einer zentralen Dateninfrastruktur. Unsere Herangehensweise unterscheidet sich dabei von klassischen IT-Infrastrukturprojekten. Wir erproben den *Data Hub* prototypisch in einer Pilotphase und setzen dabei auf eine moderne, offene und modulare Architektur und konsequent auf Open Source. Der Prototyp fußt auf dem bekannten Tech Stack der urbanen Datenplattform [CIVITAS/CORE](https://www.civitasconnect.digital/civitas-core/), wird jedoch speziell an die Bedarfe der Berliner Verwaltung angepasst und in einem iterativen Prozess weiterentwickelt. So kann der *Data Hub* zu einer auf die Bedarfe Berlins zugeschnittenen, umfassenden städtischen Datenplattform erweitert werden. 
+Derzeit erarbeitet das Kompetenzteam der Technologiestiftung Berlin und der Senatskanzlei Berlin eine prototypische Variante des Data Hubs, sowie verschiedene Anwendungsfälle, um die vielfältigen Möglichkeiten dieser Infrastruktur besser zu verstehen, zu erproben und einen Echtbetrieb bestmöglich vorzubereiten. 
+
+### Eine urbane Datenplattform für Berlin
+
+Beim Data Hub Berlin handelt es sich um eine sogenannte urbane Datenplattform. Viele Kommunen und Städte betreiben oder entwickeln derzeit urbane Datenplattformen, z.B. Potsdam, Bonn, Frankfurt und Hamburg. Dafür setzen sie teils auf bereits etablierte Lösungen oder Eigenentwicklungen. 
+
+Urbane Datenplattfomen sollen eine zentrale digitale Infrastruktur bilden, die Daten aus verschiedenen Quellen einer Stadt oder Region bündeln, verknüpfen und zugänglich machen. Urbane Datenplattformen ermöglichen eine intelligentere und datengestützte Stadtentwicklung, indem sie Kommunen helfen, Daten aus unterschiedlichen Fachbereichen und für unterschiedliche Zielgruppen (Verwaltung, Wirtschaft, Zivilgesellschaft) bereitzustellen und daraus nützliche Dienste und Analysen zu entwickeln.  
+
+Mit dem Berliner Data Hub bestreitet nun auch das Land Berlin den Weg zur Etablierung einer urbanen Datenplattform. Der Data Hub Prototyp fußt auf dem Open Source Code und Architekturmodell des [CIVITAS/CORE](/docs/intro#die-open-source-plattform-civitas-core-als-grundlage).
+
+:::info
+
+Was eine urbane Datenplattform leistet, ist über die DIN SPEC 91357:2017-12 festgehalten, allerdings sehr breit definiert. Das  Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR) hat in einer Veröffentlichung von 2025 die Funktionsweisen beschrieben und verschiedene bestehende Lösungen verglichen.  
+
+<p className="text-right -mb-3">
+[Mehr zu urbanen Datenplattformen in der Veröffentlichung des BBSR <ArrowTopRightOnSquareIcon className="h-5 w-5" />](https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/sonderveroeffentlichungen/2025/urbane-datenplattformen-vergleich.html)
+</p>
+:::
+
+
+### Die Vorteile eines Data Hubs für Berlin
+
+Der Data Hub Berlin ist mehr als nur eine technische Plattform – er ist ein strategisches Instrument für eine moderne, vernetzte und datengetriebene Verwaltung. Folgende Vorteile bzw. Effekte soll er für die Berliner Verwaltung bewirken:
+
+1. **Effizienz und Kostentransparenz**
+
+      Der Data Hub soll nicht nur die Datenbereitstellung verbessern, sondern auch messbare Einsparungen ermöglichen. Durch die Nutzung von Open Source Software, standardisierten Schnittstellen und zentralisierten Datenservices können redundante Entwicklungen und teure Lizenzkosten reduziert werden. Gleichzeitig ermöglicht die transparente Infrastruktur der Verwaltung, Arbeitsabläufe effizienter zu gestalten und Ressourcen gezielter einzusetzen – so trägt der Data Hub direkt zur Kostenoptimierung in Berliner Behörden bei.
+
+2. **Digitale Souveränität und Kompetenzaufbau**
+
+      Der Data Hub trägt langfristig dazu bei, die digitale Souveränität der Berliner Verwaltung zu stärken. Durch den konsequenten Einsatz von Open Source Software, offenen Standards und modularen Architekturen reduziert er die Abhängigkeit von proprietären Lösungen. Gleichzeitig werden bei der Nutzung und Weiterentwicklung des Hubs neue Kompetenzen in Datenmanagement, Analyse und Softwareentwicklung innerhalb der Verwaltung aufgebaut. So entsteht nicht nur eine unabhängige Infrastruktur, sondern auch ein Wissens- und Kompetenzpool, der zukünftige Projekte effizienter und selbstbestimmter ermöglicht.
+
+3. **Verwaltungsdigitalisierung und Interoberabilität**
+
+      Der Data Hub fördert nicht nur datengetriebenes Entscheiden und ermöglicht es analoge Produkte wie PDF‑Berichte in digitale, maschinenlesbare Formen zu überführen, sondern treibt insgesamt die Verwaltungsdigitalisierung voran. Langfristig unterstützt er auch die bessere Zusammenarbeit zwischen den Fachabteilungen Ämtern, indem er Standards etabliert, die geteilt werden können, um Interoperabilität und Datenqualität zu erhöhen. Durch diese gemeinsame Grundlage entstehen Schnittstellen, die neue Datenprodukte, Analysemöglichkeiten und Prozessoptimierungen ermöglichen – der Data Hub wirkt somit als Booster für effizientere und vernetzte Verwaltung.
+
+4. **Grundlage für Innovationen wie KI-Tools, IoT und den digitalen Zwilling**
+
+      Der Data Hub dient als zentrale Dateninfrastruktur, die dringend notwendig ist um zukunftgerichtete Innovationen aufzubauen. Zuküntig könnte er beispielsweise KI-Anwendungen mit hochwertigen, standardisierten Verwaltungsdaten unterstützen und die Nutzung von IoT-Daten aus städtischen Sensoren erleichtern. Außerdem soll er die Basis für einen digitalen Zwilling Berlins legen, indem Daten konsistent gesammelt, vernetzt und visualisierbar gemacht werden. So entstehen die Voraussetzungen für smarte, datengetriebene Lösungen – von vorausschauender Planung über optimierte Services bis hin zu neuen Anwendungen für Bürger:innen und Unternehmen.
+
+
+## Strategischer Rahmen
+
+Der Aufbau des Data Hub Berlin ist keine neue Einzelinitiative, sondern eine seit einigen Jahren angestrebtes Vorhaben.
+
+Die KPMG hat bereits 2019 eine Studie mit dem Titel „Konzept eines Data Hubs zur Vernetzung städtischer Datenquellen“ veröffentlicht, die als Grundlage für die Berliner Open Data-Strategie diente. Diese Studie wurde im Auftrag der Senatsverwaltungen für Wirtschaft, Energie und Betriebe (SenWiEnBe) sowie für Inneres und Sport (SenInnDS) erstellt. Sie lieferte konzeptionelle Vorschläge für die Entwicklung eines zentralen Data Hubs, der verschiedene städtische Datenquellen miteinander verknüpfen soll. 
+Im Rahmen dieser Studie wurden unter anderem auch Empfehlungen zur Daten-Governance, zur Schaffung einer gemeinsamen Infrastruktur sowie zur Festlegung eindeutiger Verantwortlichkeiten und erforderlicher Kompetenzen im Umgang mit dem Data Hub ausgesprochen.
+
+In den nachfolgenden Jahren wurde der Data Hub als eine zentrale Maßnahme in die Strategie „Gemeinsam Digital: Berlin“ aufgenommen. Er ist außerdem Teil der Richtlinie der Berliner Regierung zur Verwaltungsmodernisierung und gliedert sich in den strategischen Rahmen der Open Data und Open Source Strategien des Landes ein.
+
+
+
+<Tabs
+  groupId="strategien"
+  defaultValue="gd-b"
+  values={[
+    { label: 'Gemeinsam Digital:Berlin', value: 'gd-b' },
+    { label: 'Open Data Strategie', value: 'open-data' },
+    { label: 'Open Source Strategie', value: 'open-source' },
+    { label: 'Richtlinien der Regierungspolitik', value: 'regierungspolitik' },
+  ]}
+  className="tab-container"
+>
+<TabItem value="gd-b">
+  <div className="tabs__content">
+    <h3>Gemeinsam Digital:Berlin</h3>
+    <p>Gemeinsam Digital:Berlin (GD:B) ist die Dachstrategie des Landes Berlin, die Strategien zur Smart City, Digitalisierung und Verwaltungsmodernisierung (einschließlich digitaler Bürgerdienste) zusammenführt. Die in der Strategie festgelegte Maßnahme</p>
+    <blockquote className="border-l-4 border-berlin-black pl-4 my-2">
+      „Aufbau einer übergreifenden internen und öffentlichen Dateninfrastruktur (Data Hub und Open Data Portal)“
+    </blockquote>
+    <p>wird mit dem Data Hub Realität. Ziel ist, dass Datenbestände der Berliner Verwaltung nicht mehr lokal in einzelnen Ämtern oder Fachverfahren verbleiben, sondern über eine zentrale Infrastruktur verwaltet und geteilt werden.</p>
+    <p className="text-right">
+[Zur GD:B-Strategie des Landes Berlin <ArrowTopRightOnSquareIcon className="h-5 w-5" />](https://gemeinsamdigital.berlin.de/)
+</p>
+  </div>
+</TabItem>
+
+<TabItem value="open-data">
+  <div className="tabs__content">
+    <h3>Open Data Strategie</h3>
+    <p>Die Berliner Open Data Strategie ist ein Fachstrategie unter der GD:B-Strategie. Sie ist dafür da, die Veröffentlichung von Verwaltungsdaten über das Berliner Open Data Portal voranzutreiben und die Nutzung offener Daten in der Berliner Verwaltung zu stärken.</p>
+    <p>Der Data Hub als zentrale Infrastruktur für Datenmangement, bietet Software-Tools zur Umsetzung konkreter Datenprojekte und ergänzt das Open Data Portal und die Möglichkeiten zur Nutzung dieser Daten somit perfekt. Deswegen ist er ebenfalls in dieser Strategie erwähnt. Außerdem ermöglicht er die Umsetzung der anderen Open Data Strategiemaßnahmen, wie Dateninventuren und die Etablierung von Linked Data durch die Bereitstellung von Triple Stores.</p>
+        <p className="text-right">
+[Zur Open Data Strategie des Landes Berlin <ArrowTopRightOnSquareIcon className="h-5 w-5" />](https://www.berlin.de/moderne-verwaltung/e-government/open-data-1513722.php#headline_1_3)
+</p>
+  </div>
+
+</TabItem>
+<TabItem value="open-source">
+  <div className="tabs__content">
+    <h3>Open Source Strategie</h3>
+    <p>Die Berliner Verwaltung folgt einer klaren Richtlinie, die vorschreibt, bei jeder neuen Softwarebeschaffung zunächst Open Source Lösungen zu prüfen und eine Nicht‑Beschaffung zu begründen. Ziel ist es, digitale Souveränität, Kostentransparenz und offene Zugänge zu stärken.
+    Der Data Hub setzt diese Richtlinie praktisch um: Er basiert vollständig auf Open Source Software, nutzt offene Standards und macht Verwaltungsdaten interoperabel und nutzbar. Er ist damit ein konkretes Beispiel dafür, wie die Open Source Strategie in Berlin Wirkung entfaltet.</p>
+            <p className="text-right">
+[Infos zur Open Source Strategie des Landes Berlin <ArrowTopRightOnSquareIcon className="h-5 w-5" />](https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2024/pressemitteilung.1514319.php)
+</p>
+  </div>
+
+</TabItem>
+<TabItem value="regierungspolitik">
+
+  <div className="tabs__content">
+    <h3>Richtlinien der Berliner Regierungspolitik</h3>
+    <p>Um die Planung der verfügbaren Flächen in der Stadt für die Ansiedlung von Gewerbe, Industrie, erneuerbarer Energien, soziale Infrastruktur und Wohnungsbau mit einem transparenten und breit nutzbaren Flächenkataster zu verbinden, wird der Senat einen digitalen Zwilling von Berlin erarbeiten lassen. Bereits bestehende Anstrengungen, um bestehende Daten der Geoinfrastruktur anwendbar zu machen (Data Hub) werden dazu fortgeführt und eingebunden.</p>
+        <p className="text-right">
+[Zu den Richtlinien der Regierungspolitik 2023-2026 <ArrowTopRightOnSquareIcon className="h-5 w-5" />](https://www.berlin.de/rbmskzl/politik/senat/richtlinien-der-politik/)
+</p>
+  </div>
+
+</TabItem>
+
+</Tabs>
+
+
+## Pilotphase und Prototyp
+
+Die Entwicklung eines so umfassenden IT-Infrastrukturprojektes erfordert agile Prozesse und enge Zusammenarbeit in der Praxis. In einer Pilotphase wird der Data Hub prototypisch aufgebaut – also in einer frühen Version, die gezielt getestet, erprobt und stetig weiterentwickelt wird –, um alle Anforderungen für eine Verstetigung und den Produktivbetrieb zu identifizieren. Dabei werden sowohl technische als auch organisatorische Rahmenbedingungen betrachtet, um nachhaltige Mehrwerte für ein breites Spektrum an Nutzenden zu schaffen.  
+
+### Zusammenarbeit von Technologiestiftung Berlin und Berliner Senatskanzlei
+
+Die Pilotphase des Data Hubs wird von der Technologiestiftung Berlin und der Berliner Senatskanzlei partnerschaftlich im Rahmen einer Zuwendung koordiniert. Die Technologiestiftung begleitet die Pilotprojekte fachlich und organisatorisch, setzt diese gemeinsam mit den Pilotnutzenden um und betreibt den Prototypen in Zusammenarbeit mit einem technischen Dienstleister. In den Jahren 2025 und 2026 soll somit der Grundstein gelegt werden. Als gesamtstädtische Plattform lebt der Data Hub aber auch von der Mitwirkung Vieler: In der AG Data Hub bringen sich Senatsverwaltungen und Bezirksämter ein und auch die Pilotnutzenden kommen aus verschiedenen Bereichen der Berliner Verwaltung. Parallel zur Pilotphase bereitet die Senatskanzlei die Verstetigung des Data Hubs als dauerhafte Dateninfrastruktur für das Land Berlin vor.
+
+### Der Prototyp als Lern- und Diskussionsraum
+
+Seit April 2025 steht eine erste Version des Data Hubs als prototypische Instanz zur Verfügung. Ein Prototyp ist mehr als eine technische Vorstufe – er ist ein Werkzeug zum Denken, Testen und Lernen. Beim Data Hub Berlin dient der Prototyp dazu, zentrale Annahmen über Architektur, Prozesse und Zusammenarbeit unter realen Bedingungen zu überprüfen, bevor eine umfassende Umsetzung erfolgt. Statt monatelang abstrakte Konzepte zu planen, ermöglicht der Prototyp, frühzeitig konkrete Erfahrungen zu sammeln: Welche Datenflüsse funktionieren? Wo entstehen Reibungen zwischen Fachverfahren, Technik und Organisation? Und welche Anforderungen stellen künftige Nutzende?
+Durch dieses iterative Vorgehen wird nicht nur Technik entwickelt, sondern auch ein gemeinsames Verständnis dafür, wie datengetriebene Verwaltung funktionieren kann. Der Prototyp schafft also die Grundlage für informierte Entscheidungen und reduziert langfristig Risiken, Kosten und Fehlentwicklungen.
+
+### Umsetzung erster Use Cases
+
+Die Pilotphase für die ersten Anwendungsfälle begann im Sommer 2025 mit der ersten Version des Prototypen. Zusammen mit der Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen (SenSBW), der Senatsverwaltung für Arbeit, Soziales, Gleichstellung, Integration, Vielfalt und Antidiskriminierung (SenASGIVA), den Bezirken Neukölln und Pankow – werden vier konkrete Anwendungsfälle erprobt. Weitere Pilotprojekte sollen in 2026 folgen. 
+Die Erkenntnisse aus den Use Cases fließen in die Weiterentwicklung des Berliner Data Hub. So stellen wir sicher, dass die Plattform die Bedarfe der Berliner Verwaltung in der Arbeit mit Daten bestmöglich erfüllt. Außerdem können mit der Zeit weitere Komponenten aus der CIVITAS/CORE-Weiterentwicklung in den Berliner Data Hub integriert werden.
+
+## Die Architektur des CIVITAS/CORE als Grundlage
+
+Unsere Herangehensweise unterscheidet sich dabei von klassischen IT-Infrastrukturprojekten. Wir erproben den Data Hub prototypisch in einer Pilotphase und setzen dabei auf eine moderne, offene und modulare Architektur und konsequent auf Open Source. Der Prototyp fußt auf dem bekannten Tech Stack der urbanen Datenplattform [CIVITAS/CORE](https://www.civitasconnect.digital/civitas-core/), wird jedoch speziell an die Bedarfe der Berliner Verwaltung angepasst und in einem iterativen Prozess weiterentwickelt. So kann der Data Hub zu einer auf die Bedarfe Berlins zugeschnittenen, umfassenden städtischen Datenplattform erweitert werden. 
 
 <iframe width="526" height="296" src="https://www.youtube.com/embed/6MgitC9dmzs" title="CIVITAS/CORE In 5 Minuten" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Fest verankert in Berlins Smart City Strategie
 
-Der Aufbau des *Data Hub* Berlin ist keine neue Einzelinitiative, sondern eine seit einigen Jahren angestrebte und zentrale Maßnahme der Strategie [„Gemeinsam Digital: Berlin“](https://gemeinsamdigital.berlin.de/), Teil der Berliner Digitalstrategie und der [Richtline der Berliner Regierung zur Verwaltungsmodernisierung](https://www.berlin.de/rbmskzl/politik/senat/richtlinien-der-politik/#2). 
-
-### Gemeinsam Digital:Berlin
-
- [Gemeinsam Digital:Berlin (kurz: GD:B)](https://gemeinsamdigital.berlin.de/) ist die Dachstrategie des Landes Berlin, die Strategien zur Smart City, Digitalisierung und Verwaltungsmodernisierung (einschließlich digitaler Bürgerdienste) zusammenführt. Die in der Strategie genannte Maßnahme „Aufbau einer übergreifenden internen und öffentlichen Dateninfrastruktur (*Data Hub* und Open Data Portal)" wird mit dem *Data Hub* umgesetzt. Ziel ist, dass Datenbestände der Berliner Verwaltung nicht mehr lokal in einzelnen Ämtern oder Fachverfahren verbleiben, sondern über eine zentrale Infrastruktur, den *Data Hub*, verwaltet und geteilt werden. 
-
-### Open Data Strategie und Open Source Strategie
-
-Parallel zum *Data Hub* existiert in Berlin eine [Open Data Strategie](https://www.berlin.de/moderne-verwaltung/e-government/open-data-1513722.php#headline_1_3), mit der die Veröffentlichung von Verwaltungsdaten über das Berliner [Open Data Portal](https://daten.berlin.de/) und die Nutzung offener Daten gestärkt werden soll.  
-Während das Berliner Open Data Portal als Metadatenkatalog für die Bereitstellung von Daten für die Öffentlichkeit gedacht ist, bietet der *Data Hub* die Software-Tools zur Umsetzung konkreter Datenprojekte für die Berliner Verwaltung. Der *Data Hub* kann sowohl für öffentliche wie für verwaltungsinterne Datenprojekte genutzt werden. Beide Systeme ergänzen sich.  
-
-Mit einer konsequenten Ausrichtung auf Open Source stärkt der *Data Hub* zudem die digitale Souveränität der Hauptstadt und positioniert Berlin beim Aufbau von offenen, souveränen Verwaltungsinfrastrukturen, die datengetriebene Prozesse nachhaltig und nutzendenorientiert unterstützen. Damit zahlt der *Data Hub* auch auf die Berliner Open Source Strategie ein. 
-
-## Praxisnah Anforderungen explorieren mit dem Prototypen
-
-Die Entwicklung eines so umfassenden IT-Infrastrukturprojektes erfordert agile Prozesse und enge Zusammenarbeit in der Praxis. In einer Pilotphase wird der *Data Hub* prototypisch aufgebaut – also in einer frühen Version, die gezielt getestet, erprobt und stetig weiterentwickelt wird –, um alle Anforderungen für eine Verstetigung und den Produktivbetrieb zu identifizieren. Dabei werden sowohl technische als auch organisatorische Rahmenbedingungen betrachtet, um nachhaltige Mehrwerte für ein breites Spektrum an Nutzenden zu schaffen.  
-
-### Erste Use Cases gemeinam mit der Verwaltung
-
-Seit April 2025 steht der *Data Hub* als prototypische Instanz zur Verfügung. Zusammen mit der Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen (SenSBW), der Senatsverwaltung für Arbeit, Soziales, Gleichstellung, Integration, Vielfalt und Antidiskriminierung (SenASGIVA), den Bezirken Neukölln und Pankow – werden vier konkrete Anwendungsfälle erprobt. Weitere Pilotprojekte sollen folgen. 
-Die Erkenntnisse aus den Use Cases fließen in die Weiterentwicklung des Berliner *Data Hub*. So stellen wir sicher, dass der *Data Hub* die Bedarfe der Berliner Verwaltung in der Arbeit mit Daten bestmöglich erfüllt. Gegebenenfalls können weitere Komponenten aus der CIVITA/CORE-Gemeinschaft in den Berliner *Data Hub* integriert werden.  
-
-### Nachnutzung gewährleisten mit dem Wissensspeicher 
-
-Um einen Wissenstransfer zu ermöglichen und die Nutzung des *Data Hub* in die Breite zu tragen wird mit dem Wissensspeicher eine wachsende Online-Dokumentation verfolgt. Der Wissensspeicher bietet leicht verständliche Informationen zu den Software-Bausteinen, zeigt, wie sie eingesetzt werden können, und liefert Einblicke in bereits umgesetzte Projekte. Der Wissensspeicher wird kontinuierlich erweitert, sobald neue Erfahrungen und Anwendungsfälle aus der Pilotphase hinzukommen. 
-
-## Verantwortlichkeiten
-
-Die Pilotphase des *Data Hub* wird von der Technologiestiftung Berlin und der Berliner Senatskanzlei partnerschaftlich koordiniert. Aktuell wird die Plattform in einer Pilotphase durch die Technologiestiftung/CityLAB im Rahmen einer Zuwendung der Senatskanzlei Berlin getestet. Ab 2026 soll der *Data Hub* sukzessive ausgerollt und perspektivisch im Berliner Landesnetz integriert werden. 
-
-Die Technologiestiftung begleitet die Pilotprojekte fachlich und organisatorisch, setzt diese gemeinsam mit den Pilotnutzenden um und betreibt den Prototypen in Zusammenarbeit mit einem technischen Dienstleister.  
-
-Als gesamtstädtische Plattform lebt der *Data Hub* aber von der Mitwirkung Vieler: In der AG *Data Hub* bringen sich Senatsverwaltungen und Bezirksämter ein und auch die Pilotnutzenden kommen aus verschiedenen Bereichen der Berliner Verwaltung. Parallel zur Pilotphase bereitet die Senatskanzlei die Verstetigung des *Data Hub* als dauerhafte Dateninfrastruktur für das Land Berlin vor.  
-
-Ansprechpersonen: 
-- Martina Kuhaupt (Senatskanzlei Berlin) 
-- Lisa Stubert (Projektleitung CityLAB Berlin/Technologiestiftung Berlin) 
-
-Sie haben Fragen zum *Data Hub Berlin* oder möchten Pilotnutzer:in werden? Unser Team der Technologiestiftung Berlin nimmt Anfragen gern per Mail entgegen. 
-E-Mail: datahub@ts.berlin 
-
+</div>
 
  
