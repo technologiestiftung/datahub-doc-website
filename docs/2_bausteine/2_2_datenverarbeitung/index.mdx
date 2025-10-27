@@ -1,6 +1,6 @@
 ---
-title: Datenverwaltung
-sidebar_position: 1
+title: Datenverarbeitung
+sidebar_position: 2
 hide_title: true
 ---
 
@@ -13,44 +13,50 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
   <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-0 xl:pl-16 pt-16">
  <div className="flex-[0_0_250px]">
-      <img className="max-w-[70%]" src="/img/single_cube_purple.svg" alt="Wissensspeicher Logo" />
+      <img className="max-w-[70%]" src="/img/single_cube_pink.svg" alt="Wissensspeicher Logo" />
     </div> 
     <div>
-          <h1>Datenverwaltung & -ablage</h1>
+          <h1>Datenverarbeitung & integration</h1>
       <p className="text-lg">
-        Hier geht es um die zentralen Ablageorte für Daten im Data Hub. Ob Tabellen, Geodaten oder Dokumente – diese Komponenten sorgen dafür, dass Daten sicher, strukturiert und zugänglich aufbewahrt werden.
+        Diese Bausteine kümmern sich darum, dass Daten von A nach B gelangen, automatisch verarbeitet oder regelmäßig aktualisiert werden. Damit entfällt viel manuelle Arbeit, Daten stehen stets aktuell bereit und komplexe Verarbeitungsschritte werden möglich.
       </p>
     </div>
   </div>
 
-<p className='pt-12 xl:pt-16'>Diese Tools stehen im Data Hub im Funktionsbereich Datenverwaltung und -ablage zur Verfügung: </p>
+<p className='pt-12 xl:pt-16'>Diese Tools stehen im Data Hub im Funktionsbereich Datenverarbeitung und -integration zur Verfügung: </p>
 
 {(() => {
 const cards = [
   {
-    svg: "/img/logos/minio.svg",
-    title: 'MinIO',
-    description: 'MinIO ist ein Cloud-Speicher zur Ablage von Dateien und Objektdaten. Er kann genutzt werden um Daten für den Data Hub zur Verfügung zu stellen.',
-    link: '/docs/bausteine/2_1_datenverwaltung/MinIO'
+    svg: "/img/logos/node_red.svg",
+    title: 'Node-RED',
+    description: 'NodeRed bietet eine visuelle Oberfläche zur Verbindung verschiedener Datenquellen und zur Automatisierung von Abläufen durch Workflows.',
+    link: '/docs/bausteine/2_2_datenverarbeitung/NodeRED'
   },
   {
-    svg: "/img/logos/pgadmin.svg",
-    title: 'pgAdmin & PostgreSQL',
-    description: 'pgAdmin stellt eine grafische Oberfläche für die PostgreSQL-Datenbanken des Data Hubs bereit. Daten können abgelegt, abgefragt und transformiert werden.',
-    link: '/docs/bausteine/2_1_datenverwaltung/pgAdmin'
+    svg: "/img/logos/airflow.svg",
+    title: 'Apache Airflow',
+    description: 'Airflow orchestriert Datenpipelines. Es ermöglicht die automatisierte Ausführung vielfältiger Schritte zur Tranformation und Analyse von Daten.',
+    link: '/docs/bausteine/2_2_datenverarbeitung/Airflow'
   },
   {
-    svg: "/img/logos/geoserver.svg",
-    title: 'GeoServer',
-    description: 'GeoServer stellt Geodaten über standardisierte Webdienste bereit und ermöglicht diese in andere Anwendungen wie das Masterportal zu integrieren.',
-    link: '/docs/bausteine/2_1_datenverwaltung/GeoServer'
+    svg: "/img/logos/jupiter.svg",
+    title: 'Jupyter Notebook',
+    description: 'Jupyter Notebooks bieten eine interaktive Umgebung zur Erstellung und Ausführung von Code, zur Datenanalyse und zur Visualisierung von Ergebnissen.',
+    link: '/docs/bausteine/2_2_datenverarbeitung/JupyterNotebook'
   },
   {
-    svg: "/img/logos/supabase.png",
-    title: 'Supabase',
-    description: 'Supabase ist eine Open-Source-Backend-as-a-Service (BaaS)-Plattform und bietet eine vollständige Backend-Lösung mit Authentifizierung, Datenbank und Storage.',
-    link: '/docs/bausteine/2_1_datenverwaltung/Supabase'
-  }
+    svg: "/img/logos/appsmith.svg",
+    title: 'Appsmith',
+    description: 'AppSmith ermöglicht die schnelle Entwicklung von individuellen Benutzeroberflächen für die Dateninteraktion und Datenerfassung mittels Formularen.',
+    link: '/docs/bausteine/2_2_datenverarbeitung/Appsmith'
+  },
+    {
+    svg: "/img/logos/apisix.png",
+    title: 'Apache APISIX',
+    description: 'APISIX fungiert als zentrales API-Gateway. Es gewährleistet die performante und sichere Bereitstellung von Schnittstellen innerhalb des Data Hubs.',
+    link: '/docs/bausteine/2_2_datenverarbeitung/APISIX'
+  },
 ];
 
 

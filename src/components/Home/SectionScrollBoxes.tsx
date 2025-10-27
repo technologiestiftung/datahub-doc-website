@@ -265,12 +265,12 @@ export default function SectionScrollBoxes() {
             <div className="flex flex-wrap gap-4 mt-8 whitespace-nowrap">
               <ButtonSimple
                 label="Datenverwaltung"
-                slug="/docs/category/datenverwaltung"
+                slug="/docs/bausteine/2_1_datenverwaltung/"
                 color="bg-berlin-purple"
               />
               <ButtonSimple
                 label="Datenverarbeitung"
-                slug="/docs/category/datenverarbeitung"
+                slug="/docs/bausteine/2_2_datenverarbeitung/"
                 color="bg-berlin-pink"
               />
               <ButtonSimple

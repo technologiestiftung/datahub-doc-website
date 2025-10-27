@@ -7,7 +7,7 @@ hide_title: true
 import DocCard from '@theme/DocCard';
 import styles from '../docs.module.css';
 import Link from '@docusaurus/Link';
-import { ArrowRightIcon } from '@heroicons/react/24/solid';
+import { ArrowPathIcon } from '@heroicons/react/24/solid';
 
 <div className={styles.doccontainer}>
 
@@ -41,7 +41,7 @@ const cards = [
     link: '/docs/rechte--rollen/keycloak'
   },
   {
-    svg: "/img/single_cube_pink.svg",
+    svg: <ArrowPathIcon />,
     title: 'Data Hub Governance',
     description: 'Mit der Governance wird ein klarer Rahmen für Rollen, Prozesse und Prinzipien für den verantwortungsvollen Umgang mit Daten in der Berliner Verwaltung definiert.',
     color: 'bg-green-500',
@@ -65,11 +65,13 @@ return (
           >
             <div className="">
               <div className="flex flex-col items-left mb-4">
-    <div
-      className={`flex flex-col items-center justify-center pb-3`}
-    >
-      <img src={card.svg} alt={card.title} className="w-20 h-20" />
-    </div>
+<div className="flex flex-col items-center justify-center pb-3">
+  {typeof card.svg === 'string' ? (
+    <img src={card.svg} alt={card.title} className="w-20 h-20" />
+  ) : (
+    <div className="text-berlin-black w-16 h-16">{card.svg}</div>
+  )}
+</div>
                 <h3 className="text-lg font-semibold align-content my-auto text-berlin-black">
                   {card.title}
                 </h3>

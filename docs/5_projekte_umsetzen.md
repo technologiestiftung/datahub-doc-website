@@ -4,7 +4,7 @@ hide_title: true
 sidebar_position: 5
 ---
 import { ClockIcon } from '@heroicons/react/24/solid';
-import styles from './docs.module.css';
+import styles from '/docs/docs.module.css';
 
 <div className={styles.doccontainer}>
 

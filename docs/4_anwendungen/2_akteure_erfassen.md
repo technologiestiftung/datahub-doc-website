@@ -1,27 +1,20 @@
 ---
+title: Erfassung von Akteuren im Sozialraum
+hide_title: true
 sidebar_position: 2
 ---
 
-# Erfassung von Akteuren im Sozialraum
+import { ClockIcon } from '@heroicons/react/24/solid';
+import styles from '/docs/docs.module.css';
 
-Intro text
+<div className={styles.doccontainer}>
 
-## Apache Airflow
+<div className="flex flex-col items-center justify-center h-96 text-center space-y-4">
+  <ClockIcon className="h-16 w-16 text-blue-500" />
+  <h1 className="text-3xl font-bold text-berlin-black">Coming Soon</h1>
+  <p className="text-gray-700 max-w-md">
+    Diese Seite wird gerade erstellt. Bald findest du hier neue Inhalte und hilfreiche Informationen zum Data Hub Berlin. Schau bald wieder vorbei!
+  </p>
+</div>
 
-**Apache Airflow ist eine Plattform zur Erstellung, Planung und Überwachung von Datenpipelines, mit der sich komplexe Datenverarbeitungs- und Transformationsprozesse als gerichtete azyklische Graphen (DAGs) automatisieren lassen.**
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-## jupyter
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-## Node-RED
-
-**Node-RED ist eine visuelle Programmierumgebung, mit der man mithilfe von Flussdiagrammen Logik und Datenflüsse zwischen Geräten, APIs und Online-Diensten einfach erstellen kann.**
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-## piveau
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+</div>

@@ -165,9 +165,26 @@ Die Erkenntnisse aus den Use Cases fließen in die Weiterentwicklung des Berline
 
 ## Die Architektur des CIVITAS/CORE als Grundlage
 
+:::danger[Work in progress]
+Achtung dieser Abschnitt befindet sich noch im Aufbau!
+:::
+
+
 Unsere Herangehensweise unterscheidet sich dabei von klassischen IT-Infrastrukturprojekten. Wir erproben den Data Hub prototypisch in einer Pilotphase und setzen dabei auf eine moderne, offene und modulare Architektur und konsequent auf Open Source. Der Prototyp fußt auf dem bekannten Tech Stack der urbanen Datenplattform [CIVITAS/CORE](https://www.civitasconnect.digital/civitas-core/), wird jedoch speziell an die Bedarfe der Berliner Verwaltung angepasst und in einem iterativen Prozess weiterentwickelt. So kann der Data Hub zu einer auf die Bedarfe Berlins zugeschnittenen, umfassenden städtischen Datenplattform erweitert werden. 
 
-<iframe width="526" height="296" src="https://www.youtube.com/embed/6MgitC9dmzs" title="CIVITAS/CORE In 5 Minuten" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div className="flex justify-center my-8">
+  <div className="w-full lg:w-4/5 max-w-3xl aspect-video">
+    <iframe
+      className="w-full h-full rounded-md shadow-md"
+      src="https://www.youtube.com/embed/6MgitC9dmzs"
+      title="CIVITAS/CORE In 5 Minuten"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
 
 
 </div>

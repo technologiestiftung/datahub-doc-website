@@ -1,7 +1,7 @@
 ---
-title: Monitoring der Landesgleichstellung
+title: Datenbasiertes Monitoring der Bibliotheken
 hide_title: true
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 import { ClockIcon } from '@heroicons/react/24/solid';

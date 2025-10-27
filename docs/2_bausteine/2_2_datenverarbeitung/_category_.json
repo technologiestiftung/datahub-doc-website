@@ -1,8 +1,0 @@
-{
-  "label": "Datenverarbeitung",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "Diese Bausteine kümmern sich darum, dass Daten von A nach B gelangen, automatisch verarbeitet oder regelmäßig aktualisiert werden. Damit entfällt viel manuelle Arbeit, und Daten stehen stets aktuell bereit."
-  }
-}
