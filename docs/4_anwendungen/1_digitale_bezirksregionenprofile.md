@@ -83,6 +83,13 @@ Zur Darstellung der Daten mittels interaktiver Dashboards wird die Komponente **
   height={750}              
 />
 
+<iframe
+  src="https://react-flow-designer.lovable.app"
+  width="100%"
+  height="400"
+  style={{ border: "1px solid #ccc", borderRadius: "8px" }}
+  allowFullScreen
+></iframe>
 
 <br />
 

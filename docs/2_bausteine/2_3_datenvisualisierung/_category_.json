@@ -1,8 +1,0 @@
-{
-  "label": "Datenvisualisierung",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "description": "Hier werden Daten für die Fachpraxis sichtbar gemacht: interaktive Dashboards, Diagramme oder Monitoring-Ansichten helfen, Zusammenhänge schnell zu erkennen und Entscheidungen besser zu treffen."
-  }
-}
