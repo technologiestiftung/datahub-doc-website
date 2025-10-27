@@ -9,7 +9,7 @@ const slides = [
     description:
       'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Behörden? Ein zentrales Dashboard ersetzt das bisher aufwendige manuelle Berichtswesen und ermöglicht eine datenbasierte Auswertung der Gleichstellungsmaßnahmen.',
     image: '/img/example1.svg',
-    slug: 'https://odis-berlin.de/',
+    slug: '/docs/anwendungen/landesgleichstellung',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const slides = [
     description:
       'Wo engagieren sich Träger, Initiativen und soziale Programme in Neukölln? Mit einem Mapping-Tool können Akteure außerhalb der Verwaltung ihre Angebote selbst erfassen, aktuell halten und der Stadtplanung zur Verfügung stellen.',
     image: '/img/example2.svg',
-    slug: 'https://odis-berlin.de/',
+    slug: '/docs/anwendungen/akteure_erfassen',
   },
   {
     id: 3,
@@ -25,15 +25,15 @@ const slides = [
     description:
       'Wie viele Medien wurden ausgeliehen? Wer leiht was? Wie können Gelder und Räume effizient genutzt werden? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow, soll künftig Bedarfserfassung und Makulatur datenbasiert vereinfachen.',
     image: '/img/example3.svg',
-    slug: 'https://odis-berlin.de/',
+    slug: '/docs/anwendungen/datenbasierte_bibliothek',
   },
   {
     id: 4,
-    title: 'Effiziente Bezirksregionenprofile',
+    title: 'Digitale Bezirksregionenprofile',
     description:
       'Wie entwickeln sich demographische und soziale Strukturen in Bezirksregionen? Mit Datenbanken und Dashboard-Templates wird der Prozess zur Erstellung zentraler Instrumente der Stadtentwicklung effizienter und einheitlicher.',
     image: '/img/example4.svg',
-    slug: 'https://odis-berlin.de/',
+    slug: 'docs/anwendungen/digitale_bezirksregionenprofile',
   },
 ];
 
