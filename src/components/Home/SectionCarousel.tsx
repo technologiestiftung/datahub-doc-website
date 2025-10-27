@@ -33,7 +33,7 @@ const slides = [
     description:
       'Wie entwickeln sich demographische und soziale Strukturen in Bezirksregionen? Mit Datenbanken und Dashboard-Templates wird der Prozess zur Erstellung zentraler Instrumente der Stadtentwicklung effizienter und einheitlicher.',
     image: '/img/example4.svg',
-    slug: 'docs/anwendungen/digitale_bezirksregionenprofile',
+    slug: '/docs/anwendungen/digitale_bezirksregionenprofile',
   },
 ];
 
