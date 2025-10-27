@@ -275,7 +275,7 @@ export default function SectionScrollBoxes() {
               />
               <ButtonSimple
                 label="Datenvisualisierung"
-                slug="/docs/category/datenvisualisierung"
+                slug="/docs/bausteine/2_3_datenvisualisierung/"
                 color="bg-berlin-light-blue"
               />
             </div>
