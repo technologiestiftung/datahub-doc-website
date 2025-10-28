@@ -302,6 +302,21 @@ input[class*="searchInput"] {
   border-left-color: #e40422 !important;
 }
 
+/* Boder warning anpassen */
+.theme-admonition.theme-admonition-warning,
+.theme-admonition.alert.alert--warning {
+  --ifm-alert-border-color: #FFE70E;
+  border-left-color: #FFE70E !important;
+    background-color: #FFFACC;
+}
+
+.theme-admonition.theme-admonition-tip,
+.theme-admonition.alert.alert--tip {
+  --ifm-alert-border-color: #00AA84;
+  border-left-color: #00AA84 !important;
+    background-color: #CCFFF4;
+}
+
 /* ----- ICONS anpassen ------- */
 
 /* ========== Danger-Icon ========== */

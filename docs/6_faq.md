@@ -12,7 +12,7 @@ import styles from './docs.module.css';
       <img src="/img/wissen.svg" alt="Wissensspeicher Logo" />
     </div> -->
     <div>
-          <h1>FAQ: 
+          <h1>FAQ - 
     Häufig gestellte Fragen</h1>
       <p className="text-lg">
         Viele Fragen aber wenig Zeit? In diesem Abschnitt sind die wichtigsten Informationen zum Data Hub Prototypen zusammengestellt.

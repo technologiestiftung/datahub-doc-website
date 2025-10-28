@@ -58,13 +58,6 @@ Dabei Zugriffe sind immer nur möglich, wenn sich die Nutzer:innen vorher authen
 
 ## Beispielhafter Ablauf einer Use-Case-Umsetzung 
 
-<img
-  src={require('./assets/Use-Case-Umsetzung.png').default}
-  alt="Rechte-und-Rollen"
-  width={800}
-  height={450}              
-/>
-
 1. **Kontaktaufnahme der Verwaltungsorganisation** (Use-Case-Geber:in) über Data Hub Team der Technologiestiftung oder Arbeitsgruppe Smart City & Datenmanagement (6 B III) der Senatskanzlei 
 
 2. **Rücksprache zwischen Senatskanzlei und Data Hub Team** zu Umsetzbarkeit (Passung zu den techn. Möglichkeiten des Data Hubs) und Kapazitäten 
@@ -84,7 +77,7 @@ Dabei Zugriffe sind immer nur möglich, wenn sich die Nutzer:innen vorher authen
 
 Perspektivisch wäre es empfehlenswert, in den Fach- und Bezirksverwaltungen datenbezogene Prozesse so weit institutionell zu standardisieren, dass jede Behörde über klare, verantwortliche Rollen (bspw. Daten-Stewards) verfügt, die das Zusammenarbeiten mit der Datenplattform Data Hub regeln, Standards gemeinsam aushandeln und weitere Use Cases entwickeln. 
 
-:::warning
+:::warning Hinweis
 
 Bisher existiert noch keine offizielle abgestimmte Governance. Die hier dargestellten Prozesse, sind als erste Vorschläge und als ein Arbeitsstand für die jetzige Phase des prototypischen Betriebs zu verstehen.
 

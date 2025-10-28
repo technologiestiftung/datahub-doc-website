@@ -1,0 +1,154 @@
+---
+sidebar_position: 1
+hide_title: true
+---
+
+import styles from '/docs/docs.module.css';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { ArrowRightEndOnRectangleIcon, ArrowRightStartOnRectangleIcon } from '@heroicons/react/24/solid';
+
+
+
+<div className={styles.doccontainer}>
+
+  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-10 xl:pl-16 pt-16">
+    <div>
+      <h1>Apache Superset</h1>
+      <p className="text-lg">
+        Superset ermöglicht die Erstellung interaktiver Berichte und Dashboards. Es unterstützt Auswertungen und die Nutzung von Analyseergebnissen.
+      </p>
+    </div>
+  </div>
+  {/* <p className="pt-2 xl:pl-16 font-bold">
+  Kategorie: Datenvisualisierung <br />Tags: Dashboards, BI, Analyse, Berichte
+  </p> */}
+
+## Was ist Superset?
+
+### Analysen und Dashboards für Fachabteilungen
+
+<div className="flex flex-col xl:flex-row xl:items-center justify-center xl:gap-10 ">
+  <p className="mb-0">
+    Apache Superset ist ein webbasiertes Open-Source-Business-Intelligence-Tool zur Visualisierung und Analyse strukturierter Daten. Es ermöglicht Nutzer:innen, Daten schnell in interaktive Dashboards und aussagekräftige Diagramme zu verwandeln – ohne Programmierkenntnisse. Fachabteilungen können so wiederkehrende Auswertungen automatisieren oder Entwicklungen übersichtlich überwachen.
+  </p>
+  <div className="flex flex-[0_0_250px] xl:pb-20 w-full justify-center items-center">
+    <img
+      src="/img/logos/superset.svg"
+      alt="Wissensspeicher Logo"
+      className="block h-auto w-[50%] xl:w-full"
+    />
+  </div>
+</div>
+
+### Superset im Data Hub
+
+Innerhalb des Data Hub ergänzt Superset die bestehende Infrastruktur, indem es Daten aus zentralen Datenbanken und vorbereitenden Tools in nutzerfreundliche Visualisierungen überführt. Ergebnisse lassen sich einfach per Link teilen oder exportieren. Damit wird Superset zu einem wichtigen Bindeglied zwischen den eher technischen Datenmanagement-Prozessen im Hintergrund und den konkreten fachlichen Entscheidungen in der Berliner Verwaltung.  
+
+### Funktionen & Einsatzgebiete
+
+Für folgene Aspekte bietet sich die Nutzung von Superset besonders an:
+
+- Erstellung interaktiver Dashboards und Berichte  
+- Vielfältige Visualisierungsmöglichkeiten: Balken, Linien, Heatmaps, Pivot-Tabellen  
+- Einfache Zusammenarbeit durch Teilen von Links zu internen und öffentlichen Dashboards
+- Verwaltungskontext: Monitoring von Projektdaten, Indikatoren und Kennzahlen, Berichtswesen und mehr
+- Bereitstellung von Analysemöglichkeiten für Mitarbeitende mit wenig IT-Kentnissen
+
+
+:::tip Praxisbeispiel
+
+**„Haushaltsmonitoring leicht gemacht“** 📊  
+
+Eine Fachabteilung erstellt monatlich ein Dashboard in Superset, das zeigt, wie sich Fördermittel über Bezirke verteilen:
+
+Statt Excel-Tabellen zu verschicken, werden die Daten filterbar und interaktiv visualisiert und um Erklärtexte ergänzt, und ein Link zum Dashboard geteilt – aktuell, interaktiv und leicht verständlich.  
+
+:::
+
+## Wie nutzt man Superset?
+
+### Skill-Level & Anforderungen
+
+Wer mit Apache Superset arbeiten möchte, sollte grundlegendes Verständnis für Datenstrukturen und Tabellen mitbringen, um Abfragen sinnvoll interpretieren zu können. Programmierkenntnisse sind nicht zwingend nötig, aber ein Basiswissen in SQL hilft, komplexere Analysen zu erstellen. Wichtig sind außerdem ein Auge für visuelle Aufbereitung von Daten, analytisches Denken und die Fähigkeit, Dashboards und Berichte so zu gestalten, dass sie für andere Fachabteilungen verständlich sind.
+
+**Technisches Know-How notwendig:** <span title="Leicht zu verstehen" class="text-green-500">●●○○○</span>  
+**Komplexität bzw. Einarbeitungszeit:** <span title="Mäßig lang" class="text-yellow-400">●●●○○</span>  
+
+👉 Für Verwaltungsmitarbeitende bedeutet das: Superset eignet sich vor allem für Fachabteilungen, die regelmäßig Daten auswerten möchten und grundlegendes Zahlenverständnis mitbringen; bei komplexeren Abfragen, Datenaufbereitung oder Dashboard-Design kann Unterstützung durch das Data Hub Kompetenzteam oder externe Dienstleister nötig sein.
+
+
+### Input & Output
+
+<Tabs
+  defaultValue="input"
+  values={[
+    { label: 'Input', value: 'input' },
+    { label: 'Output', value: 'output' },
+  ]}>
+
+  <TabItem value="input">
+  <>
+    <div className="tabs__content">
+    <div className="mb-4">
+      <ArrowRightEndOnRectangleIcon className="w-5 h-5 text-green-600" />
+      <h3 className="inline pl-2">Input</h3>
+    </div>
+    <p>
+    Superset arbeitet mit Daten, die bereits im Data Hub aufbereitet wurden. Typische Inputs sind:
+
+    - Daten aus SQL-Datenbanken wie TimescaleDB oder PostgreSQL  
+    - Daten aus Dateien wie CSV oder JSON, z.B. Exporte aus Fachverfahren, die vorher mit MinIO abgelegt und dann in die Datenbank geschrieben wurden
+    - Ergebnisse aus ETL-Prozessen (z. B. Apache Airflow), die Daten transformieren und bereinigen   
+    - Open Data, das über ETL-Prozesse in die Data Hub-Datenbanken integriert wurden oder über Schnittstellen direkt in Superset geladen werden
+    </p>
+    </div>
+  </>
+  </TabItem>
+
+  <TabItem value="output">
+  <>
+    <div className="tabs__content">
+    <div className="mb-4">
+      <ArrowRightStartOnRectangleIcon className="w-5 h-5 text-blue-600" />
+      <h3 className="inline pl-2">Output</h3>
+    </div>
+    <p>
+    Aus Superset entstehen die folgen Datenprodukte:
+
+    - Interaktive Dashboards für interne und externe Nutzung (unter öffentlichem Link teilbar)
+    - Diagramme und Tabellen für Ad-hoc-Analysen
+    - Exportierbare Ansichten der Dashboards für Dokumentation oder Präsentationen
+    - Templates für Diagramme und Charts, die mit anderen Nutzenden geteilt werden können
+    </p>
+    </div>
+  </>
+  </TabItem>
+
+</Tabs>
+
+
+## Praxisbeispiele
+
+:::danger[Work in progress]
+Achtung dieser Abschnitt befindet sich noch im Aufbau!
+:::
+
+
+
+## Weiterführende Informationen
+
+Diese Seite ist als erster Einstieg zu Apache Superset im Kontext des Data Hubs gedacht. 
+Da es sich um ein bekanntes Open Source Tool handelt, existiert eine offizielle, technische Dokumentationen:
+
+[Offizielle Dokumentation](https://superset.apache.org/)  
+
+In der Dokumentation des CIVITAS/CORE findest du Hinweise dazu, wie das Tool auf Admin Level genutzt und verwaltet wird:
+
+[CIVITAS/CORE Admin Docs](https://docs.core.civitasconnect.digital/docs/Administration/Superset)
+
+Tutorials oder Inspirationen findest du hier:
+
+[Tutorials](https://superset.apache.org/docs/using-superset/creating-your-first-dashboard/)
+
+</div>
