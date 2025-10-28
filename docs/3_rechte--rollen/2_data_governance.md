@@ -8,7 +8,7 @@ import styles from '../docs.module.css';
 
 <div className={styles.doccontainer}>
 
-  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-10 pt-16">
+  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-10 xl:pl-16 pt-16">
  {/* <div className={styles.heroimage}>
       <img src="/img/wissen.svg" alt="Wissensspeicher Logo" />
     </div>  */}

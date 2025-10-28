@@ -24,19 +24,19 @@ import styles from './docs.module.css';
 <details className="faq-accordion">
     <summary>1. Was ist der Data Hub?</summary>
         <div className="faq-content">
-        Der **Data Hub** ist – vereinfacht gesagt – eine zentrale Sammlung digitaler Datenwerkzeuge für die Berliner Verwaltung. Er unterstützt Verwaltungsmitarbeitende dabei Datenprojekte eigenständig umzusetzen – von der Erfassung über die Verarbeitung bis hin zur Darstellung und gemeinsamen Nutzung von Daten. 
+        Der **Data Hub** ist eine urbane Datenplattform für die Berliner Verwaltung. Dabei handelt es sich – vereinfacht gesagt – um eine zentrale Sammlung digitaler Werkzeuge für die Arbeit mit Daten. Er unterstützt Verwaltungsmitarbeitende dabei Datenprojekte eigenständig umzusetzen – von der Erfassung über die Verarbeitung bis hin zur Darstellung und gemeinsamen Nutzung von Daten. 
         </div>
 </details>
 <details className="faq-accordion">
     <summary>2. Wofür kann ich den Data Hub nutzen?</summary>
         <div className="faq-content">
-      Der Data Hub soll zukünftig für alle Arten von Datenprojekten genutzt werden, wie die Visualisierung von Statistiken, interne digitale Monitoringberichte oder Kartenanwendungen. Aber auch die Verarbeitung von Daten, wie zum Beispiel deren Anonymisierung, soll mit dem Data Hub möglich sein. Derzeit arbeiten wir an verschiedenen Use Cases, um die vielfältigen Möglichkeiten des Data Hub zu erproben.  
+      Der Data Hub soll zukünftig für alle Arten von Datenprojekten genutzt werden, wie die Visualisierung von Statistiken, interne digitale Monitoringberichte oder Kartenanwendungen. Aber auch die Verarbeitung von Daten, wie zum Beispiel deren Anonymisierung, Analyse oder Verschneidung, soll mit dem Data Hub möglich sein. Derzeit arbeiten wir an verschiedenen Use Cases, um die vielfältigen Möglichkeiten des Data Hub zu erproben.  
         </div>
 </details>
 <details className="faq-accordion">
     <summary>3. Wie bekomme ich Zugang zum Data Hub?</summary>
         <div className="faq-content">
-     Der Zugang läuft über die Arbeitsgruppe Smart City und Datenmanagement im Referat E-Government der Senatskanzlei Berlin. Hier werden Projekte koordiniert, priorisiert und begleitet. 
+     Erste Pilotnutzende, die konkrete Projekte einbringen, erhalten derzeit Zugänge. Der Zugang läuft über die Technologistiftung Berlin in Absprache mit der Arbeitsgruppe Smart City und Datenmanagement im Referat E-Government der Senatskanzlei Berlin. Hier werden Pilotprojekte koordiniert, priorisiert und begleitet. 
         </div>
 </details>
 <details className="faq-accordion">
@@ -49,19 +49,19 @@ import styles from './docs.module.css';
 <details className="faq-accordion">
     <summary>5. Wie sicher sind meine Daten?</summary>
         <div className="faq-content">
-        Der Data Hub ist vollständig Open Source, transparent, BSI-konform und läuft auf souveräner Infrastruktur. Zugriffsrechte können granular gesteuert werden, sodass Projekteinreichende festlegen, wer lesen, bearbeiten oder freigeben darf.
+         Die Zugriffsrechte auf Daten und Projekte im Data Hub können granular gesteuert werden, sodass Projekteinreichende festlegen, wer lesen, bearbeiten oder freigeben darf. Der Code des Data Hub Prototypen ist vollständig Open Source, basiert auf bewährter Software und läuft auf souveräner Infrastruktur auf deutschen Servern. Für die Verstetigung ist ein Betrieb im Landesnetz angestrebt.
         </div>
 </details>
 <details className="faq-accordion">
     <summary>6. Was unterscheidet den Data Hub vom Open Data Portal?</summary>
         <div className="faq-content">
-        Das Berliner [Open Data Portal](https://daten.berlin.de/) ist ein Metadatenkatalog und dient der Bereitstellung von Daten für die Öffentlichkeit. Der Data Hub hingegen bietet ein Werkzeugset an Software-Tools zur Umsetzung konkreter Datenprojekte für die Berliner Verwaltung. Der Data Hub kann sowohl für öffentliche wie für verwaltungsinterne Datenprojekte genutzt werden. Beide Systeme ergänzen sich. 
+        Das Berliner [Open Data Portal](https://daten.berlin.de/) ist ein Metadatenkatalog und dient der Bereitstellung von Daten für die Öffentlichkeit. Der Data Hub hingegen bietet ein Werkzeugset an Software-Tools zur Umsetzung konkreter Datenprojekte für die Berliner Verwaltung. Der Data Hub kann sowohl für öffentliche wie für verwaltungsinterne Datenprojekte genutzt werden. Der Data Hub ist daher kein neues Datenportal, sondern beide Systeme ergänzen sich. Zusammen mit vielen anderen bestehenden Dateninfrastrukturprojekten im Land Berlin, soll ein "System der Systeme" entstehen.
          </div>
 </details>
 <details className="faq-accordion">
     <summary>7. Wie werde ich unterstützt, wenn ich noch keine Erfahrung mit Datenprojekten habe?</summary>
         <div className="faq-content">
-        Dieser Wissensspeicher dient dazu, erste Schritte mit Datenprojekten zu unterstützen. Als „lebendes Dokument“ wird er laufend um Handreichungen, Video-Tutorials sowie Schritt-für-Schritt-Anleitungen ergänzt. Bei konkreten Fragen zum Datenprojekt können darüber hinaus das Kompetenzteam der Technologiestiftung Berlin unterstützen. 
+        Dieser Wissensspeicher dient dazu, erste Schritte mit Datenprojekten zu unterstützen. Als „lebendes Dokument“ wird er laufend um Handreichungen, Video-Tutorials sowie Schritt-für-Schritt-Anleitungen ergänzt. Bei konkreten Fragen zum Datenprojekt können darüber hinaus das Kompetenzteam der Technologiestiftung Berlin unterstützen. Datenprojekte müssen aber auch nicht "allein" im Data Hub umgesetzt werden. Externe Dienstleister können im Auftrag der Verwaltung Zugriff erhalten, um Projekte in dieser nachhaltigen Infrastruktur umzusetzen.
         </div>
 </details>
 <details className="faq-accordion">
