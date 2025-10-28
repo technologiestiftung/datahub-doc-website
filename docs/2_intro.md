@@ -39,7 +39,7 @@ Beim Data Hub Berlin handelt es sich um eine sogenannte urbane Datenplattform. V
 
 Urbane Datenplattfomen sollen eine zentrale digitale Infrastruktur bilden, die Daten aus verschiedenen Quellen einer Stadt oder Region bündeln, verknüpfen und zugänglich machen. Urbane Datenplattformen ermöglichen eine intelligentere und datengestützte Stadtentwicklung, indem sie Kommunen helfen, Daten aus unterschiedlichen Fachbereichen und für unterschiedliche Zielgruppen (Verwaltung, Wirtschaft, Zivilgesellschaft) bereitzustellen und daraus nützliche Dienste und Analysen zu entwickeln.  
 
-Mit dem Berliner Data Hub bestreitet nun auch das Land Berlin den Weg zur Etablierung einer urbanen Datenplattform. Der Data Hub Prototyp fußt auf dem Open Source Code und Architekturmodell des [CIVITAS/CORE](/docs/intro#die-open-source-plattform-civitas-core-als-grundlage).
+Mit dem Berliner Data Hub bestreitet nun auch das Land Berlin den Weg zur Etablierung einer urbanen Datenplattform. Der Data Hub Prototyp fußt auf dem Open Source Code und Architekturmodell des [CIVITAS/CORE](/docs/intro#die-architektur-des-civitascore-als-grundlage).
 
 :::info
 
@@ -49,6 +49,15 @@ Was eine urbane Datenplattform leistet, ist über die DIN SPEC 91357:2017-12 fes
 [Mehr zu urbanen Datenplattformen in der Veröffentlichung des BBSR <ArrowTopRightOnSquareIcon className="h-5 w-5" />](https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/sonderveroeffentlichungen/2025/urbane-datenplattformen-vergleich.html)
 </p>
 :::
+
+### Grundprinzipien des Data Hubs
+
+Wichtig zu wissen ist, dass es sich beim Data Hub nicht um eine einzelne Software-Lösung handet, sondern um eine modulare Architektur. Das bedeutet der Data hub besteht aus einer Zusammenstellung von verschiedenen Open Source Software-Tools, die in einer gemeinsamen Infrastruktur aufgesetzt und über Schnittstellen miteinander verbunden sind. Ein Rechte- und Rollenmanagement regelt den Zugriff auf die Tools, und bestimmt wer welche Aspekte des Hubs mit welchen Daten verwenden kann. Alle Tools sind im Browser verfügbar ohne Download von Software nutzbar. Kurzgefasst fußt der Data Hub auf vier Prinzipien:
+
+- Cloud-Native-Technologien
+- hohe Kompatibilität und Skalierbarkeit
+- komplett Open Source und Anbieterunabhängig
+- modularer Aufbau im Baukasten-Prinzip
 
 
 ### Die Vorteile eines Data Hubs für Berlin
@@ -165,12 +174,15 @@ Die Erkenntnisse aus den Use Cases fließen in die Weiterentwicklung des Berline
 
 ## Die Architektur des CIVITAS/CORE als Grundlage
 
-:::danger[Work in progress]
-Achtung dieser Abschnitt befindet sich noch im Aufbau!
-:::
+Der CIVITAS/CORE-Stack bildet das technische Rückgrat des Data Hub Berlin: Als offene, modulare Plattform ermöglicht CIVITAS/CORE eine urbane Dateninfrastruktur, die Städte und Kommunen frei betreiben und adaptieren können. Der gemeinschaftliche Architektur-Stack bietet sich an, weil er hohe Wiederverwendbarkeit, geringere Kosten und mehr technologische Unabhängigkeit bietet, statt viele Einzelentwicklungen entsteht ein standardisierter Kern, der jeweils an lokale Anforderungen angepasst wird. 
 
+### Open Source als zentraler Aspekt
 
-Unsere Herangehensweise unterscheidet sich dabei von klassischen IT-Infrastrukturprojekten. Wir erproben den Data Hub prototypisch in einer Pilotphase und setzen dabei auf eine moderne, offene und modulare Architektur und konsequent auf Open Source. Der Prototyp fußt auf dem bekannten Tech Stack der urbanen Datenplattform [CIVITAS/CORE](https://www.civitasconnect.digital/civitas-core/), wird jedoch speziell an die Bedarfe der Berliner Verwaltung angepasst und in einem iterativen Prozess weiterentwickelt. So kann der Data Hub zu einer auf die Bedarfe Berlins zugeschnittenen, umfassenden städtischen Datenplattform erweitert werden. 
+Open Source ist dabei kein Nebenaspekt, sondern zentral: Durch Transparenz und Mitwirkung in der Entwickler-Community gewinnen alle Beteiligten an Souveränität, und Lock-in-Effekte werden vermieden. Die Entwicklergemeinschaft hinter CIVITAS/CORE – die Civitas Connect e. V. mit ihren Mitgliedsstädten und kommunalen Unternehmen, bündelt Anforderungen, entwickelt gemeinsam und steuert die Roadmap im kollektiven Konsens. 
+
+Der CIVITAS/CORE ist cloud-nativ aufgebaut und basiert vollständig auf Kubernetes, wodurch er flexibel, skalierbar ist. Diese Architektur ermöglicht es Städten und Kommunen, die Plattform entweder eigenständig zu betreiben oder durch verschiedene technische Dienstleister betreiben zu lassen, ohne Abhängigkeit von einzelnen Herstellern oder proprietären Infrastrukturen.
+
+Im folgenden Video von Civitas Connect wird der CIVITAS/CORE anschaulich vorgestellt. Es erklärt, welche Ziele die Initiative verfolgt und welche Vorteile die gemeinsame Open-Source-Basis Städten und Kommunen bietet.
 
 <div className="flex justify-center my-8">
   <div className="w-full lg:w-4/5 max-w-3xl aspect-video">
@@ -186,7 +198,23 @@ Unsere Herangehensweise unterscheidet sich dabei von klassischen IT-Infrastruktu
   </div>
 </div>
 
+### Anpassung von CIVITAS/CORE für Berlin
 
+Für Berlin bedeutet das: Wir können diese offen verfügbare Plattform nutzen, um von einem modernen, breit aufgestellten Software-Projekt und den kommenden Weiterentwicklungen teilzuhaben. Gleichzeitig müssen wir explorieren, wie wir den CORE für uns einsetzen, wie wir ihn an unsere Verwaltungs- und Organisationsstruktur anpassen und wie eine Governance-Instanz entsteht, die den Berliner Rahmenbedingungen gerecht wird. So wird aus einer generischen Plattformlösung eine passgenaue, kommunalspezifische Infrastruktur: der Berliner Data Hub.
+
+:::info
+
+Weitere Informationen zum CIVITAS/CORE-Framework und den beteiligten Städten findest du auf der Website von Civitas Connect.
+Einen tieferen Einblick in die Entstehungsgeschichte, Ziele und den Open-Source-Ansatz des Projekts bietet außerdem der CityLAB-Podcast „Vom Datenchaos in die digitale Souveränität mit Ralf Leufkes und Lisa Stubert".
+
+<p className="text-right -mb-3">
+[Offizielle Website zu CIVITAS/CORE <ArrowTopRightOnSquareIcon className="h-5 w-5" />](https://www.civitasconnect.digital/civitas-core/)
+</p>
+<p className="text-right -mb-3">
+[Zum Podcast des CityLAB Berlin zum CIVITAS/CORE <ArrowTopRightOnSquareIcon className="h-5 w-5" />](https://radiocitylab.podigee.io/29-neue-episode)
+</p>
+
+:::
 </div>
 
  
