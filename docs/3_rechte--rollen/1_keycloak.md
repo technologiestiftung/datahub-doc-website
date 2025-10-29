@@ -45,6 +45,12 @@ Die Daten sind in sogenannten Dataspaces organisiert – also in thematischen od
 Ein Dataspace kann beispielsweise einem Fachbereich, einem Projekt oder einem Thema wie Umwelt oder Mobilität zugeordnet sein.  
 Daten innerhalb eines Dataspace sind grundsätzlich geschützt und nicht automatisch öffentlich. Wenn sie geteilt werden, passiert das bewusst und gezielt – etwa, wenn eine andere Abteilung sie benötigt oder wenn sie über das Berliner Open Data Portal veröffentlicht werden sollen.
 
+<img
+  src={require('./assets/dataspace_info_graph.png').default}
+  alt="Dataspaces"
+  width={800}
+  height={250}              
+/>
 
 ### Rollen und Verantwortlichkeiten
 
@@ -67,17 +73,19 @@ Ein großer Vorteil von Keycloak liegt darin, dass Daten zwischen unterschiedlic
 So entsteht eine neue Form der Zusammenarbeit: Die Abteilungen behalten die Verantwortung für ihre Daten, können sie aber dort teilen, wo es für die Stadtentwicklung oder für gemeinsame Projekte sinnvoll ist.
 
 
-## Transparenz und Vertrauen
+### Transparenz und Vertrauen
 
-Jede Anmeldung, jede Freigabe und jeder Zugriff wird in Keycloak protokolliert.  
-Das schafft Transparenz und stärkt das Vertrauen innerhalb der Verwaltung – und später auch gegenüber der Öffentlichkeit, wenn Daten freigegeben oder veröffentlicht werden.  
+Jede Anmeldung, jede Freigabe und jeder Zugriff wird in Keycloak protokolliert. Das schafft Transparenz und stärkt das Vertrauen innerhalb der Verwaltung, und später auch gegenüber der Öffentlichkeit, wenn Daten freigegeben oder veröffentlicht werden. 
 
-Sicherheit bedeutet hier nicht Abschottung, sondern den bewussten, verantwortungsvollen Umgang mit Daten.  
-Keycloak sorgt dafür, dass sensible Informationen geschützt bleiben, während gleichzei
+Sicherheit bedeutet hier nicht Abschottung, sondern den bewussten, verantwortungsvollen Umgang mit Daten. Keycloak sorgt dafür, dass sensible Informationen geschützt bleiben, während gleichzeitig Offenheit und Zusammenarbeit möglich werden.
+
+
+## Fazit
+
+Keycloak ist mehr als nur ein Login-System. Es ist ein zentraler Bestandteil des Data Hub Berlin, der technische Sicherheit mit organisatorischer Verantwortung verbindet.   Es schützt Daten, erleichtert die Zusammenarbeit und sorgt dafür, dass die Verwaltung offen und zugleich sicher mit Informationen umgehen kann.  
 
 :::danger[Work in progress]
 Achtung dieser Abschnitt befindet sich noch im Aufbau!
 :::
-
 
 </div>
