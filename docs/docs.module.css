@@ -45,3 +45,11 @@ h3 {
   margin-top: 2.75rem;
   margin-bottom: 1.5rem;
 }
+
+.imgcaption {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.25rem; /* entspricht Tailwind pt-1 */
+  font-size: 0.875rem;   /* entspricht Tailwind text-sm */
+}
