@@ -35,6 +35,14 @@ p a:hover {
   text-decoration-thickness: 3px;
 }
 
+li a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+li a:hover {
+  text-decoration-thickness: 3px;
+}
+
 h2 {
   margin-top: 4rem;
   margin-bottom: 2rem;
