@@ -2,6 +2,7 @@
 title: Erfassung von Akteuren im Sozialraum
 hide_title: true
 sidebar_position: 2
+description: Dies ist der zentrale Wissensspeicher des prototypischen Data Hub Berlins, der urbanen Datenplattform der Berliner Verwaltung. Hier findest du Informationen zu Hintergründen, Aufbau und Anwendungsfällen der Plattform.
 ---
 
 import { ClockIcon } from '@heroicons/react/24/solid';
