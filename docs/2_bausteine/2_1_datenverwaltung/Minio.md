@@ -7,7 +7,7 @@ sidebar_custom_props:
 # MinIO
 ## Zentrale Dateiablage im Data Hub
 
-MinIO ist ein Open-Source-Speichersystem, das ähnlich wie große Cloud-Dienste funktioniert.  
+MinIO ist ein Open Source-Speichersystem, das ähnlich wie große Cloud-Dienste funktioniert.  
 Im Civitas Core Data Hub übernimmt MinIO die Rolle eines **sicheren Ablageortes für Dateien und Datenobjekte**.  
 Das heißt: Fachabteilungen der Berliner Verwaltung können Daten an einem zentralen Ort speichern, teilen und versionieren – ohne komplizierte Technik oder unsichere Umwege.  
 

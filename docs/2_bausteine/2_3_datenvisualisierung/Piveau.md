@@ -7,8 +7,8 @@ sidebar_custom_props:
 # Piveau
 ## Offene Daten publizieren und nutzen
 
-Piveau ist eine Open-Source-Software zur **Veröffentlichung und Verwaltung offener Daten**.  
-Sie wird von der Technologiestiftung Berlin mitentwickelt und ist auch beim Berliner Open-Data-Portal im Einsatz.  
+Piveau ist eine Open Source-Software zur **Veröffentlichung und Verwaltung offener Daten**.  
+Sie wird von der Technologiestiftung Berlin mitentwickelt und ist auch beim Berliner Open Data-Portal im Einsatz.  
 Im Civitas Core Data Hub ermöglicht Piveau die Anbindung an offene Datenkataloge und erleichtert die Weitergabe von Daten an die Öffentlichkeit.  
 
 ---
@@ -28,7 +28,7 @@ Inputs:
 - **Beschreibungen** (Titel, Lizenz, Kategorien)  
 
 Outputs:  
-- **Veröffentlichte Datensätze** im Berliner Open-Data-Portal  
+- **Veröffentlichte Datensätze** im Berliner Open Data-Portal  
 - **Weiterleitung** an GovData und europäische Datenportale  
 - **APIs** für den automatisierten Zugriff  
 

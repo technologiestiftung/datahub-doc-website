@@ -7,7 +7,7 @@ sidebar_custom_props:
 # Jupyter Notebook
 ## Interaktive Analysen und Daten-Experimente
 
-Jupyter Notebook ist ein Open-Source-Tool, mit dem sich **Code, Datenanalysen und Dokumentation** in einer interaktiven Umgebung kombinieren lassen.  
+Jupyter Notebook ist ein Open Source-Tool, mit dem sich **Code, Datenanalysen und Dokumentation** in einer interaktiven Umgebung kombinieren lassen.  
 Im Civitas Core Data Hub nutzen vor allem Daten- und IT-Teams Jupyter, um Daten zu analysieren, Modelle auszuprobieren und Ergebnisse direkt nachvollziehbar zu dokumentieren.  
 
 ---

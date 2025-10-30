@@ -7,7 +7,7 @@ sidebar_custom_props:
 # pgAdmin
 ## Einfache Verwaltung von PostgreSQL-Datenbanken
 
-pgAdmin ist ein Open-Source-Werkzeug zur **grafischen Verwaltung von PostgreSQL-Datenbanken**.  
+pgAdmin ist ein Open Source-Werkzeug zur **grafischen Verwaltung von PostgreSQL-Datenbanken**.  
 Im Civitas Core Data Hub unterstützt pgAdmin IT- und Datenteams dabei, Datenbanken einzurichten, Abfragen zu testen und Inhalte übersichtlich zu verwalten – ohne ausschließlich auf die Kommandozeile angewiesen zu sein.  
 
 ---

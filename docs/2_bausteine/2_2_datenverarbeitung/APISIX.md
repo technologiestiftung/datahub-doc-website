@@ -7,7 +7,7 @@ sidebar_custom_props:
 # Apache APISIX
 ## Schnittstellen steuern und absichern
 
-Apache APISIX ist ein Open-Source-API-Gateway.  
+Apache APISIX ist ein Open Source-API-Gateway.  
 Es dient im Civitas Core Data Hub als **zentrale Steuerungsebene für Schnittstellen** (APIs) zwischen den verschiedenen Komponenten und Anwendungen.  
 
 Damit lassen sich Datenflüsse nicht nur koordinieren, sondern auch absichern und überwachen.  

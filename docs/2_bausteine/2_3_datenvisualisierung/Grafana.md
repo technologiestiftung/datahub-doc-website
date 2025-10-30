@@ -7,7 +7,7 @@ sidebar_custom_props:
 # Grafana
 ## Monitoring und Echtzeit-Visualisierung
 
-Grafana ist eine Open-Source-Plattform, die speziell für das **Monitoring und die Visualisierung von Echtzeitdaten** entwickelt wurde.  
+Grafana ist eine Open Source-Plattform, die speziell für das **Monitoring und die Visualisierung von Echtzeitdaten** entwickelt wurde.  
 Im Civitas Core Data Hub unterstützt Grafana vor allem technische Teams dabei, Systeme, Sensoren oder Datenströme im Blick zu behalten.  
 
 Anders als Superset richtet sich Grafana stärker an IT- und Betriebsaspekte, bleibt aber durch seine intuitive Oberfläche auch für Fachabteilungen nutzbar.  

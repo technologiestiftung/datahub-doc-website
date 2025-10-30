@@ -7,7 +7,7 @@ sidebar_custom_props:
 # Appsmith
 ## Eigene Anwendungen ohne viel Programmierung
 
-Appsmith ist ein Open-Source-Tool zur Erstellung von **interaktiven Webanwendungen**.  
+Appsmith ist ein Open Source-Tool zur Erstellung von **interaktiven Webanwendungen**.  
 Es ermöglicht Fachabteilungen, eigene Oberflächen für Datenbanken, APIs oder Dateispeicher zu bauen – ohne tief in die Programmierung einzusteigen.  
 
 Im Civitas Core Data Hub kann Appsmith genutzt werden, um maßgeschneiderte Anwendungen für Verwaltungsprozesse zu entwickeln.  

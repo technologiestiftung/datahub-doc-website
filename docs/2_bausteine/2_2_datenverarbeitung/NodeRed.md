@@ -7,7 +7,7 @@ sidebar_custom_props:
 # Node-RED
 ## Datenflüsse einfach gestalten
 
-Node-RED ist eine Open-Source-Software, mit der sich Datenflüsse (Pipelines) visuell zusammenstellen lassen.  
+Node-RED ist eine Open Source-Software, mit der sich Datenflüsse (Pipelines) visuell zusammenstellen lassen.  
 Anstatt Code schreiben zu müssen, können Abläufe per „Drag & Drop“ in einem Editor erstellt werden.  
 Im Civitas Core Data Hub wird Node-RED genutzt, um Daten von A nach B zu bewegen, aufzubereiten oder automatisch weiterzugeben.  
 

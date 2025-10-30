@@ -7,7 +7,7 @@ sidebar_custom_props:
 # Supabase
 ## Datenbank und Authentifizierung „as a Service“
 
-Supabase ist eine Open-Source-Alternative zu Firebase. Es bietet eine Kombination aus **Datenbank, Authentifizierung und API-Services**.  
+Supabase ist eine Open Source-Alternative zu Firebase. Es bietet eine Kombination aus **Datenbank, Authentifizierung und API-Services**.  
 Im Civitas Core Data Hub kann Supabase genutzt werden, um schnell datengetriebene Anwendungen aufzubauen – ohne eine eigene Backend-Infrastruktur entwickeln zu müssen.  
 
 ---

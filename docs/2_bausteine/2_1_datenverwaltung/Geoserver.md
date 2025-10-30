@@ -7,7 +7,7 @@ sidebar_custom_props:
 # GeoServer
 ## Karten- und Geodaten für alle zugänglich machen
 
-GeoServer ist eine Open-Source-Software zur Veröffentlichung von **Geodaten**.  
+GeoServer ist eine Open Source-Software zur Veröffentlichung von **Geodaten**.  
 Im Civitas Core Data Hub dient GeoServer dazu, Daten aus GIS-Systemen (z. B. Shapefiles, GeoTIFFs) über standardisierte Schnittstellen zugänglich zu machen.  
 
 So können Geodaten in Kartenanwendungen, Fachverfahren oder offene Datenportale eingebunden werden.  
@@ -30,7 +30,7 @@ Inputs:
 Outputs:  
 - **Kartendienste** (WMS) für Webanwendungen  
 - **Datenzugriff** (WFS/WCS) für GIS-Software  
-- **Einbettung in Portale** wie das Berliner Open-Data-Portal  
+- **Einbettung in Portale** wie das Berliner Open Data-Portal  
 
 ---
 
@@ -52,7 +52,7 @@ Outputs:
 
 ## Praxisbeispiel
 🗺️ **„Stadtplanungsdaten sichtbar machen“**  
-Ein Bezirk veröffentlicht aktuelle Bebauungspläne über GeoServer. Bürger:innen können die Karten im Open-Data-Portal einsehen, Planungsämter direkt in ihrer GIS-Software damit arbeiten.  
+Ein Bezirk veröffentlicht aktuelle Bebauungspläne über GeoServer. Bürger:innen können die Karten im Open Data-Portal einsehen, Planungsämter direkt in ihrer GIS-Software damit arbeiten.  
 
 ---
 

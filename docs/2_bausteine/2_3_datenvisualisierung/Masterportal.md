@@ -7,7 +7,7 @@ sidebar_custom_props:
 # Masterportal
 ## Kartenanwendungen für die Verwaltung und Öffentlichkeit
 
-Masterportal ist ein Open-Source-Framework, das auf OpenLayers basiert und zur Erstellung von **Webkartenanwendungen** dient.  
+Masterportal ist ein Open Source-Framework, das auf OpenLayers basiert und zur Erstellung von **Webkartenanwendungen** dient.  
 Im Civitas Core Data Hub ermöglicht es, Geodaten aus verschiedenen Quellen in nutzerfreundlichen Karten darzustellen – angepasst an die Bedürfnisse der Berliner Verwaltung und Öffentlichkeit.  
 
 ---

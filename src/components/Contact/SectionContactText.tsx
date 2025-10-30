@@ -11,7 +11,7 @@ export default function SectionAboutText() {
             Kontakt
           </h1>
           <p className="text-md md:text-lg pt-6">
-            Sie haben Fragen zum Data Hub Berlin oder möchten Pilotnutzer:in
+            Sie haben Fragen zum Data Hub Berlin oder möchten Pilotnutzende:r
             werden? Unser Team der Technologiestiftung Berlin nimmt Anfragen
             gern per Mail entgegen.
           </p>

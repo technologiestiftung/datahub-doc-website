@@ -16,7 +16,7 @@ import styles from '/docs/docs.module.css';
     Diese Seite wird gerade erstellt. Bald findest du hier neue Inhalte und hilfreiche Informationen zum Data Hub Berlin. Schau bald wieder vorbei!
   </p>
 </div>
-Du hast Fragen zum Data Hub Berlin oder möchtest Pilotnutzer:in werden? Unser Team der Technologiestiftung Berlin nimmt Anfragen gern per Mail entgegen. 
+Du hast Fragen zum Data Hub Berlin oder möchtest Pilotnutzende:r werden? Unser Team der Technologiestiftung Berlin nimmt Anfragen gern per Mail entgegen. 
 E-Mail: datahub@ts.berlin 
 
 </div>

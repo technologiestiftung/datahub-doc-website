@@ -16,7 +16,7 @@ import styles from '../docs.module.css';
     <div>
           <h1>Zugänge und Rollen mit Keycloak</h1>
       <p className="text-lg">
-        Die Software Keycloak regelt die Berechtigungssteuerung im Data Hub. Über sogenannte Dataspaces und Rollen werden Zugriffsrechte granular vergeben und verwaltet. Auf dieser Seite liest du wie das, wie das Rechte- und Rollenmanagement technisch umgesetzt wird.
+        Die Software Keycloak regelt die Berechtigungssteuerung im Data Hub. Über sogenannte Dataspaces und Rollen werden Zugriffsrechte granular vergeben und verwaltet. Auf dieser Seite liest du, wie das, wie das Rechte- und Rollenmanagement technisch umgesetzt wird.
       </p>
     </div>
   </div>
@@ -31,9 +31,9 @@ Auf dieser Seite wird das Rechte- und Rollenmanagement von der technischen Seite
 :::
 
 
-### Einmal anmelden, alle Tools des Data Hubs nutzen
+### Einmal anmelden, alle Tools des Data Hub nutzen
 
-Keycloak ist so etwas wie das Tor zum Data Hub Berlin. Es sorgt dafür, dass sich alle Nutzerinnen und Nutzer mit einem einzigen Login anmelden können, egal ob sie Daten analysieren, neue Inhalte einpflegen oder nur etwas nachlesen möchten. Anstatt für jede Anwendung ein separates Benutzerkonto zu benötigen, genügt eine Anmeldung über Keycloak. Dieses Prinzip nennt sich „Single Sign-On“. Es spart Zeit, reduziert technische Hürden und erhöht gleichzeitig die Sicherheit, weil Zugriffe kontrolliert und nachvollzogen werden können.  
+Keycloak ist so etwas wie das Tor zum Data Hub Berlin. Es sorgt dafür, dass sich alle Nutzenden mit einem einzigen Login anmelden können, egal ob sie Daten analysieren, neue Inhalte einpflegen oder nur etwas nachlesen möchten. Anstatt für jede Anwendung ein separates Benutzerkonto zu benötigen, genügt eine Anmeldung über Keycloak. Dieses Prinzip nennt sich „Single Sign-On“. Es spart Zeit, reduziert technische Hürden und erhöht gleichzeitig die Sicherheit, weil Zugriffe kontrolliert und nachvollzogen werden können.  
 
 
 
@@ -44,7 +44,7 @@ Im Data Hub Berlin gilt das Prinzip der geteilten Verantwortung. Fachabteilungen
 ### Dataspaces 
 Die Daten sind in sogenannten Dataspaces organisiert – also in thematischen oder organisatorischen Datenräumen.  
 Ein Dataspace kann beispielsweise einem Fachbereich, einem Projekt oder einem Thema wie Umwelt oder Mobilität zugeordnet sein.  
-Daten innerhalb eines Dataspace sind grundsätzlich geschützt und nicht automatisch öffentlich. Wenn sie geteilt werden, passiert das bewusst und gezielt – etwa, wenn eine andere Abteilung sie benötigt oder wenn sie über das Berliner Open Data Portal veröffentlicht werden sollen.
+Daten innerhalb eines Dataspace sind grundsätzlich geschützt und nicht automatisch öffentlich. Wenn sie geteilt werden, passiert das bewusst und gezielt – etwa wenn eine andere Abteilung sie benötigt oder wenn sie über das Berliner Open Data-Portal veröffentlicht werden sollen.
 
 <img
   src={require('./assets/dataspace_info_graph.png').default}
@@ -59,12 +59,12 @@ Damit die Zusammenarbeit reibungslos funktioniert, gibt es im Data Hub verschied
 - Die Rolle Koordinatorin oder Koordinator trägt die Verantwortung für einen gesamten Datenraum. Sie entscheidet über Freigaben, steuert die Zusammenarbeit mit anderen Abteilungen und sorgt dafür, dass die Daten verantwortungsvoll genutzt werden.  
 - Unterstützt wird sie oder er von Developerinnen und Developern, die sich um die technischen Aspekte kümmern, Schnittstellen einrichten und Prozesse automatisieren.  
 - Editorinnen und Editoren pflegen Inhalte und stellen sicher, dass die Daten aktuell und vollständig sind.  
-- Darüber hinaus gibt es verschiedene Leseberechtigungen, für den internen Gebrauch oder für die Öffentlichkeit.  
+- Darüber hinaus gibt es verschiedene Leseberechtigungen für den internen Gebrauch oder für die Öffentlichkeit.  
 
 
 ### Konfiguration von Rechten
 
-Für die Nutzenden des Data Hubs ist eine Konfiguration ihrerseits nicht notwendig, Keycloak sorgt im Hintergrund dafür, dass die richtigen Personen nur auf die Daten zugreifen, die sie auch wirklich sehen oder bearbeiten dürfen. Das Anlegen von Accounts und zuweisen von Rollen und Dataspaces, wird durch eine zentrale Stelle vorgenommen. Für den Prototypen in der Pilotphase übernimmt diese Rolle das Team der Technologiestiftung in Absprache mit der Senatskanzlei und den Nutzenden.
+Für die Nutzenden des Data Hub ist eine Konfiguration ihrerseits nicht notwendig, Keycloak sorgt im Hintergrund dafür, dass die richtigen Personen nur auf die Daten zugreifen, die sie auch wirklich sehen oder bearbeiten dürfen. Das Anlegen von Accounts und Zuweisen von Rollen und Dataspaces wird durch eine zentrale Stelle vorgenommen. Für den Prototypen in der Pilotphase übernimmt diese Rolle das Team der Technologiestiftung Berlin in Absprache mit der Senatskanzlei und den Nutzenden.
 
 
 ### Zusammenarbeit über Grenzen hinweg
@@ -76,17 +76,10 @@ So entsteht eine neue Form der Zusammenarbeit: Die Abteilungen behalten die Vera
 
 ### Transparenz und Vertrauen
 
-Jede Anmeldung, jede Freigabe und jeder Zugriff wird in Keycloak protokolliert. Das schafft Transparenz und stärkt das Vertrauen innerhalb der Verwaltung, und später auch gegenüber der Öffentlichkeit, wenn Daten freigegeben oder veröffentlicht werden. 
+Jede Anmeldung, jede Freigabe und jeder Zugriff wird in Keycloak protokolliert. Das schafft Transparenz und stärkt das Vertrauen innerhalb der Verwaltung und später auch gegenüber der Öffentlichkeit, wenn Daten freigegeben oder veröffentlicht werden. 
 
 Sicherheit bedeutet hier nicht Abschottung, sondern den bewussten, verantwortungsvollen Umgang mit Daten. Keycloak sorgt dafür, dass sensible Informationen geschützt bleiben, während gleichzeitig Offenheit und Zusammenarbeit möglich werden.
 
-
-## Fazit
-
-Keycloak ist mehr als nur ein Login-System. Es ist ein zentraler Bestandteil des Data Hub Berlin, der technische Sicherheit mit organisatorischer Verantwortung verbindet.   Es schützt Daten, erleichtert die Zusammenarbeit und sorgt dafür, dass die Verwaltung offen und zugleich sicher mit Informationen umgehen kann.  
-
-:::danger[Work in progress]
-Achtung dieser Abschnitt befindet sich noch im Aufbau!
-:::
+Keycloak ist mehr als nur ein Login-System. Es ist ein zentraler Bestandteil des Data Hub Berlin, der technische Sicherheit mit organisatorischer Verantwortung verbindet. Es schützt Daten, erleichtert die Zusammenarbeit und sorgt dafür, dass die Verwaltung gemeinsam und zugleich sicher mit Informationen umgehen kann.  
 
 </div>

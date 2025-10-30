@@ -124,7 +124,7 @@ export default function HomepageMainTools() {
             {' '}
             Der Data Hub bringt eine erprobte Architektur für urbane
             Datenplattfomen nach Berlin, die vollständig auf cloudbetriebener
-            Open-Source-Software basiert. Der Prototyp wird derzeit gezielt an
+            Open Source-Software basiert. Der Prototyp wird derzeit gezielt an
             die Anforderungen der Berliner Verwaltung angepasst und
             weiterentwickelt. In diesem iterativen Prozess entsteht so nicht nur
             ein{' '}

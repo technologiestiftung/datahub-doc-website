@@ -7,7 +7,7 @@ sidebar_custom_props:
 # Apache Airflow
 ## Automatisierte Datenprozesse steuern
 
-Apache Airflow ist eine Open-Source-Software zur **Planung, Steuerung und Überwachung von Datenprozessen** (ETL-Pipelines).  
+Apache Airflow ist eine Open Source-Software zur **Planung, Steuerung und Überwachung von Datenprozessen** (ETL-Pipelines).  
 Im Civitas Core Data Hub sorgt Airflow dafür, dass Daten regelmäßig gesammelt, verarbeitet und bereitgestellt werden – ohne manuelles Zutun.  
 
 ---
