@@ -12,8 +12,8 @@ export default function SectionAboutText() {
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl font-normal">
             Mit dem Data Hub entsteht eine zentrale Datenplattform für das Land
-            Berlin. Sie macht ein lange geplantes Vorhaben endlich greifbar und
-            legt mit dem Prototypen den Grundstein.
+            Berlin. Der Prototyp legt den Grundstein für ein vernetztes
+            Datenmanagement und neue datenbasierte Lösungen.
           </p>
           <h3 className="text-1xl md:text-3xl font-bold pt-6 lg:pt-2">
             Der Hintergrund:
