@@ -48,6 +48,7 @@ GeoServer bietet im Data Hub insbesondere:
 :::tip Fiktives Praxisbeispiel
 
 **„Für den Bezirk relevante Baumaßnahmen filtern“** 🌍  
+
 Eine Senatsverwaltung pflegt über ein Formular eine Liste von Baumaßnahmen und deren Status in Berlin. Die Daten aus dem Formular fließen automatisiert in die Datenbank des Data Hubs. Der GeoSever ist mit dieser Datenbank verbunden und erstellt in Echtzeit aus den Daten einen WFS-Dienst. Ein Bezirksamt nutzt den WFS-Dienst, indem es ihn automatisch filtert um nur die Daten für den eigenen Bezirk anzuzeigen und spielt diese in einer interaktiven Karte für das bezirkliche Stadtplanungsamt aus.
 
 :::

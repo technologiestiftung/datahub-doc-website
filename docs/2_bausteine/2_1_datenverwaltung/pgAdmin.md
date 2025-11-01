@@ -50,7 +50,8 @@ Die PostgreSQL-Datenbanken und pgAdmin bieten insbesondere folgenden Mehrwert:
 
 :::tip Fiktives Praxisbeispiel
 
-„Umweltdaten aus Sensoren sammeln“ 🗄️
+**„Umweltdaten aus Sensoren sammeln“ 🗄️**
+
 Messdaten aus Luft- und Bodenstationen werden in Echtzeit an die PostgreSQL-Datenbank übertragen und dort gespeichert. Über eine Schnittstelle werden sie mit Grafana verbunden. Eine Fachabteilungen kann die stets aktuellen Werte somit über Dashboards überwachen und Trends analysieren.
 
 :::
@@ -85,7 +86,7 @@ pgAdmin ist für Benutzer:innen mit grundlegendem Datenbankverständnis geeignet
       <p>
       Typische Inputs für die Datenbanken sind:
 
-      - Daten aus Dateien, die in MinIO abgelegt und z.B. über NodeRed oder AirFlow verfügbar gemacht werden
+      - Daten aus Dateien, die in MinIO abgelegt und z.B. über Node-Red oder AirFlow verfügbar gemacht werden
       - händische Datenuploads von gut strukturierten Daten aus CSV-Dateien  
       - IoT-Daten
       </p>
