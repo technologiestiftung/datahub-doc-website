@@ -50,8 +50,7 @@ Die PostgreSQL-Datenbanken und pgAdmin bieten insbesondere folgenden Mehrwert:
 
 :::tip Fiktives Praxisbeispiel
 
-**„Umweltdaten aus Sensoren sammeln“ 🗄️**
-
+**„Umweltdaten aus Sensoren sammeln“ 🗄️**  
 Messdaten aus Luft- und Bodenstationen werden in Echtzeit an die PostgreSQL-Datenbank übertragen und dort gespeichert. Über eine Schnittstelle werden sie mit Grafana verbunden. Eine Fachabteilungen kann die stets aktuellen Werte somit über Dashboards überwachen und Trends analysieren.
 
 :::

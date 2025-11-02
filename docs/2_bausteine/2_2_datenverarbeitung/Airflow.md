@@ -48,8 +48,7 @@ Airflow wird im Data Hub insbesondere für folgende Aufgaben genutzt:
 
 :::tip Fiktives Praxisbeispiel
 
-**„Anonymisierte Nutzungsinforamtionen für Bibliotheken“ 🗂️**
-
+**„Anonymisierte Nutzungsinforamtionen für Bibliotheken“ 🗂️**  
 Alle öffentlichen Bibliotheken Berlins erfassen monatlich pseudonymisierte Daten zu Ausleihvorgängen und Nutzer:innenmerkmalen (z. B. ungefähre Wohnlage und Altersgruppen). Die Rohdaten werden in MinIO abgelegt. Airflow steuert die ETL-Pipelines: Bereinigung, Aggregation und vollständige Anonymisierung. Die aufbereiteten Daten fließen in Dashboards, die Bibliotheksleitungen, Bezirksämter und die Senatsverwaltung für Analyse und Steuerung nutzen. Nachmeldungen oder Korrekturen der Bibliotheken lösen automatisch ein Update der aggregierten Ergebnisse aus.
 
 :::

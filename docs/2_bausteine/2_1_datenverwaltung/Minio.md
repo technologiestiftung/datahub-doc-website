@@ -61,8 +61,7 @@ MinIO bietet im Data Hub insbesondere folgenden Mehrwert:
 
 :::tip Fiktives Praxisbeispiel
 
-**„Monitoring von Kita-Plätzen“** 📂
-
+**„Monitoring von Kita-Plätzen“** 📂  
 Ein Fachamt legt jeden Monat einen Datensatz mit Auslastungszahlen für Kitas in MinIO ab. Die Daten stehen so für einen konfigurierten ETL-Prozess zur Verfügung. Dieser berechnet automatisch Kennzahlen wie freie Plätze pro Bezirk, Belegungsquoten und wartet den Datensatz mit Geokoordinaten der Einrichtungen auf. Der aufbereitete Datensatz wird zurück in MinIO gespeichert wird und steht dort nun anderen Abteilungen mit berechtigtem Zugriff für eigene Planungen und Berichte zur Verfügung.
 
 :::

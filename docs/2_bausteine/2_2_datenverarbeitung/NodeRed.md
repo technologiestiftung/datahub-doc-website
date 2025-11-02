@@ -47,8 +47,7 @@ Node-Red wird Data Hub insbesondere für folgende Dinge eingesetzt:
 
 :::tip Fiktives Praxisbeispiel
 
-**„Bezirkliche Datensammlung mit automatischer Vereinheitlichung“** 🗂️
-
+**„Bezirkliche Datensammlung mit automatischer Vereinheitlichung“** 🗂️  
 Alle 12 Bezirke laden regelmäßig eine geupdatete Datentabelle in MinIO zu einem gemeinsamen Thema hoch, zum Beispiel zu Sozialraumindikatoren. Sobald ein Bezirk neue Daten ablegt, startet automatisch ein Prozess in Node-Red: Die Struktur des Datensatzes wird geprüft und die Daten werden in eine konsolidierte Datenbank geschrieben. Diese versorgt Berichte und Dashboards für die Senatsverwaltung.
 
 :::
