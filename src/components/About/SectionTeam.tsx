@@ -22,7 +22,7 @@ export default function SectionTeam() {
               <p>
                 <span className="font-semibold">Lisa Stubert</span>
                 <br />
-                Projektleitung Data Hub Prototyp <br />
+                Projektleitung Data Hub-Prototyp <br />
                 CityLAB Berlin
                 <br />
                 Technologiestiftung Berlin
