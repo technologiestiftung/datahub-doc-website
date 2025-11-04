@@ -17,7 +17,7 @@ export default function SectionContact({
           </h3>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4">
             <p>
-              Sie haben Fragen zum Data Hub Berlin oder möchten Pilotnutzende:r
+              Sie haben Fragen zum Data Hub Berlin oder möchten Pilotnutzender
               werden? Unser Team der Technologiestiftung Berlin nimmt Anfragen
               gern per Mail entgegen.
             </p>

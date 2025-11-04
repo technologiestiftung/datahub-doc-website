@@ -152,7 +152,7 @@ Der Aufbau des Data Hub Berlin ist keine neue Einzelinitiative, sondern ein seit
 
 ## Pilotphase und Prototyp
 
-Die Entwicklung eines so umfassenden IT-Infrastrukturprojekts erfordert agile Prozesse und enge Zusammenarbeit in der Praxis. In einer Pilotphase wird der Data Hub prototypisch aufgebaut, also in einer frühen Version, die gezielt getestet, erprobt und stetig weiterentwickelt wird, um alle Anforderungen für eine Verstetigung und den Produktivbetrieb zu identifizieren. Dabei werden sowohl technische als auch organisatorische Rahmenbedingungen betrachtet, um nachhaltige Mehrwerte für ein breites Spektrum an Nutzenden zu schaffen.  
+Die Entwicklung eines so umfassenden IT-Infrastrukturprojekts erfordert agile Prozesse und enge Zusammenarbeit in der Praxis. In einer Pilotphase wird der Data Hub prototypisch aufgebaut. Diese frühe Version dient dazu den Data Hub gezielt zu erproben und stetig weiter zu entwickeln, um alle Anforderungen für eine Verstetigung und den Produktivbetrieb zu identifizieren. Dabei werden sowohl technische als auch organisatorische Rahmenbedingungen betrachtet, um nachhaltige Mehrwerte für ein breites Spektrum an Nutzenden zu schaffen.  
 
 ### Zusammenarbeit von Technologiestiftung Berlin und Berliner Senatskanzlei
 
