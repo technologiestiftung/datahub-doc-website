@@ -21,17 +21,16 @@ export default function SectionAboutText() {
             Fest verankert in Berlins Smart City-Strategie
           </h3>
           <p className="text-md md:text-lg">
-            Der Aufbau des Data Hubs ist keine neue Einzelinitiative, sondern
-            ein seit vielen Jahren diskutiertes und angestrebtes Vorhaben.
-            Initiiert wurde der Data Hub Berlin von der Senatskanzlei Berlin auf
-            Basis der Richtlinien der Berliner Regierungspolitik. Verankert ist
-            er auch als zentrale Maßnahme in der Digitalstrategie des Landes
-            „Gemeinsam Digital: Berlin“ mit dem Ziel eine übergreifende, moderne
-            und effiziente Dateninfrastruktur zu schaffen. Eine zentrale
-            Anforderung ist, dass der Data Hub Berlin durch eine moderne
-            Architektur und klare Governance die bestehende IT-Landschaft
-            Berlins ergänzt und datengetriebene Prozesse nachhaltig und
-            nutzerorientiert fördert.
+            Der Aufbau des Data Hub ist keine neue Einzelinitiative, sondern ein
+            seit vielen Jahren diskutiertes und angestrebtes Vorhaben. Initiiert
+            wurde der Data Hub Berlin von der Senatskanzlei Berlin auf Basis der
+            Richtlinien der Berliner Regierungspolitik. Verankert ist er auch
+            als zentrale Maßnahme in der Digitalstrategie des Landes „Gemeinsam
+            Digital: Berlin“, mit dem Ziel eine übergreifende, moderne und
+            effiziente Dateninfrastruktur zu schaffen. Eine zentrale Anforderung
+            ist, dass der Data Hub Berlin durch eine moderne Architektur und
+            klare Governance die bestehende IT-Landschaft Berlins ergänzt und
+            datengetriebene Prozesse nachhaltig und nutzerorientiert fördert.
           </p>{' '}
           <h3 className="text-1xl md:text-3xl font-bold pt-6 lg:pt-2">
             Über die Pilotphase:
@@ -40,9 +39,9 @@ export default function SectionAboutText() {
           </h3>
           <p className="text-md md:text-lg">
             Die Entwicklung eines so umfassenden IT-Infrastrukturprojektes
-            erfordert agile Prozesse und enge Zusammenarbeit mit der Praxis. In
-            einer Pilotphase wird der Data Hub zunächst prototypisch aufgebaut.
-            Diese frühe Version wird gezielt getestet, erprobt und
+            erfordert agile Prozesse und eine enge Zusammenarbeit mit der
+            Praxis. In einer Pilotphase wird der Data Hub zunächst prototypisch
+            aufgebaut. Diese frühe Version wird gezielt getestet, erprobt und
             kontinuierlich weiterentwickelt. So lassen sich alle Anforderungen
             für eine spätere Verstetigung und den Produktivbetrieb
             identifizieren. Dabei werden sowohl technische als auch
@@ -59,22 +58,22 @@ export default function SectionAboutText() {
             Technologiestiftung Berlin und Berliner Senatskanzlei
           </h3>
           <p className="text-md md:text-lg">
-            Die Pilotphase des Data Hubs wird von der Technologiestiftung Berlin
+            Die Pilotphase des Data Hub wird von der Technologiestiftung Berlin
             und der Berliner Senatskanzlei partnerschaftlich koordiniert. Die
-            Technologiestiftung begleitet die Pilotprojekte fachlich und
+            Technologiestiftung Berlin begleitet die Pilotprojekte fachlich und
             organisatorisch, setzt diese gemeinsam mit den Pilotnutzenden um und
             betreibt den Prototypen in Zusammenarbeit mit einem technischen
             Dienstleister. Als gesamtstädtische Plattform lebt der Data Hub aber
-            von der Mitwirkung Vieler: In der AG Data Hub bringen sich
+            von der Mitwirkung vieler: In der AG Data Hub bringen sich
             Senatsverwaltungen und Bezirksämter ein und auch die Pilotnutzenden
             kommen aus verschiedenen Bereichen der Berliner Verwaltung. Parallel
             zur Pilotphase bereitet die Senatskanzlei die Verstetigung des Data
-            Hubs als dauerhafte Dateninfrastruktur für das Land Berlin vor.
+            Hub als dauerhafte Dateninfrastruktur für das Land Berlin vor.
           </p>
           <p className="text-md md:text-lg">
             Weitere Informationen finden sich im Wissensspeicher und im FAQ.
           </p>
-          <Button label="Zum FAQ" slug="/docs/faq"></Button>
+          <Button label="Zum Wissensspeicher" slug="/docs/willkommen"></Button>
         </div>
         {/* Right Side - Text Content */}
         <div className="lg:col-span-2 hidden lg:block">

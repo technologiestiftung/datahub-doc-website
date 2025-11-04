@@ -103,7 +103,7 @@ export default function HomepageMainTools() {
         {/* Header */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold tracking-wide">
-            Tools im Baukasten des Data Hubs
+            Tools im Baukasten des Data Hub
           </h2>
           <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
             Diese Open Source-Werkzeuge sind die Bausteine des Data Hub – eine

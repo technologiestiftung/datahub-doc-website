@@ -53,7 +53,7 @@ Was eine urbane Datenplattform leistet, ist über die DIN SPEC 91357:2017-12 fes
 
 ### Grundprinzipien des Data Hub
 
-Wichtig zu wissen ist, dass es sich beim Data Hub nicht um eine einzelne Software-Lösung handelt, sondern um eine modulare Architektur. Das bedeutet, der Data Hub besteht aus einer Zusammenstellung von verschiedenen Open Source-Software-Tools, die in einer gemeinsamen Infrastruktur aufgesetzt und über Schnittstellen miteinander verbunden sind. Ein Rechte- und Rollenmanagement regelt den Zugriff auf die Tools und bestimmt, wer welche Aspekte des Hubs mit welchen Daten verwenden kann. Alle Tools sind im Browser verfügbar und ohne den Download von Software nutzbar. 
+Wichtig zu wissen ist, dass es sich beim Data Hub nicht um eine einzelne Software-Lösung handelt, sondern um eine modulare Architektur. Das bedeutet, der Data Hub besteht aus einer Zusammenstellung von verschiedenen Open Source-Software-Tools, die in einer gemeinsamen Infrastruktur aufgesetzt und über Schnittstellen miteinander verbunden sind. Ein Rechte- und Rollenmanagement regelt den Zugriff auf die Tools und bestimmt, wer welche Aspekte des Hub mit welchen Daten verwenden kann. Alle Tools sind im Browser verfügbar und ohne den Download von Software nutzbar. 
 Kurzgefasst fußt der Data Hub auf vier Prinzipien:
 
 - Cloud-Native-Technologien
@@ -72,7 +72,7 @@ Der Data Hub Berlin ist mehr als nur eine technische Plattform – er ist ein st
 
 2. **Digitale Souveränität und Kompetenzaufbau**
 
-      Der Data Hub trägt langfristig dazu bei, die digitale Souveränität der Berliner Verwaltung zu stärken. Durch den konsequenten Einsatz von Open Source-Software, offenen Standards und modularen Architekturen reduziert er die Abhängigkeit von proprietären Lösungen. Gleichzeitig werden bei der Nutzung und Weiterentwicklung des Hubs neue Kompetenzen in Datenmanagement, Analyse und Softwareentwicklung innerhalb der Verwaltung aufgebaut. So entsteht nicht nur eine unabhängige Infrastruktur, sondern auch ein Wissens- und Kompetenzpool, der zukünftige Projekte effizienter und selbstbestimmter ermöglicht.
+      Der Data Hub trägt langfristig dazu bei, die digitale Souveränität der Berliner Verwaltung zu stärken. Durch den konsequenten Einsatz von Open Source-Software, offenen Standards und modularen Architekturen reduziert er die Abhängigkeit von proprietären Lösungen. Gleichzeitig werden bei der Nutzung und Weiterentwicklung des Hub neue Kompetenzen in Datenmanagement, Analyse und Softwareentwicklung innerhalb der Verwaltung aufgebaut. So entsteht nicht nur eine unabhängige Infrastruktur, sondern auch ein Wissens- und Kompetenzpool, der zukünftige Projekte effizienter und selbstbestimmter ermöglicht.
 
 3. **Verwaltungsdigitalisierung und Interoberabilität**
 
@@ -152,7 +152,7 @@ Der Aufbau des Data Hub Berlin ist keine neue Einzelinitiative, sondern ein seit
 
 ## Pilotphase und Prototyp
 
-Die Entwicklung eines so umfassenden IT-Infrastrukturprojekts erfordert agile Prozesse und enge Zusammenarbeit in der Praxis. In einer Pilotphase wird der Data Hub-Prototypisch aufgebaut – also in einer frühen Version, die gezielt getestet, erprobt und stetig weiterentwickelt wird –, um alle Anforderungen für eine Verstetigung und den Produktivbetrieb zu identifizieren. Dabei werden sowohl technische als auch organisatorische Rahmenbedingungen betrachtet, um nachhaltige Mehrwerte für ein breites Spektrum an Nutzenden zu schaffen.  
+Die Entwicklung eines so umfassenden IT-Infrastrukturprojekts erfordert agile Prozesse und enge Zusammenarbeit in der Praxis. In einer Pilotphase wird der Data Hub prototypisch aufgebaut, also in einer frühen Version, die gezielt getestet, erprobt und stetig weiterentwickelt wird, um alle Anforderungen für eine Verstetigung und den Produktivbetrieb zu identifizieren. Dabei werden sowohl technische als auch organisatorische Rahmenbedingungen betrachtet, um nachhaltige Mehrwerte für ein breites Spektrum an Nutzenden zu schaffen.  
 
 ### Zusammenarbeit von Technologiestiftung Berlin und Berliner Senatskanzlei
 
