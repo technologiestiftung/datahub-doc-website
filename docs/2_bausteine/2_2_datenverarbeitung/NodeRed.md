@@ -35,15 +35,15 @@ Node-Red ist ein Low-Code-Tool, das Datenströme über eine grafische Oberfläch
 
 ### Node-Red im Data Hub
 
-Im Data Hub wird Node-Red eingesetzt, um Daten aus MinIO, Datenbanken oder APIs zu verarbeiten, ETL-Prozesse zu steuern oder Daten an die PostgreSQL-Datenbanken des Data Hub weiterzuleiten, welche wiederum die Danten den Analyse- und Visualisierungstools wie Superset zur Verfügung stellt. Über Programmcode-Elemte im Node-Red-Flow können die Daten zu einem gewissen Grad vorverarbeitet oder geprüft werden. Dadurch können Verwaltungsprozesse automatisiert und wiederholbare Workflows ohne tiefe Programmierkenntnisse erstellt werden.
+Im Data Hub wird Node-Red eingesetzt, um Daten aus MinIO, Datenbanken oder APIs zu verarbeiten, ETL-Prozesse zu steuern oder Daten an die PostgreSQL-Datenbanken des Data Hub weiterzuleiten, welche wiederum die Daten den Analyse- und Visualisierungstools wie Superset zur Verfügung stellt. Über Programmcode-Elemente im Node-Red-Flow können die Daten zu einem gewissen Grad vorverarbeitet oder geprüft werden. Dadurch können Verwaltungsprozesse automatisiert und wiederholbare Workflows ohne tiefe Programmierkenntnisse erstellt werden.
 
 ## Funktionen & Einsatzgebiete
 
-Node-Red wird Data Hub insbesondere für folgende Dinge eingesetzt:
+Node-Red wird im Data Hub insbesondere für folgende Dinge eingesetzt:
 
-- Verbindung von Datenquellen, APIs und Tools über grafische Flows, um die Daten in die Datenbanken des Data Hubs zu schreiben  
+- Verbindung von Datenquellen, APIs und Tools über grafische Flows, um die Daten in die Datenbanken des Data Hub zu schreiben.  
 - Aufsetzen von Trigger-basierten Verarbeitungen (z. B. bei neuen Dateien oder Zeitplänen)  
-- Monitoring von Datenflüssen und Logging von Ereignissen, sowie Datenqualitätsprüfungen
+- Monitoring von Datenflüssen und Logging von Ereignissen sowie Datenqualitätsprüfungen
 
 :::tip Fiktives Praxisbeispiel
 
@@ -61,7 +61,7 @@ Auch wenn Node-RED als Low-Code-Tool über eine einfach aufgebaute grafische Obe
 **Technisches Know-How notwendig:** <span title="Leicht zu verstehen" class="text-yellow-400">●●●○○</span>  
 **Komplexität bzw. Einarbeitungszeit:** <span title="Mäßig" class="text-green-500">●●○○○</span>  
 
-👉 Für Verwaltungsmitarbeitende heißt das: Das initiale Aufsetzen von Flows sollte durch IT- oder Daten-Spezialist:innen oder das Data Hub Team durchgeführt werden, insbesondere bei komplexn Workflows, Anbindungen an mehrere Systeme oder wenn Daten transformiert oder geprüft werden sollen.
+👉 Für Verwaltungsmitarbeitende heißt das: Das initiale Aufsetzen von Flows sollte durch IT- oder Daten-Spezialistwnn oder das Data Hub-Team durchgeführt werden, insbesondere bei komplexn Workflows, Anbindungen an mehrere Systeme oder wenn Daten transformiert oder geprüft werden sollen.
 
 ### Input & Output
 

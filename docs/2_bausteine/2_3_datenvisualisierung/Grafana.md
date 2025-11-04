@@ -64,7 +64,7 @@ Grafana ist auf Anwenderfreundlichkeit ausgelegt, erfordert aber Grundkenntnisse
 **Technisches Know-How notwendig:** <span title="Mittel" class="text-yellow-400">●●○○○</span>  
 **Komplexität bzw. Einarbeitungszeit:** <span title="Mittel" class="text-yellow-400">●●○○○</span>  
 
-👉 Verwaltungsmitarbeitende können fertige Dashboards nutzen und leicht anpassen. Das initiale Erstellen von komplexen Dashboards, insbesondere für Echtzeitdaten oder das Einrichten von Alerts sollte durch ein geschultes IT- oder Daten-Team erfolgen.
+👉 Verwaltungsmitarbeitende können fertige Dashboards nutzen und leicht anpassen. Das initiale Erstellen von komplexen Dashboards, insbesondere für Echtzeitdaten oder das Einrichten von Alerts, sollte durch ein geschultes IT- oder Daten-Team erfolgen.
 
 ### Input & Output
 
@@ -88,7 +88,7 @@ Grafana ist auf Anwenderfreundlichkeit ausgelegt, erfordert aber Grundkenntnisse
       - Tabellen aus PostgreSQL-Datenbanken  
       - Sensordaten aus der Timescale-DB   
       - JSON oder CSV-Dateien aus MinIO  
-      - APIs von Fachverfahren oder Open Data Quellen
+      - APIs von Fachverfahren oder Open Data-Quellen
       </p>
     </div>
   </>
@@ -116,17 +116,17 @@ Grafana ist auf Anwenderfreundlichkeit ausgelegt, erfordert aber Grundkenntnisse
 
 ## Beispiele
 
-Grafana kommt als Datenvisualisierungskomponente unter anderem in diesem Projekt der Technologiestiftung Berlin und des Bezirksamt Pankows zum Einsatz:
+Grafana kommt als Datenvisualisierungskomponente unter anderem in diesem Projekt der Technologiestiftung Berlin und des Bezirksamts Pankow zum Einsatz:
 
 - [Datenbasierte Bibliothekssteuerung 2023: Monitoring von Ausleihen und Angeboten](https://grafana.odis-berlin.de/public-dashboards/4b1757c17042436fbcbe6065061114d2?orgId=1)  
 
 
 ## Weiterführende Informationen
 
-Diese Seite ist als erster Einstieg zu Grafana im Kontext des Data Hubs gedacht. Da es sich um ein bekanntes Open Source Tool handelt, existiert eine offizielle, technische Dokumentationen:  
+Diese Seite ist als erster Einstieg zu Grafana im Kontext des Data Hub gedacht. Da es sich um ein bekanntes Open Source Tool handelt, existiert eine offizielle, technische Dokumentation:  
 [Offizielle Grafana Dokumentation](https://grafana.com/docs/) 
 
-In der Dokumentation des CIVITAS/CORE findest du Hinweise dazu, wie das Tool auf Admin Level genutzt und verwaltet wird:  
+In der Dokumentation des CIVITAS/CORE findest du Hinweise dazu, wie das Tool auf Admin-Level genutzt und verwaltet wird:  
 [CIVITAS/CORE Admin Docs](https://docs.core.civitasconnect.digital/docs/Administration/Grafana)
 
 Tutorials oder Inspirationen findest du hier:  

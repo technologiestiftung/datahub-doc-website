@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 hide_title: true
 description: Dies ist der zentrale Wissensspeicher des prototypischen Data Hub Berlins, der urbanen Datenplattform der Berliner Verwaltung. Hier findest du Informationen zu Hintergründen, Aufbau und Anwendungsfällen der Plattform.
 title: Appsmith
@@ -35,32 +35,32 @@ Appsmith ist ein Low-Code-Framework zum Erstellen interner Verwaltungs- und Date
 
 ### Appsmith im Data Hub
 
-Im Data Hub dient Appsmith als schnelles Interface-Tool, um Daten aus den PostgreSQL-Datenbanken sichtbar und interaktiv nutzbar zu machen, vorallem aber um ein Eintragen und Verändern von Daten für interne und externe Personen zu ermöglichen ohne das diese direkten Zugriff auf das komplexe Backend bekommen. Datenänderungen werden direkt über Queries in die Datenbanken zurückgeschrieben, sofern Berechtigungen bestehen. Zusätzlich können von der Verwaltung abgestimme, hinterlegte Schemata und Datenmodelle verwendet werden, um Eintragungen zu validieren und eine hohe Datenqualität und Dateninteroperabilität sicherzustellen.
+Im Data Hub dient Appsmith als schnelles Interface-Tool, um Daten aus den PostgreSQL-Datenbanken sichtbar und interaktiv nutzbar zu machen, vor allem aber, um ein Eintragen und Verändern von Daten für interne und externe Personen zu ermöglichen, ohne dass diese direkten Zugriff auf das komplexe Backend bekommen. Datenänderungen werden direkt über Queries in die Datenbanken zurückgeschrieben, sofern Berechtigungen bestehen. Zusätzlich können von der Verwaltung abgestimmte, hinterlegte Schemata und Datenmodelle verwendet werden, um Eintragungen zu validieren und eine hohe Datenqualität und Dateninteroperabilität sicherzustellen.
  
 
 ## Funktionen & Einsatzgebiete
 
 Appsmith wird im Data Hub besonders genutzt für:
 
-- Entwicklung von Formularen zur Datenerfassung die Verwaltungsintern und extern genutzt werden können
+- Entwicklung von Formularen zur Datenerfassung, die verwaltungsintern und extern genutzt werden können.
 - Erstellung von simplen Dashboards mit Charts und Tabellen
 
 
 :::tip Fiktives Praxisbeispiel
 
 **„Zentrale Meldestelle für Kulturstandorte“ 🎭**  
-Kultureinrichtungen in Berlin pflegen über eine Appsmith-Anwendung ihre Öffnungszeiten, Kontaktinformationen, Barrierefreiheitsmerkmale und Kurzbeschreibungen. Die Oberfläche prüft Eingaben automatisch (z. B. gültige Zeiten, Pflichtfelder, Dubletten) und speichert die Daten in der zentralen Datenbank. Die Senatsverwaltung gibt die Daten in einem händischen Prüfschritt frei und veröffentlicht die geupdatete Datentabelle als Open Data.
+Kultureinrichtungen in Berlin pflegen über eine Appsmith-Anwendung ihre Öffnungszeiten, Kontaktinformationen, Barrierefreiheitsmerkmale und Kurzbeschreibungen. Die Oberfläche prüft Eingaben automatisch (z.B. gültige Zeiten, Pflichtfelder, Dubletten) und speichert die Daten in der zentralen Datenbank. Die Senatsverwaltung gibt die Daten in einem händischen Prüfschritt frei und veröffentlicht die geupdatete Datentabelle als Open Data.
 
 :::
 
 ## Skill-Level & Anforderungen
 
-Appsmith ist Low-Code, jedoch hilfreich ist ein Verständnis von SQL und JavaScript-Snippets. Diese Kenntnisse werden zum Beispiel benötigt, um die Verbindung zur Datenbank zu konfigurieren und Prüflogiken zu implementieren.
+Appsmith ist Low-Code, hilfreich ist jedoch ein Verständnis von SQL und JavaScript-Snippets. Diese Kenntnisse werden zum Beispiel benötigt, um die Verbindung zur Datenbank zu konfigurieren und Prüflogiken zu implementieren.
 
 **Technisches Know-How notwendig:** <span class="text-yellow-400">●●●○○</span>  
 **Komplexität / Einarbeitung:** <span class="text-yellow-400">●●●○○</span>  
 
-👉 Fachabteilungen mit Grundkenntnissen können sehr einfache Oberflächen und Formulare selbst bauen, oder bestehende leicht anpassen. Das intitale Aufsetzen von komplexeren Formularen und Logiken sollte über IT- oder Datenexpertinnen durchgeführt werden, wie dem Kompetenzteam des Data Hubs.
+👉 Fachabteilungen mit Grundkenntnissen können sehr einfache Oberflächen und Formulare selbst bauen oder bestehende leicht anpassen. Das intitale Aufsetzen von komplexeren Formularen und Logiken sollte über IT- oder Datenexperten durchgeführt werden, wie dem Kompetenzteam des Data Hub.
 
 ## Input & Output
 
@@ -81,7 +81,7 @@ Appsmith ist Low-Code, jedoch hilfreich ist ein Verständnis von SQL und JavaScr
       <p>
       Typische Inputs für Appsmith-Anwendungen im Data Hub sind:
 
-      - PostgreSQL-Datenbanken des Data Hubs
+      - PostgreSQL-Datenbanken des Data Hub
       - Händische Eingaben durch Nutzende   
       - REST-APIs
       </p>
@@ -112,7 +112,7 @@ Appsmith ist Low-Code, jedoch hilfreich ist ein Verständnis von SQL und JavaScr
 
 ## Beispiele
 
-AppSmith wird unter anderem in dieser Pilotanwendungen eingesetzt, um ein Formular zu erstellen, das von externen Akteuren genutzt wird um Daten an die Verwaltung zu liefern:
+AppSmith wird unter anderem in dieser Pilotanwendung eingesetzt, um ein Formular zu erstellen, das von externen Akteuren genutzt wird, um Daten an die Verwaltung zu liefern:
 
 - [Erfassung von Akteuren im Sozialraum](/docs/anwendungen/akteure_erfassen)
 

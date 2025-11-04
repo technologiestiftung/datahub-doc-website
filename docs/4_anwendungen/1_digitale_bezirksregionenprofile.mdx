@@ -24,15 +24,14 @@ import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/reac
 ## Was sind die Berliner Bezirksregionenprofile?
 
 Die Berliner Bezirksregionenprofile (BZRP) geben regelmäßig Auskunft über die sozio-ökonomische Lage der Bezirksregionen. Jedes Profil besteht aus zwei Teilen: einer Analyse zentraler demografischer und sozialer Indikatoren (Kurzprofil) sowie einer Beschreibung der auf dieser Analyse basierenden Maßnahmen und Ziele für den jeweiligen Bezirk.
-Die Erstellung der Profile erfolgt derzeit innerhalb der Bezirke durch spezialisierte Personen oder Teams aus dem Bereichen der Sozialraumorientierten Planungskoordination. Als Datengrundlage dienen Informationen des Amtes für Statistik Berlin-Brandenburg sowie der Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen, ergänzt um bezirksspezifische Daten.
-
+Die Erstellung der Profile erfolgt derzeit innerhalb der Bezirke durch spezialisierte Personen oder Teams aus dem Bereichen der sozialraumorientierten Planungskoordination. Als Datengrundlage dienen Informationen des Amtes für Statistik Berlin-Brandenburg sowie der Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen, ergänzt um bezirksspezifische Daten.
 
 
 ## Das Problem
 
-Der derzeitige Prozess rund um die Erstellung und Veröffentlichung der Bezirkregionenprofile ist für viele Beteiligte nicht mehr zufriedenstellen. Grund dafür sind:
+Der derzeitige Prozess rund um die Erstellung und Veröffentlichung der Bezirksregionenprofile ist für viele Beteiligte nicht mehr zufriedenstellen. Grund dafür sind:
 
-- **Hoher manueller Aufwand:** Die Erstellung der BZRP ist sehr zeitaufwendig, da viele Prozesse manuell erfolgen, inklusive Datenexporten, analoger Arbeitsschritte und Medienbrüchen. Augrund mangelnder Ressourcen und weil die BZRP regelmäßig neu erstellt werden müssen, bleibt in vielen Bezirken so keine Zeit für die eigentliche tiefergehende Analyse der Daten und die Erstellung von Maßnahmenbeschreibungen über die Kurzprofile hinaus
+- **Hoher manueller Aufwand:** Die Erstellung der BZRP ist sehr zeitaufwendig, da viele Prozesse manuell erfolgen, inklusive Datenexporten, analoger Arbeitsschritte und Medienbrüchen. Aufgrund mangelnder Ressourcen und weil die BZRP regelmäßig neu erstellt werden müssen, bleibt in vielen Bezirken so keine Zeit für die eigentliche tiefergehende Analyse der Daten und die Erstellung von Maßnahmenbeschreibungen über die Kurzprofile hinaus
 - **Uneinheitliche Veröffentlichungen:** Die Daten werden über das PRISMA-Fachverfahren bereitgestellt, das Verschneidung, Aggregation und Visualisierung der Daten ermöglicht, aber keine standardisierte Veröffentlichung nach außen vorsieht. Dies führt zu starken Unterschieden zwischen den Bezirken: Einige nutzen aufwendig erstellte interaktive Diagramme und Karten aus dem Tool Datawrapper, während die meisten Profile nach wie vor nur als PDF verfügbar sind.
 
 ## Zielsetzung
@@ -113,7 +112,7 @@ Der Data Hub wird eingesetzt, um den Prozess zur Erstellung der BZRP zu vereinfa
       </p>
       <ul className="ml-4 list-disc">
         <li>Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen, Referat I A 38</li>
-        <li>Organisationseinheit Sozialraumorientierte Planungskoordination (OESPK), inkl. bezirklicher Datenkoordinator:innen</li>
+        <li>Organisationseinheit "Sozialraumorientierte Planungskoordination" (OESPK), inklusive der bezirklichen Datenkoordinator:innen</li>
         <li>Ein Dienstleister zur Unterstützung bei der Gestaltung der BZRPs</li>
         <li>Regional- und Stadtteilkoordinator:innen</li>
       </ul>
@@ -125,7 +124,7 @@ Der Data Hub wird eingesetzt, um den Prozess zur Erstellung der BZRP zu vereinfa
 
 ### Technische Lösung im Data Hub
 - Datenfluss: Tabellarische Daten werden vom Amt für Statistik an die Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen übermittelt und in das Fachverfahren PRISMA geladen.  
-- Parallel werden die Daten in die relationelle Datenbank des Data Hub importiert, inklusive bezirksspezifischer Daten, die unterschiedlich formatiert vorliegen.  
+- Parallel werden die Daten in die relationale Datenbank des Data Hub importiert, inklusive bezirksspezifischer Daten, die unterschiedlich formatiert vorliegen.  
 - Für interaktive Dashboards wird Superset genutzt, mit Rechtemanagement, sodass jede:r Datenkoordinator:in nur das eigene Dashboard bearbeiten kann.
 
 <iframe
@@ -141,7 +140,7 @@ Zur Umsetzung wurden Methoden eingesetzt, die Prozessstruktur und Einbindung all
 
 - Workshops mit einer [Entwicklungsmatrix](https://www.oeffentliches-gestalten.de/buch/vorbereiten/ist-zustand-betrachten) zur Analyse des IST-Zustands  
 - [Akteurskartierung](https://www.oeffentliches-gestalten.de/buch/erkunden/system-akteure-verbinden#schl%C3%BCsselakteure-identifizieren)  
-- Erstellung von Personas für Gelegenheits- und Poweruser:innen des Dashboards, um Bedürfnisse und Kompetenzen zu verstehen  
+- Erstellung von Personas für Gelegenheits- und Poweruser des Dashboards, um Bedürfnisse und Kompetenzen zu verstehen  
 
 Workshops mit einem Dashboard-Prototypen wurden genutzt, um Nutzung, technische Infrastruktur und dahinterliegende Prozesse zu testen.  
 
@@ -153,7 +152,7 @@ Es zeigte sich, dass ein Kompromiss nötig ist: zwischen schnellem Prototyping u
 ### Lessons Learned
 Die Erfahrungen aus der Umsetzung des BZRP-Dashboards liefern wichtige Erkenntnisse für den gesamten Data Hub-Prototypen: Sie zeigen, wie sich interaktive Datenprodukte entwickeln lassen, welche Herausforderungen beim Einbinden verschiedener Akteure auftreten und welche Ansätze für eine effizientere und skalierbare Datenbereitstellung funktionieren.
 
-- Es ist wichtig, eine Balance zwischen schnellem Prototyping, einem tiefgründigen Verständnis der Prozesse und dem Bedürfnis, komplexe Verwaltungsabläufe zu optimieren und zu beschleunigen, zu finden. An den BZRP zeigt sich, ein bestehender Prozess und ein analoges Produkt lassen sich nicht 1 zu 1 ins Digitale überführen. Stattdessen muss im Rahmen einer möglichst sinnvollen Verwaltungsmoderisierung Stück für Stück hinterfragt und neusortiert werden.
+- Es ist wichtig, eine Balance zwischen schnellem Prototyping, einem tiefgründigen Verständnis der Prozesse und dem Bedürfnis, komplexe Verwaltungsabläufe zu optimieren und zu beschleunigen, zu finden. An den BZRP zeigt sich, ein bestehender Prozess und ein analoges Produkt lassen sich nicht 1 zu 1 ins Digitale überführen. Stattdessen muss im Rahmen einer möglichst sinnvollen Verwaltungsmodernisierung Stück für Stück hinterfragt und neu sortiert werden.
 - Datenkommentierung und -einordnung bleiben entscheidend: Vollautomatisierte Prozesse sind derzeit (noch) nicht möglich. Sie erfordern die Erweiterung von Fachverfahren, um eine Anschlussfähigkeit über Schnittstellen und das Internet sicherzustellen.
 
 ###  Next Steps

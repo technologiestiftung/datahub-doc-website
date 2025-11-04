@@ -36,7 +36,7 @@ import { ArrowRightEndOnRectangleIcon, ArrowRightStartOnRectangleIcon } from '@h
 
 ### GeoServer im Data Hub
 
-Im Data Hub dient GeoServer als zentrale Komponente um aus Daten mit Raumbezug standardisierte Geo-Webservices zu machen. Open Data, Daten aus Fachverfahren oder andere projektbasierten Datensätzen werden über die Benutzeroberfläche des GeoServer registriert und es wird ein WFS- oder WMS-Dienst konfiguriert. Dies fördert die Wiederverwendbarkeit und Interoperabilität von Geodaten. Bestimmte Tools, wie das Masterportal benötigen die Daten in diesen Formaten. Die offenen Geodaten aus dem Geoportal des Landes Berlin, liegen ebenfalls in diesen Formaten vor.
+Im Data Hub dient GeoServer als zentrale Komponente, um aus Daten mit Raumbezug standardisierte Geo-Webservices zu machen. Open Data, Daten aus Fachverfahren oder andere projektbasierte Datensätzen werden über die Benutzeroberfläche des GeoServers registriert und es wird ein WFS- oder WMS-Dienst konfiguriert. Dies fördert die Wiederverwendbarkeit und Interoperabilität von Geodaten. Bestimmte Tools wie das Masterportal benötigen die Daten in diesen Formaten. Die offenen Geodaten aus dem Geoportal des Landes Berlin liegen ebenfalls in diesen Formaten vor.
 
 ## Funktionen & Einsatzgebiete
 
@@ -48,7 +48,7 @@ GeoServer bietet im Data Hub insbesondere:
 :::tip Fiktives Praxisbeispiel
 
 **„Für den Bezirk relevante Baumaßnahmen filtern“** 🌍  
-Eine Senatsverwaltung pflegt über ein Formular eine Liste von Baumaßnahmen und deren Status in Berlin. Die Daten aus dem Formular fließen automatisiert in die Datenbank des Data Hubs. Der GeoSever ist mit dieser Datenbank verbunden und erstellt in Echtzeit aus den Daten einen WFS-Dienst. Ein Bezirksamt nutzt den WFS-Dienst, indem es ihn automatisch filtert um nur die Daten für den eigenen Bezirk anzuzeigen und spielt diese in einer interaktiven Karte für das bezirkliche Stadtplanungsamt aus.
+Eine Senatsverwaltung pflegt über ein Formular eine Liste von Baumaßnahmen und deren Status in Berlin. Die Daten aus dem Formular fließen automatisiert in die Datenbank des Data Hub. Der GeoSever ist mit dieser Datenbank verbunden und erstellt in Echtzeit aus den Daten einen WFS-Dienst. Ein Bezirksamt nutzt den WFS-Dienst, indem es ihn automatisch filtert, um nur die Daten für den eigenen Bezirk anzuzeigen und spielt diese in einer interaktiven Karte für das bezirkliche Stadtplanungsamt aus.
 
 :::
 
@@ -56,7 +56,7 @@ Eine Senatsverwaltung pflegt über ein Formular eine Liste von Baumaßnahmen und
 
 ### Skill-Level & Anforderungen
 
-GeoServer richtet sich an Nutzer:innen mit Kenntnissen in Geoinformationssystemen, Datenbanken und Web-Services. Für einfache Layer-Registrierung reicht ein gutes Verständnis der Oberfläche; für automatisierte Abläufe oder komplexe Rechteverwaltung sind Kenntnisse in GIS-Standards, WMS/WFS/WCS und SRS (Spatial Reference Systems) hilfreich.  
+GeoServer richtet sich an Nutzende mit Kenntnissen in Geoinformationssystemen, Datenbanken und Web-Services. Für einfache Layer-Registrierung reicht ein gutes Verständnis der Oberfläche; für automatisierte Abläufe oder komplexe Rechteverwaltung sind Kenntnisse in GIS-Standards, WMS/WFS/WCS und SRS (Spatial Reference Systems) hilfreich.  
 
 **Technisches Know-How notwendig:** <span title="Mittel" class="text-yellow-400">●●●○○</span>  
 **Komplexität bzw. Einarbeitungszeit:** <span title="Mittel" class="text-yellow-400">●●●○○</span>  
@@ -79,7 +79,7 @@ GeoServer richtet sich an Nutzer:innen mit Kenntnissen in Geoinformationssysteme
         </div>
         <p>
           Typische Inputs für GeoServer sind:
-          - Geodaten aus der PostgreSQL/PostGIS-Datenbank des Data Hubs  
+          - Geodaten aus der PostgreSQL/PostGIS-Datenbank des Data Hub  
         </p>
       </div>
     </>
@@ -96,7 +96,7 @@ GeoServer richtet sich an Nutzer:innen mit Kenntnissen in Geoinformationssysteme
           Über GeoServer werden bereitgestellt:
           - Karten- und Layer-Dienste (WMS) für Visualisierungen  
           - Feature-Dienste (WFS) für Geodatenzugriff und Abfragen
-          - Feature-Dienste mit Schreibzugriffen (WFS-T) zum Anlegen und editieren von Geodaten
+          - Feature-Dienste mit Schreibzugriffen (WFS-T) zum Anlegen und Editieren von Geodaten
           - Rasterdienste (WCS) für großflächige Datensätze  
         </p>
       </div>
@@ -107,7 +107,7 @@ GeoServer richtet sich an Nutzer:innen mit Kenntnissen in Geoinformationssysteme
 
 ## Beispiele
 
-GeoServer wird unter anderem in dieser Pilotanwendungen eingesetzt, um Daten mit Adressen aus einer Erhebung in eine Masterportal-Karte zu bringen:
+GeoServer wird unter anderem in dieser Pilotanwendung eingesetzt, um Daten mit Adressen aus einer Erhebung in eine Masterportal-Karte zu bringen:
 
 - [Erfassung von Akteuren im Sozialraum](/docs/anwendungen/akteure_erfassen)
 

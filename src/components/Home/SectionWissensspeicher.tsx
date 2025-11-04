@@ -27,7 +27,7 @@ export default function SectionWissensspeicher() {
         <div className="order-1 lg:order-2 col-span-12 lg:col-span-6 text-center ">
           <div className="w-full h-auto overflow-hidden">
             <div className="max-w-[339px] mb-10 md:mb-0 mx-auto">
-              <WissenSVG width={375} height={375}></WissenSVG>
+              <WissenSVG width={320} height={320}></WissenSVG>
             </div>
           </div>
         </div>

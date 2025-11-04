@@ -37,20 +37,20 @@ import { ArrowRightEndOnRectangleIcon, ArrowRightStartOnRectangleIcon } from '@h
 
 ### Masterportal im Data Hub
 
-Im Rahmen des Data Hubs übernimmt Masterportal die Funktion, Geodaten effizient und standardkonform bereitzustellen und als Webkarten zu visualisieren – sowohl für Fachabteilungen als auch für die Öffentlichkiet. Die Lösung kann direkt auf die bestehende offene Geodaten‑Infrastruktur der Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen (Geoportal) aufsetzen oder die im Data Hub im GeoServer konfigurierten Dienste nutzen. So lassen sich neue, thematische Portale bauen zum Beispiel für verwaltungsinternes Monitoring oder als Produkt zur Information für Bürger und Bürgerinnen.
+Im Rahmen des Data Hub übernimmt Masterportal die Funktion, Geodaten effizient und standardkonform bereitzustellen und als Webkarten zu visualisieren – sowohl für Fachabteilungen als auch für die Öffentlichkiet. Die Lösung kann direkt auf die bestehende offene Geodaten‑Infrastruktur der Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen (Geoportal) aufsetzen oder die im Data Hub im GeoServer konfigurierten Dienste nutzen. So lassen sich neue, thematische Portale bauen zum Beispiel für verwaltungsinternes Monitoring oder als Produkt zur Information für Bürger und Bürgerinnen.
 
 ## Funktionen & Einsatzgebiete
 
 Masterportal wird im Data Hub insbesondere für folgende Aufgaben genutzt:
 
-- Einrichtung von Geoportalen bzw. Kartenanwendungen mit geringem Programmieraufwand zur Betrachtung von Geodaten
+- Einrichtung von Geoportalen beziehungsweise Kartenanwendungen mit geringem Programmieraufwand zur Betrachtung von Geodaten
 - Einrichtung von Kartenanwendungen, die ein Editieren bzw. Einzeichnen von Daten zulassen, zur Erfassung von Geodaten
 
 
 :::tip Fiktives Praxisbeispiel
 
 **„Grünflächen- und Gartenkarte als Service für Bürger und Bürgerinnen“** 🏛️  
-Eine Senatsverwaltung nutzt Masterportal, um alle öffentlichen Parks, Gemeinschaftsgärten und Grünflächen Berlins auf einer interaktiven, öffentlichen Karte darzustellen. Bürger:innen können Öffnungszeiten, Angebote und Standortinfos einsehen, während Fachabteilungen dieselben Geodaten für Planung, Pflegeberichte und Monitoring nutzen. Updates in der Datenbank werden automatisch in die Karte übertragen, sodass diese stets aktuell bleibt.
+Eine Senatsverwaltung nutzt Masterportal, um alle öffentlichen Parks, Gemeinschaftsgärten und Grünflächen Berlins auf einer interaktiven, öffentlichen Karte darzustellen. Bürger können Öffnungszeiten, Angebote und Standortinfos einsehen, während Fachabteilungen dieselben Geodaten für Planung, Pflegeberichte und Monitoring nutzen. Updates in der Datenbank werden automatisch in die Karte übertragen, sodass diese stets aktuell bleibt.
 
 :::
 
@@ -77,7 +77,7 @@ Das Masterportal richtet sich an Fachabteilungen mit thematischem Kartenbezug. G
       <p>
         Typische Inputs für Masterportale im Data Hub‑Kontext:
 
-        - Geodaten‑Dienste die über den GeoServer des Data Hubs bereitgestellt werden 
+        - Geodaten‑Dienste die über den GeoServer des Data Hub bereitgestellt werden 
         - Offene Geodaten‑Dienste des Berliner Geoportals
         - GeoJSON-Dateien
       </p>
@@ -108,7 +108,7 @@ Das Masterportal kommt als Datenvisualisierungskomponente unter anderem in einem
 
 - [Erfassung von Akteuren im Sozialraum](/docs/anwendungen/akteure_erfassen)
 
-Das Masterportal ist als Software weit verbreitet und kommt sowohl in Berlin, als auch in anderen Städten und Verwaltungen zum Einsatz. Hier einige Beispiele:
+Das Masterportal ist als Software weit verbreitet und kommt sowohl in Berlin als auch in anderen Städten und Verwaltungen zum Einsatz. Hier einige Beispiele:
 
 - [Berliner Geodatenportal](https://gdi.berlin.de/viewer/main/)
 - [Mein XHain](https://www.geodaten-fk.de/MeinXhain/Portal/)
@@ -117,11 +117,11 @@ Das Masterportal ist als Software weit verbreitet und kommt sowohl in Berlin, al
 
 ## Weiterführende Informationen  
 
-Diese Seite ist als erster Einstieg zu Apache Superset im Kontext des Data Hubs gedacht. 
-Da es sich um ein bekanntes Open Source Tool handelt, existiert eine offizielle, technische Dokumentationen:   
+Diese Seite ist als erster Einstieg zu Apache Superset im Kontext des Data Hub gedacht. 
+Da es sich um ein bekanntes Open Source-Tool handelt, existiert eine offizielle, technische Dokumentation:   
 [Masterportal Dokumentation](https://www.masterportal.org/dokumentation)  
 
-In der Dokumentation des CIVITAS/CORE findest du Hinweise dazu, wie das Tool auf Admin Level genutzt und verwaltet wird:  
+In der Dokumentation des CIVITAS/CORE findest du Hinweise dazu, wie das Tool auf Admin-Level genutzt und verwaltet wird:  
 [CIVITAS/CORE Admin Docs](https://docs.core.civitasconnect.digital/docs/Administration/Masterportal)
 
 </div>

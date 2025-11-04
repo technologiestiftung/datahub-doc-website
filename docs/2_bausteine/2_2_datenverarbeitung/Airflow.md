@@ -26,7 +26,7 @@ Airflow orchestriert Datenpipelines. Es ermöglicht die automatisierte Ausführu
 ### Orchestrierung von Datenpipelines
 <div className="flex flex-col xl:flex-row xl:items-center justify-center xl:gap-10">
   <p className="mb-0">
-Apache Airflow erlaubt das definieren von Workflows als Code („DAGs“) und steuert deren Ausführung automatisch. Jobs können zeit- oder ereignisgesteuert ablaufen, Abhängigkeiten zwischen Aufgaben werden automatisch beachtet, und fehlerhafte Schritte können wiederholt werden.  
+Apache Airflow erlaubt das Definieren von Workflows als Code („DAGs“) und steuert deren Ausführung automatisch. Jobs können zeit- oder ereignisgesteuert ablaufen, Abhängigkeiten zwischen Aufgaben werden automatisch beachtet, und fehlerhafte Schritte können wiederholt werden.  
 </p>
     <div className="flex flex-[0_0_250px] xl:pb-8 w-full justify-center items-center">
       <img src="/img/logos/airflow.svg" alt="Apache Airflow Logo" className="block h-auto w-[70%] xl:w-[70%]"/>
@@ -41,15 +41,15 @@ Im Data Hub übernimmt Airflow die zentrale Rolle bei der Automatisierung von ET
 
 Airflow wird im Data Hub insbesondere für folgende Aufgaben genutzt:
 
-- Skript-basiertes laden von Daten aus MinIO, APIs oder anderen Datenquellen, um die Daten in die Datenbanken des Data Hub zu schreiben
-- Ausführung von Python-Skripten um komplexe Verarbeitungsschritte auszuführen, wie Geocodierung, Anonymisierung oder Verschneidung von Daten
+- Skript-basiertes Laden von Daten aus MinIO, APIs oder anderen Datenquellen, um die Daten in die Datenbanken des Data Hub zu schreiben.
+- Ausführung von Python-Skripten, um komplexe Verarbeitungsschritte auszuführen, wie Geocodierung, Anonymisierung oder Verschneidung von Daten.
 - Aufsetzen von Trigger-basierten Verarbeitungen (z. B. bei neuen Dateien oder Zeitplänen)
-- Monitoring von Datenflüssen und Logging von Ereignissen, sowie Datenqualitätsprüfungen  
+- Monitoring von Datenflüssen und Logging von Ereignissen sowie Datenqualitätsprüfungen  
 
 :::tip Fiktives Praxisbeispiel
 
-**„Anonymisierte Nutzungsinforamtionen für Bibliotheken“ 🗂️**  
-Alle öffentlichen Bibliotheken Berlins erfassen monatlich pseudonymisierte Daten zu Ausleihvorgängen und Nutzer:innenmerkmalen (z. B. ungefähre Wohnlage und Altersgruppen). Die Rohdaten werden in MinIO abgelegt. Airflow steuert die ETL-Pipelines: Bereinigung, Aggregation und vollständige Anonymisierung. Die aufbereiteten Daten fließen in Dashboards, die Bibliotheksleitungen, Bezirksämter und die Senatsverwaltung für Analyse und Steuerung nutzen. Nachmeldungen oder Korrekturen der Bibliotheken lösen automatisch ein Update der aggregierten Ergebnisse aus.
+**„Anonymisierte Nutzungsinformationen für Bibliotheken“ 🗂️**  
+Alle öffentlichen Bibliotheken Berlins erfassen monatlich pseudonymisierte Daten zu Ausleihvorgängen und Nutzermerkmalen (zum Beispiel ungefähre Wohnlage und Altersgruppen). Die Rohdaten werden in MinIO abgelegt. Airflow steuert die ETL-Pipelines: Bereinigung, Aggregation und vollständige Anonymisierung. Die aufbereiteten Daten fließen in Dashboards, die Bibliotheksleitungen, Bezirksämter und die Senatsverwaltung für Analyse und Steuerung nutzen. Nachmeldungen oder Korrekturen der Bibliotheken lösen automatisch ein Update der aggregierten Ergebnisse aus.
 
 :::
 
@@ -85,7 +85,7 @@ Airflow erfordert Kenntnisse in Python und Datenbankkonzepten sowie ein Verstän
 
       - Rohdaten aus MinIO (CSV, JSON, GeoJSON)  
       - Tabellen aus PostgreSQL-Datenbanken  
-      - Externe APIs oder Open Data Quellen  
+      - Externe APIs oder Open Data-Quellen  
       - Trigger-Ereignisse wie neue Dateien oder geplante Zeitpunkte
       </p>
     </div>
@@ -102,9 +102,9 @@ Airflow erfordert Kenntnisse in Python und Datenbankkonzepten sowie ein Verstän
       <p>
       Airflow erzeugt:
 
-      - Strukturierte Datentabellen in den Data Hub Datenbanken
-      - Dateien die in MinIO abgelegt werden
-      - Verarbeitete und Veredelte Daten durch Skripte
+      - Strukturierte Datentabellen in den Data Hub-Datenbanken
+      - Dateien, die in MinIO abgelegt werden
+      - Verarbeitete und veredelte Daten durch Skripte
       - Logs und Monitoring-Informationen zur Nachvollziehbarkeit der Prozesse
       </p>
     </div>
@@ -115,12 +115,12 @@ Airflow erfordert Kenntnisse in Python und Datenbankkonzepten sowie ein Verstän
 
 ## Beispiele
 
-Airflow kommt unter anderem in diesem Pilotprojekten zum Einsatz:
+Airflow kommt unter anderem in diesem Pilotprojekt zum Einsatz:
  
 - [Datenbasierte Bibliothekssteuerung: Automatisierte Berechnung von Kennzahlen für Angebote und Ausleihen](/docs/anwendungen/datenbasierte_bibliothek)  
 
 ## Weiterführende Informationen
 
-- [Offizielle Apache Airflow Dokumentation](https://airflow.apache.org/docs/)  
+- [Offizielle Apache Airflow-Dokumentation](https://airflow.apache.org/docs/)  
 - [Airflow Tutorials & Beispiele](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html)
 </div>

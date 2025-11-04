@@ -16,7 +16,7 @@ import { ArrowRightEndOnRectangleIcon, ArrowRightStartOnRectangleIcon } from '@h
     <div>
       <h1>PostgreSQL-Datenbanken / pgAdmin</h1>
       <p className="text-lg">
-        pgAdmin stellt eine grafische Oberfläche für die PostgreSQL-Datenbanken des Data Hubs bereit. Daten können abgelegt, abgefragt und transformiert werden.
+        pgAdmin stellt eine grafische Oberfläche für die PostgreSQL-Datenbanken des Data Hub bereit. Daten können abgelegt, abgefragt und transformiert werden.
       </p>
     </div>
   </div>
@@ -27,7 +27,7 @@ import { ArrowRightEndOnRectangleIcon, ArrowRightStartOnRectangleIcon } from '@h
 
 <div className="flex flex-col xl:flex-row xl:items-center justify-center xl:gap-10 ">
   <p className="mb-0">
-    Die Datenbanken dienen als Speicherort für strukturiert vorliegende Daten, die im Data Hub zur Verfügung stehen sollen. pgAdmin ist ein Open-Source-Tool, das eine grafische Benutzeroberfläche für PostgreSQL bereitstellt. Es erleichtert die Verwaltung von Tabellen, Schemata, Benutzern und Abfragen. IT-Teams können Datenbanken konfigurieren, Abfragen testen, Ergebnisse analysieren und Backups erstellen, ohne ausschließlich SQL über die Kommandozeile nutzen zu müssen.
+    Die Datenbanken dienen als Speicherort für strukturiert vorliegende Daten, die im Data Hub zur Verfügung stehen sollen. pgAdmin ist ein Open Source-Tool, das eine grafische Benutzeroberfläche für PostgreSQL bereitstellt. Es erleichtert die Verwaltung von Tabellen, Schemata, Benutzern und Abfragen. IT-Teams können Datenbanken konfigurieren, Abfragen testen, Ergebnisse analysieren und Backups erstellen, ohne ausschließlich SQL über die Kommandozeile nutzen zu müssen.
   </p>
   <div className="flex flex-[0_0_250px] xl:pb-20 w-full justify-center items-center">
       <img src="/img/logos/pgadmin.svg" alt="pgAdmin Logo" className="block h-auto w-[70%] xl:w-full"/>
@@ -36,22 +36,22 @@ import { ArrowRightEndOnRectangleIcon, ArrowRightStartOnRectangleIcon } from '@h
 
 ### pgAdmin im Data Hub
 
-pgAdmin unterstützt die Data Hub Infrastruktur, indem es Datenbankadministration und -überwachung vereinfacht. Nutzende können Datenbanken für befüllen, Schemata anlegen, Abfragen testen und Daten für Analysen und Dashboards aufbereiten. Besonders praktisch ist die Kombination mit den Datenverarbeitungskomponenten des Data Hubs, durch die über ETL-Prozesse oder andere Integrationen Daten in die Datenbanken gespeist werden können.
+pgAdmin unterstützt die Data Hub-Infrastruktur, indem es Datenbankadministration und -überwachung vereinfacht. Nutzende können Datenbanken befüllen, Schemata anlegen, Abfragen testen und Daten für Analysen und Dashboards aufbereiten. Besonders praktisch ist die Kombination mit den Datenverarbeitungskomponenten des Data Hub, durch die über ETL-Prozesse oder andere Integrationen Daten in die Datenbanken gespeist werden können.
 
 ## Funktionen & Einsatzgebiete
 
-Die PostgreSQL-Datenbanken und pgAdmin bieten insbesondere folgenden Mehrwert:
+Die PostgreSQL-Datenbanken und pgAdmin bieten insbesondere folgende Mehrwerte:
 
-- Ablegen von strukturieren Daten, um sie z.B. für die Dashboard-Tools verfügbar zu machen 
-- Anlegen von Schemata, die z.B. für Prüf- und Datenerhebungsprozesse verwendet werden können und Datenqualität sicherstellen
-- Transformation von Daten, z.B. Überführung von Geodaten in ein anderes Bezugssystem oder Aggregation von Werten
+- Ablegen von strukturieren Daten, um sie zum Beispiel für die Dashboard-Tools verfügbar zu machen. 
+- Anlegen von Schemata, die zum Beispiel für Prüf- und Datenerhebungsprozesse verwendet werden können und Datenqualität sicherstellen.
+- Transformation von Daten, zum Beispiel die Überführung von Geodaten in ein anderes Bezugssystem oder die Aggregation von Werten
 - Strukturübersicht: Tabellen, Schemata, Indizes und Views auf einen Blick
  
 
 :::tip Fiktives Praxisbeispiel
 
 **„Umweltdaten aus Sensoren sammeln“ 🗄️**  
-Messdaten aus Luft- und Bodenstationen werden in Echtzeit an die PostgreSQL-Datenbank übertragen und dort gespeichert. Über eine Schnittstelle werden sie mit Grafana verbunden. Eine Fachabteilungen kann die stets aktuellen Werte somit über Dashboards überwachen und Trends analysieren.
+Messdaten aus Luft- und Bodenstationen werden in Echtzeit an die PostgreSQL-Datenbank übertragen und dort gespeichert. Über eine Schnittstelle werden sie mit Grafana verbunden. Eine Fachabteilung kann die stets aktuellen Werte somit über Dashboards überwachen und Trends analysieren.
 
 :::
 
@@ -59,12 +59,12 @@ Messdaten aus Luft- und Bodenstationen werden in Echtzeit an die PostgreSQL-Date
 
 ### Skill-Level & Anforderungen
 
-pgAdmin ist für Benutzer:innen mit grundlegendem Datenbankverständnis geeignet. SQL-Kenntnisse sind hilfreich, insbesondere für komplexe Abfragen, aber nicht zwingend für grundlegende Verwaltungsaufgaben.
+pgAdmin ist für Benutzer mit grundlegendem Datenbankverständnis geeignet. SQL-Kenntnisse sind hilfreich, insbesondere für komplexe Abfragen, aber nicht zwingend für grundlegende Verwaltungsaufgaben.
 
 **Technisches Know-How notwendig:** <span title="Mäßig" class="text-yellow-400">●●●○○</span>  
 **Komplexität bzw. Einarbeitungszeit:** <span title="Mäßig" class="text-yellow-400">●●●○○</span>  
 
-👉 Für Verwaltungsmitarbeitende heißt das: Das Einspielen oder Verarbeiten von Daten in die Datenbanken, sowie das Konfigurieren der Verbindungen mit den Datenverabeitungs- und Datenvisualisierungstools, sollte im wesentlichen dem IT-Team überlassen und weitesgehend automatisiert werden. Mit pgAdmin ist es aber möglich auch ohne Programmierkentnisse, unkritische Änderungen an Daten vorzunehmen, Schemata zu updaten oder sich schlicht einen Überblick über die Vorhanden Daten zu verschaffen, falls das für einen Workflow notwendig ist.
+👉 Für Verwaltungsmitarbeitende heißt das: Das Einspielen oder Verarbeiten von Daten in die Datenbanken sowie das Konfigurieren der Verbindungen mit den Datenverabeitungs- und Datenvisualisierungstools sollten im wesentlichen dem IT-Team überlassen und weitestgehend automatisiert werden. Mit pgAdmin ist es aber  auch ohne Programmierkentnisse möglich, unkritische Änderungen an Daten vorzunehmen, Schemata zu updaten oder sich schlicht einen Überblick über die vorhandenen Daten zu verschaffen, falls das für einen Workflow notwendig ist.
 
 ### Input & Output
 
@@ -85,7 +85,7 @@ pgAdmin ist für Benutzer:innen mit grundlegendem Datenbankverständnis geeignet
       <p>
       Typische Inputs für die Datenbanken sind:
 
-      - Daten aus Dateien, die in MinIO abgelegt und z.B. über Node-Red oder AirFlow verfügbar gemacht werden
+      - Daten aus Dateien, die in MinIO abgelegt und z.B. über Node-Red oder AirFlow verfügbar gemacht werden.
       - händische Datenuploads von gut strukturierten Daten aus CSV-Dateien  
       - IoT-Daten
       </p>
@@ -103,9 +103,9 @@ pgAdmin ist für Benutzer:innen mit grundlegendem Datenbankverständnis geeignet
       <p>
       Aus pgAdmin entstehen oder werden bereitgestellt:
 
-      - Rohdaten und verarbeitete Daten, die über eine Schnittstelle mit den Dashboard-Tools verbunden werden
-      - Geodaten, die an den Geoserver übertragen und in WFS-Schnittstellen umgewandelt werden
-      - Schematas die z.B. für Prüfmechanismen in AppSmith-Formularen genutzt werden können
+      - Rohdaten und verarbeitete Daten, die über eine Schnittstelle mit den Dashboard-Tools verbunden werden.
+      - Geodaten, die an den Geoserver übertragen und in WFS-Schnittstellen umgewandelt werden.
+      - Schemata, die zum Beispiel für Prüfmechanismen in AppSmith-Formularen genutzt werden können.
       </p>
     </div>
   </>
