@@ -3,26 +3,66 @@ import { Button } from '@site/src/components/UI/Button';
 import '../../css/tailwind.css';
 
 const toolList = [
-  { name: 'minio', size: 'w-32 h-32', placeholder: 'single_cube_purple.svg' },
-  { name: 'appsmith', size: 'w-32 h-32', placeholder: 'single_cube_pink.svg' },
-  { name: 'grafana', size: 'w-32 h-32', placeholder: 'single_cube_blue.svg' },
-  { name: 'pgadmin', size: 'w-32 h-32', placeholder: 'single_cube_purple.svg' },
-  { name: 'airflow', size: 'w-32 h-32', placeholder: 'single_cube_pink.svg' },
   {
-    name: 'master_portal',
+    name: 'minio.svg',
+    size: 'w-32 h-32',
+    placeholder: 'single_cube_purple.svg',
+  },
+  {
+    name: 'appsmith.svg',
+    size: 'w-32 h-32',
+    placeholder: 'single_cube_pink.svg',
+  },
+  {
+    name: 'grafana.svg',
     size: 'w-32 h-32',
     placeholder: 'single_cube_blue.svg',
   },
   {
-    name: 'geoserver',
+    name: 'pgadmin.svg',
     size: 'w-32 h-32',
     placeholder: 'single_cube_purple.svg',
   },
-  { name: 'node_red', size: 'w-32 h-32', placeholder: 'single_cube_pink.svg' },
-  { name: 'superset', size: 'w-32 h-32', placeholder: 'single_cube_blue.svg' },
-  { name: 'piveau', size: 'w-32 h-32', placeholder: 'single_cube_purple.svg' },
-  { name: 'jupiter', size: 'w-32 h-32', placeholder: 'single_cube_pink.svg' },
-  { name: 'misc', size: 'w-32 h-32', placeholder: 'single_cube_blue.svg' },
+  {
+    name: 'airflow.svg',
+    size: 'w-32 h-32',
+    placeholder: 'single_cube_pink.svg',
+  },
+  {
+    name: 'master_portal.svg',
+    size: 'w-32 h-32',
+    placeholder: 'single_cube_blue.svg',
+  },
+  {
+    name: 'geoserver.svg',
+    size: 'w-32 h-32',
+    placeholder: 'single_cube_purple.svg',
+  },
+  {
+    name: 'node_red.svg',
+    size: 'w-32 h-32',
+    placeholder: 'single_cube_pink.svg',
+  },
+  {
+    name: 'superset.svg',
+    size: 'w-32 h-32',
+    placeholder: 'single_cube_blue.svg',
+  },
+  {
+    name: 'piveau.svg',
+    size: 'w-32 h-32',
+    placeholder: 'single_cube_purple.svg',
+  },
+  {
+    name: 'jupiter.svg',
+    size: 'w-32 h-32',
+    placeholder: 'single_cube_pink.svg',
+  },
+  {
+    name: 'keycloak.svg',
+    size: 'w-24 h-24',
+    placeholder: 'single_cube_yellow.svg',
+  },
 ];
 
 export default function HomepageMainTools() {
@@ -66,7 +106,8 @@ export default function HomepageMainTools() {
             Tools im Baukasten des Data Hubs
           </h2>
           <p className="text-xl md:text-3xl leading-6 md:leading-relaxed">
-            Open Source, direkt im Browser nutzbar und vielfältig kombinierbar.
+            Diese Open Source-Werkzeuge sind die Bausteine des Data Hub – eine
+            Auswahl.
           </p>
         </div>
 
@@ -95,16 +136,17 @@ export default function HomepageMainTools() {
 
                   {/* Logo oder Text */}
                   {tool.name === 'misc' ? (
-                    <p
-                      className={`text-base md:text-xl leading-6 text-berlin-black flex items-center justify-center h-full w-full text-center transition-all duration-300 transform
+                    <img
+                      src={`img/logos/${tool.name}`}
+                      alt={tool.name}
+                      className={`absolute inset-0 w-32 h-32 rounded-md transition-all duration-300 transform
           ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}
+          group-hover:opacity-0 group-hover:scale-95
         `}
-                    >
-                      ... und Weitere
-                    </p>
+                    />
                   ) : (
                     <img
-                      src={`img/logos/${tool.name}.svg`}
+                      src={`img/logos/${tool.name}`}
                       alt={tool.name}
                       className={`absolute inset-0 w-32 h-32 rounded-md transition-all duration-300 transform
           ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}
@@ -124,13 +166,14 @@ export default function HomepageMainTools() {
             {' '}
             Der Data Hub bringt eine erprobte Architektur für urbane
             Datenplattfomen nach Berlin, die vollständig auf cloudbetriebener
-            Open Source-Software basiert. Der Prototyp wird derzeit gezielt an
-            die Anforderungen der Berliner Verwaltung angepasst und
-            weiterentwickelt. In diesem iterativen Prozess entsteht so nicht nur
-            ein{' '}
+            Open Source-Software basiert. Derzeit wird der Prototyp dahingehend
+            weiterentwickelt, dass in einem iterativen Prozess konkrete
+            Hilfestellungen für Verwaltungshandlungen integriert werden. So
+            entsteht ein{' '}
             <span className="font-bold">moderner Stack aus Software-Tools</span>
-            , der flexibel und leicht skalierbar ist, sondern auch Innovation
-            fördert und die digitale Souveränität der Verwaltung stärkt.
+            , der nicht nur flexibel und leicht skalierbar ist, sondern auch
+            Innovation fördert und die digitale Souveränität von Verwaltungen
+            stärkt.
           </p>
         </div>
 
