@@ -3,14 +3,14 @@ import { Button } from '@site/src/components/UI/Button';
 import '../../css/tailwind.css';
 
 const slides = [
-  {
-    id: 1,
-    title: 'Landesgleichstellung auf einen Blick',
-    description:
-      'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Behörden? Ein zentrales Dashboard ersetzt das bisher aufwendige manuelle Berichtswesen und ermöglicht eine datenbasierte Auswertung der Gleichstellungsmaßnahmen.',
-    image: '/img/example1.svg',
-    slug: '/docs/anwendungen/landesgleichstellung',
-  },
+  // {
+  //   id: 1,
+  //   title: 'Landesgleichstellung auf einen Blick',
+  //   description:
+  //     'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Behörden? Ein zentrales Dashboard ersetzt das bisher aufwendige manuelle Berichtswesen und ermöglicht eine datenbasierte Auswertung der Gleichstellungsmaßnahmen.',
+  //   image: '/img/example1.svg',
+  //   slug: '/docs/anwendungen/landesgleichstellung',
+  // },
   {
     id: 2,
     title: 'Akteure im Kiez sichtbar machen',
