@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 hide_title: true
 description: Dies ist der zentrale Wissensspeicher des prototypischen Data Hub Berlins, der urbanen Datenplattform der Berliner Verwaltung. Hier findest du Informationen zu Hintergründen, Aufbau und Anwendungsfällen der Plattform.
 title: Jupyter Notebook

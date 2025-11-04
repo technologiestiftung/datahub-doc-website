@@ -68,7 +68,7 @@ import styles from './docs.module.css';
 <details className="faq-accordion">
     <summary>8. Wie passt der Data Hub in die Berliner Gesamtstrategie für eine moderne digitale Verwaltung?</summary>
         <div className="faq-content">
-        Der Aufbau des Data Hub ist keine neue Einzelinitiative, sondern eine seit einigen Jahren angestrebte und zentrale Maßnahme der [Strategie „Gemeinsam Digital: Berlin“](https://gemeinsamdigital.berlin.de/de/strategie/), Teil der Berliner Digitalstrategie und der Richtline der Berliner Regierung zur Verwaltungsmodernisierung.
+        Der Aufbau des Data Hub Berlin ist ein seit einigen Jahren angestrebtes Vorhaben, als zentrale Maßnahme der Strategie [Strategie „Gemeinsam Digital: Berlin“](https://gemeinsamdigital.berlin.de/de/strategie/) entsprechend der Richtlinien der Berliner Regierungspolitik. 
         </div>
 </details>
 <details className="faq-accordion">

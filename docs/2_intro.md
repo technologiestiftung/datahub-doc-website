@@ -38,7 +38,7 @@ Derzeit erarbeitet ein Kompetenzteam der Technologiestiftung Berlin und der Sena
 
 Beim Data Hub Berlin handelt es sich um eine sogenannte urbane Datenplattform. Viele Kommunen und Städte betreiben oder entwickeln derzeit urbane Datenplattformen, z.B. Potsdam, Bonn, Frankfurt und Hamburg. Dafür setzen sie teils auf bereits etablierte Lösungen oder Eigenentwicklungen. 
 
-Urbane Datenplattfomen sollen eine zentrale digitale Infrastruktur bilden, die Daten aus verschiedenen Quellen einer Stadt oder Region bündeln, verknüpfen und zugänglich machen. Urbane Datenplattformen ermöglichen eine intelligentere und datengestützte Stadtentwicklung, indem sie Kommunen helfen, Daten aus unterschiedlichen Fachbereichen und für unterschiedliche Zielgruppen (Verwaltung, Wirtschaft, Zivilgesellschaft) bereitzustellen und daraus nützliche Dienste und Analysen zu entwickeln.  
+Urbane Datenplattfomen bilden eine zentrale digitale Infrastruktur, die Daten aus verschiedenen Quellen einer Stadt oder Region bündeln, verknüpfen und zugänglich machen. Sie ermöglichen eine intelligente und datengestützte Stadtentwicklung, indem sie Kommunen helfen, Daten aus unterschiedlichen Fachbereichen und für unterschiedliche Zielgruppen (Verwaltung, Wirtschaft, Zivilgesellschaft) bereitzustellen und daraus nützliche Dienste und Analysen zu entwickeln.  
 
 Mit dem Berliner Data Hub bestreitet nun auch das Land Berlin den Weg zur Etablierung einer urbanen Datenplattform. Der Data Hub-Prototyp fußt auf dem Open Source-Code und Architekturmodell des [CIVITAS/CORE](/docs/intro#die-architektur-des-civitascore-als-grundlage).
 
@@ -72,11 +72,11 @@ Der Data Hub Berlin ist mehr als nur eine technische Plattform – er ist ein st
 
 2. **Digitale Souveränität und Kompetenzaufbau**
 
-      Der Data Hub trägt langfristig dazu bei, die digitale Souveränität der Berliner Verwaltung zu stärken. Durch den konsequenten Einsatz von Open Source-Software, offenen Standards und modularen Architekturen reduziert er die Abhängigkeit von proprietären Lösungen. Gleichzeitig werden bei der Nutzung und Weiterentwicklung des Hub neue Kompetenzen in Datenmanagement, Analyse und Softwareentwicklung innerhalb der Verwaltung aufgebaut. So entsteht nicht nur eine unabhängige Infrastruktur, sondern auch ein Wissens- und Kompetenzpool, der zukünftige Projekte effizienter und selbstbestimmter ermöglicht.
+      Der Data Hub trägt langfristig dazu bei, die digitale Souveränität der Berliner Verwaltung zu stärken. Durch den konsequenten Einsatz von Open Source-Software, offenen Standards und modularen Architekturen reduziert er die Abhängigkeit von proprietären Lösungen. Gleichzeitig werden bei der Nutzung und Weiterentwicklung der Plattform neue Kompetenzen in Datenmanagement, Analyse und Softwareentwicklung innerhalb der Verwaltung aufgebaut. So entsteht nicht nur eine unabhängige Infrastruktur, sondern auch ein Wissens- und Kompetenzpool, der zukünftige Projekte effizienter und selbstbestimmter ermöglicht.
 
 3. **Verwaltungsdigitalisierung und Interoberabilität**
 
-      Der Data Hub fördert nicht nur datengetriebenes Entscheiden und ermöglicht es analoge Produkte wie PDF‑Berichte in digitale, maschinenlesbare Formen zu überführen, sondern treibt insgesamt die Verwaltungsdigitalisierung voran. Langfristig unterstützt er auch die bessere Zusammenarbeit zwischen den Fachabteilungen in Ämtern, indem er Standards etabliert, die geteilt werden können, um Interoperabilität und Datenqualität zu erhöhen. Durch diese gemeinsame Grundlage entstehen Schnittstellen, die neue Datenprodukte, Analysemöglichkeiten und Prozessoptimierungen ermöglichen – der Data Hub wirkt somit als Booster für effizientere und vernetzte Verwaltung.
+      Der Data Hub fördert nicht nur datengetriebenes Entscheiden und ermöglicht es, analoge Produkte wie PDF‑Berichte in digitale, maschinenlesbare Formen zu überführen, sondern treibt insgesamt die Verwaltungsdigitalisierung voran. Langfristig unterstützt er auch die bessere Zusammenarbeit zwischen den Fachabteilungen in Ämtern, indem er Standards etabliert, die geteilt werden können, um Interoperabilität und Datenqualität zu erhöhen. Durch diese gemeinsame Grundlage entstehen Schnittstellen, die neue Datenprodukte, Analysemöglichkeiten und Prozessoptimierungen ermöglichen – der Data Hub wirkt somit als Booster für effizientere und vernetzte Verwaltung.
 
 4. **Grundlage für Innovationen wie KI-Tools, das Internet of Things(IoT) und den digitalen Zwilling**
 
@@ -85,7 +85,7 @@ Der Data Hub Berlin ist mehr als nur eine technische Plattform – er ist ein st
 
 ## Strategischer Rahmen
 
-Der Aufbau des Data Hub Berlin ist keine neue Einzelinitiative, sondern ein seit einigen Jahren angestrebtes Vorhaben:
+Der Aufbau des Data Hub Berlin ist ein seit einigen Jahren angestrebtes Vorhaben, als zentrale Maßnahme der Strategie „Gemeinsam Digital: Berlin“ entsprechend der Richtlinien der Berliner Regierungspolitik. 
 
 
 <Tabs
