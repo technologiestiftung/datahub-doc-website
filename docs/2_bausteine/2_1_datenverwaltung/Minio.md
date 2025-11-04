@@ -41,15 +41,15 @@ import { ArrowRightEndOnRectangleIcon, ArrowRightStartOnRectangleIcon } from '@h
 
 MinIO bildet zusammen mit den Datenbanken das Dateispeicher-Rückgrat des Data Hub. Es ist der zentrale Ablageort für Rohdaten, Export-Dateien aus Fachverfahren, Container-Images, Modelle oder große Geodatenpakete. Die Vorteile liegen in einfacher Integration (S3 API), feingranularer Zugriffssteuerung und der Möglichkeit, Daten sowohl intern als auch für externe Projekte sicher freizugeben. Eine unkomplizierte Ablage für beliebige Dateitypen (Data Lake-Charakter) ist durch eine web-basierte Benutzeroberfläche für Upload, Download und Management der Dateien sichergestellt.
 
-<!--   <div className="w-full justify-center items-center pt-4">
+  <div className="w-full justify-center items-center pt-4">
     <img
-      src={require('./assets/Superset_Screenshot.png').default}
-      alt="Beispielansicht eines Superset Dashboard"
-      label="Beispielansicht eines Superset Dashboard"
+      src={require('./assets/MinIO.jpeg').default}
+      alt="Projektübersicht in MinIO"
+      label="Projektübersicht in MinIO"
       className="block h-auto w-full xl:w-[80%] justify-center items-center mx-auto"
     />
-    <figcaption className={styles.imgcaption}>Beispielansicht eines Superset Dashboards</figcaption>
-  </div> -->
+    <figcaption className={styles.imgcaption}>Projektübersicht in MinIO</figcaption>
+  </div>
 
 ## Funktionen & Einsatzgebiete
 
