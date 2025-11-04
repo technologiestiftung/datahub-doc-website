@@ -40,7 +40,7 @@ Im Data Hub dient GeoServer als zentrale Komponente, um aus Daten mit Raumbezug 
 
   <div className="w-full justify-center items-center pt-4">
     <img
-      src={require('./assets/Geoserver.jpeg').default}
+      src={require('./assets/GeoServer.jpeg').default}
       alt="Startansicht von GeoServer"
       label="Startansicht von GeoServer"
       className="block h-auto w-full xl:w-[80%] justify-center items-center mx-auto"
