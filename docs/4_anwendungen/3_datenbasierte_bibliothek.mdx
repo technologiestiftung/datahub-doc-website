@@ -23,45 +23,46 @@ import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/reac
     </div>
   </div>
 
-## Was sind datenbasierte Bibliotheken?
+## Wie datenbasiert arbeiten Bibliotheken?
 
-Bibliotheken sind vielmehr als Orte um Bücher zu leihen. Als Kultur- und Weiterbildungsorte und Orte des Miteinanders sind Bibliotheken zentrale Ankerpunkte im Kiez. Um sich fit für die Zukunft zu machen, müssen auch Bibliotheken datenbasiert arbeiten. Wer fragt noch Sachbücher nach? Gibt es mehr Online-Ausleihen als am Schalter? Und welche Bevölkerungsgruppen werden mit dem Angebot eigentlich noch angesprochen? Bibliotheken können dabei auf detaillierte Nutzungs- und Bestandsdaten zurückgreifen. Die Stadtteilbibliothek Pankow hat sich als Pionierin auf den Weg gemacht, um diese Daten für ihre Arbeit zu nutzen.  
-Sie helfen bei der Etatverteilung, bei Entscheidungen zur Bestandspflege (Makulatur), bei der Frage nach der Aktualität der Medien und beim Vergleich zwischen den einzelnen Standorten. So lernt die Bibliothek wie sie sich für die Zukunft aufstellen kann, um weiterhin den Bedarfen aus der Bevölkerung gerecht zu werden. 
+Bibliotheken sind vielmehr als Orte um Bücher zu leihen. Als Kultur- und Weiterbildungsorte und Orte des Miteinanders sind Bibliotheken zentrale Ankerpunkte im Kiez. Um sich fit für die Zukunft zu machen, müssen auch Bibliotheken datenbasiert arbeiten. Wer fragt noch Sachbücher nach? Gibt es mehr Online-Ausleihen als am Schalter? Und welche Bevölkerungsgruppen werden mit dem Angebot eigentlich noch angesprochen? Bibliotheken können dabei auf detaillierte Nutzungs- und Bestandsdaten zurückgreifen. Die Stadtteilbibliothek Pankow hat sich als Pionierin auf den Weg gemacht, um diese Daten bestmöglich für ihre Arbeit zu nutzen.  
 
 
 ## Das Problem
 
-Jährlich müssen Auswertungen erstellt werden, etwa für den Verbund Öffentlicher Bibliotheken Berlins (VÖBB) oder für die interne Etatplanung. 
+Zu den regelmäßigen Aufgaben der Bibliothek gehört die Etatverteilung, Entscheidungen zur Bestandspflege (Makulatur), die Frage nach der Aktualität und Auslastung der Medien und der Vergleich zwischen den einzelnen Standorten. 
+Weiterhin müssen jährlich Auswertungen erstellt werden, etwa für den Verbund Öffentlicher Bibliotheken Berlins (VÖBB). 
+Im Kern geht es darum, wie die Bibliothek sich für die Zukunft aufstellen kann, um den Bedarfen aus der Bevölkerung gerecht zu werden.
 
-Bisherige Auswertungen waren jedoch arbeitsintensiv, weil große CSV-Dateien manuell ausgewertet werden müssen und die Ergebnisse meist nicht visualisiert sind. Das führt dazu, dass Ergebnisse kaum vergleichbar und oft nur für einzelne Personen verfügbar sind. 
+Als Grundlage für diese Aufgaben können Daten über Ausleihen und Medienbestände genutzt werden. In der Praxis gestaltet sich diese Nutzung bisher allerdings nicht ganz einfach.
+Bisherige Auswertungen waren arbeitsintensiv, weil große CSV-Dateien manuell ausgewertet werden müssen und die Ergebnisse meist nicht visualisiert sind. Das führt dazu, dass Ergebnisse kaum vergleichbar und oft nur für einzelne Personen verfügbar sind. 
+Es fehlt an unkomplizierten Datenpipelines zur Vorbereitung der Daten und an nutzendenfreundlichen Tools, die nicht nur für die technisch versierten Mitarbeitenden leicht zu bedienen sind.
+
 
 Es fehlen vor allem:
 - eine zentrale, einheitliche Ablage der Statistikdaten,
-- eine einfache Möglichkeit, Zeitreihen zu vergleichen (z. B. 2023 mit 2024),
-- eine Form der Darstellung, die auch nicht-technische Mitarbeitende nutzen können.
+- eine einfache Möglichkeit, Zeitreihen zu vergleichen,
+- eine leicht anpassbare, bedarfsgerechte Darstellung bzw. Visualisierung der Daten, die auch nicht-technische Mitarbeitende nutzen können.
 
 
 
 ## Zielsetzung
 
-**Datenbasierte Entscheidungen** sollen Bibliotheken befähigen, ihren Bestand gezielter zu steuern und die Etatverteilung transparenter zu gestalten. Das Dashboard zeigt, wie sich Nutzung, Bestand und Zukäufe entwickeln, und schafft so eine Grundlage für fundierte Entscheidungen statt reiner Erfahrungswerte.  
+Der Data Hub wird eingesetzt, um den Prozess zur Vorbereitung der Daten zu automatisieren und auf einem Dashboard für die Auswertung durch die Fachpersonen zur Verfügung zu stellen:
 
-**Weniger manueller Aufwand** entlastet die Mitarbeitenden bei der jährlichen Auswertung. Durch die zentrale Verarbeitung im Data Hub werden Tabellen und Berichte automatisch generiert, was Zeit spart und die Vergleichbarkeit zwischen Bibliotheken verbessert.  
+- **Datenbasierte Entscheidungen** sollen Bibliotheken befähigen, ihren Bestand gezielter zu steuern und die Etatverteilung transparenter zu gestalten. Das Dashboard zeigt, wie sich Nutzung, Bestand und Zukäufe entwickeln, und schafft so eine Grundlage für fundierte Entscheidungen statt reiner Erfahrungswerte.  
 
+- **Weniger manueller Aufwand** entlastet die Mitarbeitenden bei der jährlichen Auswertung. Durch die zentrale Verarbeitung im Data Hub werden Tabellen und Berichte automatisch generiert, was Zeit spart und die Vergleichbarkeit zwischen Bibliotheken verbessert.  
 
-<figure style={{ border: '1px solid #000', width: 'fit-content', margin: '1rem auto', textAlign: 'center' }}>
-  <img
-    src={require('../assets/datenbasierte_bibliothek_dashboard.png').default}
-    alt="Dashboard der Bibliothek im Data Hub"
-    width={800}
-    height={400}
-    style={{ display: 'block' }}
-  />
-  <figcaption style={{ fontSize: '0.9rem', color: '#333', marginTop: '0.5rem' }}>
-    Abbildung: Prototyp des Bibliotheks-Dashboards im Data Hub Berlin
-  </figcaption>
-</figure>
-
+  <div className="w-full justify-center items-center pt-4">
+    <img
+      src={require('../assets/datenbasierte_bibliothek_dashboard.png').default}
+      alt="Impressionen eines ersten Prototypen des Dashboards"
+      label="Impressionen eines ersten Prototypen des Dashboards"
+      className="block h-auto w-full xl:w-[80%] justify-center items-center mx-auto"
+    />
+    <figcaption className={styles.imgcaption}>Impressionen eines ersten Prototypen des Dashboards</figcaption>
+  </div>
 
 ## Die Umsetzung
 
@@ -85,7 +86,6 @@ Es fehlen vor allem:
       <p>
         Grundlage des Projekts sind die jährlich erhobenen <strong>BesEx-Statistikdaten</strong> der Pankower Stadtbibliotheken. Sie enthalten Informationen zu <strong>Ausleihen, Beständen, Medienarten, Sachgruppen</strong> und Lieferanten in einer standardisierten CSV-Struktur.  
       </p>  
-      [Bibliotheksdaten](../assets/datenbasierte_bibliothek_dashboard.png)
     </div>
   </>
   </TabItem>
@@ -101,9 +101,9 @@ Es fehlen vor allem:
         Das Dashboard „Datenbasierte Bibliothek“ richtet sich an:
       </p>
       <ul className="ml-4 list-disc">
-        <li><strong>Lektor:innen</strong> der Bibliotheken – zur Bewertung, Planung und Pflege des Bestands.</li>
-        <li><strong>Bibliotheksleitungen</strong> – zur strategischen Steuerung, Etatplanung und Berichterstattung (z. B. an den VÖBB).</li>
-        <li><strong>Interessierte Öffentlichkeit</strong> – perspektivisch über offene Dashboards oder Veröffentlichungen im Open-Data-Portal Berlin.</li>
+        <li>Lektor:innen der Bibliotheken – zur Bewertung, Planung und Pflege des Bestands.</li>
+        <li>Bibliotheksleitungen – zur strategischen Steuerung, Etatplanung und Berichterstattung (z. B. an den VÖBB).</li>
+        <li>Interessierte Öffentlichkeit – perspektivisch über eine zusätzliche öffentliche Variante des Dashboards oder Veröffentlichungen.</li>
       </ul>
     </div>
   </>
@@ -117,11 +117,12 @@ Es fehlen vor allem:
         <h3 className="inline pl-2">Die Beteiligten</h3>
       </div>
       <p>
-        Am Pilotprojekt „Datenbasierte Bibliothek“ arbeiten verschiedene Partner zusammen:
+        Am Pilotprojekt „Datenbasierte Bibliothek“ arbeiten diese Partner zusammen:
       </p>
       <ul className="ml-4 list-disc">
-        <li><strong>Janusz-Korczak-Bibliothek Pankow</strong> – Initiatorin und Datenlieferantin des Projekts.</li>
-        <li><strong>Technologiestiftung Berlin</strong> – technische Umsetzung, Datenintegration und Dashboard-Entwicklung.</li>
+        <li>Janusz-Korczak-Bibliothek Pankow – Initiatorin und Datenlieferantin des Projekts.</li>
+        <li>Technologiestiftung Berlin – technische Umsetzung, Datenintegration und Dashboard-Entwicklung.</li>
+        <li>Weitere Bibliotheken und VÖBB – perspektivisch sollen andere Bibliotheken auf das Projekt aufsetzen können.</li>
       </ul>
     </div>
   </>
@@ -135,43 +136,41 @@ Es fehlen vor allem:
 Die Umsetzung im Data Hub Berlin basiert auf einer modularen Datenpipeline, von der Ablage über die Verarbeitung bis zur Analyse.  
 
 1. **Speicherung:**  
-  Die Bibliothek liefert ihre jährlichen Statistikdaten im BesEx-Format. Diese Rohdaten werden im Data Hub harmonisiert und im Objektspeicher **MinIO** abgelegt. 
+  Die Bibliothek liefert ihre jährlichen Statistikdaten im BesEx-Format. Diese Rohdaten werden im Data Hub harmonisiert und im Objektspeicher MinIO abgelegt. 
 
 2. **Verarbeitung und Analyse:**  
-  Über **Node-RED** werden die umfangreichen CSV-Dateien automatisch eingelesen, in kleinere Datensätze aufgeteilt und in die **PostgreSQL-Datenbank** importiert. In der Datenbank werden anschließend bibliothekstypische Kennzahlen berechnet, zum Beispiel:
+  Über Node-RED werden die umfangreichen CSV-Dateien automatisch eingelesen, in kleinere Datensätze aufgeteilt und in die PostgreSQL-Datenbank importiert. In der Datenbank werden anschließend bibliothekstypische Kennzahlen berechnet, zum Beispiel:
 
-    - **Bestandsanteil** (Anteil eines Exemplars am Gesamtbestand)
-    - **Ausleihanteil** (Anteil der Ausleihen dieses Exemplars an allen Ausleihen)
-    - **Umsatz** (Ausleihen im Verhältnis zum Bestand)
-    - **Effizienz** (Bestandsanteil im Verhältnis zum Ausleihanteil)
-    - **Aktivierungsgrad** (wurde ein Medium im Zeitraum überhaupt genutzt?)
+    - Bestandsanteil (Anteil eines Exemplars am Gesamtbestand)
+    - Ausleihanteil (Anteil der Ausleihen dieses Exemplars an allen Ausleihen)
+    - Umsatz (Ausleihen im Verhältnis zum Bestand)
+    - Effizienz (Bestandsanteil im Verhältnis zum Ausleihanteil)
+    - Aktivierungsgrad (wurde ein Medium im Zeitraum überhaupt genutzt?)
 
-    Die Analysen orientieren sich an der **Systematik für Bibliotheken (SfB)**, diese Struktur ermöglicht Vergleiche zwischen Themenbereichen, Häusern und Jahren. 
+    Die Analysen orientieren sich an der Systematik für Bibliotheken (SfB), diese Struktur ermöglicht Vergleiche zwischen Themenbereichen, Häusern und Jahren. 
 
 3. **Visualisierung:**  
-  Die bereinigten Daten fließen in **Apache Superset**, wo ein interaktives Dashboard entsteht. Darin können Bibliotheksleitungen und Lektorierende:
-    - **nach Zeiträumen filtern**,
-    - **einzelne Sachgruppen vergleichen**,
-    - **Zugang und Abgang einsehen**,
-    - **Ausleihen pro Lieferant oder Medienart betrachten**
-
-
-
+  Die bereinigten Daten fließen in Apache Superset, wo ein interaktives Dashboard entsteht. Darin können Bibliotheksleitungen und Lektorierende:
+    - nach Zeiträumen filtern,
+    - einzelne Sachgruppen vergleichen,
+    - Zugang und Abgang einsehen,
+    - Ausleihen pro Lieferant oder Medienart betrachten
 
 <iframe
   src="https://data-hub-flow-designer.lovable.app/?flow=JTdCJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJpZCUyMiUzQSUyMmJlemlya3NhbXQlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc291cmNlJTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBMjkuMzM0MzUwMzU3MTk3NzM1JTJDJTIyeSUyMiUzQTEwLjIxNDg4NTgwNDUzOTc5NyU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMm1hbnVlbGxlciUyMERhdGVpdXBsb2FkJTIyJTJDJTIyc3VidGl0bGUlMjIlM0ElMjJDU1YtRGF0ZWklMjBkZXIlMjBCZXN0YW5kc251dHp1bmclMjAoQmVzRVgpJTIyJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTMwMiUyQyUyMmhlaWdodCUyMiUzQTcyJTdEJTJDJTIyc2VsZWN0ZWQlMjIlM0FmYWxzZSUyQyUyMmRyYWdnaW5nJTIyJTNBZmFsc2UlN0QlMkMlN0IlMjJpZCUyMiUzQSUyMnByb2Nlc3NpbmclMjIlMkMlMjJ0eXBlJTIyJTNBJTIycHJvY2Vzc2luZyUyMiUyQyUyMnBvc2l0aW9uJTIyJTNBJTdCJTIyeCUyMiUzQTQ1LjMzOTQ3MTMzNzg1MDM0JTJDJTIyeSUyMiUzQTI4Mi4wMTk2MzYxOTMwMjQwNCU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMk5vdGUlMjBSZWQlMjIlMkMlMjJ0aXRsZSUyMiUzQSUyMk5vZGVSZWQlMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMkRhdGVuJTIwd2VyZGVuJTIwYXV0b21hdGlzY2glMjBlaW5nZWxlc2VuJTIwdW5kJTIwaW4lMjBrbGVpbmVyZSUyMERhdGVucyVDMyVBNHR6ZSUyMGF1ZmdldGVpbHQlMjAlMjIlMkMlMjJjdXN0b21UaXRsZSUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTM4MCUyQyUyMmhlaWdodCUyMiUzQTEwOSU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBZmFsc2UlMkMlMjJkcmFnZ2luZyUyMiUzQWZhbHNlJTdEJTJDJTdCJTIyaWQlMjIlM0ElMjJkYXRhYmFzZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJjb21wb25lbnQlMjIlMkMlMjJwb3NpdGlvbiUyMiUzQSU3QiUyMnglMjIlM0E1MDcuNDYzMzY3MzcxMDgwMDQlMkMlMjJ5JTIyJTNBNDEuOTI3NTU1NjE0NDIzMjMlN0QlMkMlMjJkYXRhJTIyJTNBJTdCJTIybGFiZWwlMjIlM0ElMjJLb21wb25lbnRlJTIyJTJDJTIydGl0bGUlMjIlM0ElMjJwZ0FkbWluJTJGRGF0ZW5iYW5rJTIyJTJDJTIyZGVzY3JpcHRpb24lMjIlM0ElMjJEYXRlbiUyMHdlcmRlbiUyMGluJTIwZWluZXIlMjBQb3N0Z3JlU1FMLURhdGVuYmFuayUyMGFiZ2VsZWd0JTJDJTIwdW5kJTIwYmlibGlvdGhla3N0eXBpc2NoZSUyMEtlbm56YWhsZW4lMjBiZXJlY2huZXQlMjIlMkMlMjJjdXN0b21UaXRsZSUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTI4MCUyQyUyMmhlaWdodCUyMiUzQTE0NCU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBZmFsc2UlMkMlMjJkcmFnZ2luZyUyMiUzQWZhbHNlJTdEJTJDJTdCJTIyaWQlMjIlM0ElMjJkYXNoYm9hcmQlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyZGFzaGJvYXJkJTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBNTA4LjA5ODk4ODA1Nzc2ODIlMkMlMjJ5JTIyJTNBMjMxLjcwNDQ4NzU4MTEwNDQlN0QlMkMlMjJkYXRhJTIyJTNBJTdCJTIybGFiZWwlMjIlM0ElMjJHcmFmYW5hJTIyJTJDJTIydGl0bGUlMjIlM0ElMjJTdXBlcnNldCUyMiUyQyUyMmRlc2NyaXB0aW9uJTIyJTNBJTIyRGF0ZW4lMjB3ZXJkZW4lMjBpbiUyMGVpbmVtJTIwaW50ZXJha3RpdmVuJTIwRGFzaGJvYXJkJTIwdmlzdWFsaXNpZXJ0LiUyMiUyQyUyMmN1c3RvbVRpdGxlJTIyJTNBZmFsc2UlN0QlMkMlMjJtZWFzdXJlZCUyMiUzQSU3QiUyMndpZHRoJTIyJTNBMjgwJTJDJTIyaGVpZ2h0JTIyJTNBMTI1JTdEJTJDJTIyc2VsZWN0ZWQlMjIlM0F0cnVlJTJDJTIyZHJhZ2dpbmclMjIlM0FmYWxzZSU3RCUyQyU3QiUyMmlkJTIyJTNBJTIybm9kZS0xMDAxJTIyJTJDJTIydHlwZSUyMiUzQSUyMmVuZHVzZXIlMjIlMkMlMjJwb3NpdGlvbiUyMiUzQSU3QiUyMnglMjIlM0E0OTcuOTIxMzA3MzkyMDU1MjclMkMlMjJ5JTIyJTNBNDA3LjgxOTgzMDQyMjEwMDMlN0QlMkMlMjJkYXRhJTIyJTNBJTdCJTIybGFiZWwlMjIlM0ElMjJFbmQlMjBVc2VyJTIyJTJDJTIydGl0bGUlMjIlM0ElMjJJbnRlcmFrdGl2ZXMlMjBEYXNoYm9hcmQlMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMkJpYmxpb3RoZWtzJTIwRGFzaGJvYXJkJTIwbWl0JTIwRmlsdGVyLSUyMHVuZCUyMEFuYWx5c2VmJUMzJUE0aGlna2VpdGVuJTIyJTJDJTIyaWNvbiUyMiUzQSUyMmNoYXJ0JTIyJTJDJTIyY3VzdG9tVGl0bGUlMjIlM0FmYWxzZSU3RCUyQyUyMm1lYXN1cmVkJTIyJTNBJTdCJTIyd2lkdGglMjIlM0EzMDAlMkMlMjJoZWlnaHQlMjIlM0ExMDglN0QlMkMlMjJzZWxlY3RlZCUyMiUzQWZhbHNlJTJDJTIyZHJhZ2dpbmclMjIlM0FmYWxzZSU3RCUyQyU3QiUyMmlkJTIyJTNBJTIybm9kZS0xMDAwJTIyJTJDJTIydHlwZSUyMiUzQSUyMmNvbXBvbmVudCUyMiUyQyUyMnBvc2l0aW9uJTIyJTNBJTdCJTIyeCUyMiUzQTQwLjAyNTM4NTY1NTgyNzE0JTJDJTIyeSUyMiUzQTEyOC4wNjI4NDQ5MjM0NDk5NCU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMktvbXBvbmVudGUlMjIlMkMlMjJ0aXRsZSUyMiUzQSUyMk1pbklPJTIyJTJDJTIyZGVzY3JpcHRpb24lMjIlM0ElMjJEYXRlbiUyMHdlcmRlbiUyMGltJTIwaW50ZXJuZW4lMjBDbG91ZC1TcGVpY2hlciUyMGFiZ2VsZWd0JTIyJTJDJTIyY3VzdG9tVGl0bGUlMjIlM0FmYWxzZSU3RCUyQyUyMm1lYXN1cmVkJTIyJTNBJTdCJTIyd2lkdGglMjIlM0EyODAlMkMlMjJoZWlnaHQlMjIlM0ExMDklN0QlMkMlMjJzZWxlY3RlZCUyMiUzQWZhbHNlJTJDJTIyZHJhZ2dpbmclMjIlM0FmYWxzZSU3RCU1RCUyQyUyMmVkZ2VzJTIyJTNBJTVCJTdCJTIyaWQlMjIlM0ElMjJlLXByb2MtZGIlMjIlMkMlMjJzb3VyY2UlMjIlM0ElMjJwcm9jZXNzaW5nJTIyJTJDJTIydGFyZ2V0JTIyJTNBJTIyZGF0YWJhc2UlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc21vb3Roc3RlcCUyMiUyQyUyMm1hcmtlckVuZCUyMiUzQSU3QiUyMnR5cGUlMjIlM0ElMjJhcnJvd2Nsb3NlZCUyMiU3RCU3RCUyQyU3QiUyMmlkJTIyJTNBJTIyZS1kYi1kYXNoJTIyJTJDJTIyc291cmNlJTIyJTNBJTIyZGF0YWJhc2UlMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJkYXNoYm9hcmQlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc21vb3Roc3RlcCUyMiUyQyUyMm1hcmtlckVuZCUyMiUzQSU3QiUyMnR5cGUlMjIlM0ElMjJhcnJvd2Nsb3NlZCUyMiU3RCU3RCUyQyU3QiUyMnN0eWxlJTIyJTNBJTdCJTIyc3Ryb2tlV2lkdGglMjIlM0EyJTJDJTIyc3Ryb2tlJTIyJTNBJTIyJTIzMDAwJTIyJTJDJTIyc3Ryb2tlRGFzaGFycmF5JTIyJTNBJTIyNSUyQzUlMjIlN0QlMkMlMjJjbGFzc05hbWUlMjIlM0ElMjJhbmltYXRlZC1lZGdlJTIyJTJDJTIydHlwZSUyMiUzQSUyMnNtb290aHN0ZXAlMjIlMkMlMjJzb3VyY2UlMjIlM0ElMjJkYXNoYm9hcmQlMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJub2RlLTEwMDElMjIlMkMlMjJpZCUyMiUzQSUyMnh5LWVkZ2VfX2Rhc2hib2FyZC1ub2RlLTEwMDElMjIlN0QlMkMlN0IlMjJzdHlsZSUyMiUzQSU3QiUyMnN0cm9rZVdpZHRoJTIyJTNBMiUyQyUyMnN0cm9rZSUyMiUzQSUyMiUyMzAwMCUyMiUyQyUyMnN0cm9rZURhc2hhcnJheSUyMiUzQSUyMjUlMkM1JTIyJTdEJTJDJTIyY2xhc3NOYW1lJTIyJTNBJTIyYW5pbWF0ZWQtZWRnZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzbW9vdGhzdGVwJTIyJTJDJTIyc291cmNlJTIyJTNBJTIyYmV6aXJrc2FtdCUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMm5vZGUtMTAwMCUyMiUyQyUyMmlkJTIyJTNBJTIyeHktZWRnZV9fYmV6aXJrc2FtdC1ub2RlLTEwMDAlMjIlN0QlMkMlN0IlMjJzdHlsZSUyMiUzQSU3QiUyMnN0cm9rZVdpZHRoJTIyJTNBMiUyQyUyMnN0cm9rZSUyMiUzQSUyMiUyMzAwMCUyMiUyQyUyMnN0cm9rZURhc2hhcnJheSUyMiUzQSUyMjUlMkM1JTIyJTdEJTJDJTIyY2xhc3NOYW1lJTIyJTNBJTIyYW5pbWF0ZWQtZWRnZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzbW9vdGhzdGVwJTIyJTJDJTIyc291cmNlJTIyJTNBJTIybm9kZS0xMDAwJTIyJTJDJTIydGFyZ2V0JTIyJTNBJTIycHJvY2Vzc2luZyUyMiUyQyUyMmlkJTIyJTNBJTIyeHktZWRnZV9fbm9kZS0xMDAwLXByb2Nlc3NpbmclMjIlN0QlNUQlMkMlMjJ2ZXJzaW9uJTIyJTNBMSU3RA%3D%3D"
   width="100%"
   height="400"
-  style={{ border: "1px solid #ccc", borderRadius: "8px" }}
+  style={{ border: "1px solid #ccc", borderRadius: "8px", marginTop:"2em" }}
   allowFullScreen
 ></iframe>
+<figcaption className={styles.imgcaption}>Schematische Abbildung der Datenpipeline für die datenbasierte Bibliothek im Data Hub</figcaption>
 
-## Organisatorische und methodische Begleitung
+### Organisatorische und methodische Begleitung
 
 **Ein nutzerzentrierter Ansatz** prägte die Zusammenarbeit mit der Janusz-Korczak-Bibliothek. Das Dashboard wurde gemeinsam mit dem Ziel entwickelt, Anforderungen und Arbeitsabläufe der Bibliothek direkt in die Gestaltung einzubeziehen. Ein strukturierter Service Blueprint half, sowohl die Nutzungssituationen als auch die technischen Prozesse im Hintergrund sichtbar zu machen.
 
 **Workshops und Tests** begleiteten den Entwicklungsprozess.  
-In drei Terminen wurden gemeinsam die zentralen Fragen und Kennzahlen definiert, die das Dashboard beantworten soll. Anschließend testeten Lektorierende den Prototyp, um zu prüfen, ob er ihre praktischen Fragestellungen abbilden kann.
+In drei Terminen wurden gemeinsam die zentralen Fragen und Kennzahlen definiert, die das Dashboard beantworten soll. Derzeit testen Lektorierende den Prototyp, um zu prüfen, ob er ihre praktischen Fragestellungen abbilden kann.
 
 ## Wie geht’s weiter?
 
@@ -184,12 +183,14 @@ Die gemeinsame Entwicklung mit der Janusz-Korczak-Bibliothek hat gezeigt, wie wi
 Das BesEx-Format hat sich als gutes Beispiel erwiesen, Daten strukturiert in den Data Hub zu überführen. Auf dieser Grundlage lassen sich große Datenmengen automatisiert verarbeiten; ein wichtiger Schritt hin zu skalierbaren Dashboard-Lösungen.
 
 - **Visualisierung senkt Barrieren.**  
-Ein klar gestaltetes Dashboard hilft, den Zugang zu Daten zu öffnen. Viele Mitarbeitende, die bisher wenig mit Statistik gearbeitet haben, konnten durch die Visualisierungen einen neuen Zugang zu ihren eigenen Fragestellungen gewinnen.
+Ein klar gestaltetes Dashboard hilft, den Zugang zu Daten zu öffnen. Es zeichnet sich ab, dass viele Mitarbeitende, die bisher wenig mit Statistik gearbeitet haben, durch die Visualisierungen einen neuen Zugang zu ihren eigenen Fragestellungen gewinnen.
 
 ---
 
 ### Nächste Schritte 
 
- Durch jährliche Datenupdates und automatisierte Prozesse im Data Hub bleibt die Lösung langfristig aktuell und leicht erweiterbar. Perspektivisch sollen weitere Berliner Bibliotheken eingebunden werden, da viele bereits mit dem gleichen BesEx-Datenstandard arbeiten. Dabei können die Vorarbeiten im Data Hub, wie die Datenverabreitung und Visualisierung leicht auf die anderen 11 Bezirke übertragen werden. 
+Der Prototyp wird derzeit durch die Nutzenden vertestet. Das Feedback wird gesammelt und genutzt, um das Dashboard weiterzuentwickeln und zu optimieren.
+
+Durch jährliche Datenupdates und automatisierte Prozesse im Data Hub bleibt die Lösung langfristig aktuell und leicht erweiterbar. Perspektivisch sollen weitere Berliner Bibliotheken eingebunden werden, da viele bereits mit dem gleichen BesEx-Datenstandard arbeiten. Dabei können die Vorarbeiten im Data Hub, wie die Datenverabreitung und Visualisierung leicht auf die anderen 11 Bezirke übertragen werden. 
 
 </div>
