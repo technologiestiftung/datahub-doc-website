@@ -46,7 +46,7 @@ Der Data Hub verfügt über die Möglichkeit, Datenzugriffe auf genau die Datens
 
 Die dadurch entstehenden, getrennten „Bereiche” innerhalb der Plattform werden als Dataspaces bezeichnet. 
 
-Zu jedem Use Case müssen Rollen definiert und deren benötigte Privilegien festgelegt werden, um eine erfolgreiche Umsetzung zu gewährleisten (Daten zu pflegen, Anpassungen am Dashboard vornehmen, Daten zu erfassen und dergleichen). Dabei gilt es zukünftig Standardrollen zu definieren, um den Prozess bei jedem Use Case zu beschleunigen, wie: 
+Zu jedem Use Case müssen Rollen definiert und deren benötigte Privilegien festgelegt werden, um eine erfolgreiche Umsetzung zu gewährleisten (Daten pflegen, Anpassungen am Dashboard vornehmen, Daten zu erfassen und dergleichen). Dabei gilt es zukünftig Standardrollen zu definieren, um den Prozess bei jedem Use Case zu beschleunigen, wie: 
 
 <img
   src={require('./assets/Rechte-und-Rollen.jpeg').default}
@@ -57,15 +57,15 @@ Zu jedem Use Case müssen Rollen definiert und deren benötigte Privilegien fest
 
 Dabei sind Zugriffe nur möglich, wenn sich die Nutzenden vorher authentifiziert haben. 
 
-## Beispielhafter Ablauf einer Use-Case-Umsetzung 
+## Beispielhafter Ablauf einer Use Case-Umsetzung 
 
 1. **Kontaktaufnahme der Verwaltungsorganisation** (Use-Case-Geber) über Data Hub-Team der Technologiestiftung Berlin oder die Arbeitsgruppe Smart City & Datenmanagement (6 B III) der Senatskanzlei 
 
-2. **Rücksprache mit dem Data Hub-Team** zu Umsetzbarkeit (Passung zu den techn. Möglichkeiten des Data Hub) und Kapazitäten 
+2. **Rücksprache mit dem Data Hub-Team** zu Umsetzbarkeit (Passung zu den technischen Möglichkeiten des Data Hub) und Kapazitäten 
 
 3. **Rückmeldung an Use-Case-Geber:** Kick-Off-Termin zur Klärung von Rahmenbedingungen, konkreter Zieldefinition, der Festlegung von Rollen: 
         - Product Owner im Data Hub-Team 
-        - Data Engineer (techn. Umsetzung) im Data Hub-Team 
+        - Data Engineer (technische Umsetzung) im Data Hub-Team 
         - Verfügbarer Ansprechpartner bei Use Case-Geber 
 
 4. **Konfiguration des Data Hub:**

@@ -21,7 +21,7 @@ const slides = [
   },
   {
     id: 3,
-    title: 'Bibliotheksdashboard Pankow',
+    title: 'Datenbasierte Bibliotheken',
     description:
       'Wie viele Medien wurden ausgeliehen? Wer leiht was? Wie können Gelder und Räume effizient genutzt werden? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow, soll künftig Bedarfserfassung und Makulatur datenbasiert vereinfachen.',
     image: '/img/example3.svg',

@@ -141,7 +141,7 @@ Grafana kommt als Datenvisualisierungskomponente unter anderem in diesem Projekt
 
 ## Weiterführende Informationen
 
-Diese Seite ist als erster Einstieg zu Grafana im Kontext des Data Hub gedacht. Da es sich um ein bekanntes Open Source Tool handelt, existiert eine offizielle, technische Dokumentation:  
+Diese Seite ist als erster Einstieg zu Grafana im Kontext des Data Hub gedacht. Da es sich um ein bekanntes Open Source-Tool handelt, existiert eine offizielle, technische Dokumentation:  
 [Offizielle Grafana Dokumentation](https://grafana.com/docs/) 
 
 In der Dokumentation des CIVITAS/CORE findest du Hinweise dazu, wie das Tool auf Admin-Level genutzt und verwaltet wird:  

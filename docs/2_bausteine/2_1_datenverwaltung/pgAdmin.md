@@ -69,12 +69,12 @@ Messdaten aus Luft- und Bodenstationen werden in Echtzeit an die PostgreSQL-Date
 
 ### Skill-Level & Anforderungen
 
-pgAdmin ist für Benutzer mit grundlegendem Datenbankverständnis geeignet. SQL-Kenntnisse sind hilfreich, insbesondere für komplexe Abfragen, aber nicht zwingend für grundlegende Verwaltungsaufgaben.
+pgAdmin ist für Benutzer mit grundlegendem Datenbankverständnis geeignet. SQL-Kenntnisse sind insbesondere für komplexe Abfragen hilfreich, aber für grundlegende Datenbankverwaltungsaufgaben nicht zwingend notwendig. 
 
 **Technisches Know-How notwendig:** <span title="Mäßig" class="text-yellow-400">●●●○○</span>  
 **Komplexität bzw. Einarbeitungszeit:** <span title="Mäßig" class="text-yellow-400">●●●○○</span>  
 
-👉 Für Verwaltungsmitarbeitende heißt das: Das Einspielen oder Verarbeiten von Daten in die Datenbanken sowie das Konfigurieren der Verbindungen mit den Datenverabeitungs- und Datenvisualisierungstools sollten im wesentlichen dem IT-Team überlassen und weitestgehend automatisiert werden. Mit pgAdmin ist es aber  auch ohne Programmierkentnisse möglich, unkritische Änderungen an Daten vorzunehmen, Schemata zu updaten oder sich schlicht einen Überblick über die vorhandenen Daten zu verschaffen, falls das für einen Workflow notwendig ist.
+👉 Für Verwaltungsmitarbeitende heißt das: Das Einspielen oder Verarbeiten von Daten in die Datenbanken sowie das Konfigurieren der Verbindungen mit den Datenverabeitungs- und Datenvisualisierungstools sollten im Wesentlichen dem IT-Team überlassen und weitestgehend automatisiert werden. Mit pgAdmin ist es aber  auch ohne Programmierkentnisse möglich, unkritische Änderungen an Daten vorzunehmen, Schemata zu updaten oder sich schlicht einen Überblick über die vorhandenen Daten zu verschaffen, falls das für einen Workflow notwendig ist.
 
 ### Input & Output
 
