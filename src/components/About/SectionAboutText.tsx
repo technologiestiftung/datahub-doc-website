@@ -21,8 +21,8 @@ export default function SectionAboutText() {
             Fest verankert in der Strategie Gemeinsam Digital: Berlin */}
           </h3>
           <p className="text-md md:text-lg">
-            Der Aufbau des Data Hubs ist eine seit einigen Jahren angestrebte
-            und zentrale Maßnahme der Strategie „Gemeinsam Digital: Berlin“
+            Der Aufbau des Data Hub ist eine seit einigen Jahren angestrebte und
+            zentrale Maßnahme der Strategie „Gemeinsam Digital: Berlin“
             entsprechend der Richtlinien der Berliner Regierungspolitik mit dem
             Ziel eine übergreifende, moderne und effiziente Dateninfrastruktur
             zu schaffen. Eine zentrale Anforderung ist, dass der Data Hub Berlin
