@@ -21,7 +21,7 @@ import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/reac
     </div>
   </div>
 
-## Welche Rolle spielen Stadtteilkoordination für die Vernetzung im Sozialraum?
+## Welche Rolle spielt Stadtteilkoordination für die Vernetzung im Sozialraum?
 
 Im Bezirk Berlin-Neukölln pulsiert das Großstadtleben mit all seinen Facetten und Herausforderungen. Die Stadtteilkoordination ist maßgeblich für die Vernetzung der verschiedenen Akteure wie Jugendclubs, Geflüchtetenunterkünfte, Nachbarschaftstreffs oder Stadtteilzentren in den jeweiligen Bezirksregionen verantwortlich. Sie nimmt somit eine zentrale Rolle bei der Förderung von Kooperation und Synergien zwischen Netzwerken und Akteuren ein. Als Intermediärin gewährleistet die Stadtteilkoordination den effektiven Informationstransfer zwischen der Verwaltung und dem Sozialraum, wodurch ein reibungsloser Austausch und eine bessere Zusammenarbeit ermöglicht werden. 
 Die Stadtteilkoordination sind wiederum gegenüber dem Bezirk verpflichtet, vertraglich gebunden Daten über Akteure, Träger und Netzwerke regelmäßig zu erfassen und halbjährlich zu aktualisieren. Diese vertragliche Verpflichtung gewährleistet eine konsistente und aktuelle Datenbasis, die eine Übersicht über die bestehenden (sozialen) Strukturen im Bezirk ermöglicht und damit auch die Planbarkeit von Maßnahmen erleichtert.
