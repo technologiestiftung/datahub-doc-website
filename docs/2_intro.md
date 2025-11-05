@@ -22,9 +22,9 @@ import { DocumentTextIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24
         Daten sind die Grundlage für gutes Verwaltungshandeln, Planung und Innovation. Hier erfährst du, wie der Data Hub Berlin im Rahmen der bestehenden Strategien angesiedelt ist, wie er eine gemeinsame, offene Infrastruktur aufbaut und wie durch einen prototypischen Ansatz erste Anwendungsfälle erprobt werden.
       </p>
     </div>
-        <div className={styles.heroimage}>
-      <img src="/img/wissen.svg" alt="Wissensspeicher Logo" />
-    </div>
+     <div className="flex-[0_0_250px]">
+      <img className="md:max-w-[70%]" src="/img/wissen.svg" alt="Wissensspeicher Logo" />
+    </div> 
   </div>
 
 
