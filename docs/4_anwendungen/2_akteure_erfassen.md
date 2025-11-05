@@ -156,7 +156,7 @@ Zur Umsetzung wurden Methoden eingesetzt, um den aktuellen Datenerfassungsprozes
 
 ## Wie geht's weiter?
 
-### Lessons Learned
+### Zentrale Erkenntnisse 
 Ein entscheidender Erfolgsfaktor des Projekts war die konzeptionelle Vorarbeit des Bezirks für ein Datenmodell. Dieses Datenmodell legt klare Feldnamen und Feldtypen fest und bildet so die Grundlage für die Umsetzung des Formulars in Appsmith. Beim iterativen Aufbau des Formulars wurden auftretende Hürden oder Unklarheiten immer wieder mit dem Bezirk gespiegelt und gelöst. Auch die zu Beginn eingesetzten Methoden, um den bisherigen komplexen Erfassungsprozess zu skizzieren und Bedarfe abzuleiten hat sich als wichtige Vorarbeit herauskristallisiert. So konnten zu Beginn des Projekts Bedarfe und Ziele erarbeitet und ein Minimum Valiable Product (MVP) definiert werden. 
 
 Die Erfahrungen aus der Umsetzung mit Postgres, Appsmith und Masterportal liefern wichtige Erkenntnisse für den gesamten Data Hub-Prototypen: Sie zeigen:
