@@ -172,7 +172,7 @@ Die Erfahrungen aus der Umsetzung mit Postgres, Appsmith und Masterportal liefer
 - Das Masterportal eignet sich sehr gut als Ergänzung zur Erfassung von Geodaten. Allerdings wäre es sinnvoll, zusätzlich Zeit zu investieren, um das von uns übernommene Plugin insbesondere im Hinblick auf UI und UX weiter zu optimieren. Dadurch ließe sich die Bedienbarkeit verbessern und der Workflow für Nutzende noch effizienter gestalten.
 
 
-###  Next Steps
+###  Nächste Schritte 
 
 Für die nächste halbjährliche Aktualisierung Ende 2025 ist geplant, dass die Stadtteilkoordination die entwickelte Lösung im Data Hub Berlin erstmals anwendet. Parallel dazu werden das Bezirksamt Neukölln und das Data Hub Team die Visualisierung der erfassten Daten vorantreiben und erste Ideen für (interne) Dashboards oder die Darstellung von Netzwerkstrukturen erarbeiten und sukzessive umsetzen. Als Pilotprojekt ist der Datenerfassungsprozess der Akteure im Sozialraum anschlussfähig zu den übrigen 11 Bezirken im Land Berlin sowie weiteren Projekten der Verwaltung, in denen die Eingabe und Verwaltung von verwaltungsexternen Daten im Mittelpunkt stehen.
 
