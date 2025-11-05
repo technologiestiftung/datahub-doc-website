@@ -16,7 +16,7 @@ import styles from '../docs.module.css';
     <div>
           <h1>Data Hub Governance</h1>
       <p className="text-lg">
-        Damit der Data Hub fair, sicher und nachvollziehbar genutzt werden kann, braucht es einen klaren Rahmen für Zusammenarbeit und Verantwortung. Daher wird parallel zum Prototypen eine Governance erarbeitet, die Rollen, Prozesse und Prinzipien für den verantwortungsvollen Umgang mit Daten in der Berliner Verwaltung definiert.
+        Damit der Data Hub fair, sicher und nachvollziehbar genutzt werden kann, braucht es einen klaren Rahmen für Zusammenarbeit und Verantwortung. Daher wird parallel zum Prototypen ein Vorschlag für eine Governance erarbeitet, die Rollen, Prozesse und Prinzipien für den verantwortungsvollen Umgang mit Daten in der Berliner Verwaltung definiert.
       </p>
     </div>
   </div>
@@ -61,7 +61,7 @@ Dabei sind Zugriffe nur möglich, wenn sich die Nutzenden vorher authentifiziert
 
 1. **Kontaktaufnahme der Verwaltungsorganisation** (Use-Case-Geber) über Data Hub-Team der Technologiestiftung Berlin oder die Arbeitsgruppe Smart City & Datenmanagement (6 B III) der Senatskanzlei 
 
-2. **Rücksprache zwischen Senatskanzlei und Data Hub-Team** zu Umsetzbarkeit (Passung zu den techn. Möglichkeiten des Data Hub) und Kapazitäten 
+2. **Rücksprache mit dem Data Hub-Team** zu Umsetzbarkeit (Passung zu den techn. Möglichkeiten des Data Hub) und Kapazitäten 
 
 3. **Rückmeldung an Use-Case-Geber:** Kick-Off-Termin zur Klärung von Rahmenbedingungen, konkreter Zieldefinition, der Festlegung von Rollen: 
         - Product Owner im Data Hub-Team 

@@ -25,11 +25,11 @@ import styles from './docs.module.css';
 <details className="faq-accordion">
     <summary>1. Was ist der Data Hub?</summary>
         <div className="faq-content">
-        Der Data Hub ist eine urbane Datenplattform für die Berliner Verwaltung. Dabei handelt es sich – vereinfacht gesagt – um eine zentrale Sammlung digitaler Werkzeuge für die Arbeit mit Daten. Er unterstützt Verwaltungsmitarbeitende dabei, Datenprojekte eigenständig umzusetzen – von der Erfassung über die Verarbeitung bis hin zur Darstellung und gemeinsamen Nutzung von Daten. 
+        Der Data Hub ist eine urbane Datenplattform für die Berliner Verwaltung. Dabei handelt es sich – vereinfacht gesagt – um eine zentrale Sammlung digitaler Werkzeuge für die Arbeit mit Daten. Er unterstützt die Berliner Verwaltung bei der Umsetzung von Datenprojekten – von der Erfassung über die Verarbeitung bis hin zur Darstellung und gemeinsamen Nutzung von Daten. 
         </div>
 </details>
 <details className="faq-accordion">
-    <summary>2. Wofür kann ich den Data Hub nutzen?</summary>
+    <summary>2. Wofür kann der Data Hub genutzt werden?</summary>
         <div className="faq-content">
       Der Data Hub soll zukünftig für alle Arten von Datenprojekten genutzt werden, wie die Visualisierung von Statistiken, interne digitale Monitoringberichte oder Kartenanwendungen. Auch die Verarbeitung von Daten, wie zum Beispiel deren Anonymisierung, Analyse oder Verschneidung, soll mit dem Data Hub möglich sein. Derzeit arbeiten wir an verschiedenen Use Cases, um die vielfältigen Möglichkeiten des Data Hub zu erproben.  
         </div>
@@ -37,11 +37,11 @@ import styles from './docs.module.css';
 <details className="faq-accordion">
     <summary>3. Wie bekomme ich Zugang zum Data Hub?</summary>
         <div className="faq-content">
-     Derzeit gibt es keinen unbegleiteten Zugang zum Data Hub Berlin. Erste Pilotnutzende, die konkrete Projekte eingebracht haben, haben Zugänge erhalten. Die technische Umsetzung wird überwiegend durch das Data Hub Kompetenzteam der Technologiestiftung realisiert und begleitet von Workshops, Arbeitstreffen und einem stetigen Wissentranfer für die Verwaltungsmitarbeitenden. Der Zugang bzw. die Projektauswahl läuft über die Technologistiftung Berlin in Absprache mit der Arbeitsgruppe Smart City und Datenmanagement im Referat E-Government der Senatskanzlei Berlin. Hier werden Projekte koordiniert, priorisiert und Bedarfe aufgenommen. Bei Interesse zur Umsetzung eines Projekts freuen wir uns über eine E-Mail an datahub@ts.berlin.
+     Derzeit gibt es keinen unbegleiteten Zugang zum Data Hub Berlin. Erste Pilotnutzende, die konkrete Projekte eingebracht haben, haben Zugänge erhalten. Die technische Umsetzung wird überwiegend durch das Data Hub Kompetenzteam der Technologiestiftung realisiert und begleitet von Workshops, Arbeitstreffen und einem stetigen Wissenstranfer für die Verwaltungsmitarbeitenden. Der Zugang bzw. die Projektauswahl läuft über die Technologiestiftung Berlin in Absprache mit der Gruppe Smart City und Datenmanagement der Senatskanzlei Berlin. Hier werden Projekte koordiniert, priorisiert und Bedarfe aufgenommen. Bei Interesse zur Umsetzung eines Projekts freuen wir uns über eine E-Mail an datahub@ts.berlin.
         </div>
 </details>
 <details className="faq-accordion">
-    <summary>4. Welche Vorteile bietet der Data Hub finanziell?</summary>
+    <summary>4. Welche Vorteile bietet der Data Hub?</summary>
         <div className="faq-content">
         Durch die Bereitstellung von Open Source-Komponenten entsteht ein breites Angebot an lizenzfreier Software, die eine Vielzahl an Bedarfen bei der Arbeit mit Daten für die Berliner Verwaltung deckt. Darüber hinaus dürften sich Skalierungseffekte einstellen, wenn die Nutzung des Data Hub in der Breite und ein Wissenstransfer für die Anwendung der Komponenten in die Verwaltung zunehmen. 
         Gleichzeitig soll die Effizienz steigen, da mehr Prozesse automatisiert, zentral gesteuert und weiterverwendet werden können und redundante Einzellösungen wegfallen. 
@@ -56,7 +56,9 @@ import styles from './docs.module.css';
 <details className="faq-accordion">
     <summary>6. Was unterscheidet den Data Hub vom Open Data-Portal?</summary>
         <div className="faq-content">
-        Das Berliner [Open Data-Portal](https://daten.berlin.de/) ist ein Metadatenkatalog und dient der Bereitstellung von Daten für die Öffentlichkeit. Der Data Hub hingegen bietet ein Werkzeugset an Software-Tools zur Umsetzung konkreter Datenprojekte für die Berliner Verwaltung. Der Data Hub kann sowohl für öffentliche wie für verwaltungsinterne Datenprojekte genutzt werden. Der Data Hub ist daher kein neues Datenportal, sondern beide Systeme ergänzen sich. Zusammen mit vielen anderen bestehenden Dateninfrastrukturprojekten im Land Berlin, soll ein „System der Systeme" entstehen.
+        Das Berliner [Open Data-Portal](https://daten.berlin.de/) ist ein Metadatenkatalog und dient der Bereitstellung von Daten für die Öffentlichkeit. Der Data Hub hingegen bietet ein Werkzeugset an Software-Tools zur Umsetzung konkreter Datenprojekte für die Berliner Verwaltung. Der Data Hub kann sowohl für Datenprojekte mit Open Data oder verwaltungsinternen Daten genutzt werden. Der Data Hub ist daher kein neues Datenportal, sondern beide Systeme ergänzen sich. 
+        Es soll ein "System der Systeme", d.h. ein zentraler Knotenpunkt für bestehende dezentrale Systeme entstehen. 
+        
          </div>
 </details>
 <details className="faq-accordion">
@@ -66,7 +68,7 @@ import styles from './docs.module.css';
         </div>
 </details>
 <details className="faq-accordion">
-    <summary>8. Wie passt der Data Hub in die Berliner Gesamtstrategie für eine moderne digitale Verwaltung?</summary>
+    <summary>8. Wie passt der Data Hub in eine Strategie für eine moderne digitale Verwaltung im Land Berlin? </summary>
         <div className="faq-content">
         Der Aufbau des Data Hub Berlin ist ein seit einigen Jahren angestrebtes Vorhaben, als zentrale Maßnahme der Strategie [Strategie „Gemeinsam Digital: Berlin“](https://gemeinsamdigital.berlin.de/de/strategie/) entsprechend der Richtlinien der Berliner Regierungspolitik. 
         </div>

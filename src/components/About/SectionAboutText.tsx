@@ -16,64 +16,54 @@ export default function SectionAboutText() {
             Datenmanagement und neue datenbasierte Lösungen.
           </p>
           <h3 className="text-1xl md:text-3xl font-bold pt-6 lg:pt-2">
-            Der Hintergrund:
-            <br />
-            Fest verankert in Berlins Smart City-Strategie
+            Der Hintergrund
+            {/* <br />
+            Fest verankert in der Strategie Gemeinsam Digital: Berlin */}
           </h3>
           <p className="text-md md:text-lg">
-            Der Aufbau des Data Hub ist keine neue Einzelinitiative, sondern ein
-            seit vielen Jahren diskutiertes und angestrebtes Vorhaben. Initiiert
-            wurde der Data Hub Berlin von der Senatskanzlei Berlin auf Basis der
-            Richtlinien der Berliner Regierungspolitik. Verankert ist er auch
-            als zentrale Maßnahme in der Digitalstrategie des Landes „Gemeinsam
-            Digital: Berlin“, mit dem Ziel eine übergreifende, moderne und
-            effiziente Dateninfrastruktur zu schaffen. Eine zentrale Anforderung
-            ist, dass der Data Hub Berlin durch eine moderne Architektur und
-            klare Governance die bestehende IT-Landschaft Berlins ergänzt und
-            datengetriebene Prozesse nachhaltig und nutzerorientiert fördert.
+            Der Aufbau des Data Hubs ist eine seit einigen Jahren angestrebte
+            und zentrale Maßnahme der Strategie „Gemeinsam Digital: Berlin“
+            entsprechend der Richtlinien der Berliner Regierungspolitik mit dem
+            Ziel eine übergreifende, moderne und effiziente Dateninfrastruktur
+            zu schaffen. Eine zentrale Anforderung ist, dass der Data Hub Berlin
+            durch eine moderne Architektur und klare Governance die bestehende
+            IT-Landschaft Berlins ergänzt und datengetriebene Prozesse
+            nachhaltig und nutzendenorientiert fördert.
           </p>{' '}
           <h3 className="text-1xl md:text-3xl font-bold pt-6 lg:pt-2">
-            Über die Pilotphase:
-            <br />
-            Praxisnah Anforderungen explorieren mit dem Prototypen
+            Über die Pilotphase
+            {/* <br />
+            Praxisnah Anforderungen explorieren mit dem Prototypen */}
           </h3>
           <p className="text-md md:text-lg">
             Die Entwicklung eines so umfassenden IT-Infrastrukturprojektes
             erfordert agile Prozesse und eine enge Zusammenarbeit mit der
-            Praxis. In einer Pilotphase wird der Data Hub zunächst prototypisch
-            aufgebaut. Diese frühe Version wird gezielt getestet, erprobt und
-            kontinuierlich weiterentwickelt. So lassen sich alle Anforderungen
-            für eine spätere Verstetigung und den Produktivbetrieb
-            identifizieren. Dabei werden sowohl technische als auch
-            organisatorische Rahmenbedingungen betrachtet, um nachhaltige
-            Mehrwerte für ein breites Spektrum an Nutzenden zu schaffen. Der
-            Prototyp steht ausgewählten Pilotnutzenden aus der Berliner
-            Verwaltung zur Verfügung. Gemeinsam werden derzeit reale
-            Datenprojekte umgesetzt, um die Plattform praxisnah zu testen und
-            weiterzuentwickeln.
+            Praxis. Seit April 2025 steht der Data Hub als prototypische Instanz
+            zur Verfügung. Mit echten Datenprojekten der Berliner Verwaltung
+            werden Funktionen, Prozesse und Rahmenbedingungen geprüft. So lässt
+            sich erkennen, welche technischen und organisatorischen
+            Anforderungen für einen Regelbetrieb notwendig sind.
           </p>
           <h3 className="text-1xl md:text-3xl font-bold pt-6 lg:pt-2">
-            Über das Team:
-            <br />
-            Technologiestiftung Berlin und Berliner Senatskanzlei
+            Über das Team
+            {/* <br />
+            Technologiestiftung Berlin und Berliner Senatskanzlei */}
           </h3>
           <p className="text-md md:text-lg">
-            Die Pilotphase des Data Hub wird von der Technologiestiftung Berlin
-            und der Berliner Senatskanzlei partnerschaftlich koordiniert. Die
-            Technologiestiftung Berlin begleitet die Pilotprojekte fachlich und
-            organisatorisch, setzt diese gemeinsam mit den Pilotnutzenden um und
-            betreibt den Prototypen in Zusammenarbeit mit einem technischen
-            Dienstleister. Als gesamtstädtische Plattform lebt der Data Hub aber
-            von der Mitwirkung vieler: In der AG Data Hub bringen sich
-            Senatsverwaltungen und Bezirksämter ein und auch die Pilotnutzenden
-            kommen aus verschiedenen Bereichen der Berliner Verwaltung. Parallel
-            zur Pilotphase bereitet die Senatskanzlei die Verstetigung des Data
-            Hub als dauerhafte Dateninfrastruktur für das Land Berlin vor.
+            Aktuell wird die Pilotphase durch die Abteilung CityLab der
+            Technologiestiftung Berlin im Rahmen einer Zuwendung der
+            Senatskanzlei Berlin getestet. Die Technologiestiftung begleitet die
+            Pilotprojekte organisatorisch und übernimmt einen Großteil der
+            technischen Umsetzung. Als gesamtstädtische Plattform lebt der Data
+            Hub von der Mitwirkung vieler: Senatsverwaltungen, Bezirksämter und
+            Nutzende aus verschiedenen Bereichen der Verwaltung bringen sich
+            ein. Parallel bereitet die Senatskanzlei die Verstetigung des Data
+            Hubs als dauerhafte städtische Dateninfrastruktur vor.
           </p>
-          <p className="text-md md:text-lg">
+          <p className="text-md md:text-lg pt-6 pb-2">
             Weitere Informationen finden sich im Wissensspeicher und im FAQ.
           </p>
-          <Button label="Zum Wissensspeicher" slug="/docs/willkommen"></Button>
+          <Button label="Zum Wissensspeicher" slug="/docs/intro"></Button>
         </div>
         {/* Right Side - Text Content */}
         <div className="lg:col-span-2 hidden lg:block">
