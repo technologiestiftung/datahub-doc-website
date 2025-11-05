@@ -70,7 +70,7 @@ Eine Senatsverwaltung nutzt Masterportal, um alle öffentlichen Parks, Gemeinsch
 ### Skill‑Level & Anforderungen  
 Das Masterportal richtet sich an Fachabteilungen mit thematischem Kartenbezug. Grundlegende Kenntnisse in Geodatenformaten und Kartenarchitektur sind hilfreich. Für das Erstellen von Standard-Kartenanwendungen sind aber in der Regel keine Programmierkenntnisse notwendig, da die Karten konfiguriert werden.
  
-**Technisches Know‑How notwendig:** <span title="Mittel" class="text-yellow-400">●●○○○</span>  
+**Technisches Know-How notwendig:** <span title="Mittel" class="text-yellow-400">●●○○○</span>  
 **Komplexität bzw. Einarbeitungszeit:** <span title="Mäßig" class="text-yellow-400">●●○○○</span>  
 
 👉 Für Verwaltungsmitarbeitende bedeutet das: Fachabteilungen können einmal aufgesetzte Geoportale nutzen und leicht anpassen und updaten. Die Einrichtung von Konfiguration, Schnittstellen oder 3D‑Funktionalitäten sollte durch IT‑ oder Daten-Teams unterstützt werden. Umfassende Funktionalitäten wie Routing oder 3D‑Daten erfordern möglicherweise GIS‑Spezialisten oder -Spezialistinnen.
@@ -124,7 +124,7 @@ Das Masterportal richtet sich an Fachabteilungen mit thematischem Kartenbezug. G
 ## Beispiele  
 Das Masterportal kommt als Datenvisualisierungskomponente unter anderem in einem unserer Pilotprojekte zum Einsatz, um Daten kartenbasiert zu erfassen und für die Fachämter verfügbar zu machen:
 
-- [Erfassung von Akteuren im Sozialraum](/docs/anwendungen/akteure_erfassen)
+- [Akteure im Sozialraum sichtbar machen](/docs/anwendungen/akteure_erfassen)
 
 Das Masterportal ist als Software weit verbreitet und kommt sowohl in Berlin als auch in anderen Städten und Verwaltungen zum Einsatz. Hier einige Beispiele:
 

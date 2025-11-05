@@ -138,7 +138,7 @@ PostgreSQL-Datenbanken und pgAdmin werden im Data Hub unter anderem in diesen vi
 - [Digitale Bezirksregionenprofile: Dashboards zur Visualisierung Indikatoren auf Bezirksebene](/docs/anwendungen/datenbasierte_bibliothek)
 - [Datenbasierte Bibliothekssteuerung: Monitoring von Ausleihen und Angeboten zur Steuerung der Makulatur](/docs/anwendungen/datenbasierte_bibliothek)
 - [Digitales Landesgleichstellungsmonitoring: Visualisierung von Kennzahlen zur Gleichstellung in Berlin](/docs/anwendungen/landesgleichstellung)
-- [Erfassung von Akteuren im Sozialraum](/docs/anwendungen/akteure_erfassen)
+- [Akteure im Sozialraum sichtbar machen](/docs/anwendungen/akteure_erfassen)
 
 ## Weiterführende Informationen
 

@@ -48,12 +48,15 @@ Die dadurch entstehenden, getrennten „Bereiche” innerhalb der Plattform werd
 
 Zu jedem Use Case müssen Rollen definiert und deren benötigte Privilegien festgelegt werden, um eine erfolgreiche Umsetzung zu gewährleisten (Daten pflegen, Anpassungen am Dashboard vornehmen, Daten zu erfassen und dergleichen). Dabei gilt es zukünftig Standardrollen zu definieren, um den Prozess bei jedem Use Case zu beschleunigen, wie: 
 
-<img
-  src={require('./assets/Rechte-und-Rollen.jpeg').default}
-  alt="Rechte-und-Rollen"
-  width={800}
-  height={300}              
-/>
+  <div className="w-full justify-center items-center pt-4 pb-6">
+    <img
+      src={require('./assets/Rechte-und-Rollen.jpeg').default}
+      alt="Darstellung der Rechte und Rollen"
+      label="Darstellung der Rechte und Rollen"
+      className="block h-auto w-full xl:w-[80%] justify-center items-center mx-auto"
+    />
+    <figcaption className={styles.imgcaption}>Darstellung der Rechte und Rollen</figcaption>
+  </div>
 
 Dabei sind Zugriffe nur möglich, wenn sich die Nutzenden vorher authentifiziert haben. 
 
@@ -80,7 +83,7 @@ Perspektivisch wäre es empfehlenswert, in den Fach- und Bezirksverwaltungen dat
 
 :::warning Hinweis
 
-Bisher existiert noch keine offizielle abgestimmte Governance. Die hier dargestellten Prozesse sind als erste Vorschläge und als ein Arbeitsstand für die jetzige Phase des prototypischen Betriebs zu verstehen.
+Bisher existiert noch keine offizielle, abgestimmte Governance. Die hier dargestellten Prozesse sind als erste Vorschläge und als ein Arbeitsstand für die jetzige Phase des prototypischen Betriebs zu verstehen.
 
 :::
 

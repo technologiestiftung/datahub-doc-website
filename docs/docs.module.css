@@ -41,6 +41,19 @@ h2 {
   margin-bottom: 2rem;
   font-size: 30px;
 }
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 34px; /* kleiner für Mobile */
+  }
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 26px; /* kleiner für Mobile */
+  }
+}
+
 h3 {
   margin-top: 2.75rem;
   margin-bottom: 1.5rem;

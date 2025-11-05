@@ -127,7 +127,7 @@ GeoServer richtet sich an Nutzende mit Kenntnissen in Geoinformationssystemen, D
 
 GeoServer wird unter anderem in dieser Pilotanwendung eingesetzt, um Daten mit Adressen aus einer Erhebung in eine Masterportal-Karte zu bringen:
 
-- [Erfassung von Akteuren im Sozialraum](/docs/anwendungen/akteure_erfassen)
+- [Akteure im Sozialraum sichtbar machen](/docs/anwendungen/akteure_erfassen)
 
 
 ## Weiterführende Informationen

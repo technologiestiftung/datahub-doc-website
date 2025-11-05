@@ -132,7 +132,7 @@ Appsmith ist Low-Code, hilfreich ist jedoch ein Verständnis von SQL und JavaScr
 
 AppSmith wird unter anderem in dieser Pilotanwendung eingesetzt, um ein Formular zu erstellen, das von externen Akteuren genutzt wird, um Daten an die Verwaltung zu liefern:
 
-- [Erfassung von Akteuren im Sozialraum](/docs/anwendungen/akteure_erfassen)
+- [Akteure im Sozialraum sichtbar machen](/docs/anwendungen/akteure_erfassen)
 
 ## Weiterführende Informationen
 

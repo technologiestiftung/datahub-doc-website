@@ -46,12 +46,15 @@ Die Daten sind in sogenannten Dataspaces organisiert – also in thematischen od
 Ein Dataspace kann beispielsweise einem Fachbereich, einem Projekt oder einem Thema wie Umwelt oder Mobilität zugeordnet sein.  
 Daten innerhalb eines Dataspace sind grundsätzlich geschützt und nicht automatisch öffentlich. Wenn sie geteilt werden, passiert das bewusst und gezielt – etwa wenn eine andere Abteilung sie benötigt oder wenn sie über das Berliner Open Data-Portal veröffentlicht werden sollen.
 
-<img
-  src={require('./assets/dataspace_info_graph.png').default}
-  alt="Dataspaces"
-  width={800}
-  height={250}              
-/>
+  <div className="w-full justify-center items-center pt-4">
+    <img
+      src={require('./assets/dataspace_info_graph.png').default}
+      alt="Schematische Darstellung der Dataspace-Logik"
+      label="Schematische Darstellung der Dataspace-Logik"
+      className="block h-auto w-full xl:w-[80%] justify-center items-center mx-auto"
+    />
+    <figcaption className={styles.imgcaption}>Schematische Darstellung der Dataspace-Logik</figcaption>
+  </div>
 
 ### Rollen und Verantwortlichkeiten
 

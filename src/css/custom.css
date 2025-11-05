@@ -120,6 +120,7 @@
 
 .breadcrumbs__link {
   background-color: #e6e6e6;
+  margin-bottom: 0.2rem;
 }
 .breadcrumbs__link:hover {
   background-color: #ffe70e;

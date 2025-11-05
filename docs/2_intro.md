@@ -78,7 +78,7 @@ Der Data Hub Berlin ist mehr als nur eine technische Plattform – er ist ein st
 
       Der Data Hub fördert nicht nur datengetriebenes Entscheiden und ermöglicht es, analoge Produkte wie PDF‑Berichte in digitale, maschinenlesbare Formen zu überführen, sondern treibt insgesamt die Verwaltungsdigitalisierung voran. Langfristig unterstützt er auch die bessere Zusammenarbeit zwischen den Fachabteilungen in Ämtern, indem er Standards etabliert, die geteilt werden können, um Interoperabilität und Datenqualität zu erhöhen. Durch diese gemeinsame Grundlage entstehen Schnittstellen, die neue Datenprodukte, Analysemöglichkeiten und Prozessoptimierungen ermöglichen – der Data Hub wirkt somit als Booster für effizientere und vernetzte Verwaltung.
 
-4. **Grundlage für Innovationen wie KI-Tools, das Internet of Things(IoT) und den digitalen Zwilling**
+4. **Grundlage für Innovationen wie KI-Tools, das Internet of Things (IoT) und den digitalen Zwilling**
 
       Der Data Hub dient als zentrale Dateninfrastruktur, die dringend notwendig ist, um zukunftgerichtete Innovationen aufzubauen. Zuküntig könnte er beispielsweise KI-Anwendungen mit hochwertigen, standardisierten Verwaltungsdaten unterstützen und die Nutzung von IoT-Daten aus städtischen Sensoren erleichtern. Außerdem soll er die Basis für einen digitalen Zwilling Berlins legen, indem Daten konsistent gesammelt, vernetzt und visualisierbar gemacht werden. So entstehen die Voraussetzungen für smarte, datengetriebene Lösungen – von vorausschauender Planung über optimierte Services bis hin zu neuen Anwendungen für Bürgerinnen und Bürger sowie Unternehmen.
 
@@ -168,7 +168,9 @@ Durch dieses iterative Vorgehen wird nicht nur Technik entwickelt, sondern auch 
 Die Pilotphase für die ersten Anwendungsfälle begann im Sommer 2025 mit der ersten Version des Prototypen. Zusammen mit der Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen (SenSBW), der Senatsverwaltung für Arbeit, Soziales, Gleichstellung, Integration, Vielfalt und Antidiskriminierung (SenASGIVA) sowie den Bezirken Neukölln und Pankow werden vier konkrete Anwendungsfälle erprobt. Weitere Pilotprojekte sollen in 2026 folgen. 
 Die Erkenntnisse aus den Use Cases fließen in die Weiterentwicklung des Berliner Data Hub. So stellen wir sicher, dass die Plattform die Bedarfe der Berliner Verwaltung in der Arbeit mit Daten bestmöglich erfüllt. Außerdem können mit der Zeit weitere Komponenten aus der CIVITAS/CORE-Weiterentwicklung in den Berliner Data Hub integriert werden.
 
-Um die erfolgreiche Umsetzung von Use Cases zu gewährleisten, erfolgt diese in enger Begleitung durch das Kompetenzteam der Technologiestiftung Berlin. Gemeinsam werden die Projektziele an die technischen Möglichkeiten des Data Hub angepasst und eine Timeline festgelegt. Erst dann erfolgt der Zugang zu den individuellen Komponenten des Data Hub.
+:::warning Hinweis
+Um die erfolgreiche Umsetzung von Use Cases in der Pilotphase zu gewährleisten, erfolgt diese in enger Begleitung durch das Kompetenzteam der Technologiestiftung Berlin. Gemeinsam werden die Projektziele an die technischen Möglichkeiten des Data Hub angepasst und eine Timeline festgelegt. Erst dann erfolgt der Zugang zu den individuellen Komponenten des Data Hub.
+:::
 
 ## Die Architektur des CIVITAS/CORE als Grundlage
 

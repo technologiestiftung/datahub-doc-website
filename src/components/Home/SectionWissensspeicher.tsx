@@ -19,7 +19,10 @@ export default function SectionWissensspeicher() {
               wächst die Dokumentation weiter und macht die Potenziale des
               Projekts sichtbar.
             </p>
-            <Button label="Zum Wissensspeicher" slug="/docs/intro"></Button>
+            <Button
+              label="Zum Wissensspeicher"
+              slug="/docs/willkommen"
+            ></Button>
           </div>
         </div>
 
