@@ -44,7 +44,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/technologiestiftung/datahub-doc-website',
+          editUrl: undefined, // Deaktiviert den "Edit this page"-Link global
         },
         blog: {
           showReadingTime: true,
@@ -54,7 +54,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/technologiestiftung/datahub-doc-website',
+          editUrl: undefined, // Deaktiviert den "Edit this page"-Link global
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -81,7 +81,7 @@ const config: Config = {
       },
       items: [
         {
-          to: 'https://portal.data-hub.berlin',
+          to: 'https://portal.data-hub.berlin/',
           label: 'Portal',
           position: 'right',
           className: 'navbar__link--portal',
