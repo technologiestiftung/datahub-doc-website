@@ -39,7 +39,7 @@ import { ArrowRightEndOnRectangleIcon, ArrowRightStartOnRectangleIcon } from '@h
 
 ### MinIO im Data Hub
 
-MinIO bildet zusammen mit den Datenbanken das Dateispeicher-Rückgrat des Data Hub. Es ist der zentrale Ablageort für Rohdaten, Export-Dateien aus Fachverfahren, Container-Images, Modelle oder große Geodatenpakete. Die Vorteile liegen in einfacher Integration (S3 API), feingranularer Zugriffssteuerung und der Möglichkeit, Daten sowohl intern als auch für externe Projekte sicher freizugeben. Eine unkomplizierte Ablage für beliebige Dateitypen (Data Lake-Charakter) ist durch eine web-basierte Benutzeroberfläche für Upload, Download und Management der Dateien sichergestellt.
+MinIO bildet zusammen mit den Datenbanken das Dateispeicher-Rückgrat des Data Hub. Es ist der zentrale Ablageort für Rohdaten, Export-Dateien aus Fachverfahren, Container-Images, Modelle oder große Geodatenpakete. Die Vorteile liegen in einfacher Integration (S3 API), feingranularer Zugriffssteuerung und der Möglichkeit, Daten sowohl intern als auch für externe Projekte sicher freizugeben. Eine unkomplizierte Ablage für beliebige Dateitypen (Data Lake-Charakter) ist durch eine webbasierte Benutzeroberfläche für Upload, Download und Management der Dateien sichergestellt.
 
   <div className="w-full justify-center items-center pt-4">
     <img
@@ -70,7 +70,7 @@ Ein Fachamt legt jeden Monat einen Datensatz mit Auslastungszahlen für Kitas in
 
 ### Skill-Level & Anforderungen
 
-MinIO ist bewusst benutzerfreundlich gehalten: Für einfaches Ablegen, Löschen oder Herunterunterladen von Dateien reicht die Web-Oberfläche. Für das Aufsetzen von Automatisierung sind Basiskenntnisse in HTTP/S und S3-Konzepten hilfreich.
+MinIO ist bewusst benutzerfreundlich gehalten: Für einfaches Ablegen, Löschen oder Herunterladen von Dateien reicht die Web-Oberfläche. Für das Aufsetzen von Automatisierung sind Basiskenntnisse in HTTP/S und S3-Konzepten hilfreich.
 
 **Technisches Know-How notwendig:** <span title="Leicht zu verstehen" class="text-green-500">●●○○○</span>  
 **Komplexität bzw. Einarbeitungszeit:** <span title="Kurz" class="text-green-500">●●○○○</span>  

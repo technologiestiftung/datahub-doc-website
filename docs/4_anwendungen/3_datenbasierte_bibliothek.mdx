@@ -1,5 +1,5 @@
 ---
-title: Datenbasierte Bibliothek
+title: Datenbasierte Bibliotheken
 sidebar_position: 3
 hide_title: true
 ---
@@ -17,22 +17,22 @@ import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/reac
     <div>
       <h1>Datenbasierte Bibliothek</h1>
       <p className="text-lg">
-        Was verraten Bibliotheksdaten über das Lesen in der Stadt?
-        Das Dashboard „Datenbasierte Bibliothek“ macht sichtbar, wie sich Nutzung, Bestand und Zukäufe entwickeln. Es verdeutlicht wie Daten helfen, Kulturangebote gezielt zu gestalten.
+        Was verraten Bibliotheksdaten über das Kulturangebot in der Stadt? Womit erreichen Bibliotheken besonders viele Menschen? Und wie können Räume und Gelder effizient genutzt werden?
+        Das Dashboard „Datenbasierte Bibliothek“ macht sichtbar, wie sich Nutzung, Bestand und Zukäufe entwickeln. Es verdeutlicht, wie Daten helfen, Kulturangebote gezielt zu gestalten.
       </p>
     </div>
   </div>
 
-## Um welche Daten handelt es sich?
+## Was sind datenbasierte Bibliotheken?
 
-In den Pankower öffentlichen Bibliotheken werden seit Jahren detaillierte Nutzungs- und Bestandsdaten erhoben. 
-Diese Daten helfen bei der Etatverteilung, bei Entscheidungen zur Bestandspflege (Makulatur), bei der Frage nach Aktualität der Medien und beim Vergleich zwischen den Häusern. 
+Wer leiht was und wie viele Medien werden ausgeliehen? In den öffentlichen Bibliotheken von Berlin-Pankow werden seit Jahren detaillierte Nutzungs- und Bestandsdaten erhoben. 
+Diese Daten helfen bei der Etatverteilung, bei Entscheidungen zur Bestandspflege (Makulatur), bleibt der Frage nach Aktualität der Medien und beim Vergleich zwischen den Häusern. 
 
 ## Das Problem
 
 Jährlich müssen Auswertungen erstellt werden, etwa für den Verbund Öffentlicher Bibliotheken Berlins (VÖBB) oder für die interne Etatplanung. 
 
-Bisherige Auswertungen waren jedoch arbeitsintensiv, weil große CSV-Dateien manuell ausgewertet werden müssen und die Ergebnisse meist nicht visualisiert sind. Ergebnisse waren wenig vergleichbar und oft nur für einzelne Personen verfügbar. 
+Bisherige Auswertungen waren jedoch arbeitsintensiv, weil große CSV-Dateien manuell ausgewertet werden müssen und die Ergebnisse meist nicht visualisiert sind. Das führt dazu, dass Ergebnisse vergleichbar und oft nur für einzelne Personen verfügbar sind. 
 
 Es fehlt vor allem:
 - eine zentrale, einheitliche Ablage der Statistikdaten,
@@ -84,7 +84,7 @@ Es fehlt vor allem:
       <p>
         Grundlage des Projekts sind die jährlich erhobenen <strong>BesEx-Statistikdaten</strong> der Pankower Stadtbibliotheken. Sie enthalten Informationen zu <strong>Ausleihen, Beständen, Medienarten, Sachgruppen</strong> und Lieferanten in einer standardisierten CSV-Struktur.  
       </p>  
-      <!-- ![Bibliotheksdaten](../assets/bibliotheks_dashboard.png) -->
+      [Bibliotheksdaten](../assets/bibliotheks_dashboard.png)
     </div>
   </>
   </TabItem>
@@ -148,7 +148,7 @@ Die Umsetzung im Data Hub Berlin basiert auf einer modularen Datenpipeline, von 
     Die Analysen orientieren sich an der **Systematik für Bibliotheken (SfB)**, diese Struktur ermöglicht Vergleiche zwischen Themenbereichen, Häusern und Jahren. 
 
 3. **Visualisierung:**  
-  Die bereinigten Daten fließen in **Apache Superset**, wo ein interaktives Dashboard entsteht. Darin können Bibliotheksleitungen und Lektor:innen:
+  Die bereinigten Daten fließen in **Apache Superset**, wo ein interaktives Dashboard entsteht. Darin können Bibliotheksleitungen und Lektorierende:
     - **nach Zeiträumen filtern**,
     - **einzelne Sachgruppen vergleichen**,
     - **Zugang und Abgang einsehen**,
@@ -170,7 +170,7 @@ Die Umsetzung im Data Hub Berlin basiert auf einer modularen Datenpipeline, von 
 **Ein nutzerzentrierter Ansatz** prägte die Zusammenarbeit mit der Janusz-Korczak-Bibliothek. Das Dashboard wurde gemeinsam mit dem Ziel entwickelt, Anforderungen und Arbeitsabläufe der Bibliothek direkt in die Gestaltung einzubeziehen. Ein strukturierter Service Blueprint half, sowohl die Nutzungssituationen als auch die technischen Prozesse im Hintergrund sichtbar zu machen.
 
 **Workshops und Tests** begleiteten den Entwicklungsprozess.  
-In drei Terminen wurden gemeinsam die zentralen Fragen und Kennzahlen definiert, die das Dashboard beantworten soll. Anschließend testeten Lektor:innen den Prototyp, um zu prüfen, ob er ihre praktischen Fragestellungen abbilden kann.
+In drei Terminen wurden gemeinsam die zentralen Fragen und Kennzahlen definiert, die das Dashboard beantworten soll. Anschließend testeten Lektorierende den Prototyp, um zu prüfen, ob er ihre praktischen Fragestellungen abbilden kann.
 
 ## Wie geht’s weiter?
 

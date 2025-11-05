@@ -71,7 +71,7 @@ Auch wenn Node-RED als Low-Code-Tool über eine einfach aufgebaute grafische Obe
 **Technisches Know-How notwendig:** <span title="Leicht zu verstehen" class="text-yellow-400">●●●○○</span>  
 **Komplexität bzw. Einarbeitungszeit:** <span title="Mäßig" class="text-green-500">●●○○○</span>  
 
-👉 Für Verwaltungsmitarbeitende heißt das: Das initiale Aufsetzen von Flows sollte durch IT- oder Daten-Spezialistwnn oder das Data Hub-Team durchgeführt werden, insbesondere bei komplexn Workflows, Anbindungen an mehrere Systeme oder wenn Daten transformiert oder geprüft werden sollen.
+👉 Für Verwaltungsmitarbeitende heißt das: Das initiale Aufsetzen von Flows sollte durch IT- oder Daten-Spezialisten oder das Data Hub-Team durchgeführt werden, insbesondere bei komplexen Workflows, Anbindungen an mehrere Systeme oder wenn Daten transformiert oder geprüft werden sollen.
 
 ### Input & Output
 
