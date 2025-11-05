@@ -1,0 +1,38 @@
+---
+title: Projekte umsetzen
+hide_title: true
+sidebar_position: 5
+description: Dies ist der zentrale Wissensspeicher des prototypischen Data Hub Berlins, der urbanen Datenplattform der Berliner Verwaltung. Hier findest du Informationen zu Hintergründen, Aufbau und Anwendungsfällen der Plattform.
+---
+
+import DocCard from '@theme/DocCard';
+import styles from './docs.module.css';
+import Link from '@docusaurus/Link';
+import { RocketLaunchIcon } from '@heroicons/react/24/solid';
+
+<div className={styles.doccontainer}>
+
+  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-10 xl:pl-16 pt-16">
+    <div>
+          <h1>Projekte umsetzen</h1>
+      <p className="text-lg">
+        Die derzeitigen Use Cases sollen Stück für Stück um weitere Anwendungsfälle aus der Verwaltung ergänzt werden; in enger Abstimmung und technischer Begleitung durch das Kompetenzteam.
+      </p>
+    </div>
+     <div className={styles.heroimage}>
+     <RocketLaunchIcon className="h-16 w-16 text-blue-500" />
+    </div> 
+  </div>
+
+## Derzeitige Umsetzung von Projekten
+
+Die Umsetzung von Projekten in der Urbanen Datenplattform („Data Hub“) erfolgt derzeit in enger Begleitung durch das Kompetenzteam der Technologiestiftung Berlin. Während die Komponenten der Plattform, wie beispielsweise Datenbanken oder Visualisierungstools standardisiert bereitstehen, unterscheiden sich die Anforderungen der Projekte stark. Faktoren wie Datenlage, Abstimmungsprozesse, Datenschutzfragen oder der Aufwand für ETL-Prozesse (Extract, Transform, Load) variieren von Fall zu Fall. Die Fragen sind daher nicht nur technischer, sondern häufig auch organisatorischer oder rechtlicher Natur.
+
+Der Zugang zum Data Hub erfolgt aktuell in Begleitung. Das bedeutet: Projekte werden gemeinsam mit dem Kompetenzteam der Technologiestiftung umgesetzt. Zu Beginn werden Ziel, Arbeitsweise und Zeitplan definiert, anschließend werden passende Zugänge und Zuständigkeiten geklärt. Erst wenn diese Rahmenbedingungen abgestimmt sind, werden technische Zugänge zu Superset oder der PostgreSQL-Datenbank definiert und eingerichtet.
+
+Wenn ein Fachbereich der Verwaltung bereits mit einem externen Dienstleister zusammenarbeitet, der Erfahrung mit den eingesetzten Open-Source-Komponenten (z. B. Superset oder PostgreSQL) mitbringt und die technische Umsetzung übernimmt, kann der Prozess entsprechend verkürzt oder teilweise ausgelagert werden. In diesem Fall wird dennoch ein gemeinsamer Kick-off-Termin durchgeführt, um zentrale Punkte abzustimmen wie die Einrichtung von Datenräumen, Rollen- und Rechtekonzepte sowie die Definition der Projektverantwortlichen und Ansprechpartner.
+
+Parallel erarbeitet die Technologiestiftung eine Governance-Struktur für die Nutzung der Urbanen Datenplattform. Dazu entstehen Informationsangebote wie Checklisten für fachliche Teams in der Verwaltung, die ein Projekt im Data Hub umsetzen möchten. Diese Checklisten helfen, zentrale Fragen frühzeitig zu klären: Liegt die Datenhoheit beim eigenen Fachbereich? Dürfen die Daten verarbeitet oder veröffentlicht werden? Welche Ressourcen stehen zur Verfügung?
+So wird sichergestellt, dass Projekte effizient geplant und nachhaltig im Data Hub umgesetzt werden können.
+
+</div>
