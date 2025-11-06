@@ -16,7 +16,7 @@ import { RocketLaunchIcon } from '@heroicons/react/24/solid';
     <div>
           <h1>Projekte umsetzen</h1>
       <p className="text-lg">
-        Die derzeitigen Use Cases sollen Stück für Stück um weitere Anwendungsfälle aus der Verwaltung ergänzt werden; in enger Abstimmung und technischer Begleitung durch das Kompetenzteam.
+        Die aktuellen Use Cases werden nach und nach um weitere Anwendungsfälle aus der Verwaltung erweitert. Fachbereiche können dabei selbst aktiv werden, jeweils in enger Abstimmung und mit technischer Begleitung durch das Kompetenzteam.
       </p>
     </div>
      <div className="flex-[0_0_250px] md:flex-[0_0_270px]">
@@ -24,15 +24,86 @@ import { RocketLaunchIcon } from '@heroicons/react/24/solid';
     </div> 
   </div>
 
-## Derzeitige Umsetzung von Projekten
 
-Die Umsetzung von Projekten in der Urbanen Datenplattform („Data Hub“) erfolgt derzeit in enger Begleitung durch das Kompetenzteam der Technologiestiftung Berlin. Während die Komponenten der Plattform, wie beispielsweise Datenbanken oder Visualisierungstools standardisiert bereitstehen, unterscheiden sich die Anforderungen der Projekte stark. Faktoren wie Datenlage, Abstimmungsprozesse, Datenschutzfragen oder der Aufwand für ETL-Prozesse (Extract, Transform, Load) variieren von Fall zu Fall. Die Fragen sind daher nicht nur technischer, sondern häufig auch organisatorischer oder rechtlicher Natur.
+## Begleitete Umsetzung von Projekten
 
-Der Zugang zum Data Hub erfolgt aktuell in Begleitung. Das bedeutet: Projekte werden gemeinsam mit dem Kompetenzteam der Technologiestiftung umgesetzt. Zu Beginn werden Ziel, Arbeitsweise und Zeitplan definiert, anschließend werden passende Zugänge und Zuständigkeiten geklärt. Erst wenn diese Rahmenbedingungen abgestimmt sind, werden technische Zugänge zu Superset oder der PostgreSQL-Datenbank definiert und eingerichtet.
+Der Prototyp des Data Hub Berlin ist seit Mitte 2025 Betrieb und steht somit theoretisch für eine Vielzahl von Use Cases der Berliner Verwaltung und verwaltungsnaher Institutionen zur Verfügung. Er bietet Potenzial für viele Fachbereiche und eine breite Nutzerschaft.
+Es handelt sich jedoch um ein komplexes System, dass einige Anforderungen und Rahmenbedingungen mitbringt. Der Data Hub ist deshalb momentan kein reines Self-Service-System, sondern wird begleitet eingeführt, um Qualität, Sicherheit und nachhaltige Nutzung sicherzustellen.
+Die Umsetzung von Projekten erfolgt in der Pilotphase in enger Begleitung durch das Kompetenzteam der Technologiestiftung Berlin.
+Im Folgenden wird alles Wissenswerte zur Umsetzung eines Use Cases in der Pilotphase zusammengefasst.
 
-Wenn ein Fachbereich der Verwaltung bereits mit einem externen Dienstleister zusammenarbeitet, der Erfahrung mit den eingesetzten Open-Source-Komponenten (z. B. Superset oder PostgreSQL) mitbringt und die technische Umsetzung übernimmt, kann der Prozess entsprechend verkürzt oder teilweise ausgelagert werden. In diesem Fall wird dennoch ein gemeinsamer Kick-off-Termin durchgeführt, um zentrale Punkte abzustimmen wie die Einrichtung von Datenräumen, Rollen- und Rechtekonzepte sowie die Definition der Projektverantwortlichen und Ansprechpartner.
+## Hilfreiche Kompetenzen zur Bearbeitung von Use Cases
 
-Parallel erarbeitet die Technologiestiftung eine Governance-Struktur für die Nutzung der Urbanen Datenplattform. Dazu entstehen Informationsangebote wie Checklisten für fachliche Teams in der Verwaltung, die ein Projekt im Data Hub umsetzen möchten. Diese Checklisten helfen, zentrale Fragen frühzeitig zu klären: Liegt die Datenhoheit beim eigenen Fachbereich? Dürfen die Daten verarbeitet oder veröffentlicht werden? Welche Ressourcen stehen zur Verfügung?
-So wird sichergestellt, dass Projekte effizient geplant und nachhaltig im Data Hub umgesetzt werden können.
+### Technische Kompetenzen
+Je nach umzusetzendem Anwendungsfall kommen andere Software-Bausteine und Aspekte des Data Hubs zum Einsatz. Von daher lässt sich pauschal nicht sagen, welche technischen Anforderungen erforderlich sind.
+In den meisten Fällen sind aber vor allem die folgenden Kenntnisse hilfreich:
+- Datenbankkenntnisse: Grundkenntnisse in SQL und Erfahrung mit PostgreSQL erleichtern das Abfragen und Modellieren von Daten.
+- ETL-Prozesse: Fähigkeiten in Datenaufbereitung, Transformation und Integration (zum Beispiel mittels Python, Pandas oder SQL-Skripten).
+- Visualisierung: Erfahrung mit Superset oder ähnlichen Tools, um Dashboards zu erstellen und anzupassen.
+- Grundlagen von Datenmanagement und Governance: Verständnis von Rollen- und Berechtigungskonzepten.
+- Allgemeine IT-Kompetenzen: Umgang mit Standard-Software, Dateiimport/-export, Versionskontrolle.
+
+
+### Fachliche und organisatorische Anforderungen
+Währende die Software-Komponenten des Data Hub standardisiert bereit stehen, bringt jedes Projektvorhaben unterschiedliche fachliche und organisatorische Anforderungen mit.
+Einige der typische Variablen, die für jedes Projekt betrachtet werden müssen sind:
+
+- Datenverfügbarkeit und -qualität
+- Abstimmungswege und Zuständigkeiten
+- Datenschutz- und Veröffentlichungsfragen
+- Aufwand für Datenaufbereitung (ETL)
+- Bereits vorhandene technische Ressourcen
+
+
+## Prinzip: Befähigung statt Abhängigkeit
+Auch wenn das initiale Um- und Aufsetzen eines Anwendungsfalls einiges an externer Unterstützungsleistung erfordern kann: Ziel jeder Umsetzung im Data Hub ist, dass die Use-Case-Gebende Stelle der Berliner Verwaltung das Endprodukt vollständig übernimmt und eigenständig nutzen kann. Teams sollen in der Lage sein, zum Beispiel neue Daten einzuspielen, Dashboards anzupassen und kleine Weiterentwicklungen selbst vorzunehmen. Externe Unterstützung, durch das Kompetenzteam oder durch einen technischen Dienstleister, kommt nur bei neuen Funktionen oder komplexen Erweiterungen hinzu. So entsteht eine nachhaltige, anbieterunabhängige Nutzung und Kompetenzentwicklung innerhalb der Verwaltung.
+
+## Ablauf zur Projektumsetzung
+
+Typischerweise wird ein Projekt durch folgende Aspekte (siehe hierzu auch das Kapitel ["Data Hub Governance"](/docs/rechte--rollen/data_governance)) begleitet:
+
+1. Erstgespräch & Projektverständnis: Zielklärung und Prüfung, ob das Vorhaben im Data Hub sinnvoll umgesetzt werden kann. 
+2. Organisatorische & methodische Begleitung: Definition der Rahmenbedingungen, Anforderungserfassung und Einbeziehen der Stakeholder.
+3. Technische Umsetzung: Entwicklung des Use Cases im Data Hub
+
+Die technische Umsetzung im Data Hub kann auf unterschiedliche Weise erfolgen. Welcher Weg geeignet ist, hängt von fachlichen Ressourcen, technischer Erfahrung und Projektkomplexität ab.
+
+
+### Umsetzung durch das Team der Technologiestiftung Berlin
+
+Die Technologiestiftung übernimmt die Umsetzung, wenn beim Fachbereich keine entsprechenden Kapazitäten oder Vorkenntnisse vorhanden sind.
+Das Team unterstützt bei Datenaufbereitung, Integration, Visualisierung und befähigt die Fachbereiche, das Endprodukt selbstständig zu betreiben.
+
+
+### Umsetzung durch einen externen Dienstleister
+Fachbereiche können Dienstleister beauftragen, die technische Aufgaben übernehmen.
+Die Technologiestiftung stellt Zugänge bereit, sichert Architektur- und Sicherheitsanforderungen ab und begleitet die Integration.
+Auch hier bleibt das Ziel die vollständige Übernahme des Endprodukts durch den Use-Case-Geber. Dienstleister unterstützen nur bei neuen Funktionen oder komplexen Anpassungen.
+Ein typischer Vorteil ist hier eine schnelle Umsetzung, wenn geeigneten Partnern vorhanden sind.
+
+
+### Umsetzung durch die Verwaltung selbst
+Wenn technische Expertise vorhanden ist, können die Use-Case-Gebenden die Umsetzung selbst durchführen.
+Die Technologiestiftung liefert Infrastruktur, Zugänge, Sicherheitsrichtlinien und Guidance.
+Die Lösung wird vollständig von der Verwaltung genutzt, gepflegt und weiterentwickelt.
+Ein Vorteil dieser Variante ist die hohe Autonomie und der Kompetenzaufbau im Haus. Es kann allerdings ein initialer Lernaufwand und Ressourcenbindung notwendig sein.
+
+### Hybride Ansätze
+In der Realität macht oft auch eine Kombination der oben genannten Möglichkeiten Sinn: Zum Beispiel die technische Umsetzung durch Verwaltung oder Dienstleister und Governance und Qualitätssicherung durch die Technologiestiftung.
+Der Übergang in den selbständigen Betrieb bleibt in jedem Fall verbindliches Ziel.
+
+
+## Unterstützungsangebote
+Die Technologiestiftung entwickelt schrittweise Vorschläge für eine Governance-Struktur für die Nutzung des Data Hub und entsprechendes Hilfs- und Leitmaterial. Dazu gehören:
+- Checklisten für Projektteams
+- Hilfestellung zu Datenhoheit und -freigabe
+- Empfehlungen zu Datenschutz und Informationssicherheit
+- Guidelines für die Nutzung der Plattformkomponenten
+- Standardisierte Datenräume
+- Best-Practice-Vorlagen für Datenmodelle und Dashboards
+- Templates für Projektvorbereitung
+
+Diese Angebote sollen zukünftig helfen, früh zentrale Fragen zu klären, Verzögerungen zu vermeiden und Projekte effizient umzusetzen.
+
 
 </div>
