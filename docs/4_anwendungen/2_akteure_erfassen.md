@@ -59,7 +59,7 @@ Der Data Hub wird eingesetzt, um den Erfassungsprozess zu vereinfachen, zu syste
       label="Impressionen eines ersten Prototypen des Dashboards"
       className="block h-auto w-full xl:w-[80%] justify-center items-center mx-auto"
     />
-    <figcaption className={styles.imgcaption}>Impressionen eines ersten Prototypen des Dashboards</figcaption>
+    <figcaption className={styles.imgcaption}>Die Erfassung neuer Akteure kann georeferenziert über die Kartenansicht und einem Formular erfolgen. </figcaption>
   </div>
 
 ## Die Umsetzung 
