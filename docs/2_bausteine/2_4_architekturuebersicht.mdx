@@ -14,7 +14,7 @@ import { ArrowRightEndOnRectangleIcon, ArrowRightStartOnRectangleIcon } from '@h
       <h1>Architektur des Data Hub Berlin</h1>
       <p className="text-lg">
         Die Architektur des Data Hub Berlin bildet das technische Rückgrat der Plattform. 
-        Sie basiert auf <strong>Civitas CORE</strong>, einer offenen, modularen Architektur, 
+        Sie basiert auf CIVITAS/CORE, einer offenen, modularen Architektur, 
         die moderne Cloud-Technologien mit einem klaren Fokus auf Nachnutzbarkeit, Sicherheit und Skalierbarkeit verbindet.
       </p>
     </div>
@@ -24,23 +24,23 @@ import { ArrowRightEndOnRectangleIcon, ArrowRightStartOnRectangleIcon } from '@h
 
 Die Architektur des Data Hub Berlin folgt vier grundlegenden Prinzipien, die sicherstellen, dass die Plattform langfristig erweiterbar, interoperabel und zukunftsfähig bleibt.  
 
-Im Mittelpunkt steht der Einsatz von **Cloud-nativen Technologien**. Durch den containerbasierten Aufbau und die Orchestrierung über Kubernetes kann der Data Hub flexibel betrieben werden, vollständig in der Cloud. Die Plattform lässt sich bei Bedarf automatisch skalieren, also vergrößern, und reagiert so dynamisch auf wachsende Anforderungen.  
+Im Mittelpunkt steht der Einsatz von Cloud-nativen Technologien. Durch den containerbasierten Aufbau und die Orchestrierung über Kubernetes kann der Data Hub flexibel betrieben werden, vollständig in der Cloud. Die Plattform lässt sich bei Bedarf automatisch skalieren, also vergrößern, und reagiert so dynamisch auf wachsende Anforderungen.  
 
-Die Architektur ist explizit mit Blick auf **Kompatibilität und Skalierbarkeit** entwickelt worden. Offene Schnittstellen und standardisierte Kommunikationsprotokolle ermöglichen die einfache Integration neuer Datenquellen, Anwendungen oder Fachverfahren. Damit kann der Data Hub mit den Bedürfnissen seiner Nutzenden mitwachsen.  
+Die Architektur ist explizit mit Blick auf Kompatibilität und Skalierbarkeit entwickelt worden. Offene Schnittstellen und standardisierte Kommunikationsprotokolle ermöglichen die einfache Integration neuer Datenquellen, Anwendungen oder Fachverfahren. Damit kann der Data Hub mit den Bedürfnissen seiner Nutzenden mitwachsen.  
 
-Ein weiterer Grundpfeiler ist die konsequente Nutzung von **Open Source-Komponenten**. Diese Entscheidung schafft Transparenz und Unabhängigkeit von einzelnen Anbietern. Gleichzeitig fördert sie die Nachnutzbarkeit und den Wissenstransfer mit anderen Städten und öffentlichen Einrichtungen.  
+Ein weiterer Grundpfeiler ist die konsequente Nutzung von Open Source-Komponenten. Diese Entscheidung schafft Transparenz und Unabhängigkeit von einzelnen Anbietern. Gleichzeitig fördert sie die Nachnutzbarkeit und den Wissenstransfer mit anderen Städten und öffentlichen Einrichtungen.  
 
-Schließlich folgt der Data Hub einem **modularen Baukastenprinzip**. Jede Funktion, vom Dateneingang über die Verarbeitung bis zur Visualisierung, ist als eigenständiges Modul umgesetzt. Dadurch kann die Plattform gezielt erweitert, angepasst oder um neue Funktionen ergänzt werden, ohne dass der Betrieb beeinträchtigt wird.  
+Schließlich folgt der Data Hub einem modularen Baukastenprinzip. Jede Funktion, vom Dateneingang über die Verarbeitung bis zur Visualisierung, ist als eigenständiges Modul umgesetzt. Dadurch kann die Plattform gezielt erweitert, angepasst oder um neue Funktionen ergänzt werden, ohne dass der Betrieb beeinträchtigt wird.  
 
 Gemeinsam ermöglichen diese Prinzipien einen robusten, sicheren und flexiblen Betrieb der Plattform und bilden damit das Fundament einer nachhaltige Dateninfrastruktur in der Berliner Verwaltung.
 
 
 ## Architekturaufbau
 
-Die technische Basis des Data Hub Berlin orientiert sich am **Microservice-Prinzip**. Jede Aufgabe, wie etwa die Aufnahme von Sensordaten oder das Bereitstellen von Geodiensten, wird von einem eigenen, spezialisierten Software Diensten übernommen.  
-Diese Dienste laufen in **Kubernetes-Clustern**, die für Ausfallsicherheit, Lastverteilung und automatische Skalierung sorgen. So kann der Data Hub auch bei hohem Datenaufkommen gezielt Ressourcen erweitern, ohne dass andere Komponenten betroffen sind.  
+Die technische Basis des Data Hub Berlin orientiert sich am Microservice-Prinzip. Jede Aufgabe, wie etwa die Aufnahme von Sensordaten oder das Bereitstellen von Geodiensten, wird von einem eigenen, spezialisierten Software Diensten übernommen.  
+Diese Dienste laufen in Kubernetes-Clustern, die für Ausfallsicherheit, Lastverteilung und automatische Skalierung sorgen. So kann der Data Hub auch bei hohem Datenaufkommen gezielt Ressourcen erweitern, ohne dass andere Komponenten betroffen sind.  
 
-Das zentrale **API-Gateway (APISIX)** bündelt alle Schnittstellen der Plattform. Es regelt Authentifizierung, Routing und Monitoring und stellt sicher, dass Datenflüsse zwischen internen Diensten und externen Anwendungen kontrolliert und sicher sind.  
+Das zentrale API-Gateway (APISIX) bündelt alle Schnittstellen der Plattform. Es regelt Authentifizierung, Routing und Monitoring und stellt sicher, dass Datenflüsse zwischen internen Diensten und externen Anwendungen kontrolliert und sicher sind.  
 
 <img
   src={require('../assets/architektur_schema.png').default}
@@ -48,13 +48,13 @@ Das zentrale **API-Gateway (APISIX)** bündelt alle Schnittstellen der Plattform
   className="block h-auto w-full xl:w-[80%] justify-center items-center mx-auto pt-6"
 />
 <figcaption className={styles.imgcaption}>
-Schematische Darstellung der Komponenten und ihrer Verbindungen im Data Hub Berlin
+Schematische Darstellung der Komponenten und ihrer Verbindungen in der CIVITAS/CORE-Architektur (Quelle: Civitas Connect)
 </figcaption>
 
 
 ## Zentrale Komponenten im Überblick
 
-Die Civitas CORE-Architektur gliedert sich in mehrere Schichten, die gemeinsam den Weg der Daten vom Eingang bis zur Nutzung abbilden.
+Die CIVITAS/CORE-Architektur gliedert sich in mehrere Schichten, die gemeinsam den Weg der Daten vom Eingang bis zur Nutzung abbilden.
 
 ### 1. Datenerfassung (Ingestion)
 
@@ -98,11 +98,11 @@ Die Architektur des Data Hub Berlin setzt konsequent auf offene, standardisierte
 
 Diese Seite bietet einen Überblick über die technische Architektur des Data Hub Berlin. Für vertiefende Informationen zur technischen Implementierung stehen folgende Quellen zur Verfügung:
 
-- **Civitas CORE Dokumentation** für weitere technische Details zu Architektur:  
-  [Civitas CORE Architektur Dokumentation](https://docs.core.civitasconnect.digital/docs/Architecture/platform-architecture)  
-  [Civitas CORE Repository](https://gitlab.com/civitas-connect/civitas-core/civitas-core)
+- **CIVITAS/CORE Dokumentation** für weitere technische Details zu Architektur:  
+  [CIVITAS/CORE Architektur Dokumentation](https://docs.core.civitasconnect.digital/docs/Architecture/platform-architecture)  
+  [CIVITAS/CORE Repository](https://gitlab.com/civitas-connect/civitas-core/civitas-core)
 
-- **Offizielle Website des Projekts Civitas Connect**, dem Verein hinter Civitas CORE. Hintergrund, Zielsetzung und Open-Source-Ansatz der Plattform:  
-  [civitasconnect.digital](https://www.civitasconnect.digital/)  
+- **Offizielle Website des Projekts Civitas Connect**, dem Verein hinter CIVITAS/CORE. Hintergrund, Zielsetzung und Open-Source-Ansatz der Plattform:  
+  [Civitasconnect.digital](https://www.civitasconnect.digital/)  
 
 </div>
