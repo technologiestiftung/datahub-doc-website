@@ -16,7 +16,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description="Data Hub Berlin – Die zentrale & modulare Infrastruktur für Datenprojekte. Für eine digitale Verwaltung, die wirkt."
     >
       <SectionHeader />
       <div className="bg-berlin-yellow py-4 overflow-hidden w-full">
