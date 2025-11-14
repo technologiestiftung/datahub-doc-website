@@ -2,7 +2,7 @@
 title: Akteure im Sozialraum sichtbar machen
 sidebar_position: 2
 hide_title: true
-description: Wo engagieren sich Träger, Initiativen und soziale Programme in Berlin-Neukölln? Mithilfe von Online-Formular, Karten-Tool und dahinterliegender Datenbank können soziale Akteure außerhalb der Verwaltung ihre Angebote selbst erfassen, aktuell halten und der Stadtplanung zur Verfügung stellen. 
+description: Wo wirken Akteure, Träger und Netzwerke in Berlin-Neukölln? Mithilfe von Online-Formular, Karten-Tool und dahinterliegender Datenbank können soziale Akteure außerhalb der Verwaltung auf Basis einer Liefervereinbarung Informationen erfassen, aktuell halten und zur Verfügung stellen. 
 ---
 
 import styles from '../docs.module.css';
@@ -23,32 +23,32 @@ import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/reac
 
 ## Welche Rolle spielt Stadtteilkoordination für die Vernetzung im Sozialraum?
 
-Im Bezirk Berlin-Neukölln pulsiert das Großstadtleben mit all seinen Facetten und Herausforderungen. Die Stadtteilkoordination ist maßgeblich für die Vernetzung der verschiedenen Akteure wie Jugendclubs, Geflüchtetenunterkünfte, Nachbarschaftstreffs oder Stadtteilzentren in den jeweiligen Bezirksregionen verantwortlich. Sie nimmt somit eine zentrale Rolle bei der Förderung von Kooperation und Synergien zwischen Netzwerken und Akteuren ein. Als Intermediärin gewährleistet die Stadtteilkoordination den effektiven Informationstransfer zwischen der Verwaltung und dem Sozialraum, wodurch ein reibungsloser Austausch und eine bessere Zusammenarbeit ermöglicht werden. 
-Die Stadtteilkoordination sind wiederum gegenüber dem Bezirk verpflichtet, vertraglich gebunden Daten über Akteure, Träger und Netzwerke regelmäßig zu erfassen und halbjährlich zu aktualisieren. Diese vertragliche Verpflichtung gewährleistet eine konsistente und aktuelle Datenbasis, die eine Übersicht über die bestehenden (sozialen) Strukturen im Bezirk ermöglicht und damit auch die Planbarkeit von Maßnahmen erleichtert.
+Im Bezirk Berlin-Neukölln pulsiert das Großstadtleben mit all seinen Facetten und Herausforderungen. Die Stadtteilkoordination ist maßgeblich für die Vernetzung der verschiedenen Akteure wie Jugendclubs, Geflüchtetenunterkünfte, Nachbarschaftstreffs oder Bibliotheken in den jeweiligen Bezirksregionen verantwortlich. Sie nimmt somit eine zentrale Rolle bei der Förderung von Kooperation und Synergien zwischen Netzwerken und Akteuren ein. Als Intermediärin gewährleistet die Stadtteilkoordination den Informationstransfer zwischen der Verwaltung und dem Sozialraum, wodurch ein reibungsloser Austausch und eine bessere Zusammenarbeit ermöglicht werden. 
+Die Stadtteilkoordinationen haben sich vertraglich daran gebunden Daten über Akteure, Träger und Netzwerke regelmäßig zu erfassen und halbjährlich zu aktualisieren. Dies gewährleistet eine konsistente und aktuelle Datenbasis, die eine Übersicht über die bestehenden sozialräumlichen Strukturen im Bezirk ermöglicht. Dadurch können blinde Flecken im Sozialraum identifiziert  und Lösungsansätze erarbeitet werden.
 
 
 ## Das Problem
 
 Die bisher erprobten Prozesse – zuletzt über das CMS Imperia des Landes Berlin – zur Erfassung der Akteure, Träger und Netzwerke in den Neuköllner Kiezen stießen in der Vergangenheit immer wieder an ihre Grenzen. 
 
-•	**Hohe Arbeitsaufwand und Fehleranfälligkeit**, da durch eine manuelle Eingabe Fehler in den Tabellen häufig auftreten und zu einem erheblichen Korrekturaufwand für Stadtteilkoordinatoren und Bezirken führt. Die Bearbeitung bereits gespeicherter Daten ist sperrig und zeitaufwendig, was den Arbeitsfluss erheblich beeinträchtigt.
+•	**Hoher Arbeitsaufwand und Fehleranfälligkeit**, da durch eine manuelle Eingabe Fehler in den Tabellen auftreten und zu einem erheblichen Korrekturaufwand für Stadtteilkoordinationen und Regionalkoordinationen der OESPK führt. Die Bearbeitung bereits gespeicherter Daten ist sperrig und zeitaufwendig, was den Arbeitsfluss erheblich beeinträchtigt.
 
-•	**Wenig nutzendenfreundlich:** Das Erfassen der Daten in einer über Jahre gewachsenen Tabelle ohne klare Datenstruktur erschwert das Eintragen der Informationen oder das Filtern nach bestimmten Akteuren. Geodaten können nur sehr aufwendig eingetragen werden, eine Adresssuche fehlt. Es bleibt unklar, welche Felder wirklich ausgefüllt werden müssen. So werden auch Mehrwert und Nutzen der Daten kaum ersichtlich, Visualisierungen und datenbasierte Auswertungen sind nur schwer und mit großem Aufwand umsetzbar.
+•	**Wenig nutzendenfreundlich:** Das Erfassen der Daten in einer über Jahre gewachsenen Tabelle erschwert das Eintragen der Informationen oder das Filtern nach bestimmten Akteuren. Geodaten können nur sehr aufwendig eingetragen werden, eine Adresssuche fehlt. Es bleibt unklar, welche Felder wirklich ausgefüllt werden müssen. So werden Mehrwert und Nutzen der Daten kaum ersichtlich, Visualisierungen und datenbasierte Auswertungen sind nur schwer und mit großem Aufwand umsetzbar.
 
 •	**Eingeschränkte Skalierbarkeit**, da die Datenmengen wachsen und die Erfassung der Daten und die tägliche Arbeit mit den Daten immer unübersichtlicher wird. 
 
-•	**Fehlende Rollen- und Rechtesystematik**, da keine Möglichkeit besteht Benutzerrollen zu definieren oder Passwörter für die Eingabe zu nutzen. So kann der Bezirk nur sehr umständlich überprüfen, ob die Daten richtig eingetragen wurden. 
+•	**Fehlende Rollen- und Rechtesystematik**, da keine Möglichkeit besteht Benutzerrollen zu definieren oder Passwörter für die Eingabe zu nutzen. So kann die Regionalkoordination nur sehr umständlich überprüfen, ob die Daten richtig eingetragen wurden. 
 
 
 ## Zielsetzung
 
-Der Data Hub wird eingesetzt, um den Erfassungsprozess zu vereinfachen, zu systematisieren und nutzendenfreundlich zu gestalten, um darauf aufbauend eine zuverlässige Datenbasis über Akteure im Sozialraum für den Bezirk zu generieren.
+Der Data Hub wird eingesetzt, um den Erfassungsprozess zu vereinfachen, zu systematisieren und nutzendenfreundlich zu gestalten. Dadarauf aufbauend kann eine zuverlässige Datenbasis über Akteure im Sozialraum generiert werden.
 
 •	**Ein Erfassungsformular auf Basis des Softwarebausteins Appsmith** regelt, standardisiert und steuert die Eingabe der Informationen über Akteure, Träger und Netzwerke. Das Erfassungsformular ist auf den Use Case zugeschnitten und bietet ein intuitives Interface sowie klare Bearbeitungsoptionen, um den Arbeitsaufwand schlank zu halten und die Effizienz zu erhöhen. Eine Integration der Erfassung in eine Kartenansicht auf Basis des Softwarebausteins Masterportal ermöglicht dabei eine adressgenaue Eintragung eines Akteurs.
 
-• **Ein Rollen- und Zugangssystem** regelt, dass verwaltungsexterne Akteure wie die Stadtteilkoordination unabhängig von der Zugehörigkeit zum Bezirksamt Informationen eintragen und anpassen können. Der Bezirk kann in seiner Rolle Updates kontrollieren und freigeben oder selbstständig Anpassungen am Formular vornehmen und behält so nicht nur die Kontrolle über die vertraglich geregelten Daten-Updates sondern kann so auch das Formular lebendig halten.
+• **Ein Rollen- und Zugangssystem** regelt, dass verwaltungsexterne Akteure wie die Stadtteilkoordination unabhängig von der Zugehörigkeit zum Bezirksamt Informationen eintragen und anpassen können. Die Regionalkoordination kann in ihrer Rolle Updates kontrollieren und freigeben oder selbstständig Anpassungen am Formular vornehmen und behält die Kontrolle über die vertraglich geregelten Daten-Updates.
 
-•	Eine dem Prozess **dahinterliegende Datenbank** bildet den Single Point of Truth. Bei Bedarf kann aus der Datenbank ein Export gezogen werden, um die Akteursdaten für die tägliche Stadtteilarbeit zu nutzen. Perspektivisch bilden die standardisierten Informationen die Grundlage für Datenvisualisierungen wie Dashboards oder die Darstellung von Netzwerksbeziehungen. Diese Informationen könnten zentrale Akteur identifizieren, Lücken im Netzwerk aufzeigen und gezielte Maßnahmen zur Optimierung der Zusammenarbeit ermöglichen. Zudem können Daten archiviert werden. So können auch alte Einträge später wieder aufgerufen und ausgewertet werden.
+•	Eine dem Prozess **dahinterliegende Datenbank** bildet die zentrale Datenquelle (den Single Point of Truth). Bei Bedarf kann aus der Datenbank ein Export gezogen werden, um die Daten für die tägliche Arbeit zu nutzen. Perspektivisch bilden die standardisierten Informationen die Grundlage für Datenvisualisierungen wie Dashboards oder die Darstellung von Netzwerksbeziehungen. Diese Informationen könnten zentrale Akteure identifizieren, Lücken im Netzwerk aufzeigen und gezielte Maßnahmen zur Optimierung der Zusammenarbeit ermöglichen. Zudem können Daten archiviert werden und darauf aufbauend Zeitreihenanalysen durchgeführt werden.
 
 • Eine **Downloadfunktion** der Daten ermöglicht eine stärker auf Nutzende ausgerichtete Arbeit mit den Daten, die für die Vernetzungsarbeit der Stadtteilkoordination elementar ist. So kann nach Akteuren, den Adressen von Einrichtungen, Ansprechpersonen oder sonstige Informationen gefiltert werden und auch für Berichte als Datengrundlage genutzt werden.
 
@@ -93,9 +93,11 @@ Der Data Hub wird eingesetzt, um den Erfassungsprozess zu vereinfachen, zu syste
       <ul className="ml-4 list-disc">
         <li>Fachpersonen aus der Verwaltung, zum Beispiel</li>
           <ul className="ml-4 list-disc">
-            <li>Datenkoordination</li>
-            <li>Fachämter der Bezirke</li>
-            <li>Die politische Leitungsebene</li>
+            <li>Stadtplanerische Koordinierungsstelle</li>
+            <li>Stabsstelle für Dialog und Zukunft</li>
+            <li>Fachsteuerung</li>
+            <li>Entscheidungsinstanzen</li> 
+            
           </ul>   
         <li>Externe Interessierte, zum Beispiel</li>
           <ul className="ml-4 list-disc">
@@ -118,12 +120,12 @@ Der Data Hub wird eingesetzt, um den Erfassungsprozess zu vereinfachen, zu syste
         <h3 className="inline pl-2">Die Beteiligten</h3>
       </div>
       <p>
-        Beim Pilotprojekt zu den digitalen Bezirksregionenprofilen sind eine Vielzahl an Personen und Stellen eingebunden:
+        Beim Pilotprojekt „Akteure im Sozialraum sichtbar machen“ sind eine Vielzahl an Personen aus der OESPK eingebunden:
       </p>
       <ul className="ml-4 list-disc">
-        <li>Bezirk Neukölln</li>
-        <li>Organisationseinheit "Sozialraumorientierte Planungskoordination" (OESPK), inklusive der bezirklichen Datenkoordinator:innen</li>
+        <li>Regionalkoordination</li>
         <li>Stadtteilkoordination</li>
+        <li>Datenkoordination</li>
       </ul>
     </div>
   </>
@@ -151,13 +153,13 @@ Zur Umsetzung wurden Methoden eingesetzt, um den aktuellen Datenerfassungsprozes
 - Workshops mit dem Bezirksamt Neukölln zur Analyse des Ist-Zustands und Entwicklung von Bedarfen mithilfe der Methoden *Blueprint* und [Entwicklungsmatrix](https://www.oeffentliches-gestalten.de/buch/vorbereiten/ist-zustand-betrachten) 
 - Durchführung eines Experteninterviews mit einer Stadtteilkoordinatorin als Schlüsselakteurin, Betroffene und Power-Userin sowie Präsentation des Erfassungsprozesses bei potenziell Datennutzenden im Bezirksamt Neukölln
 - Entwicklung eines umfangreichen Datenmodells für das standardisierte Erfassen der Informationen.
-- Testphase und kontinuierliche Iteration des Datenerfassungsprozess mit dem Bezirk
+- Testphase und kontinuierliche Iteration des Datenerfassungsprozess mit der OESPK
 
 
 ## Wie geht's weiter?
 
 ### Zentrale Erkenntnisse 
-Ein entscheidender Erfolgsfaktor des Projekts war die konzeptionelle Vorarbeit des Bezirks für ein Datenmodell. Dieses Datenmodell legt klare Feldnamen und Feldtypen fest und bildet so die Grundlage für die Umsetzung des Formulars in Appsmith. Beim iterativen Aufbau des Formulars wurden auftretende Hürden oder Unklarheiten immer wieder mit dem Bezirk gespiegelt und gelöst. Auch die zu Beginn eingesetzten Methoden, um den bisherigen komplexen Erfassungsprozess zu skizzieren und Bedarfe abzuleiten hat sich als wichtige Vorarbeit herauskristallisiert. So konnten zu Beginn des Projekts Bedarfe und Ziele erarbeitet und ein Minimum Valiable Product (MVP) definiert werden. 
+Ein entscheidender Erfolgsfaktor des Projekts war die konzeptionelle Vorarbeit der Daten- und Regionalkoordination der OESPK für ein Datenmodell. Dieses Datenmodell legt klare Feldnamen und Feldtypen fest und bildet so die Grundlage für die Umsetzung des Formulars in Appsmith. Beim iterativen Aufbau des Formulars wurden auftretende Hürden oder Unklarheiten immer wieder mit der Daten- und Regionalkoordination der OESPK gespiegelt und gelöst. Auch die zu Beginn eingesetzten Methoden, um den bisherigen komplexen Erfassungsprozess zu skizzieren und Bedarfe abzuleiten hat sich als wichtige Vorarbeit herauskristallisiert. So konnten zu Beginn des Projekts Bedarfe und Ziele erarbeitet und ein Minimum Valiable Product (MVP) definiert werden. 
 
 Die Erfahrungen aus der Umsetzung mit Postgres, Appsmith und Masterportal liefern wichtige Erkenntnisse für den gesamten Data Hub-Prototypen: Sie zeigen:
 
@@ -174,6 +176,6 @@ Die Erfahrungen aus der Umsetzung mit Postgres, Appsmith und Masterportal liefer
 
 ###  Nächste Schritte 
 
-Für die nächste halbjährliche Aktualisierung Ende 2025 ist geplant, dass die Stadtteilkoordination die entwickelte Lösung im Data Hub Berlin erstmals anwendet. Parallel dazu werden das Bezirksamt Neukölln und das Data Hub Team die Visualisierung der erfassten Daten vorantreiben und erste Ideen für (interne) Dashboards oder die Darstellung von Netzwerkstrukturen erarbeiten und sukzessive umsetzen. Als Pilotprojekt ist der Datenerfassungsprozess der Akteure im Sozialraum anschlussfähig zu den übrigen 11 Bezirken im Land Berlin sowie weiteren Projekten der Verwaltung, in denen die Eingabe und Verwaltung von verwaltungsexternen Daten im Mittelpunkt stehen.
+Für die nächste halbjährliche Aktualisierung Ende 2025 ist geplant, dass die Stadtteilkoordination die entwickelte Lösung im Data Hub Berlin erstmals anwendet. Parallel dazu werden die OESPK Neukölln und das Data Hub Team die Visualisierung der erfassten Daten vorantreiben und erste Ideen für (interne) Dashboards oder die Darstellung von Netzwerkstrukturen erarbeiten und sukzessive umsetzen. Als Pilotprojekt ist der Datenerfassungsprozess der Akteure im Sozialraum anschlussfähig zu den übrigen 11 Bezirken im Land Berlin sowie weiteren Projekten der Verwaltung, in denen die Eingabe und Verwaltung von verwaltungsexternen Daten im Mittelpunkt stehen.
 
 </div>
