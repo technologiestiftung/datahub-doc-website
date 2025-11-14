@@ -16,7 +16,7 @@ import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/reac
     <div>
       <h1>Akteure im Sozialraum sichtbar machen</h1>
         <p className="text-lg">
-          Wo engagieren sich Träger, Initiativen und soziale Programme in Berlin-Neukölln? Mithilfe von Online-Formular, Karten-Tool und dahinterliegender Datenbank können soziale Akteure außerhalb der Verwaltung ihre Angebote selbst erfassen, aktuell halten und der Stadtplanung zur Verfügung stellen.
+         Wo wirken Akteure, Träger und Netzwerke in Berlin-Neukölln? Mithilfe von Online-Formular, Karten-Tool und dahinterliegender Datenbank können soziale Akteure außerhalb der Verwaltung auf Basis einer Liefervereinbarung Informationen erfassen, aktuell halten und zur Verfügung stellen.
         </p>
     </div>
   </div>
@@ -24,7 +24,7 @@ import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/reac
 ## Welche Rolle spielt Stadtteilkoordination für die Vernetzung im Sozialraum?
 
 Im Bezirk Berlin-Neukölln pulsiert das Großstadtleben mit all seinen Facetten und Herausforderungen. Die Stadtteilkoordination ist maßgeblich für die Vernetzung der verschiedenen Akteure wie Jugendclubs, Geflüchtetenunterkünfte, Nachbarschaftstreffs oder Bibliotheken in den jeweiligen Bezirksregionen verantwortlich. Sie nimmt somit eine zentrale Rolle bei der Förderung von Kooperation und Synergien zwischen Netzwerken und Akteuren ein. Als Intermediärin gewährleistet die Stadtteilkoordination den Informationstransfer zwischen der Verwaltung und dem Sozialraum, wodurch ein reibungsloser Austausch und eine bessere Zusammenarbeit ermöglicht werden. 
-Die Stadtteilkoordinationen haben sich vertraglich daran gebunden Daten über Akteure, Träger und Netzwerke regelmäßig zu erfassen und halbjährlich zu aktualisieren. Dies gewährleistet eine konsistente und aktuelle Datenbasis, die eine Übersicht über die bestehenden sozialräumlichen Strukturen im Bezirk ermöglicht. Dadurch können blinde Flecken im Sozialraum identifiziert  und Lösungsansätze erarbeitet werden.
+Die Stadtteilkoordinationen haben sich vertraglich daran gebunden Daten über Akteure, Träger und Netzwerke regelmäßig zu erfassen und halbjährlich zu aktualisieren. Dies gewährleistet eine konsistente und aktuelle Datenbasis, die eine Übersicht über die bestehenden sozialräumlichen Strukturen im Bezirk ermöglicht. Dadurch können blinde Flecken im Sozialraum identifiziert und Lösungsansätze erarbeitet werden.
 
 
 ## Das Problem
