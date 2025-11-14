@@ -52,6 +52,15 @@ Der Data Hub wird eingesetzt, um den Erfassungsprozess zu vereinfachen, zu syste
 
 • Eine **Downloadfunktion** der Daten ermöglicht eine stärker auf Nutzende ausgerichtete Arbeit mit den Daten, die für die Vernetzungsarbeit der Stadtteilkoordination elementar ist. So kann nach Akteuren, den Adressen von Einrichtungen, Ansprechpersonen oder sonstige Informationen gefiltert werden und auch für Berichte als Datengrundlage genutzt werden.
 
+  <div className="w-full justify-center items-center pt-4">
+    <img
+      src={require('../assets/akteure_sozialraum_masterportal_appsmith.png').default}
+      alt="Impressionen eines ersten Prototypen des Dashboards"
+      label="Impressionen eines ersten Prototypen des Dashboards"
+      className="block h-auto w-full xl:w-[80%] justify-center items-center mx-auto"
+    />
+    <figcaption className={styles.imgcaption}>Die Erfassung neuer Akteure kann georeferenziert über die Kartenansicht und einem Formular erfolgen. </figcaption>
+  </div>
 
 ## Die Umsetzung 
 
