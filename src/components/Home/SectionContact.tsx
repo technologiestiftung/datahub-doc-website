@@ -10,9 +10,9 @@ export default function SectionContact({
 }: SectionContactProps) {
   return (
     <section className={`w-full ${bgColor}`}>
-      <div className="grid grid-cols-12 gap-[40px] items-stretch z-10 max-w-7xl mx-auto md:px-16 py-20">
+      <div className="flex flex-col lg:flex-row gap-[40px] items-stretch z-10 max-w-7xl mx-auto md:px-16 py-20 px-6">
         {/* Left */}
-        <div className="relative col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto flex flex-col h-full">
+        <div className="relative flex-1 max-w-[489px] md:max-w-none mx-auto flex flex-col h-full">
           <h5 className="text-xl md:text-3xl font-bold">
             Ich habe eine Frage zum Datahub
           </h5>
@@ -32,7 +32,7 @@ export default function SectionContact({
         </div>
 
         {/* Right */}
-        <div className="relative col-span-12 lg:col-span-6 max-w-[489px] md:max-w-none mx-auto flex flex-col h-full">
+        <div className="relative flex-1 max-w-[489px] md:max-w-none mx-auto flex flex-col h-full">
           <h5 className="text-xl md:text-3xl font-bold">
             Ich habe habe eine Projektidee
           </h5>
