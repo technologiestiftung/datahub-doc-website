@@ -8,12 +8,10 @@ export default function SectionAboutText() {
       <div className="grid grid-cols-12 gap-[20px] items-center">
         <div className="relative col-span-12 lg:col-span-9 max-w-[489px] md:max-w-none mx-auto lg:pt-24">
           <h1 className="text-3xl md:text-6xl lg:text-6xl font-bold mb-2">
-            Kontakt
+            Nehmen Sie Kontakt auf!
           </h1>
           <p className="text-md md:text-lg pt-6">
-            Sie haben Fragen zum Data Hub Berlin oder möchten Pilotnutzender
-            werden? Unser Team der Technologiestiftung Berlin nimmt Anfragen
-            gern per Mail entgegen.
+            Das Team der <b>Technologiestiftung Berlin</b> steht ihnen mit Antworten zur Seite.
           </p>
           <a
             className="text-md md:text-lg pt-6 font-bold"
