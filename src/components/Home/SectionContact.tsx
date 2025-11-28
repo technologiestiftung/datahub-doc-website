@@ -34,7 +34,7 @@ export default function SectionContact({
         {/* Right */}
         <div className="relative flex-1 max-w-[489px] md:max-w-none mx-auto flex flex-col h-full">
           <h5 className="text-xl md:text-3xl font-bold">
-            Ich habe habe eine Projektidee
+            Ich habe eine Projektidee
           </h5>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 flex-grow">
             <p>
