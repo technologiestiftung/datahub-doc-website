@@ -99,6 +99,13 @@ const config: Config = {
           label: 'Wissensspeicher',
           // activeBaseRegex: '^/$',
         },
+         {
+          to: 'https://portal.data-hub.berlin/contact/',
+          label: 'Kontakt',
+          position: 'right',
+          className: '',
+          // activeBaseRegex: '^/$',
+        },
         {
           type: 'search',
           position: 'right',
