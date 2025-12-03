@@ -14,7 +14,7 @@ export default function SectionContact({
         {/* Left */}
         <div className="relative flex-1 max-w-[489px] md:max-w-none mx-auto flex flex-col h-full">
           <h5 className="text-xl md:text-3xl font-bold">
-            Ich habe eine Frage zum Datahub
+            Ich habe eine Frage zum Data Hub
           </h5>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 flex-grow">
             <p>
