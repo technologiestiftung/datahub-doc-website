@@ -103,8 +103,6 @@ const config: Config = {
           to: 'https://portal.data-hub.berlin/contact/',
           label: 'Kontakt',
           position: 'right',
-          className: '',
-          // activeBaseRegex: '^/$',
         },
         {
           type: 'search',
