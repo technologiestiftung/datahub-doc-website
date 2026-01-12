@@ -18,9 +18,9 @@ export default function SectionContact({
           </h5>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 flex-grow">
             <p>
-              Werfen sie einen Blick in unseren {' '}
+              Werfen Sie einen Blick in unseren {' '}
               <a href="docs/willkommen">Wissensspeicher</a>. Wird ihre Frage dort nicht beantwortet,
-              schreiben Sie uns gerne eine E-Mail.
+              schreiben Sie uns gerne eine Nachricht per E-Mail.
             </p>
             <div className="pt-2">
               <Button
