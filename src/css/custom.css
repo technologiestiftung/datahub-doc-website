@@ -314,9 +314,9 @@ input[class*="searchInput"] {
 /* Border Infobox anpassen */
 .theme-admonition.theme-admonition-info,
 .theme-admonition.alert.alert--info {
-  --ifm-alert-border-color: #222222;
-  border-left-color: #222222 !important;
-  background-color: #FAF9FE;
+  --ifm-alert-border-color: #4F90CD;
+  border-left-color: #4F90CD !important;
+  background-color: #E7F3FD;
   box-shadow: none;
 }
 .theme-admonition.alert.alert--info a {
@@ -326,21 +326,23 @@ input[class*="searchInput"] {
   text-decoration-thickness: 3px;
 }
 
-/* Boder Dangerbox anpassen */
+/* Warnung-Box anpassen */
 .theme-admonition.theme-admonition-danger,
 .theme-admonition.alert.alert--danger {
   --ifm-alert-border-color: #e40422;
   border-left-color: #e40422 !important;
+  background-color: #FFE6E9;
 }
 
-/* Boder warning anpassen */
+/* Hinweisbox anpassen */
 .theme-admonition.theme-admonition-warning,
 .theme-admonition.alert.alert--warning {
-  --ifm-alert-border-color: #FFE70E;
-  border-left-color: #FFE70E !important;
-    background-color: #FFFACC;
+  --ifm-alert-border-color: #CCCCCC;
+  border-left-color: #CCCCCC !important;
+    background-color: #FFFFFF;
 }
 
+/*Tipp bzw. Praxisbeispiel anpassen*/
 .theme-admonition.theme-admonition-tip,
 .theme-admonition.alert.alert--tip {
   --ifm-alert-border-color: #00AA84;
