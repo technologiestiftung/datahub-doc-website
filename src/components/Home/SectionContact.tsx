@@ -18,9 +18,8 @@ export default function SectionContact({
           </h5>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 flex-grow">
             <p>
-              Werfen Sie einen Blick in unseren {' '}
-              <a href="docs/willkommen">Wissensspeicher</a>. Wird ihre Frage dort nicht beantwortet,
-              schreiben Sie uns gerne eine Nachricht per E-Mail.
+              Unser {' '}
+              <a href="docs/willkommen">Wissensspeicher</a> versammelt die wichtigsten Informationen zum Data Hub Berlin. Bei weiteren Fragen freuen wir uns über eine Nachricht per E-Mail.
             </p>
             <div className="pt-2">
               <Button
@@ -38,8 +37,8 @@ export default function SectionContact({
           </h5>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 flex-grow">
             <p>
-              Teilen Sie gerne Ihre Projektidee über unser kurzes Formular mit uns. 
-              Wir prüfen Ihr Vorhaben und melden uns zeitnah bei Ihnen.
+              Zur Einreichung von Projektideen für den Data Hub Berlin bitten wir darum, unser Formular zu nutzen.   
+              Wir prüfen die Projektanfragen und melden uns zeitnah.
             </p>
             <div className="pt-2">
               <Button
