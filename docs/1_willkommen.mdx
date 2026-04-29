@@ -8,26 +8,22 @@ import { AcademicCapIcon, ShieldCheckIcon, Squares2X2Icon, BuildingOffice2Icon, 
 import Link from '@docusaurus/Link';
 import styles from './docs.module.css';
 
-<div className="relative flex flex-col md:flex-row items-center px-16 xl:pl-28 mb-12 pt-24 pb-16 rounded-md overflow-hidden bg-slate-100">
+<div className="relative flex flex-col xl:flex-row items-center px-16 sm:px-16 xl:pl-10 mb-12 pt-12 sm:pt-24 pb-12 sm:pb-16 rounded-md overflow-hidden bg-slate-100">
+  <div className="w-full xl:hidden mb-4 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: "url('/img/willkommen_im_wissensspeicher.svg')", height: "200px" }}></div>
+
   <div
-    className="absolute inset-y-0 right-0 xl:w-1/3 bg-cover bg-right bg-no-repeat"
-    style={{ backgroundImage: "url('/img/cubes_ueber_projekt_6pt.svg')" }}
-  ></div>
-      <div
-    className="hidden sm:block absolute inset-y-0 right-0 w-1/2 bg-cover bg-right bg-no-repeat xl:hidden"
-    style={{ backgroundImage: "url('/img/cubes_willkommen_md.svg')" }}
+    className="hidden xl:block absolute inset-y-0 right-0 xl:w-1/3 bg-cover bg-right bg-no-repeat"
+    style={{ backgroundImage: "url('/img/willkommen_im_wissensspeicher_os.svg')", backgroundSize: "100% auto" }}
   ></div>
 
-
-  <div className="relative z-10 max-w-lg text-left">
-    <h1 className="text-4xl md:text-6xl font-bold text-berlin-black">
+  <div className="relative z-10 max-w-lg text-left mt-4 lg:mt-0">
+    <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-berlin-black">
       Willkommen im Wissensspeicher
     </h1>
-    <p className="mt-6 text-lg text-berlin-gray">
+    <p className="mt-4 sm:mt-6 text-base sm:text-lg text-berlin-gray">
       Dies ist der zentrale Wissensspeicher des prototypischen **Data Hub Berlin**,
       der urbanen Datenplattform der Berliner Verwaltung. Hier findest du
-      Informationen zu Hintergründen, Aufbau und Anwendungsfällen
-      der Plattform.
+      Informationen zu Hintergründen, Aufbau und Anwendungsfällen der Plattform.
     </p>
   </div>
 </div>
@@ -50,7 +46,7 @@ const cards = [
       link: '/docs/intro'
     },
     {
-      icon: <ShieldCheckIcon className="h-8 w-8 text-white" />,
+      icon: <img src="/img/icon_rechte_rollen.svg" alt="Rechte & Rollen Icon" className="h-8 w-8" />,
       title: 'Rechte & Rollen',
       description: 'Verständnis von Zugriffsrechten, Verantwortlichkeiten und Governance-Strukturen.',
       color: 'bg-green-500',

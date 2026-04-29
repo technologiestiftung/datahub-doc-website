@@ -15,7 +15,7 @@ import { DocumentTextIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24
 
 <div className={styles.doccontainer}>
 
-  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-12 xl:pl-16 pt-16">
+<div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-12 xl:pl-2 pt-16">
     <div>
       <h1>Einführung zum<br /> Data Hub Berlin</h1>
       <p className="text-lg">
@@ -23,8 +23,8 @@ import { DocumentTextIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24
       </p>
     </div>
      <div className="flex-[0_0_250px]">
-      <img className="md:max-w-[70%]" src="/img/wissen.svg" alt="Wissensspeicher Logo" />
-    </div> 
+      <img className="max-w-[250px]" src="/img/einfuehrung_zum_datahub_os.svg" alt="Wissensspeicher Logo" />
+    </div>
   </div>
 
 

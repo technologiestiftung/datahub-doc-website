@@ -80,7 +80,12 @@
   mask: url("/img/arrow_outward_2_sw25.svg") no-repeat center / contain;
 }
 
-
+/* Anpassung der Navigation für kleine Bildschirme */
+@media (max-width: 480px) {
+  .navbar__item:nth-child(n+2):not(.navbar__search) {
+    display: none !important;
+  }
+}
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
