@@ -100,7 +100,7 @@ const config: Config = {
           // activeBaseRegex: '^/$',
         },
          {
-          to: 'https://portal.data-hub.berlin/contact/',
+          to: 'https://data-hub.berlin/contact/',
           label: 'Kontakt',
           position: 'right',
           // activeBaseRegex: '^/$',

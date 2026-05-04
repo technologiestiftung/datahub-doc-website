@@ -71,7 +71,7 @@ export default function Footer() {
             </div>
             <div className="flex space-x-6 font-semibold text-berlin-black text-base">
               <a
-                href="../contact"
+                href="https://data-hub.berlin/contact/"
                 className="underline underline-offset-8 decoration-2"
               >
                 Kontakt
