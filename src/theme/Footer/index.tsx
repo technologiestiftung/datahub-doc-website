@@ -33,35 +33,35 @@ export default function Footer() {
           {/* Right Side: Social & Links */}
           <div className="col-span-12 lg:col-span-4 flex flex-col items-start lg:items-end gap-4 lg:gap-10 mt-auto pb-6 lg:pb-12">
             <div className="flex space-x-4 pt-2">
-              <a href="#">
+              <a href="https://github.com/technologiestiftung">
                 <img
                   src="/img/logos/github.svg"
                   alt="GitHub"
                   className="h-6 w-6"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/Technologiestiftung">
                 <img
                   src="/img/logos/facebook.svg"
                   alt="Facebook"
                   className="h-6 w-6"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/technologiestiftung/">
                 <img
                   src="/img/logos/linkedin.svg"
                   alt="LinkedIn"
                   className="h-6 w-6"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/technologiestiftung/">
                 <img
                   src="/img/logos/instagram.svg"
                   alt="Instagram"
                   className="h-6 w-6"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.youtube.com/channel/UCXKw3_0L2rqLpz94L7YwFqg">
                 <img
                   src="/img/logos/youtube.svg"
                   alt="YouTube"
