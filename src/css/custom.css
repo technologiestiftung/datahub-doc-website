@@ -43,14 +43,44 @@
   background-color: #ffe70e;
   color: #222222;
 }
+
 .navbar__link--portal {
-  background-color: #222222;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
+  background: #000;
   color: #fff;
+
+  padding: 0.5rem 0.9rem;
+  border-radius: 0px; 
+  border: 1px solid transparent;
+
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
 }
-.navbar__link--portal:hover {
-  background-color: #ffe70e;
-  color: #222222;
+
+.navbar__link--portal:hover,
+.navbar__link--portal:focus {
+  background: #fff;
+  color: #000;
+  border-color: #000;
+  text-decoration: none;
 }
+
+.navbar__link--portal::after {
+  content: "";
+  width: 0.9em;
+  height: 0.9em;
+  display: inline-block;
+
+  background-color: currentColor;
+  -webkit-mask: url("/img/arrow_outward_2_sw25.svg") no-repeat center / contain;
+  mask: url("/img/arrow_outward_2_sw25.svg") no-repeat center / contain;
+}
+
+
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
@@ -284,9 +314,9 @@ input[class*="searchInput"] {
 /* Border Infobox anpassen */
 .theme-admonition.theme-admonition-info,
 .theme-admonition.alert.alert--info {
-  --ifm-alert-border-color: #222222;
-  border-left-color: #222222 !important;
-  background-color: #FAF9FE;
+  --ifm-alert-border-color: #4F90CD;
+  border-left-color: #4F90CD !important;
+  background-color: #E7F3FD;
   box-shadow: none;
 }
 .theme-admonition.alert.alert--info a {
@@ -296,21 +326,23 @@ input[class*="searchInput"] {
   text-decoration-thickness: 3px;
 }
 
-/* Boder Dangerbox anpassen */
+/* Warnung-Box anpassen */
 .theme-admonition.theme-admonition-danger,
 .theme-admonition.alert.alert--danger {
   --ifm-alert-border-color: #e40422;
   border-left-color: #e40422 !important;
+  background-color: #FFE6E9;
 }
 
-/* Boder warning anpassen */
+/* Hinweisbox anpassen */
 .theme-admonition.theme-admonition-warning,
 .theme-admonition.alert.alert--warning {
-  --ifm-alert-border-color: #FFE70E;
-  border-left-color: #FFE70E !important;
-    background-color: #FFFACC;
+  --ifm-alert-border-color: #CCCCCC;
+  border-left-color: #CCCCCC !important;
+    background-color: #FFFFFF;
 }
 
+/*Tipp bzw. Praxisbeispiel anpassen*/
 .theme-admonition.theme-admonition-tip,
 .theme-admonition.alert.alert--tip {
   --ifm-alert-border-color: #00AA84;
@@ -411,3 +443,9 @@ input[class*="searchInput"] {
   mask-position: center;
   mask-size: contain;
 }
+
+/* ========== Button-Styling ========== */
+
+
+
+

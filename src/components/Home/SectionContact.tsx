@@ -14,13 +14,12 @@ export default function SectionContact({
         {/* Left */}
         <div className="relative flex-1 max-w-[489px] md:max-w-none mx-auto flex flex-col h-full">
           <h5 className="text-xl md:text-3xl font-bold">
-            Ich habe eine Frage zum Data Hub
+            Ich habe eine Frage
           </h5>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 flex-grow">
             <p>
-              Schauen Sie mal in den{' '}
-              <a href="docs/willkommen">Wissensspeicher</a>. Sollte Ihr Anliegen
-              dort nicht geklärt werden, kontaktieren Sie uns gern per Mail.
+              Unser {' '}
+              <a href="docs/willkommen">Wissensspeicher</a> versammelt die wichtigsten Informationen zum Data Hub Berlin. Bei weiteren Fragen freuen wir uns über eine Nachricht per E-Mail.
             </p>
             <div className="pt-2">
               <Button
@@ -34,12 +33,12 @@ export default function SectionContact({
         {/* Right */}
         <div className="relative flex-1 max-w-[489px] md:max-w-none mx-auto flex flex-col h-full">
           <h5 className="text-xl md:text-3xl font-bold">
-            Ich habe eine Projektidee
+            Ich habe eine Projektidee 
           </h5>
           <div className="text-base md:text-xl leading-6 md:leading-relaxed space-y-4 flex-grow">
             <p>
-              Füllen Sie Ihre Projektidee in einem kurzen Formular aus und wir
-              melden uns bei Ihnen.
+              Zur Einreichung von Projektideen für den Data Hub Berlin bitten wir darum, unser Formular zu nutzen.   
+              Wir prüfen die Projektanfragen und melden uns zeitnah.
             </p>
             <div className="pt-2">
               <Button

@@ -81,13 +81,6 @@ const config: Config = {
       },
       items: [
         {
-          to: 'https://portal.data-hub.berlin/',
-          label: 'Portal',
-          position: 'right',
-          className: 'navbar__link--portal',
-          // activeBaseRegex: '^/$',
-        },
-        {
           to: '/about',
           label: 'Über das Projekt',
           position: 'right',
@@ -103,6 +96,13 @@ const config: Config = {
           to: 'https://data-hub.berlin/contact/',
           label: 'Kontakt',
           position: 'right',
+          // activeBaseRegex: '^/$',
+        },
+        {
+          to: 'https://portal.data-hub.berlin/',
+          label: 'Zum Portal',
+          position: 'right',
+          className: 'navbar__link--portal',
           // activeBaseRegex: '^/$',
         },
         {

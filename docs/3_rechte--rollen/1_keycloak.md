@@ -26,7 +26,7 @@ import styles from '../docs.module.css';
 Damit der Data Hub Berlin funktioniert, müssen viele Menschen und Systeme miteinander arbeiten: Fachabteilungen, Projektteams, Entwicklerinnen und Entwickler, aber auch Anwendungen, die Daten verarbeiten oder visualisieren. Alle greifen auf gemeinsame Daten zu. Diese sind manchmal intern, manchmal berlinweit, manchmal öffentlich.  
 Damit dieser Zugriff sicher, nachvollziehbar und zugleich einfach bleibt, übernimmt die Software Keycloak eine zentrale Rolle im Data Hub.
 
-:::info[Hinweis]
+:::warning[Hinweis]
 Auf dieser Seite wird das Rechte- und Rollenmanagement von der technischen Seite beleuchtet. Die zugrundeliegenden organisatorischen Rollen, Verantwortlichkeiten und Prozesse des Data Hub Berlin sollen zukünftig in der [Data Hub Governance](/docs/3_rechte--rollen/2_data_governance.md) beschrieben und geregelt werden.
 :::
 
@@ -48,7 +48,7 @@ Daten innerhalb eines Dataspace sind grundsätzlich geschützt und nicht automat
 
   <div className="w-full justify-center items-center pt-4">
     <img
-      src={require('./assets/dataspace_info_graph.png').default}
+      src={require('./assets/dataspace_logik.png').default}
       alt="Schematische Darstellung der Dataspace-Logik"
       label="Schematische Darstellung der Dataspace-Logik"
       className="block h-auto w-full xl:w-[80%] justify-center items-center mx-auto"
