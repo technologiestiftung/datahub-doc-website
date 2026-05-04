@@ -16,7 +16,7 @@ const slides = [
     title: 'Akteure im Kiez sichtbar machen',
     description:
       'Wo engagieren sich Träger, Initiativen und soziale Programme in Neukölln? Mit einem Mapping-Tool können Akteure außerhalb der Verwaltung ihre Angebote selbst erfassen, aktuell halten und der Stadtplanung zur Verfügung stellen.',
-    image: '/img/akteure_im_sozialraum.svg',
+    image: '/img/akteure_im_sozialraum_os.svg',
     slug: '/docs/anwendungen/akteure_erfassen',
   },
   {
@@ -24,7 +24,7 @@ const slides = [
     title: 'Datenbasierte Bibliotheken',
     description:
       'Wie viele Medien wurden ausgeliehen? Wer leiht was? Wie können Gelder und Räume effizient genutzt werden? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow, soll künftig Bedarfserfassung und Makulatur datenbasiert vereinfachen.',
-    image: '/img/bibliotheken.svg',
+    image: '/img/bibliotheken_os.svg',
     slug: '/docs/anwendungen/datenbasierte_bibliothek',
   },
   {
@@ -32,7 +32,7 @@ const slides = [
     title: 'Digitale Bezirksregionenprofile',
     description:
       'Wie entwickeln sich demographische und soziale Strukturen in Bezirksregionen? Mit Datenbanken und Dashboard-Templates wird der Prozess zur Erstellung zentraler Instrumente der Stadtentwicklung effizienter und einheitlicher.',
-    image: '/img/bezirksprofile.svg',
+    image: '/img/bezirksprofile_os.svg',
     slug: '/docs/anwendungen/digitale_bezirksregionenprofile',
   },
 ];
