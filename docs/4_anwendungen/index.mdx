@@ -68,18 +68,16 @@ const cards = [
           <Link
             key={idx}
             to={card.link}
-            className="relative block border-3 border-solid border-berlin-black rounded-sm p-6 transition-all duration-150 hover:bg-white no-underline hover:no-underline group">
-            {/* Bild: Standardmäßig unsichtbar, beim Hover sichtbar, groß und mittig */}
+            className="relative block border-3 border-solid border-berlin-black rounded-sm pt-0 pb-6 px-6 transition-all duration-150 hover:bg-berlin-gray no-underline hover:no-underline group">
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
               <img
                 src={card.svg}
                 alt={card.title}
-                className="w-32 h-32 object-contain"
+                className="w-80 h-80 object-contain"
               />
             </div>
 
-            {/* Text und Pfeil: Standardmäßig sichtbar, beim Hover unsichtbar */}
-            <div className="opacity-100 group-hover:opacity-0 transition-opacity duration-150">
+            <div className="opacity-100 group-hover:opacity-0 transition-opacity duration-150 ">
               <div className="flex flex-col items-left mb-4">
                 <div className="flex flex-col items-center justify-center pb-5">
                   <img src={card.svg} alt={card.title} className="w-20 h-20 opacity-0" />
@@ -91,7 +89,6 @@ const cards = [
               <p className="text-berlin-black text-md leading-relaxed pb-5">
                 {card.description}
               </p>
-              {/* Ursprünglicher Pfeil an originaler Position */}
               <div className="absolute bottom-7 right-8 flex items-center">
                 <svg
                   width="20"

@@ -1,6 +1,6 @@
 import { Button } from '@site/src/components/UI/Button';
 import '../../css/tailwind.css';
-import WissenSVG from '/img/wissen.svg';
+import WissenSVG from '/img/willkommen_im_wissensspeicher_os.svg';
 
 export default function SectionWissensspeicher() {
   return (
@@ -30,7 +30,7 @@ export default function SectionWissensspeicher() {
         <div className="order-1 lg:order-2 col-span-12 lg:col-span-6 text-center ">
           <div className="w-full h-auto overflow-hidden">
             <div className="max-w-[339px] mb-10 md:mb-0 mx-auto">
-              <WissenSVG width={320} height={320}></WissenSVG>
+              <WissenSVG width={400} height={400}></WissenSVG>
             </div>
           </div>
         </div>
