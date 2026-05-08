@@ -8,57 +8,51 @@ description: Dies ist der zentrale Wissensspeicher des prototypischen Data Hub B
 import DocCard from '@theme/DocCard';
 import styles from '../docs.module.css';
 import Link from '@docusaurus/Link';
-import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
 <div className={styles.doccontainer}>
 
-  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-10 xl:pl-16 pt-16">
+  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-12 xl:pl-2 pt-16">
     <div>
           <h1>Pilotanwendungen</h1>
       <p className="text-lg">
         In der Pilotphase werden die zentralen Bausteine des Berliner Data Hub erstmals in der Praxis erprobt. Dafür setzen verschiedene Fachverwaltungen und Bezirke derzeit erste Projekte um.
       </p>
     </div>
-     <div className={styles.heroimage}>
-      <img src="/img/pilotprojekte_illu.svg" alt="Wissensspeicher Logo" />
-    </div> 
+     <div className="flex-[0_0_250px]">
+      <img className="max-w-[250px]" src="/img/Pilotanwendungen_os.svg" alt="Wissensspeicher Logo" />
+    </div>
   </div>
 
 ## Umsetzung erster, realer Anwendungsfälle
 
 Mit den Pilotanwendungen beginnt die praktische Erprobung des Berliner Data Hub. Seit Sommer 2025 werden in Zusammenarbeit mit zwei Senatsverwaltungen und zwei Bezirken erste Use Cases umgesetzt.
-Ziel der Pilotphase ist es, die Funktionalität und Nutzbarkeit der Plattform unter realen Bedingungen zu prüfen und Anforderungen aus der Verwaltungspraxis direkt in die Weiterentwicklung einfließen zu lassen. 
-
-Die gewonnenen Erkenntnisse helfen dabei, Schnittstellen zu optimieren, Workflows zu vereinfachen und die technischen Komponenten des CIVITAS/CORE-Systems passgenau in den Berliner Kontext zu integrieren.
-So entsteht aus den Pilotprojekten nicht nur eine technische Erprobung, sondern ein gemeinsamer Lernprozess, hin zu einer datenbasierten Infrastruktur, die langfristig alle Fachverwaltungen in ihrer täglichen Arbeit unterstützt.
-
-Auf den folgenden Seiten erhältst du einen Einblick in die einzelnen Pilotprojekte und die aktuellen Umsetzungsstände:
+Ziel der Pilotphase ist es, die Funktionalität und Nutzbarkeit der Plattform unter realen Bedingungen zu prüfen und Anforderungen aus der Verwaltungspraxis direkt in die Weiterentwicklung einfließen zu lassen.
 
 {(() => {
 const cards = [
   {
-    svg: "/img/example4.svg",
+    svg: "/img/bezirksprofile_os.svg",
     title: 'Gesamtstädtische & digitale Bezirksregionenprofile',
     description: 'Wie entwickeln sich demografische und soziale Strukturen in Bezirksregionen? Mit Datenbanken und Dashboard-Templates wird der Prozess zur Erstellung zentraler Instrumente der Stadtentwicklung effizienter und einheitlicher.',
     color: 'bg-blue-500',
     link: '/docs/anwendungen/digitale_bezirksregionenprofile'
   },
     {
-    svg: "/img/example2.svg",
+    svg: "/img/akteure_im_sozialraum_os.svg",
     title: 'Akteure im Sozialraum sichtbar machen',
     description: 'Wo engagieren sich Träger, Initiativen und soziale Programme in Neukölln? Mit einem Mapping-Tool können Akteure außerhalb der Verwaltung ihre Angebote selbst erfassen, aktuell halten und der Stadtplanung zur Verfügung stellen.',
     color: 'bg-blue-500',
     link: '/docs/anwendungen/akteure_erfassen'
   },
   {
-    svg: "/img/example3.svg",
+    svg: "/img/bibliotheken_os.svg",
     title: 'Datenbasiertes Monitoring in Bibliotheken',
     description: 'Wie viele Medien wurden ausgeliehen? Wer leiht was? Wie können Gelder und Räume effizient genutzt werden? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow, soll künftig Bedarfserfassung und Makulatur datenbasiert vereinfachen.',
     color: 'bg-green-500',
     link: '/docs/anwendungen/datenbasierte_bibliothek'
   },
     {
-    svg: "/img/example1.svg",
+    svg: "/img/landesgleichstellung_os.svg",
     title: 'Monitoring der Landesgleichstellung',
     description: 'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Behörden? Ein zentrales Dashboard ersetzt das bisher aufwendige manuelle Berichtswesen und ermöglicht eine datenbasierte Auswertung der Gleichstellungsmaßnahmen.',
     color: 'bg-blue-500',
@@ -66,27 +60,28 @@ const cards = [
   }
 ];
 
-
-
-  
-return (
+   return (
   <section className="pt-5 pb-3">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {cards.map((card, idx) => (
           <Link
             key={idx}
-            to={card.link} // z.B. '/docs/einfuehrung'
-            className={`relative block border-3 border-solid border-berlin-black rounded-sm p-6 transition-colors duration-150 hover:bg-berlin-gray no-underline hover:no-underline'
-            `}
-          >
-            <div className="">
+            to={card.link}
+            className="relative block border-3 border-solid border-berlin-black rounded-sm pt-0 pb-6 px-6 transition-all duration-150 hover:bg-berlin-gray no-underline hover:no-underline group">
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+              <img
+                src={card.svg}
+                alt={card.title}
+                className="w-80 h-80 object-contain"
+              />
+            </div>
+
+            <div className="opacity-100 group-hover:opacity-0 transition-opacity duration-150 ">
               <div className="flex flex-col items-left mb-4">
-    <div
-      className={`flex flex-col items-center justify-center pb-5`}
-    >
-      <img src={card.svg} alt={card.title} className="w-20 h-20" />
-    </div>
+                <div className="flex flex-col items-center justify-center pb-5">
+                  <img src={card.svg} alt={card.title} className="w-20 h-20 opacity-0" />
+                </div>
                 <h3 className="text-lg font-semibold align-content my-auto text-berlin-black">
                   {card.title}
                 </h3>
@@ -94,7 +89,6 @@ return (
               <p className="text-berlin-black text-md leading-relaxed pb-5">
                 {card.description}
               </p>
-              {/* Pfeil rechts unten */}
               <div className="absolute bottom-7 right-8 flex items-center">
                 <svg
                   width="20"
@@ -102,13 +96,11 @@ return (
                   viewBox="0 0 20 19"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className={` w-5 h-5 stroke-berlin-black
-                  `}
-                >
+                  className="w-5 h-5 stroke-berlin-black">
                   <path
                     className="arrow"
                     d="M0.292969 9.5536H17.4596M9.33826 17.9277L17.743 9.55326L9.33826 1.17969"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </div>

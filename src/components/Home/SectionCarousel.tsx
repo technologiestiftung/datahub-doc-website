@@ -16,7 +16,7 @@ const slides = [
     title: 'Akteure im Kiez sichtbar machen',
     description:
       'Wo engagieren sich Träger, Initiativen und soziale Programme in Neukölln? Mit einem Mapping-Tool können Akteure außerhalb der Verwaltung ihre Angebote selbst erfassen, aktuell halten und der Stadtplanung zur Verfügung stellen.',
-    image: '/img/example2.svg',
+    image: '/img/akteure_im_sozialraum_os.svg',
     slug: '/docs/anwendungen/akteure_erfassen',
   },
   {
@@ -24,7 +24,7 @@ const slides = [
     title: 'Datenbasierte Bibliotheken',
     description:
       'Wie viele Medien wurden ausgeliehen? Wer leiht was? Wie können Gelder und Räume effizient genutzt werden? Das interaktive Dashboard für die Bezirksbibliotheken in Pankow, soll künftig Bedarfserfassung und Makulatur datenbasiert vereinfachen.',
-    image: '/img/example3.svg',
+    image: '/img/bibliotheken_os.svg',
     slug: '/docs/anwendungen/datenbasierte_bibliothek',
   },
   {
@@ -32,7 +32,7 @@ const slides = [
     title: 'Digitale Bezirksregionenprofile',
     description:
       'Wie entwickeln sich demographische und soziale Strukturen in Bezirksregionen? Mit Datenbanken und Dashboard-Templates wird der Prozess zur Erstellung zentraler Instrumente der Stadtentwicklung effizienter und einheitlicher.',
-    image: '/img/example4.svg',
+    image: '/img/bezirksprofile_os.svg',
     slug: '/docs/anwendungen/digitale_bezirksregionenprofile',
   },
 ];
@@ -189,21 +189,23 @@ export default function SectionCarousel() {
 
 function SlideCard({ data }) {
   return (
-    <div className="bg-white h-full p-6 px-10 lg:px-12 lg:pt-12 lg:pb-10">
-      <div className="flex flex-col lg:flex-row items-center gap-6">
+    <div className="bg-white h-full p-4 px-8 lg:px-12 lg:pt-6 lg:pb-10">
+      <div className="flex flex-col items-start gap-2">
         <img
           src={data.image}
           alt={data.title}
-          className="w-24 h-24 object-contain"
+          className="w-60 h-60 object-contain mx-auto"
         />
         <div className="text-left w-full break-words">
-          <h3 className="text-xl md:text-3xl font-bold leading-6 lg:leading-relaxed text-berlin-black">
+          <h3 className="-mt-4 mb-2 text-xl md:text-3xl font-bold leading-6 lg:leading-relaxed text-berlin-black">
             {data.title}
           </h3>
           <p className="mb-8 text-sm md:text-lg leading-6 md:leading-relaxed text-berlin-black">
             {data.description}
           </p>
-          <Button label="Mehr erfahren" slug={data.slug} />
+          <div className="flex justify-center">
+            <Button label="Mehr erfahren" slug={data.slug} />
+          </div>  
         </div>
       </div>
     </div>

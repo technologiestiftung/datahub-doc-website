@@ -12,7 +12,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
 <div className={styles.doccontainer}>
 
-  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-10 xl:pl-16 pt-16">
+  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-12 xl:pl-2 pt-16">
     <div>
           <h1>Bausteine & Tools</h1>
       <p className="text-lg">
@@ -21,7 +21,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid';
       </p>
     </div>
      <div className="flex-[0_0_250px]">
-      <img className="w-full md:max-w-[70%]" src="/img/blockbox.svg" alt="Wissensspeicher Logo" />
+      <img className="max-w-[250px]" src="/img/bausteine_und_tools_os.svg" alt="Wissensspeicher Logo" />
     </div> 
   </div>
 
@@ -35,21 +35,21 @@ Auf den folgenden Seiten findest du detaillierte Informationen zu den einzelnen 
 {(() => {
 const cards = [
   {
-    svg: "/img/single_cube_purple.svg",
+    svg: "/img/daten_verwaltung_os.svg",
     title: 'Daten speichern & verwalten',
     description: 'Tools für das Erfassen, Strukturieren und Verwalten von Verwaltungsdaten im Data Hub: von Datenbanken bis zu Metadaten-Management.',
     color: 'bg-blue-500',
     link: '/docs/bausteine/2_1_datenverwaltung/'
   },
   {
-    svg: "/img/single_cube_pink.svg",
+    svg: "/img/daten_verarbeitung_os.svg",
     title: 'Daten verarbeiten & integrieren',
     description: 'Werkzeuge zur Integration und Verarbeitung von Daten aus unterschiedlichen Quellen und Schnittstellen und zur Datenanalyse.',
     color: 'bg-green-500',
     link: '/docs/bausteine/2_2_datenverarbeitung/'
   },
   {
-    svg: "/img/single_cube_blue.svg",
+    svg: "/img/daten_visualisierung_os.svg",
     title: 'Daten visualisieren',
     description: 'Tools für die Darstellung und Analyse von Daten: Dashboards, Kartenanwendungen, Statistiken und Monitoringberichte.',
     color: 'bg-yellow-500',
@@ -63,7 +63,7 @@ const cards = [
   //   link: '/docs/category/weitere-tools'
   // },
     {
-    svg: "/img/stapled_blocks.png",
+    svg: "/img/platzhalter_architekturübersicht.png",
     title: 'Architekturübersicht',
     description: 'Eine Übersicht über die Architektur des Data Hub auf Basis von CIVITAS/CORE sowie über die Interaktionen der einzelnen Komponenten.',
     color: 'bg-purple-500',
@@ -71,9 +71,6 @@ const cards = [
   }
 ];
 
-
-
-  
 return (
   <section className="pt-5 pb-3">
     <div className="container mx-auto px-4">
@@ -81,17 +78,23 @@ return (
         {cards.map((card, idx) => (
           <Link
             key={idx}
-            to={card.link} // z.B. '/docs/einfuehrung'
-            className={`relative block border-3 border-solid border-berlin-black rounded-sm p-6 transition-colors duration-150 hover:bg-berlin-gray no-underline hover:no-underline'
-            `}
+            to={card.link}
+            className="relative block border-3 border-solid border-berlin-black rounded-sm pt-0 pb-6 px-6 transition-all duration-150 hover:bg-berlin-gray no-underline hover:no-underline group"
           >
-            <div className="">
+            {/* Bild: Standardmäßig unsichtbar, beim Hover sichtbar, groß und mittig */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <img
+                  src={card.svg}
+                  alt={card.title}
+                  className="w-64 h-64 object-contain"
+                />
+              </div>
+            {/* Text und Pfeil: Standardmäßig sichtbar, beim Hover unsichtbar */}
+            <div className="opacity-100 group-hover:opacity-0 transition-opacity duration-150">
               <div className="flex flex-col items-left mb-4">
-    <div
-      className={`flex flex-col items-center justify-center pb-3`}
-    >
-      <img src={card.svg} alt={card.title} className="w-20 h-20" />
-    </div>
+                <div className="flex flex-col items-center justify-center pb-3">
+                  {card.svg && <img src={card.svg} alt={card.title} className="w-20 h-20 opacity-0" />}
+                </div>
                 <h3 className="text-lg font-semibold align-content my-auto text-berlin-black">
                   {card.title}
                 </h3>
@@ -107,13 +110,12 @@ return (
                   viewBox="0 0 20 19"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className={` w-5 h-5 stroke-berlin-black
-                  `}
+                  className="w-5 h-5 stroke-berlin-black"
                 >
                   <path
                     className="arrow"
                     d="M0.292969 9.5536H17.4596M9.33826 17.9277L17.743 9.55326L9.33826 1.17969"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </div>
@@ -128,6 +130,6 @@ return (
 
 ## Berechtigungen zur Nutzung der Tools im Data Hub
 
-Die Berechtigungssteuerung ist ebenfalls ein wichtiger Teil der Data Hub. Sie regelt, wer in welchen Tools welche Dinge mit Daten und Datenprodukten machen kann. Sie wird technisch durch das Software-Tool Keycloak integriert. Mehr über Rechte und Rollenmanagement und [die Funktionsweise von Keycloak findest du auf dieser Seite](/docs/rechte--rollen/keycloak).
+Die Berechtigungssteuerung ist ebenfalls ein wichtiger Teil der Data Hub. Sie regelt, wer in welchen Tools welche Dinge mit Daten und Datenprodukten machen kann.
 
 </div>
