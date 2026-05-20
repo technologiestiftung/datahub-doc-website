@@ -12,15 +12,15 @@ import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/reac
 
 <div className={styles.doccontainer}>
 
-  <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-12 xl:pl-2 pt-16">
+  <div className="flex flex-col xl:flex-row items-center gap-4 xl:gap-12 xl:pl-2 pt-16 -mb-8">
     <div>
       <h1>Akteure im Sozialraum sichtbar machen</h1>
         <p className="text-lg">
          Wo wirken Akteure, Träger und Netzwerke in Berlin-Neukölln? Mithilfe von Online-Formular, Karten-Tool und dahinterliegender Datenbank können soziale Akteure außerhalb der Verwaltung auf Basis einer Liefervereinbarung Informationen erfassen, aktuell halten und zur Verfügung stellen.
         </p>
     </div>
-    <div className="flex-[0_0_250px]">
-      <img className="max-w-[250px]" src="/img/akteure_im_sozialraum_os.svg" alt="Akteure im Sozialraum" />
+    <div className="w-[250px] xl:flex-[0_0_250px]">
+      <img className="w-full max-w-[250px]" src="/img/akteure_im_sozialraum_os.svg" alt="Akteure im Sozialraum" />
     </div>
   </div>
 

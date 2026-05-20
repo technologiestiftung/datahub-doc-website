@@ -15,15 +15,19 @@ import { DocumentTextIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24
 
 <div className={styles.doccontainer}>
 
-<div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-12 xl:pl-2 pt-16">
+<div className="flex flex-col xl:flex-row items-center gap-4 xl:gap-12 xl:pl-2 pt-16 -mb-8">
     <div>
       <h1>Einführung zum<br /> Data Hub Berlin</h1>
       <p className="text-lg">
         Daten sind die Grundlage für gutes Verwaltungshandeln, Planung und Innovation. Hier erfährst du, wie der Data Hub Berlin im Rahmen der bestehenden Strategien angesiedelt ist, wie er eine gemeinsame, offene Infrastruktur aufbaut und wie durch einen prototypischen Ansatz erste Anwendungsfälle erprobt werden.
       </p>
     </div>
-     <div className="flex-[0_0_250px]">
-      <img className="max-w-[250px]" src="/img/einfuehrung_zum_datahub_os.svg" alt="Wissensspeicher Logo" />
+    <div className="w-[250px] xl:flex-[0_0_250px]">
+      <img
+        className="w-full max-w-[250px]"
+        src="/img/einfuehrung_zum_datahub_os.svg"
+        alt="Wissensspeicher Logo"
+      />
     </div>
   </div>
 
