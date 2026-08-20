@@ -1,0 +1,177 @@
+---
+title: Monitoring der Verkehrsberuhigung
+sidebar_position: 3
+hide_title: true
+---
+
+import styles from '../docs.module.css';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/react/24/solid';
+
+<div className={styles.doccontainer}>
+
+  <div className="flex flex-col xl:flex-row items-center gap-4 xl:gap-12 xl:pl-2 pt-16 -mb-8">
+    {/* Hero-Bild: Illustration/Kachelgrafik analog zu den anderen Pilotanwendungen */}
+    <div>
+      <h1>Monitoring der Verkehrsberuhigung</h1>
+      <p className="text-lg">
+        Was verraten ungenutzte Sensordaten im Berliner Bezirk Tempelhof-Schöneberg, die in erster Linie der Verkehrsberuhigung dienen? Sensoren, die zum Langsamerfahren motivieren sollen, erfassen nebenbei auch Geschwindigkeit, Länge und Art jedes vorbeifahrenden Fahrzeugs.
+        Mithilfe von einem interaktiven Dashboard und einem innovativen Rechte-Rollen-Management konnten die dynamischen Daten erstmalig ausgewertet werden.
+        Das Besondere: Der Anstoß kam nicht aus der Verwaltung, sondern von einer externen, ehrenamtlich engagierten Person.
+      </p>
+    </div>
+    <div className="w-[250px] xl:flex-[0_0_250px]">
+      <img className="w-full max-w-[250px]" src="/img/verkehrssensorik_os.svg" alt="Verkehrssensorik" />
+    </div>
+  </div>
+
+## Wie datenbasiert arbeiten Bezirksämter?
+
+Das Straßen- und Grünflächenamt Tempelhof-Schöneberg nutzt bis zu 41 mobile Verkehrszähler, die flexibel im Bezirk eingesetzt werden – vor allem im Kontext von Verkehrsberuhigung und Schulwegsicherheit. Im Gegensatz zu fest installierten Sensoren der Senatsverwaltung erfassen diese Geräte nicht nur PKW und LKW, sondern auch Fahrräder auf Einzelfahrzeugebene. Dadurch lassen sich wichtige Kennzahlen wie die Aufteilung des Verkehrsaufkommens bestimmen.
+
+## Das Problem
+
+- Die Daten liegen in einem geschlossenen Fachverfahren ohne offene Schnittstelle. Ein externer Anbieter stellt ein Portal bereit, über das sich die Messwerte nur je Standorteinsatz einzeln exportieren lassen, jeweils über mehrere manuelle Arbeitsschritte im Portal selbst.
+- Es gibt bislang kein Werkzeug, um die Daten zu nutzen. Was vorliegt, sind einzelne Exportdateien je Einsatz, aus denen sich ohne weitere Aufbereitung keine Kennzahlen für die Verkehrsplanung ablesen lassen.
+- Die Sensoren werden fortlaufend an neuen Standorten eingesetzt. Eine einmalige Auswertung würde nicht ausreichen, da laufend neue Daten hinzukommen und regelmäßig mit aufbereitet werden müssen.
+
+## Zielsetzung
+
+Ziel ist es, die bislang ungenutzten Sensordaten für die Verkehrsplanung im Bezirk nutzbar zu machen. Der Einsatz des Data Hub bietet dafür mehrere Potenziale:
+
+- **Automatisierte Aufbereitung statt Handarbeit.** Die Daten müssen nicht mehr händisch aus dem Anbieter-Portal exportiert und ausgewertet werden, sondern werden automatisiert abgerufen und aufbereitet, auch wenn laufend neue Standorteinsätze hinzukommen.
+
+- **Ein Dashboard für den Bezirk.** Das Straßen- und Grünflächenamt kann für einzelne Standorte auf einen Blick sehen, wie viele Fahrzeuge welcher Art unterwegs sind, wie schnell sie fahren und wie sich der Verkehr über den Tag verteilt, z. B. als Grundlage für Verkehrsberuhigung und Schulwegsicherheit.
+
+  {/* Optional: Screenshot des Dashboards analog zu den anderen Pilotanwendungen
+  <div className="w-full justify-center items-center pt-4">
+    <img
+      src={require('../assets/verkehrsberuhigung_dashboard.png').default}
+      alt="Impressionen des Dashboards"
+      className="block h-auto w-full xl:w-[80%] justify-center items-center mx-auto"
+    />
+    <figcaption className={styles.imgcaption}>Impressionen des Dashboards</figcaption>
+  </div>
+  */}
+
+## Die Umsetzung
+
+### Der Rahmen des Pilotprojekts
+
+<Tabs
+  defaultValue="daten"
+  values={[
+    { label: 'Daten', value: 'daten' },
+    { label: 'Zielgruppen', value: 'zielgruppen' },
+    { label: 'Beteiligte', value: 'beteiligte' },
+  ]}>
+
+  <TabItem value="daten">
+  <>
+    <div className="tabs__content">
+      <div className="mb-4">
+        <CircleStackIcon className="w-5 h-5 text-green-600" />
+        <h3 className="inline pl-2">Die Daten</h3>
+      </div>
+      <p>
+        Die Sensoren werden nacheinander an wechselnden Standorten im Bezirk eingesetzt, ein Einsatz dauert häufig mehrere Monate. <strong>Stammdaten</strong> zu Standorten und Zeiträumen einerseits und die eigentlichen <strong>Fahrzeugmessungen</strong> andererseits werden getrennt erfasst und zusammengeführt.
+      </p>
+      <p>
+        An Standorten, an denen zwei Sensoren die jeweils gegenüberliegende Fahrtrichtung erfassen, erkennt die Pipeline das automatisch, sodass beide Richtungen gemeinsam ausgewertet werden. Unplausible Messwerte, etwa unrealistische Geschwindigkeiten oder Fahrzeuglängen außerhalb der für eine Klasse üblichen Spanne, werden markiert statt stillschweigend gelöscht.
+      </p>
+    </div>
+  </>
+  </TabItem>
+
+  <TabItem value="zielgruppen">
+  <>
+    <div className="tabs__content">
+      <div className="mb-4">
+        <UsersIcon className="w-5 h-5 text-green-600" />
+        <h3 className="inline pl-2">Die Zielgruppen</h3>
+      </div>
+      <p>
+        Das Dashboard richtet sich an:
+      </p>
+      <ul className="ml-4 list-disc">
+        <li>Straßen- und Grünflächenamt – für Verkehrsberuhigung und Schulwegsicherheit.</li>
+        <li>Büro der Bezirksstadträtin für Umwelt und Verkehr.</li>
+        <li>Perspektivisch die Zivilgesellschaft, sofern ausgewählte Auswertungen als offene Daten bereitgestellt werden.</li>
+      </ul>
+    </div>
+  </>
+  </TabItem>
+
+  <TabItem value="beteiligte">
+  <>
+    <div className="tabs__content">
+      <div className="mb-4">
+        <BuildingOffice2Icon className="w-5 h-5 text-green-600" />
+        <h3 className="inline pl-2">Die Beteiligten</h3>
+      </div>
+      <p>
+        Am Pilotprojekt arbeiten diese Partner zusammen:
+      </p>
+      <ul className="ml-4 list-disc">
+        <li>Eine Bürgerin aus dem Bezirk – hat den Anstoß zu diesem Use Case gegeben und ihn maßgeblich umgesetzt.</li>
+        <li>Straßen- und Grünflächenamt Tempelhof-Schöneberg.</li>
+        <li>Büro der Bezirksstadträtin für Umwelt und Verkehr.</li>
+        <li>Technologiestiftung Berlin.</li>
+      </ul>
+    </div>
+  </>
+  </TabItem>
+
+</Tabs>
+
+### Technische Umsetzung
+
+Im Folgenden eine kurze Zusammenfassung, wie die technische Umsetzung im Data Hub abläuft:
+
+1. **Datenabruf:**
+   Ein automatisierter Workflow (Apache Airflow) ruft die Rohdaten regelmäßig aus dem Anbieter-Portal ab und legt sie zunächst unverändert in einem Objektspeicher (MinIO) ab.
+
+2. **Aufbereitung:**
+   Aus dem Objektspeicher werden die Daten in eine PostgreSQL-Datenbank übernommen, dort bereinigt, dedupliziert und zu einem einheitlichen Datenmodell zusammengeführt.
+
+3. **Dashboard:**
+   Für die Visualisierung wird Apache Superset eingesetzt, angepasst an das Corporate Design der Berliner Verwaltung.
+
+<iframe
+  src="https://data-hub-flow-designer.lovable.app/?flow=JTdCJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJpZCUyMiUzQSUyMmJlemlya3NhbXQlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc291cmNlJTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBMTgwLjA4MDc4ODQ0NDcyOTI4JTJDJTIyeSUyMiUzQTM1Ljg5NDg1NDI2NTAyOTM2JTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIyRmFjaHZlcmZhaHJlbiUyMiUyQyUyMnN1YnRpdGxlJTIyJTNBJTIyRXh0ZXJuZXMlMjBBbmJpZXRlci1Qb3J0YWwlM0ElMjBTdGFtbWRhdGVuJTIwenUlMjBTdGFuZG9ydGVuJTJGRWlucyVDMyVBNHR6ZW4lMjB1bmQlMjBNZXNzZGF0ZW4lMjBqZSUyMEZhaHJ6ZXVnJTIyJTJDJTIyY3VzdG9tTGFiZWwlMjIlM0FmYWxzZSU3RCUyQyUyMm1lYXN1cmVkJTIyJTNBJTdCJTIyd2lkdGglMjIlM0E1ODglMkMlMjJoZWlnaHQlMjIlM0E3MiU3RCU3RCUyQyU3QiUyMmlkJTIyJTNBJTIycHJvY2Vzc2luZyUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwcm9jZXNzaW5nJTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBODcuODM2MTkyMDc0OTgzNzMlMkMlMjJ5JTIyJTNBMzA5LjU1NTA1OTc2OTg3NiU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMk5vdGUlMjBSZWQlMjIlMkMlMjJ0aXRsZSUyMiUzQSUyMkFpckZsb3clMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMk9yY2hlc3RyaWVydCUyMGRlbiUyMGdlc2FtdGVuJTIwQWJsYXVmJTIwdm9uJTIwQWJydWYlMjBiaXMlMjBBZ2dyZWdhdGlvbiUyQyUyMGVpbm1hbGlnJTIwZiVDMyVCQ3IlMjBkZW4lMjBoaXN0b3Jpc2NoZW4lMjBCZXN0YW5kJTJDJTIwdyVDMyVCNmNoZW50bGljaCUyMGYlQzMlQkNyJTIwbmV1ZSUyMERhdGVuJTIyJTJDJTIyY3VzdG9tVGl0bGUlMjIlM0FmYWxzZSU3RCUyQyUyMm1lYXN1cmVkJTIyJTNBJTdCJTIyd2lkdGglMjIlM0EzODAlMkMlMjJoZWlnaHQlMjIlM0ExMjclN0QlN0QlMkMlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAwMCUyMiUyQyUyMnR5cGUlMjIlM0ElMjJlbmR1c2VyJTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBMzU2Ljk0NDI4MzM0NjQ2MjYlMkMlMjJ5JTIyJTNBNzYzLjM2ODAzNzkyNzIxNTMlN0QlMkMlMjJkYXRhJTIyJTNBJTdCJTIybGFiZWwlMjIlM0ElMjJFbmQlMjBVc2VyJTIyJTJDJTIydGl0bGUlMjIlM0ElMjJJbnRlcmFrdGl2ZXMlMjBEYXNoYm9hcmQlMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMkRhc2hib2FyZCUyMGYlQzMlQkNyJTIwZGVuJTIwQmV6aXJrJTIwbWl0JTIwQXVzd2VydHVuZ2VuJTIwamUlMjBTdGFuZG9ydCUyMHVuZCUyMEZhaHJ6ZXVna2xhc3NlJTIwbWl0JTIwZGVyJTIwTSVDMyVCNmdsaWNoa2VpdCUyMG5hY2glMjBEYXR1bSUyMHp1JTIwZmlsdGVybiUyMiUyQyUyMmljb24lMjIlM0ElMjJjaGFydCUyMiUyQyUyMmN1c3RvbVRpdGxlJTIyJTNBZmFsc2UlN0QlMkMlMjJtZWFzdXJlZCUyMiUzQSU3QiUyMndpZHRoJTIyJTNBMzAwJTJDJTIyaGVpZ2h0JTIyJTNBMTYyJTdEJTdEJTJDJTdCJTIyaWQlMjIlM0ElMjJub2RlLTEwMDIlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyY29tcG9uZW50JTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBNjY5LjYzODkxMzAyMjExNzUlMkMlMjJ5JTIyJTNBMjA5LjgwNDYwNTIxMjc0MDE0JTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIyS29tcG9uZW50ZSUyMiUyQyUyMnRpdGxlJTIyJTNBJTIyTWluSU8lMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMlJvaGRhdGVpZW4lMjAoUGFycXVldCklMjB3ZXJkZW4lMjBpbSUyME9iamVrdHNwZWljaGVyJTIwYWJnZWxlZ3QlMjIlMkMlMjJjdXN0b21UaXRsZSUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTI4MCUyQyUyMmhlaWdodCUyMiUzQTEwOSU3RCU3RCUyQyU3QiUyMmlkJTIyJTNBJTIybm9kZS0xMDAzJTIyJTJDJTIydHlwZSUyMiUzQSUyMmRhc2hib2FyZCUyMiUyQyUyMnBvc2l0aW9uJTIyJTNBJTdCJTIyeCUyMiUzQTM2Ni45NDAzMjk0OTc1NDUyNCUyQyUyMnklMjIlM0E1OTQuNzg5NTA2NTM1NTQyMiU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMkRhc2hib2FyZCUyMiUyQyUyMnRpdGxlJTIyJTNBJTIyU3VwZXJzZXQlMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMlZpc3VhbGlzaWVydCUyMGRpZSUyMEtlbm56YWhsZW4lMjB1LiUyMGEuJTIwYWxzJTIwS3JlaXNkaWFncmFtbSUyQyUyMFRhZ2VzdmVybGF1Zi1DaGFydCUyMHVuZCUyMGFscyUyMEthcnRlJTIyJTJDJTIyY3VzdG9tVGl0bGUlMjIlM0FmYWxzZSU3RCUyQyUyMm1lYXN1cmVkJTIyJTNBJTdCJTIyd2lkdGglMjIlM0EyODAlMkMlMjJoZWlnaHQlMjIlM0ExMjclN0QlN0QlMkMlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAwNiUyMiUyQyUyMnR5cGUlMjIlM0ElMjJjb21wb25lbnQlMjIlMkMlMjJwb3NpdGlvbiUyMiUzQSU3QiUyMnglMjIlM0E2NzAuNDc4NjczNjYxNTU2MyUyQyUyMnklMjIlM0EzNzUuMzg2MTMzNjE4MzI2JTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIyS29tcG9uZW50ZSUyMiUyQyUyMnRpdGxlJTIyJTNBJTIycGdBZG1pbiUyRkRhdGVuYmFuayUyMiUyQyUyMmRlc2NyaXB0aW9uJTIyJTNBJTIyRGF0ZW4lMjB3ZXJkZW4lMjBpbiUyMGRlciUyMERhdGVuYmFuayUyMGdlc3BlaWNoZXJ0JTIwdW5kJTIwaW4lMjBtZWhyZXJlbiUyMFN0dWZlbiUyMGJlcmVpbmlndCUyQyUyMGRlZHVwbGl6aWVydCUyMHVuZCUyMHp1JTIwS2VubnphaGxlbiUyMGFnZ3JlZ2llcnQlMjIlMkMlMjJjdXN0b21UaXRsZSUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTI4MCUyQyUyMmhlaWdodCUyMiUzQTE0NCU3RCU3RCU1RCUyQyUyMmVkZ2VzJTIyJTNBJTVCJTdCJTIyc3R5bGUlMjIlM0ElN0IlMjJzdHJva2VXaWR0aCUyMiUzQTIlMkMlMjJzdHJva2UlMjIlM0ElMjIlMjMwMDAlMjIlMkMlMjJzdHJva2VEYXNoYXJyYXklMjIlM0ElMjI1JTJDNSUyMiU3RCUyQyUyMmNsYXNzTmFtZSUyMiUzQSUyMmFuaW1hdGVkLWVkZ2UlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc21vb3Roc3RlcCUyMiUyQyUyMnNvdXJjZSUyMiUzQSUyMmJlemlya3NhbXQlMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJwcm9jZXNzaW5nJTIyJTJDJTIyaWQlMjIlM0ElMjJ4eS1lZGdlX19iZXppcmtzYW10LXByb2Nlc3NpbmclMjIlN0QlMkMlN0IlMjJzdHlsZSUyMiUzQSU3QiUyMnN0cm9rZVdpZHRoJTIyJTNBMiUyQyUyMnN0cm9rZSUyMiUzQSUyMiUyMzAwMCUyMiUyQyUyMnN0cm9rZURhc2hhcnJheSUyMiUzQSUyMjUlMkM1JTIyJTdEJTJDJTIyY2xhc3NOYW1lJTIyJTNBJTIyYW5pbWF0ZWQtZWRnZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzbW9vdGhzdGVwJTIyJTJDJTIyc291cmNlJTIyJTNBJTIycHJvY2Vzc2luZyUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMm5vZGUtMTAwMiUyMiUyQyUyMmlkJTIyJTNBJTIyeHktZWRnZV9fcHJvY2Vzc2luZy1ub2RlLTEwMDIlMjIlN0QlMkMlN0IlMjJzdHlsZSUyMiUzQSU3QiUyMnN0cm9rZVdpZHRoJTIyJTNBMiUyQyUyMnN0cm9rZSUyMiUzQSUyMiUyMzAwMCUyMiUyQyUyMnN0cm9rZURhc2hhcnJheSUyMiUzQSUyMjUlMkM1JTIyJTdEJTJDJTIyY2xhc3NOYW1lJTIyJTNBJTIyYW5pbWF0ZWQtZWRnZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzbW9vdGhzdGVwJTIyJTJDJTIyc291cmNlJTIyJTNBJTIybm9kZS0xMDAzJTIyJTJDJTIydGFyZ2V0JTIyJTNBJTIybm9kZS0xMDAwJTIyJTJDJTIyaWQlMjIlM0ElMjJ4eS1lZGdlX19ub2RlLTEwMDMtbm9kZS0xMDAwJTIyJTdEJTJDJTdCJTIyc3R5bGUlMjIlM0ElN0IlMjJzdHJva2VXaWR0aCUyMiUzQTIlMkMlMjJzdHJva2UlMjIlM0ElMjIlMjMwMDAlMjIlMkMlMjJzdHJva2VEYXNoYXJyYXklMjIlM0ElMjI1JTJDNSUyMiU3RCUyQyUyMmNsYXNzTmFtZSUyMiUzQSUyMmFuaW1hdGVkLWVkZ2UlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc21vb3Roc3RlcCUyMiUyQyUyMnNvdXJjZSUyMiUzQSUyMnByb2Nlc3NpbmclMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJub2RlLTEwMDYlMjIlMkMlMjJpZCUyMiUzQSUyMnh5LWVkZ2VfX3Byb2Nlc3Npbmctbm9kZS0xMDA2JTIyJTdEJTJDJTdCJTIyc3R5bGUlMjIlM0ElN0IlMjJzdHJva2VXaWR0aCUyMiUzQTIlMkMlMjJzdHJva2UlMjIlM0ElMjIlMjMwMDAlMjIlMkMlMjJzdHJva2VEYXNoYXJyYXklMjIlM0ElMjI1JTJDNSUyMiU3RCUyQyUyMmNsYXNzTmFtZSUyMiUzQSUyMmFuaW1hdGVkLWVkZ2UlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc21vb3Roc3RlcCUyMiUyQyUyMnNvdXJjZSUyMiUzQSUyMm5vZGUtMTAwMiUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMm5vZGUtMTAwNiUyMiUyQyUyMmlkJTIyJTNBJTIyeHktZWRnZV9fbm9kZS0xMDAyLW5vZGUtMTAwNiUyMiUyQyUyMm1hcmtlckVuZCUyMiUzQSU3QiUyMnR5cGUlMjIlM0ElMjJhcnJvd2Nsb3NlZCUyMiU3RCU3RCUyQyU3QiUyMnN0eWxlJTIyJTNBJTdCJTIyc3Ryb2tlV2lkdGglMjIlM0EyJTJDJTIyc3Ryb2tlJTIyJTNBJTIyJTIzMDAwJTIyJTJDJTIyc3Ryb2tlRGFzaGFycmF5JTIyJTNBJTIyNSUyQzUlMjIlN0QlMkMlMjJjbGFzc05hbWUlMjIlM0ElMjJhbmltYXRlZC1lZGdlJTIyJTJDJTIydHlwZSUyMiUzQSUyMnNtb290aHN0ZXAlMjIlMkMlMjJzb3VyY2UlMjIlM0ElMjJub2RlLTEwMDYlMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJub2RlLTEwMDMlMjIlMkMlMjJpZCUyMiUzQSUyMnh5LWVkZ2VfX25vZGUtMTAwNi1ub2RlLTEwMDMlMjIlMkMlMjJtYXJrZXJFbmQlMjIlM0ElN0IlMjJ0eXBlJTIyJTNBJTIyYXJyb3djbG9zZWQlMjIlN0QlN0QlNUQlMkMlMjJ2ZXJzaW9uJTIyJTNBMSU3RA%3D%3D"
+  width="100%"
+  height="400"
+  style={{ border: "1px solid #ccc", borderRadius: "8px", marginTop: "2em" }}
+  allowFullScreen
+></iframe>
+<figcaption className={styles.imgcaption}>Schematische Abbildung der Datenpipeline für das Monitoring der Verkehrsberuhigung im Data Hub</figcaption>
+
+### Organisatorische und methodische Begleitung
+
+**Der Anstoß kam von außen.** Der Use Case entstand nicht innerhalb der Verwaltung, sondern wurde von einer Bürgerin aus Tempelhof-Schöneberg angestoßen, die im Rahmen einer Weiterbildung zum Data Engineering ein Abschlussprojekt suchte und auf die ungenutzten Sensordaten aufmerksam wurde. Gemeinsam mit einem kleinen Team baute sie eine Daten-Pipeline sowie eine erste Version des Dashboards.
+
+**Rollen und Rechte für externe Mitarbeit.** Ein wesentlicher Teil des Projekts bestand darin, im Data Hub und den dazugehörigen Tools Rollen und Rechte so einzurichten, dass Mitarbeit von außerhalb der Verwaltung möglich wird, isoliert auf den jeweiligen Use Case beschränkt. Diese Möglichkeit gab es vorher nicht und wurde im Rahmen dieses Use Case neu aufgebaut. Bis sie stand, entwickelte das externe Team zunächst in einer eigenen, vom Data Hub getrennten Umgebung, mit weitgehend denselben Werkzeugen, die auch im Data Hub selbst genutzt werden. Abgestimmt wurde das mit dem CityLAB-Team, das diese Umgebung so beschrieben hat, dass Code, Datenmodell und Pipeline-Struktur von Anfang an mit dem Data Hub kompatibel blieben. Dadurch ließ sich der Aufbau später ohne größeren Umbau in den Data Hub übernehmen, sobald die Rollen und Rechte dafür standen. Begleitend fanden ein Kick-off und mehrere Zwischenpräsentationen mit dem Bezirksamt statt.
+
+## Wie geht’s weiter?
+
+### Zentrale Erkenntnisse
+
+Aus diesem Use Case lassen sich mehrere Erkenntnisse für den Data Hub ableiten:
+
+- **Externe Mitarbeit lässt sich sauber eingrenzen.**
+  Für den Data Hub steht jetzt ein Rollen- und Rechtemodell zur Verfügung, mit dem sich die Mitarbeit einer Person von außerhalb der Verwaltung isoliert auf einen einzelnen Use Case beschränken lässt, ohne andere Projekte oder produktive Systeme zu berühren. Das lässt sich auf künftige Kooperationen mit externen Personen übertragen, ohne dass dafür jedes Mal eine komplett getrennte Umgebung aufgebaut werden muss.
+
+- **Auch ein geschlossenes Fachverfahren ohne offene Schnittstelle lässt sich anbinden.**
+  Es reicht, den Abruf in handhabbare Abschnitte zu zerlegen und fehlgeschlagene Abschnitte nachzuverfolgen. Dieses Vorgehen lässt sich auf andere Bezirke und ähnliche Fachverfahren übertragen.
+
+- **Auch Nebenprodukt-Daten können wertvoll sein.**
+  Die Sensoren wurden für Verkehrsberuhigung gebaut, nicht für Datenerhebung. Erst als jemand gezielt danach gesucht hat, wurde daraus eine nutzbare Datengrundlage für die Verkehrsplanung.
+
+---
+
+### Nächste Schritte
+
+Das Dashboard soll erweitert und auf einer Schulwegsicherheitskonferenz vorgestellt werden. Als Folgeprojekt könnte der Ansatz auf weitere Bezirke ausgeweitet werden, etwa auf Reinickendorf, mit dem langfristigen Ziel, ausgewählte Auswertungen auch als offene Daten zu veröffentlichen.
+
+</div>

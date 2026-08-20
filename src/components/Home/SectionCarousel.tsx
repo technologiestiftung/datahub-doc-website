@@ -35,6 +35,14 @@ const slides = [
     image: '/img/bezirksprofile_os.svg',
     slug: '/docs/anwendungen/digitale_bezirksregionenprofile',
   },
+  {
+    id: 5,
+    title: 'Monitoring der Verkehrsberuhigung',
+    description:
+      'Was verraten ungenutzte Sensordaten im Berliner Bezirk Tempelhof-Schöneberg, die in erster Linie der Verkehrsberuhigung dienen? Mithilfe von einem interaktiven Dashboard und einem innovativen Rechte-Rollen-Management konnten die dynamischen Daten erstmalig ausgewertet werden.',
+    image: '/img/verkehrssensorik_os.svg',
+    slug: '/docs/anwendungen/monitoring_verkehrsberuhigung',
+  },  
 ];
 
 export default function SectionCarousel() {
