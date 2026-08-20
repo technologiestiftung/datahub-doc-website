@@ -188,6 +188,6 @@ Die Erfahrungen aus der Umsetzung mit Postgres, Appsmith und Masterportal liefer
 
 ###  Nächste Schritte 
 
-Für die nächste halbjährliche Aktualisierung Ende 2025 ist geplant, dass die Stadtteilkoordination die entwickelte Lösung im Data Hub Berlin erstmals anwendet. Parallel dazu werden die OESPK Neukölln und das Data Hub Team die Visualisierung der erfassten Daten vorantreiben und erste Ideen für (interne) Dashboards oder die Darstellung von Netzwerkstrukturen erarbeiten und sukzessive umsetzen. Als Pilotprojekt ist der Datenerfassungsprozess der Akteure im Sozialraum anschlussfähig zu den übrigen 11 Bezirken im Land Berlin sowie weiteren Projekten der Verwaltung, in denen die Eingabe und Verwaltung von verwaltungsexternen Daten im Mittelpunkt stehen.
+Anfang 2026 hat die Stadtteilkoordination die entwickelte Lösung im Data Hub Berlin erstmals angewendet. Für 2026 planen die OESPK Neukölln und das Data Hub Team die Visualisierung der erfassten Daten voranzutreiben und erste Ideen für (interne) Dashboards in Superset oder die Darstellung von Netzwerkstrukturen zu erarbeiten und sukzessive umsetzen. Als Pilotprojekt ist der Datenerfassungsprozess der Akteure im Sozialraum anschlussfähig zu den übrigen 11 Bezirken im Land Berlin sowie weiteren Projekten der Verwaltung, in denen die Eingabe und Verwaltung von verwaltungsexternen Daten im Mittelpunkt stehen.
 
 </div>
