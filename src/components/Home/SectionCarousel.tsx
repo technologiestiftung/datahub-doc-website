@@ -43,6 +43,14 @@ const slides = [
     image: '/img/verkehrssensorik_os.svg',
     slug: '/docs/anwendungen/monitoring_verkehrsberuhigung',
   },  
+  {
+    id: 5,
+    title: 'Wirkungsanalyse digitaler Bürgerdienste',
+    description:
+      'Wie häufig werden Berliner Verwaltungsleistungen tatsächlich online genutzt und warum entscheiden sich Menschen weiterhin für den Weg ins Bürgeramt? Ein Wirkungsanalyse-Dashboard schafft so die Grundlage für gezieltere Maßnahmen.',
+    image: '/img/digitale_buergerdienste_os.svg',
+    slug: '/docs/anwendungen/digitale_buergerdienste',
+  },  
 ];
 
 export default function SectionCarousel() {
