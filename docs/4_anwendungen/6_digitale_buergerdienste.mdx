@@ -1,0 +1,188 @@
+---
+title: Wirkungsanalyse digitaler Bürgerdienste
+sidebar_position: 3
+hide_title: true
+---
+
+import styles from '../docs.module.css';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/react/24/solid';
+
+<div className={styles.doccontainer}>
+
+  <div className="flex flex-col xl:flex-row items-center gap-4 xl:gap-12 xl:pl-2 pt-16 -mb-8">
+    <div>
+      <h1>Wirkungsanalyse digitaler Bürgerdienste</h1>
+      <p className="text-lg">
+        Wie häufig werden Berliner Verwaltungsleistungen tatsächlich online genutzt und warum entscheiden sich Menschen weiterhin für den Weg ins Bürgeramt?
+        Ein Wirkungsanalyse-Dashboard der digitalen Dienstleistungen der Bürgerämter (Wirkungsanalyse-Dashboard DigiBüD) führt Nutzungsquoten, Supportanfragen und Befragungsdaten aus den Bürgerämtern an einer Stelle zusammen und schafft so die Grundlage für gezieltere Maßnahmen.
+      </p>
+    </div>
+    <div className="w-[250px] xl:flex-[0_0_250px]">
+      <img className="w-full max-w-[250px]" src="/img/digitale_buergerdienste_os.svg" alt="Digitale Bürgerdienste" />
+    </div>
+  </div>
+
+## Online-Dienstleistungen bereitstellen ist nicht dasselbe wie Online-Dienstleistungen nutzen
+
+Das Land Berlin stellt eine wachsende Zahl von Verwaltungsleistungen digital bereit, zum Beispiel die elektronische Wohnsitzanmeldung und -ummeldung oder die Beantragung von Bewohnerparkausweisen. Die Bereitstellung allein sagt jedoch wenig darüber aus, ob das Angebot bei den Bürger:innen ankommt.
+
+Warum werden manche Dienste weiterhin vor Ort im Bürgeramt und nicht online erledigt? Diese Frage stellt sich die Senatskanzlei Berlin sehr bewusst. Denn die Nutzung beeinflusst die Terminkapazitäten in den Bürgerämtern und kann Aufschluss darüber geben, wie sich (Online-)Dienstleistungen der Bürgerämter noch verbessern können. Warum ist der Anteil der digitalen Anträge teils geringer als vorab erwartet? Gibt es Probleme bei der Nutzung der Webseiten, der Onlinefunktion des Personalausweises, oder möchten Bürger:innen aus ganz anderen Gründen ins Bürgeramt kommen? Diese und viele weitere Fragen rund um Nutzungsgrad und Nutzbarkeit von Onlinediensten soll ein Dashboard bündeln und zielführend beantworten.
+
+> „Wir stellen das Wirkungsanalyse-Dashboard DigiBüD in den Gremien des Programms „Digitalisierung Ämter für Bürgerdienste“ (DigiBüD) vor, um dort Feedback einzuholen. Die Daten, die regelmäßig in das Dashboard einfließen, werden in bestimmten Abständen analysiert und bewertet, dazu stimmen wir uns im Programm ab. Aus der Evaluation leiten wir gezielte Maßnahmen ab, bei denen wiederum später geprüft wird, wie sich diese auf die Daten im Dashboard auswirken."
+>
+> — **David Müller**, Senatskanzlei Berlin
+
+## Das Problem
+
+Manuelle Auswertungen zur Nutzung der Onlinedienste gab es bereits vor dem Dashboard. Um jedoch eine effizientere Bearbeitung und interaktivere Nutzung zu ermöglichen, zieht der Prozess in den Data Hub. Die Daten wurden bisher von Hand zusammengeführt und zu einer Präsentation verarbeitet, die anschließend in der Senatskanzlei ausgewertet und verschiedenen Arbeitsgruppen vorgestellt wurde.
+
+Die zentralen Herausforderungen:
+
+- **Heterogene Datenlieferungen:** Verschiedene Stellen liefern Daten aus unterschiedlichen Systemlogiken. Ein einheitliches, verlässlich wiederkehrendes Datenformat zu vereinbaren, ist eine zentrale Herausforderung des Projekts.
+- **Stakeholder einbinden:** Die Daten liegen zum Teil nicht bei der Senatskanzlei selbst. Ein Teil der Projektzeit entfiel deshalb auf Gespräche und Abstimmungen zur Änderung des Prozesses.
+- **Manueller Aufwand:** Die händische Aufbereitung bindet Kapazitäten, die für die eigentliche Analyse fehlen.
+- **Ursachen statt nur Zahlen:** Nutzungsquoten allein erklären nichts. Erst die Verknüpfung mit Supportaufkommen und Befragungsergebnissen macht sichtbar, woran es im Einzelfall liegen könnte.
+
+## Zielsetzung
+
+Ziel der Pilotanwendung ist ein Wirkungsanalyse-Dashboard DigiBüD, das die Nutzung der Onlinedienste dauerhaft und leistungsbezogen abbildet und dabei über die reine Nutzungsquote hinausgeht:
+
+- **Nutzung im Zeitverlauf sichtbar machen.** Für Leistungen wird das Verhältnis von analoger und digitaler Inanspruchnahme dargestellt – filterbar nach Leistung und Zeitraum, statt als Momentaufnahme.
+
+- **Ursachen für Nicht-Nutzung einordnen.** Befragungsdaten und Supportaufkommen werden neben die Nutzungszahlen gestellt. So wird erkennbar, ob eine niedrige Quote auf technische Hürden, auf fehlende (technische) Voraussetzungen bei den Nutzenden oder auf eine bewusste Entscheidung für den persönlichen Kontakt zurückgeht.
+
+- **Zugang erweitern.** Perspektivisch sollen weitere Senatsverwaltungen und die Bezirksämter Lesezugriff erhalten. Denn die Arbeit der Ämter für Bürgerdienste berührt verschiedenste Politikfelder.
+
+- **Handlungsfähigkeit im Haus stärken.** Das Dashboard wird vom fachverantwortlichen Team übernommen. Das Dashboard wird vom fachverantwortlichen Team übernommen und kann, je nach Bedarf,  weitergehend angepasst und geändert werden.
+
+## Die Umsetzung
+
+### Der Rahmen des Pilotprojekts
+
+<Tabs
+  defaultValue="daten"
+  values={[
+    { label: 'Daten', value: 'daten' },
+    { label: 'Zielgruppen', value: 'zielgruppen' },
+    { label: 'Beteiligte', value: 'beteiligte' },
+  ]}>
+
+<TabItem value="daten">
+
+<div className="tabs__content">
+
+<div className="mb-4">
+  <CircleStackIcon className="w-5 h-5 text-green-600" />
+  <h3 className="inline pl-2">Die Daten</h3>
+</div>
+
+Die Datengrundlage speist sich aus drei Quellen:
+
+- **Landesamt für Bürger- und Ordnungsangelegenheiten (LABO):** liefert die Fallzahlen zu den einzelnen Leistungen – wie viele Wohnsitzan- und ummeldungen, Meldebescheinigungen oder Bewohnerparkausweise beantragt wurden, jeweils aufgeschlüsselt nach analogem und digitalem Weg.
+- **Basisdienst Vermittlung und Auskunft (BDVA; verortet im ITDZ Servicecenter):** erfasst das Anfrage- und Ticketaufkommen zu den Leistungen. Unterschieden wird aktuell teilweise zwischen allgemeinen und technischen Anfragen; bei einem Teil der Leistungen wird zusätzlich erhoben, was direkt geklärt werden konnte und was an den Second-Level-Support weitergegeben wird.
+- **Amt für Statistik Berlin-Brandenburg (AfS):** stellt Befragungsdaten bereit. Neben den ohnehin erhobenen Fragen zur Zufriedenheit mit dem Bürgeramtstermin kommen eigens für dieses Vorhaben ergänzte Fragen hinzu: Warum wurde eine Leistung nicht online in Anspruch genommen? Erhoben wird quantitativ, ergänzt um Freitextfelder.
+
+</div>
+
+</TabItem>
+
+<TabItem value="zielgruppen">
+
+<div className="tabs__content">
+
+<div className="mb-4">
+  <UsersIcon className="w-5 h-5 text-green-600" />
+  <h3 className="inline pl-2">Die Zielgruppen</h3>
+</div>
+
+Das Dashboard richtet sich an die politikfeldverantwortlichen Senatsverwaltungen im Rahmen ihrer Steuerungsverantwortung, an die Bezirke im Rahmen ihrer Durchführungsverantwortung sowie die zuständigen Arbeitsgruppen und Gremien.
+
+Zudem ist perspektivisch angedacht, sinnvolle Informationen dazu auch auf der gemeinsamen Internetseite der Berliner Bürgerämter zu veröffentlichen. Diese befindet sich zurzeit in der Entwicklung und parallel wird evaluiert, welche Daten sich für eine Veröffentlichung eignen.
+
+</div>
+
+</TabItem>
+
+<TabItem value="beteiligte">
+
+<div className="tabs__content">
+
+<div className="mb-4">
+  <BuildingOffice2Icon className="w-5 h-5 text-green-600" />
+  <h3 className="inline pl-2">Die Beteiligten</h3>
+</div>
+
+Beim Pilotprojekt zur Nutzung der Online-Bürgerdienste ist eine Vielzahl an Personen und Stellen eingebunden:
+
+- Senatskanzlei Berlin, Referat V D (fachliche Verantwortung und Projektleitung)
+- Senatskanzlei Berlin, Referat VI B (Basisdienstverantwortung BDVA)
+- Landesamt für Bürger- und Ordnungsangelegenheiten, ITDZ Berlin und Amt für Statistik Berlin-Brandenburg als datengebende Stellen
+- Technologiestiftung Berlin / Data-Hub-Team (Produktverantwortung, fachliche und organisatorische Begleitung)
+
+</div>
+
+</TabItem>
+
+</Tabs>
+
+### Technische Umsetzung
+
+Die Umsetzung folgt einer schlanken Pipeline mit einem manuellen Schritt:
+
+1. **Datenübernahme:**
+   Das Team der Senatskanzlei erhält die Datensätze und lädt sie in den Objektspeicher MinIO.
+
+2. **Verarbeitung:**
+   Ein Python-Skript bereitet die Daten auf und überführt sie in die relationale Datenbank, die über pgAdmin verwaltet wird.
+
+3. **Orchestrierung:**
+   Der gesamte Ablauf wird als Workflow in Apache Airflow abgebildet und gesteuert.
+
+4. **Visualisierung:**
+   Die Darstellung erfolgt in Apache Superset als Dashboard mit verschiedenen Diagrammtypen, filterbar nach Leistung und Zeitraum.
+
+<iframe
+  src="https://data-hub-flow-designer.lovable.app/?flow=JTdCJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAwMCUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzb3VyY2UlMjIlMkMlMjJwb3NpdGlvbiUyMiUzQSU3QiUyMnglMjIlM0EyNi43OTk5MTAzMjY0OTkyMyUyQyUyMnklMjIlM0ExODMuODc5NDA0NjA4MjY4MzIlN0QlMkMlMjJkYXRhJTIyJTNBJTdCJTIybGFiZWwlMjIlM0ElMjJtYW51ZWxsZXIlMjBEYXRlaXVwbG9hZCUyMiUyQyUyMnN1YnRpdGxlJTIyJTNBJTIyRXhjZWwtRGF0ZWklM0ElMjBOdXR6dW5nc2RhdGVuJTIwT25saW5lLUIlQzMlQkNyZ2VyZGllbnN0ZSUyMChMQUJPKSUyMiUyQyUyMmN1c3RvbUxhYmVsJTIyJTNBZmFsc2UlN0QlMkMlMjJtZWFzdXJlZCUyMiUzQSU3QiUyMndpZHRoJTIyJTNBMzk3JTJDJTIyaGVpZ2h0JTIyJTNBNzIlN0QlMkMlMjJzZWxlY3RlZCUyMiUzQWZhbHNlJTJDJTIyZHJhZ2dpbmclMjIlM0FmYWxzZSU3RCUyQyU3QiUyMmlkJTIyJTNBJTIybm9kZS0xMDAxJTIyJTJDJTIydHlwZSUyMiUzQSUyMnNvdXJjZSUyMiUyQyUyMnBvc2l0aW9uJTIyJTNBJTdCJTIyeCUyMiUzQTQ2Mi4zODE4Mzg3Nzc5NzQ5NiUyQyUyMnklMjIlM0ExODMuOTk1Mzg0MDU4NzkyODclN0QlMkMlMjJkYXRhJTIyJTNBJTdCJTIybGFiZWwlMjIlM0ElMjJtYW51ZWxsZXIlMjBEYXRlaXVwbG9hZCUyMiUyQyUyMnN1YnRpdGxlJTIyJTNBJTIyQ1NWLURhdGVpJTNBJTIwQiVDMyVCQ3JnZXJiZWZyYWd1bmclMjAoQW10JTIwZiVDMyVCQ3IlMjBTdGF0aXN0aWspJTIyJTJDJTIyY3VzdG9tTGFiZWwlMjIlM0FmYWxzZSU3RCUyQyUyMm1lYXN1cmVkJTIyJTNBJTdCJTIyd2lkdGglMjIlM0EzMzYlMkMlMjJoZWlnaHQlMjIlM0E3MiU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBZmFsc2UlMkMlMjJkcmFnZ2luZyUyMiUzQWZhbHNlJTdEJTJDJTdCJTIyaWQlMjIlM0ElMjJub2RlLTEwMDIlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc291cmNlJTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBODUxLjczMDE0NTA0MTczNjMlMkMlMjJ5JTIyJTNBMTg1LjU5MTI2OTg0MTI2OTc2JTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIybWFudWVsbGVyJTIwRGF0ZWl1cGxvYWQlMjIlMkMlMjJzdWJ0aXRsZSUyMiUzQSUyMkV4Y2VsLURhdGVpJTNBJTIwQW5mcmFnZSUyMHp1JTIwT25saW5lLUIlQzMlQkNyZ2VyZGllbnN0ZW4lMjAoSVREWiklMjIlMkMlMjJjdXN0b21MYWJlbCUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTM3NSUyQyUyMmhlaWdodCUyMiUzQTcyJTdEJTJDJTIyc2VsZWN0ZWQlMjIlM0F0cnVlJTJDJTIyZHJhZ2dpbmclMjIlM0FmYWxzZSU3RCUyQyU3QiUyMmlkJTIyJTNBJTIybm9kZS0xMDAzJTIyJTJDJTIydHlwZSUyMiUzQSUyMmNvbXBvbmVudCUyMiUyQyUyMnBvc2l0aW9uJTIyJTNBJTdCJTIyeCUyMiUzQTQ5NC4yODk0NjYwMjMzMDM2JTJDJTIyeSUyMiUzQTQxMi43Mzc4ODQxODAxMTI0JTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIyS29tcG9uZW50ZSUyMiUyQyUyMnRpdGxlJTIyJTNBJTIyTWluSU8lMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMk1hbnVlbGxlciUyMFVwbG9hZCUyMGRlciUyMERva3VtZW50ZSUyMiUyQyUyMmN1c3RvbVRpdGxlJTIyJTNBZmFsc2UlN0QlMkMlMjJtZWFzdXJlZCUyMiUzQSU3QiUyMndpZHRoJTIyJTNBMjcxJTJDJTIyaGVpZ2h0JTIyJTNBOTIlN0QlMkMlMjJzZWxlY3RlZCUyMiUzQWZhbHNlJTJDJTIyZHJhZ2dpbmclMjIlM0FmYWxzZSU3RCUyQyU3QiUyMmlkJTIyJTNBJTIybm9kZS0xMDA0JTIyJTJDJTIydHlwZSUyMiUzQSUyMnByb2Nlc3NpbmclMjIlMkMlMjJwb3NpdGlvbiUyMiUzQSU3QiUyMnglMjIlM0E0ODkuNTE5MTc5ODk0MTc5ODQlMkMlMjJ5JTIyJTNBNTc2LjAxNzE5NTc2NzE5NTclN0QlMkMlMjJkYXRhJTIyJTNBJTdCJTIybGFiZWwlMjIlM0ElMjJOb3RlJTIwUmVkJTIyJTJDJTIydGl0bGUlMjIlM0ElMjJBaXJGbG93JTIyJTJDJTIyZGVzY3JpcHRpb24lMjIlM0ElMjJQaXBlbGluZSUyMHp1ciUyMERhdGVuc3BlaWNoZXJ1bmclMjIlMkMlMjJjdXN0b21UaXRsZSUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTI4MCUyQyUyMmhlaWdodCUyMiUzQTkyJTdEJTJDJTIyc2VsZWN0ZWQlMjIlM0FmYWxzZSUyQyUyMmRyYWdnaW5nJTIyJTNBZmFsc2UlN0QlMkMlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAwNSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJjb21wb25lbnQlMjIlMkMlMjJwb3NpdGlvbiUyMiUzQSU3QiUyMnglMjIlM0E1MDAuMDk3MjIyMjIyMjIyMiUyQyUyMnklMjIlM0E3NDMuMzQyNTkyNTkyNTkyNiU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMktvbXBvbmVudGUlMjIlMkMlMjJ0aXRsZSUyMiUzQSUyMnBnQWRtaW4lMkZEYXRlbmJhbmslMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMkRhdGVubWFuYWdlbWVudCUyMiUyQyUyMmN1c3RvbVRpdGxlJTIyJTNBZmFsc2UlN0QlMkMlMjJtZWFzdXJlZCUyMiUzQSU3QiUyMndpZHRoJTIyJTNBMjU5JTJDJTIyaGVpZ2h0JTIyJTNBOTIlN0QlMkMlMjJzZWxlY3RlZCUyMiUzQWZhbHNlJTJDJTIyZHJhZ2dpbmclMjIlM0FmYWxzZSU3RCUyQyU3QiUyMmlkJTIyJTNBJTIybm9kZS0xMDA2JTIyJTJDJTIydHlwZSUyMiUzQSUyMmRhc2hib2FyZCUyMiUyQyUyMnBvc2l0aW9uJTIyJTNBJTdCJTIyeCUyMiUzQTQ4OS41MTkxNzk4OTQxNzk5NiUyQyUyMnklMjIlM0E5MDguNzQ0NzA4OTk0NzA5MSU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMkRhc2hib2FyZCUyMiUyQyUyMnRpdGxlJTIyJTNBJTIyU3VwZXJzZXQlMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMkludGVyYWt0aXZlcyUyMERhc2hib2FyZCUyMHp1ciUyMCVDMyU5Q2JlcnNpY2h0JTIwJUMzJUJDYmVyJTIwZGllJTIwTnV0enVuZyUyMGRlciUyME9ubGluZS1CJUMzJUJDcmdlcmRpZW5zdGUlMjIlMkMlMjJjdXN0b21UaXRsZSUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTI4MCUyQyUyMmhlaWdodCUyMiUzQTEyNyU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBZmFsc2UlMkMlMjJkcmFnZ2luZyUyMiUzQWZhbHNlJTdEJTVEJTJDJTIyZWRnZXMlMjIlM0ElNUIlN0IlMjJzdHlsZSUyMiUzQSU3QiUyMnN0cm9rZVdpZHRoJTIyJTNBMiUyQyUyMnN0cm9rZSUyMiUzQSUyMiUyMzAwMCUyMiUyQyUyMnN0cm9rZURhc2hhcnJheSUyMiUzQSUyMjUlMkM1JTIyJTdEJTJDJTIyY2xhc3NOYW1lJTIyJTNBJTIyYW5pbWF0ZWQtZWRnZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzbW9vdGhzdGVwJTIyJTJDJTIyc291cmNlJTIyJTNBJTIybm9kZS0xMDAxJTIyJTJDJTIydGFyZ2V0JTIyJTNBJTIybm9kZS0xMDAzJTIyJTJDJTIyaWQlMjIlM0ElMjJ4eS1lZGdlX19ub2RlLTEwMDEtbm9kZS0xMDAzJTIyJTdEJTJDJTdCJTIyc3R5bGUlMjIlM0ElN0IlMjJzdHJva2VXaWR0aCUyMiUzQTIlMkMlMjJzdHJva2UlMjIlM0ElMjIlMjMwMDAlMjIlMkMlMjJzdHJva2VEYXNoYXJyYXklMjIlM0ElMjI1JTJDNSUyMiU3RCUyQyUyMmNsYXNzTmFtZSUyMiUzQSUyMmFuaW1hdGVkLWVkZ2UlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc21vb3Roc3RlcCUyMiUyQyUyMnNvdXJjZSUyMiUzQSUyMm5vZGUtMTAwMiUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMm5vZGUtMTAwMyUyMiUyQyUyMmlkJTIyJTNBJTIyeHktZWRnZV9fbm9kZS0xMDAyLW5vZGUtMTAwMyUyMiU3RCUyQyU3QiUyMnN0eWxlJTIyJTNBJTdCJTIyc3Ryb2tlV2lkdGglMjIlM0EyJTJDJTIyc3Ryb2tlJTIyJTNBJTIyJTIzMDAwJTIyJTJDJTIyc3Ryb2tlRGFzaGFycmF5JTIyJTNBJTIyNSUyQzUlMjIlN0QlMkMlMjJjbGFzc05hbWUlMjIlM0ElMjJhbmltYXRlZC1lZGdlJTIyJTJDJTIydHlwZSUyMiUzQSUyMnNtb290aHN0ZXAlMjIlMkMlMjJzb3VyY2UlMjIlM0ElMjJub2RlLTEwMDAlMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJub2RlLTEwMDMlMjIlMkMlMjJpZCUyMiUzQSUyMnh5LWVkZ2VfX25vZGUtMTAwMC1ub2RlLTEwMDMlMjIlN0QlMkMlN0IlMjJzdHlsZSUyMiUzQSU3QiUyMnN0cm9rZVdpZHRoJTIyJTNBMiUyQyUyMnN0cm9rZSUyMiUzQSUyMiUyMzAwMCUyMiUyQyUyMnN0cm9rZURhc2hhcnJheSUyMiUzQSUyMjUlMkM1JTIyJTdEJTJDJTIyY2xhc3NOYW1lJTIyJTNBJTIyYW5pbWF0ZWQtZWRnZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzbW9vdGhzdGVwJTIyJTJDJTIyc291cmNlJTIyJTNBJTIybm9kZS0xMDAzJTIyJTJDJTIydGFyZ2V0JTIyJTNBJTIybm9kZS0xMDA0JTIyJTJDJTIyaWQlMjIlM0ElMjJ4eS1lZGdlX19ub2RlLTEwMDMtbm9kZS0xMDA0JTIyJTdEJTJDJTdCJTIyc3R5bGUlMjIlM0ElN0IlMjJzdHJva2VXaWR0aCUyMiUzQTIlMkMlMjJzdHJva2UlMjIlM0ElMjIlMjMwMDAlMjIlMkMlMjJzdHJva2VEYXNoYXJyYXklMjIlM0ElMjI1JTJDNSUyMiU3RCUyQyUyMmNsYXNzTmFtZSUyMiUzQSUyMmFuaW1hdGVkLWVkZ2UlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc21vb3Roc3RlcCUyMiUyQyUyMnNvdXJjZSUyMiUzQSUyMm5vZGUtMTAwNCUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMm5vZGUtMTAwNSUyMiUyQyUyMmlkJTIyJTNBJTIyeHktZWRnZV9fbm9kZS0xMDA0LW5vZGUtMTAwNSUyMiU3RCUyQyU3QiUyMnN0eWxlJTIyJTNBJTdCJTIyc3Ryb2tlV2lkdGglMjIlM0EyJTJDJTIyc3Ryb2tlJTIyJTNBJTIyJTIzMDAwJTIyJTJDJTIyc3Ryb2tlRGFzaGFycmF5JTIyJTNBJTIyNSUyQzUlMjIlN0QlMkMlMjJjbGFzc05hbWUlMjIlM0ElMjJhbmltYXRlZC1lZGdlJTIyJTJDJTIydHlwZSUyMiUzQSUyMnNtb290aHN0ZXAlMjIlMkMlMjJzb3VyY2UlMjIlM0ElMjJub2RlLTEwMDUlMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJub2RlLTEwMDYlMjIlMkMlMjJpZCUyMiUzQSUyMnh5LWVkZ2VfX25vZGUtMTAwNS1ub2RlLTEwMDYlMjIlN0QlNUQlMkMlMjJ2ZXJzaW9uJTIyJTNBMSU3RA%3D%3D"
+  width="100%"
+  height="400"
+  style={{ border: "1px solid #ccc", borderRadius: "8px", marginTop: "2em" }}
+  allowFullScreen
+></iframe>
+<figcaption className={styles.imgcaption}>Schematische Abbildung der Datenpipeline für das Wirkungsanalyse-Dashboard DigiBüD im Data Hub</figcaption>
+
+### Organisatorische und methodische Begleitung
+
+Der Pilot wurde in einem festen Rhythmus organisiert:
+
+- **Kick-off** vor Ort zum Projektstart mit allen Beteiligten
+- **Zweiwöchentliche Abstimmungen** zwischen Data-Hub-Team und Senatskanzlei
+- **Stakeholder-Gespräche** mit den datengebenden Stellen – der Schwerpunkt der ersten Projektphase
+- **Aufbau der Datenpipeline** in MinIO, pgAdmin und Apache Airflow
+- **Aufbau des Dashboards** in Superset
+- **Onboarding** zu den Zugängen, zu Superset und zum Data Hub allgemein
+- **Abschlusstermin und Übergabe**, bei dem gemeinsam geprüft wird, ob der Prozess korrekt funktioniert
+
+## Wie geht’s weiter?
+
+### Zentrale Erkenntnisse
+
+- **Selbst machen funktioniert.**
+  Die entscheidende Voraussetzung war die Offenheit des Fachteams, sich selbst einzuarbeiten. Das Ergebnis ist ein Wirkungsanalyse-Dashboard DigiBüD, das nicht extern gepflegt werden muss, sondern von denjenigen weiterentwickelt wird, die die Aufbereitung der Daten ohnehin verantworten.
+
+- **Der Aufwand liegt in der Datenbeschaffung, nicht in der Technik.**
+  Die Pipeline selbst ist überschaubar. Wichtig ist, den Prozess gemeinsam mit den datengebenden Stellen gut zu vereinbaren, damit der Aufwand für alle überschaubar bleibt und eine verlässliche, einheitliche Lieferung zustande kommt.
+
+- **Ein Beispiel für evidenzbasiertes und wirkungsorientiertes Verwaltungshandeln.**
+  Erst die verknüpfte Betrachtung von Nutzung, Support und Befragung erlaubt es, Maßnahmen dort anzusetzen, wo sie tatsächlich wirken.
+
+---
+
+### Nächste Schritte
+
+Mit dem Dashboard als Grundlage soll künftig stärker nach Zusammenhängen gesucht werden: Wo korrelieren welche Faktoren miteinander, und welche Maßnahmen lassen sich daraus ableiten? Wenn etwa ein großer Teil der Befragten den Online-Ausweis nicht aktiviert hat, stellt sich die Frage, wie sich Menschen zur Aktivierung motivieren lassen.
+
+Parallel wird die Befragung des Amts für Statistik weiter geschärft, um aus den ersten Ergebnissen zu lernen und gezielter Fragen stellen zu können.
+
+</div>
