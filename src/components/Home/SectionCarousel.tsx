@@ -3,14 +3,14 @@ import { Button } from '@site/src/components/UI/Button';
 import '../../css/tailwind.css';
 
 const slides = [
-  // {
-  //   id: 1,
-  //   title: 'Landesgleichstellung auf einen Blick',
-  //   description:
-  //     'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Behörden? Ein zentrales Dashboard ersetzt das bisher aufwendige manuelle Berichtswesen und ermöglicht eine datenbasierte Auswertung der Gleichstellungsmaßnahmen.',
-  //   image: '/img/example1.svg',
-  //   slug: '/docs/anwendungen/landesgleichstellung',
-  // },
+  {
+    id: 1,
+    title: 'Monitoring der Landesgleichstellung',
+    description:
+      'Wie steht es um die Umsetzung des Landesgleichstellungsgesetzes in Berliner Behörden? Ein zentrales Dashboard ersetzt das bisher aufwendige manuelle Berichtswesen und macht Gleichstellungsdaten interaktiv nutzbar.',
+    image: '/img/monitoring_landesgleichstellung_os.svg',
+    slug: '/docs/anwendungen/landesgleichstellung',
+  },
   {
     id: 2,
     title: 'Akteure im Kiez sichtbar machen',
@@ -44,13 +44,21 @@ const slides = [
     slug: '/docs/anwendungen/monitoring_verkehrsberuhigung',
   },  
   {
-    id: 5,
+    id: 6,
     title: 'Wirkungsanalyse digitaler Bürgerdienste',
     description:
       'Wie häufig werden Berliner Verwaltungsleistungen tatsächlich online genutzt und warum entscheiden sich Menschen weiterhin für den Weg ins Bürgeramt? Ein Wirkungsanalyse-Dashboard schafft die Grundlage für gezieltere Maßnahmen.',
     image: '/img/digitale_buergerdienste_os.svg',
     slug: '/docs/anwendungen/digitale_buergerdienste',
   },  
+  {
+    id: 7,
+    title: 'Datenbasierte Personalpolitik',
+    description:
+      'Wie steht es in Zeiten von Fachkräftemangel um die Berliner Personalstatistik? Open Data und eigens betriebene Dashboard-Lösungen unterstützen und ergänzen bestehende Infrastrukturen für eine datenbasierte, vorausschauende Personalpolitik.',
+    image: '/img/datenbasierte_personalstatistiken_os.svg',
+    slug: '/docs/anwendungen/datenbasierte_personalstatistik',
+  },
 ];
 
 export default function SectionCarousel() {
