@@ -1,0 +1,136 @@
+---
+title: Datenbasierte Personalpolitik
+sidebar_position: 3
+hide_title: true
+---
+
+import styles from '../docs.module.css';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/react/24/solid';
+
+<div className={styles.doccontainer}>
+
+  <div className="flex flex-col xl:flex-row items-center gap-4 xl:gap-12 xl:pl-2 pt-16 -mb-8">
+    <div>
+      <h1>Datenbasierte Personalpolitik</h1>
+      <p className="text-lg">
+        Wie steht es in Zeiten von Fachkräftemangel um die Berliner Personalstatistik? Open Data und eigens betriebene Dashboard-Lösungen unterstützen und ergänzen bestehende Infrastrukturen für eine datenbasierte, vorausschauende Personalpolitik.
+      </p>
+    </div>
+    <div className="w-[250px] xl:flex-[0_0_250px]">
+      <img className="w-full max-w-[250px]" src="/img/datenbasierte_personalstatistiken_os.svg" alt="Datenbasierte Personalpolitik" />
+    </div>
+  </div>
+
+## Transparenz über den Landesdienst schaffen
+
+Die Berliner Verwaltung steht vor bedeutenden Herausforderungen: Demographischer Wandel, Fachkräftemangel und steigende Anforderungen an den öffentlichen Dienst erfordern eine vorausschauende und datenbasierte Personalpolitik. Als eigenständige und unabhängige Verwaltungseinheit schafft die Statistikstelle Personal (angesiedelt bei der Senatsverwaltung für Finanzen) Transparenz über Struktur, Kosten und Entwicklung des Personalbestandes des unmittelbaren Landesdienstes – durch Berichte, öffentlich verfügbare Datensätze und Dashboards.
+
+## Das Problem
+
+- Zusätzlich zu den Dashboards sollten die Datensätze, die den Personalberichten zugrunde liegen, als Open Data veröffentlicht werden, um die Weiterverarbeitung und eigene statistische Auswertungen zu ermöglichen.
+- Die Datensätze führen Informationen aus zahlreichen Organisationen und Quellen zusammen, enthalten teils aggregierte personenbezogene Daten und haben dadurch eine komplexe Struktur mit vielen Themenbereichen.
+- Der bisherige Weg – einzelne Datensätze über Imperia (Content Management System des Landes Berlin) im Open-Data-Portal zu veröffentlichen – war nicht praktikabel, da die Anzahl der Datensätze zu groß war.
+- Die bestehenden Dashboards sollen künftig nicht mehr über eine externe Instanz eines Dienstleisters, sondern in einer Instanz des Landes Berlin gehostet werden.
+
+## Zielsetzung
+
+Einen Veröffentlichungsprozess, der die Daten der Personalstatistikstelle unkompliziert und nutzendenfreundlich bereitstellt. Der Umzug bestehender Dashboards und, wo nötig, das Erstellen neuer Dashboards, die eine datenbasierte Personalpolitik der öffentlichen Verwaltung unterstützen.
+
+## Die Umsetzung
+
+### Der Rahmen des Pilotprojekts
+
+<Tabs
+  defaultValue="daten"
+  values={[
+    { label: 'Daten', value: 'daten' },
+    { label: 'Zielgruppen', value: 'zielgruppen' },
+    { label: 'Beteiligte', value: 'beteiligte' },
+  ]}>
+
+<TabItem value="daten">
+
+<div className="tabs__content">
+
+<div className="mb-4">
+  <CircleStackIcon className="w-5 h-5 text-green-600" />
+  <h3 className="inline pl-2">Die Daten</h3>
+</div>
+
+Daten aus verschiedenen Behörden werden lokal prozessiert und verarbeitet, zusammengeführt und anschließend in den Data Hub geladen.
+
+</div>
+
+</TabItem>
+
+<TabItem value="zielgruppen">
+
+<div className="tabs__content">
+
+<div className="mb-4">
+  <UsersIcon className="w-5 h-5 text-green-600" />
+  <h3 className="inline pl-2">Die Zielgruppen</h3>
+</div>
+
+Die Ergebnisse des Use Case richten sich sowohl an Steuerungsgremien und Beschäftigte der Berliner Verwaltung als auch an die interessierte Öffentlichkeit.
+
+</div>
+
+</TabItem>
+
+<TabItem value="beteiligte">
+
+<div className="tabs__content">
+
+<div className="mb-4">
+  <BuildingOffice2Icon className="w-5 h-5 text-green-600" />
+  <h3 className="inline pl-2">Die Beteiligten</h3>
+</div>
+
+- Mitarbeitende der Statistikstelle Personal
+- Technologiestiftung Berlin
+
+</div>
+
+</TabItem>
+
+</Tabs>
+
+### Technische Umsetzung
+
+Um die Daten als Open Data bereitzustellen, laden Mitarbeitende der Statistikstelle Personal die für die Veröffentlichung bestimmten Dateien in den Objektspeicher des Data Hub hoch und versehen sie mit beschreibenden Metadaten. Über eine mit HTML/CSS gestaltete, öffentlich zugängliche Oberfläche stehen diese Daten einem breiten Nutzendenkreis zur Verfügung. Anschließend werden die Metadaten zusätzlich im Berliner Open-Data-Portal hinterlegt und darüber auffindbar gemacht.
+
+Die Daten für die Dashboards werden lokal auf einem Rechner zusammengeführt und manuell in die Datenbank hochgeladen. Anschließend werden sie in Superset visualisiert und stehen als öffentlich einsehbare URL zur Verfügung.
+
+<iframe
+  src="https://data-hub-flow-designer.lovable.app/?flow=JTdCJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAwMyUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzb3VyY2UlMjIlMkMlMjJwb3NpdGlvbiUyMiUzQSU3QiUyMnglMjIlM0EzMDcuNTk0NTI2NzEzODMxMjclMkMlMjJ5JTIyJTNBMjIuNzA0ODE3MzM0NzYwMTQzJTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIybWFudWVsbGVyJTIwRGF0ZWl1cGxvYWQlMjIlMkMlMjJzdWJ0aXRsZSUyMiUzQSUyMkNTVi1EYXRlaWVuJTIyJTJDJTIyY3VzdG9tTGFiZWwlMjIlM0FmYWxzZSU3RCUyQyUyMm1lYXN1cmVkJTIyJTNBJTdCJTIyd2lkdGglMjIlM0EyNDUlMkMlMjJoZWlnaHQlMjIlM0E3MiU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBZmFsc2UlMkMlMjJkcmFnZ2luZyUyMiUzQWZhbHNlJTdEJTJDJTdCJTIyaWQlMjIlM0ElMjJub2RlLTEwMDQlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyY29tcG9uZW50JTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBMjkyLjQ0MzY5OTc2ODkwOTMlMkMlMjJ5JTIyJTNBNjIyLjEyNjE3NTE3NjM4OCU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMktvbXBvbmVudGUlMjIlMkMlMjJ0aXRsZSUyMiUzQSUyMnBnQWRtaW4lMkZEYXRlbmJhbmslMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMkYlQzMlQkNyJTIwZGllJTIwVmVyJUMzJUI2ZmZlbnRsaWNodW5nJTIwaW0lMjBEYXNoYm9hcmQlMjB2b3JiZXJlaXRldGUlMjBEYXRlbnMlQzMlQTR0emUlMjIlMkMlMjJjdXN0b21UaXRsZSUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTI4MCUyQyUyMmhlaWdodCUyMiUzQTEyNyU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBZmFsc2UlMkMlMjJkcmFnZ2luZyUyMiUzQWZhbHNlJTdEJTJDJTdCJTIyaWQlMjIlM0ElMjJub2RlLTEwMDUlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyZGFzaGJvYXJkJTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBMjkyLjY0OTgwMTUxMTM0OTg0JTJDJTIyeSUyMiUzQTgxNC44MzUyNzgxMzYxMzg5JTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIyRGFzaGJvYXJkJTIyJTJDJTIydGl0bGUlMjIlM0ElMjJTdXBlcnNldCUyMiUyQyUyMmRlc2NyaXB0aW9uJTIyJTNBJTIyei5CLiUyMERhc2hib2FyZCUyME1vbml0b3JpbmclMjBwYXVzY2hhbGUlMjBHZXN1bmRoZWl0c3F1b3RlJTIwKFBHUSklMjAlMjIlMkMlMjJjdXN0b21UaXRsZSUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTI4MCUyQyUyMmhlaWdodCUyMiUzQTEyNyU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBZmFsc2UlMkMlMjJkcmFnZ2luZyUyMiUzQWZhbHNlJTdEJTJDJTdCJTIyaWQlMjIlM0ElMjJub2RlLTEwMDYlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc291cmNlJTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBODcxLjM5NDM0Mzk0MTU5MjQlMkMlMjJ5JTIyJTNBMjQuMTExNzQ4Nzg0NDA2MzAyJTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIybWFudWVsbGVyJTIwRGF0ZWl1cGxvYWQlMjIlMkMlMjJzdWJ0aXRsZSUyMiUzQSUyMkNTVi1EYXRlaWVuJTIyJTJDJTIyY3VzdG9tTGFiZWwlMjIlM0FmYWxzZSU3RCUyQyUyMm1lYXN1cmVkJTIyJTNBJTdCJTIyd2lkdGglMjIlM0EyNDUlMkMlMjJoZWlnaHQlMjIlM0E3MiU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBZmFsc2UlMkMlMjJkcmFnZ2luZyUyMiUzQWZhbHNlJTdEJTJDJTdCJTIyaWQlMjIlM0ElMjJub2RlLTEwMDclMjIlMkMlMjJ0eXBlJTIyJTNBJTIyY29tcG9uZW50JTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBNTU3LjAzODUxNzMzNzk5NDQlMkMlMjJ5JTIyJTNBMjAzLjYzMjI5MzA4NjgyNTExJTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIyS29tcG9uZW50ZSUyMiUyQyUyMnRpdGxlJTIyJTNBJTIyTWluSU8lMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMkFibGFnZSUyMGRlciUyMFJvaGRhdGVuJTIwaW0lMjBPYmpla3RzcGVpY2hlciUyMiUyQyUyMmN1c3RvbVRpdGxlJTIyJTNBZmFsc2UlN0QlMkMlMjJtZWFzdXJlZCUyMiUzQSU3QiUyMndpZHRoJTIyJTNBMjgwJTJDJTIyaGVpZ2h0JTIyJTNBMTA5JTdEJTJDJTIyc2VsZWN0ZWQlMjIlM0FmYWxzZSUyQyUyMmRyYWdnaW5nJTIyJTNBZmFsc2UlN0QlMkMlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAwMCUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwcm9jZXNzaW5nJTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBMjQyLjIxMzE5NDIxNDM0OTQxJTJDJTIyeSUyMiUzQTQzOC4yOTgyMDAxNjU5NDE3NSU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMk5vdGUlMjBSZWQlMjIlMkMlMjJ0aXRsZSUyMiUzQSUyMkFpckZsb3clMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMkRhdGVucyVDMyVBNHR6ZSUyMHdlcmRlbiUyMHBlciUyMFNrcmlwdCUyMHZlcmFyYmVpdGV0JTIwdW5kJTIwaW4lMjBkaWUlMjBEYXRlbmJhbmslMjBnZXNjaHJpZWJlbiUyMiUyQyUyMmN1c3RvbVRpdGxlJTIyJTNBZmFsc2UlN0QlMkMlMjJtZWFzdXJlZCUyMiUzQSU3QiUyMndpZHRoJTIyJTNBMzgwJTJDJTIyaGVpZ2h0JTIyJTNBMTA5JTdEJTJDJTIyc2VsZWN0ZWQlMjIlM0FmYWxzZSUyQyUyMmRyYWdnaW5nJTIyJTNBZmFsc2UlN0QlMkMlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAwMSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJlbmR1c2VyJTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBODI1LjM1Njc4ODk4NDgzNiUyQyUyMnklMjIlM0E4MDEuNjUyMTIxODc0NjA0NSU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMkVuZCUyMFVzZXIlMjIlMkMlMjJ0aXRsZSUyMiUzQSUyMk1ldGFkYXRlbi1FaW50cmFnJTIwaW0lMjBPRC1Qb3J0YWwlMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMk51dHplbmRlJTIwZXJyZWljaGVuJTIwZGllJTIwQW5zaWNodCUyMCVDMyVCQ2JlciUyMGRpZSUyMFZlcmxpbmt1bmclMjBpbSUyME9wZW4lMjBEYXRhJTIwUG9ydGFsJTIyJTJDJTIyaWNvbiUyMiUzQSUyMmNoYXJ0JTIyJTJDJTIyY3VzdG9tVGl0bGUlMjIlM0F0cnVlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTMwMCUyQyUyMmhlaWdodCUyMiUzQTE1NSU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBdHJ1ZSUyQyUyMmRyYWdnaW5nJTIyJTNBZmFsc2UlN0QlMkMlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAwMiUyMiUyQyUyMnR5cGUlMjIlM0ElMjJjb21wb25lbnQlMjIlMkMlMjJwb3NpdGlvbiUyMiUzQSU3QiUyMnglMjIlM0E4MzUuNTY1MjA0NzEyMTE4MSUyQyUyMnklMjIlM0E0NDAuNTI5NDE1NTIyMDA1OSU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMktvbXBvbmVudGUlMjIlMkMlMjJ0aXRsZSUyMiUzQSUyMk1pbklPJTIyJTJDJTIyZGVzY3JpcHRpb24lMjIlM0ElMjJEYXRlbiUyMHdlcmRlbiUyMCVDMyVCQ2JlciUyMGRhcyUyMEhUTUwlMkZDU1MlMjBVc2VyJTIwSW50ZXJmYWNlJTIwYmVyZWl0Z2VzdGVsbHQlMjAlMjIlMkMlMjJjdXN0b21UaXRsZSUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTI4MCUyQyUyMmhlaWdodCUyMiUzQTEwOSU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBZmFsc2UlMkMlMjJkcmFnZ2luZyUyMiUzQWZhbHNlJTdEJTVEJTJDJTIyZWRnZXMlMjIlM0ElNUIlN0IlMjJzdHlsZSUyMiUzQSU3QiUyMnN0cm9rZVdpZHRoJTIyJTNBMiUyQyUyMnN0cm9rZSUyMiUzQSUyMiUyMzAwMCUyMiUyQyUyMnN0cm9rZURhc2hhcnJheSUyMiUzQSUyMjUlMkM1JTIyJTdEJTJDJTIyY2xhc3NOYW1lJTIyJTNBJTIyYW5pbWF0ZWQtZWRnZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzbW9vdGhzdGVwJTIyJTJDJTIyc291cmNlJTIyJTNBJTIybm9kZS0xMDA0JTIyJTJDJTIydGFyZ2V0JTIyJTNBJTIybm9kZS0xMDA1JTIyJTJDJTIyaWQlMjIlM0ElMjJ4eS1lZGdlX19ub2RlLTEwMDQtbm9kZS0xMDA1JTIyJTdEJTJDJTdCJTIyc3R5bGUlMjIlM0ElN0IlMjJzdHJva2VXaWR0aCUyMiUzQTIlMkMlMjJzdHJva2UlMjIlM0ElMjIlMjMwMDAlMjIlMkMlMjJzdHJva2VEYXNoYXJyYXklMjIlM0ElMjI1JTJDNSUyMiU3RCUyQyUyMmNsYXNzTmFtZSUyMiUzQSUyMmFuaW1hdGVkLWVkZ2UlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc21vb3Roc3RlcCUyMiUyQyUyMnNvdXJjZSUyMiUzQSUyMm5vZGUtMTAwNiUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMm5vZGUtMTAwNyUyMiUyQyUyMmlkJTIyJTNBJTIyeHktZWRnZV9fbm9kZS0xMDA2LW5vZGUtMTAwNyUyMiU3RCUyQyU3QiUyMnN0eWxlJTIyJTNBJTdCJTIyc3Ryb2tlV2lkdGglMjIlM0EyJTJDJTIyc3Ryb2tlJTIyJTNBJTIyJTIzMDAwJTIyJTJDJTIyc3Ryb2tlRGFzaGFycmF5JTIyJTNBJTIyNSUyQzUlMjIlN0QlMkMlMjJjbGFzc05hbWUlMjIlM0ElMjJhbmltYXRlZC1lZGdlJTIyJTJDJTIydHlwZSUyMiUzQSUyMnNtb290aHN0ZXAlMjIlMkMlMjJzb3VyY2UlMjIlM0ElMjJub2RlLTEwMDAlMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJub2RlLTEwMDQlMjIlMkMlMjJpZCUyMiUzQSUyMnh5LWVkZ2VfX25vZGUtMTAwMC1ub2RlLTEwMDQlMjIlN0QlMkMlN0IlMjJzdHlsZSUyMiUzQSU3QiUyMnN0cm9rZVdpZHRoJTIyJTNBMiUyQyUyMnN0cm9rZSUyMiUzQSUyMiUyMzAwMCUyMiUyQyUyMnN0cm9rZURhc2hhcnJheSUyMiUzQSUyMjUlMkM1JTIyJTdEJTJDJTIyY2xhc3NOYW1lJTIyJTNBJTIyYW5pbWF0ZWQtZWRnZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzbW9vdGhzdGVwJTIyJTJDJTIyc291cmNlJTIyJTNBJTIybm9kZS0xMDAzJTIyJTJDJTIydGFyZ2V0JTIyJTNBJTIybm9kZS0xMDA3JTIyJTJDJTIyaWQlMjIlM0ElMjJ4eS1lZGdlX19ub2RlLTEwMDMtbm9kZS0xMDA3JTIyJTdEJTJDJTdCJTIyc3R5bGUlMjIlM0ElN0IlMjJzdHJva2VXaWR0aCUyMiUzQTIlMkMlMjJzdHJva2UlMjIlM0ElMjIlMjMwMDAlMjIlMkMlMjJzdHJva2VEYXNoYXJyYXklMjIlM0ElMjI1JTJDNSUyMiU3RCUyQyUyMmNsYXNzTmFtZSUyMiUzQSUyMmFuaW1hdGVkLWVkZ2UlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc21vb3Roc3RlcCUyMiUyQyUyMnNvdXJjZSUyMiUzQSUyMm5vZGUtMTAwNyUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMm5vZGUtMTAwMCUyMiUyQyUyMmlkJTIyJTNBJTIyeHktZWRnZV9fbm9kZS0xMDA3LW5vZGUtMTAwMCUyMiU3RCUyQyU3QiUyMnN0eWxlJTIyJTNBJTdCJTIyc3Ryb2tlV2lkdGglMjIlM0EyJTJDJTIyc3Ryb2tlJTIyJTNBJTIyJTIzMDAwJTIyJTJDJTIyc3Ryb2tlRGFzaGFycmF5JTIyJTNBJTIyNSUyQzUlMjIlN0QlMkMlMjJjbGFzc05hbWUlMjIlM0ElMjJhbmltYXRlZC1lZGdlJTIyJTJDJTIydHlwZSUyMiUzQSUyMnNtb290aHN0ZXAlMjIlMkMlMjJzb3VyY2UlMjIlM0ElMjJub2RlLTEwMDclMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJub2RlLTEwMDIlMjIlMkMlMjJpZCUyMiUzQSUyMnh5LWVkZ2VfX25vZGUtMTAwNy1ub2RlLTEwMDIlMjIlN0QlMkMlN0IlMjJzdHlsZSUyMiUzQSU3QiUyMnN0cm9rZVdpZHRoJTIyJTNBMiUyQyUyMnN0cm9rZSUyMiUzQSUyMiUyMzAwMCUyMiUyQyUyMnN0cm9rZURhc2hhcnJheSUyMiUzQSUyMjUlMkM1JTIyJTdEJTJDJTIyY2xhc3NOYW1lJTIyJTNBJTIyYW5pbWF0ZWQtZWRnZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzbW9vdGhzdGVwJTIyJTJDJTIyc291cmNlJTIyJTNBJTIybm9kZS0xMDAyJTIyJTJDJTIydGFyZ2V0JTIyJTNBJTIybm9kZS0xMDAxJTIyJTJDJTIyaWQlMjIlM0ElMjJ4eS1lZGdlX19ub2RlLTEwMDItbm9kZS0xMDAxJTIyJTdEJTVEJTJDJTIydmVyc2lvbiUyMiUzQTElN0Q%3D"
+  width="100%"
+  height="400"
+  style={{ border: "1px solid #ccc", borderRadius: "8px", marginTop: "2em" }}
+  allowFullScreen
+></iframe>
+<figcaption className={styles.imgcaption}>Schematische Abbildung der Datenpipeline für die datenbasierte Personalpolitik im Data Hub</figcaption>
+
+### Organisatorische und methodische Begleitung
+
+Die Statistikstelle Personal nahm Kontakt mit der Data Hub Unit auf, da die bisherige technische Lösung keine Open-Data-Veröffentlichung erlaubte und das Hosting der Dashboards über einen externen Dienstleister mit zusätzlichen Kosten verbunden war. Nach Abklärung der Anforderungen wurden zwei Projektskizzen entworfen: eine für die Open-Data-Veröffentlichung, eine für die Migration der Dashboards.
+
+## Wie geht’s weiter?
+
+### Zentrale Erkenntnisse
+
+- **Verteilte Dashboard-Lösungen lassen sich zusammenführen.**
+  Nachdem zunächst die Kompatibilität der zwei Superset-Instanzen geklärt und die Datensätze in den Data Hub geladen wurden, konnten die Dashboards ebenfalls exportiert und im Data Hub angelegt werden. Dies unterstreicht die Möglichkeit, verteilt im Land Berlin betriebene und gehostete Dashboard-Lösungen im Data Hub zu vereinen.
+
+- **Der Data Hub kann die Open-Data-Infrastruktur ergänzen.**
+  Dieser Use Case zeigt eine Möglichkeit auf, wie der Data Hub die Open-Data-Infrastruktur des Landes Berlin ergänzen und die Bereitstellung von öffentlich verfügbaren Verwaltungsdaten unterstützen kann.
+
+---
+
+### Nächste Schritte
+
+Nach der Migration des ersten Dashboards folgen weitere Schritte zur Überführung der übrigen Dashboards (Personalmonitor, Führungskräfte, Monitoring pauschale Gesundheitsquote/PGQ) sowie zur Verstetigung des Open-Data-Veröffentlichungsprozesses.
+
+</div>
