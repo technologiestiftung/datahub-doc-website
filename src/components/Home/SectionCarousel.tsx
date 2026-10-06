@@ -59,6 +59,14 @@ const slides = [
     image: '/img/datenbasierte_personalstatistiken_os.svg',
     slug: '/docs/anwendungen/datenbasierte_personalstatistik',
   },
+  {
+    id: 8,
+    title: 'Monitoring der Berliner Industrie',
+    description:
+      'Wie steht es um die Berliner Industrie? Wie lassen sich Beschäftigung, Umsatz und Betriebe vergleichen? Ein interaktives Dashboard mit automatisierter Datenfortschreibung schafft einen Überblick.',
+    image: '/img/industriebranchen_os.svg',
+    slug: '/docs/anwendungen/industriebranchen',
+  },
 ];
 
 export default function SectionCarousel() {

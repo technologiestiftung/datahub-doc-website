@@ -35,7 +35,7 @@ Bibliotheken sind vielmehr als Orte um Bücher zu leihen. Als Kultur- und Weiter
 >
 > — **Tobias Weiß**, Janusz-Korczak-Bibliothek Pankow
 
-## Das Problem
+## Aktuelle Herausforderungen
 
 Zu den regelmäßigen Aufgaben der Bibliothek gehört die Etatverteilung, Entscheidungen zur Bestandspflege (Makulatur), die Frage nach der Aktualität und Auslastung der Medien und der Vergleich zwischen den einzelnen Standorten. 
 Weiterhin müssen jährlich Auswertungen erstellt werden, etwa für den Verbund Öffentlicher Bibliotheken Berlins (VÖBB). 
@@ -143,10 +143,10 @@ Der Data Hub wird eingesetzt, um den Prozess zur Vorbereitung der Daten zu autom
 Die Umsetzung im Data Hub Berlin basiert auf einer modularen Datenpipeline, von der Ablage über die Verarbeitung bis zur Analyse.  
 
 1. **Speicherung:**  
-  Die Bibliothek liefert ihre jährlichen Statistikdaten im BesEx-Format. Diese Rohdaten werden im Data Hub harmonisiert und im Objektspeicher MinIO abgelegt. 
+  Die Bibliothek liefert ihre jährlichen Statistikdaten im BesEx-Format. Diese Rohdaten werden im Data Hub harmonisiert und im Objektspeicher [MinIO](/docs/bausteine/2_1_datenverwaltung/Minio) abgelegt. 
 
 2. **Verarbeitung und Analyse:**  
-  Über Node-RED werden die umfangreichen CSV-Dateien automatisch eingelesen, in kleinere Datensätze aufgeteilt und in die PostgreSQL-Datenbank importiert. In der Datenbank werden anschließend bibliothekstypische Kennzahlen berechnet, zum Beispiel:
+  Über [Node-RED](/docs/bausteine/2_2_datenverarbeitung/NodeRed) werden die umfangreichen CSV-Dateien automatisch eingelesen, in kleinere Datensätze aufgeteilt und in die [PostgreSQL](/docs/bausteine/2_1_datenverwaltung/pgAdmin)-Datenbank importiert. In der Datenbank werden anschließend bibliothekstypische Kennzahlen berechnet, zum Beispiel:
 
     - Bestandsanteil (Anteil eines Exemplars am Gesamtbestand)
     - Ausleihanteil (Anteil der Ausleihen dieses Exemplars an allen Ausleihen)
@@ -157,7 +157,7 @@ Die Umsetzung im Data Hub Berlin basiert auf einer modularen Datenpipeline, von 
     Die Analysen orientieren sich an der Systematik für Bibliotheken (SfB), diese Struktur ermöglicht Vergleiche zwischen Themenbereichen, Häusern und Jahren. 
 
 3. **Visualisierung:**  
-  Die bereinigten Daten fließen in Apache Superset, wo ein interaktives Dashboard entsteht. Darin können Bibliotheksleitungen und Lektorierende:
+  Die bereinigten Daten fließen in [Apache Superset](/docs/bausteine/2_3_datenvisualisierung/Superset), wo ein interaktives Dashboard entsteht. Darin können Bibliotheksleitungen und Lektorierende:
     - nach Zeiträumen filtern,
     - einzelne Sachgruppen vergleichen,
     - Zugang und Abgang einsehen,
@@ -179,9 +179,7 @@ Die Umsetzung im Data Hub Berlin basiert auf einer modularen Datenpipeline, von 
 **Workshops und Tests** begleiteten den Entwicklungsprozess.  
 In drei Terminen wurden gemeinsam die zentralen Fragen und Kennzahlen definiert, die das Dashboard beantworten soll. Derzeit testen Lektorierende den Prototyp, um zu prüfen, ob er ihre praktischen Fragestellungen abbilden kann.
 
-## Wie geht’s weiter?
-
-### Zentrale Erkenntnisse 
+### Zentrale Erkenntnisse
 
 - **Datenarbeit braucht Zusammenarbeit.**  
 Die gemeinsame Entwicklung mit der Janusz-Korczak-Bibliothek hat gezeigt, wie wichtig es ist, technische und fachliche Perspektiven früh zu verbinden. Nur durch diesen Austausch konnten Anforderungen präzise formuliert und praktikable Lösungen gefunden werden.  
@@ -194,7 +192,7 @@ Ein klar gestaltetes Dashboard hilft, den Zugang zu Daten zu öffnen. Es zeichne
 
 ---
 
-### Nächste Schritte 
+### Status Quo
 
 Die Arbeit am Dashboard-Prototyp ist abgeschlossen. 
 

@@ -29,7 +29,7 @@ Das Landesgleichstellungsgesetz sieht ein zweijähriges Controlling zur Umsetzun
 
 Die Daten bilden die Grundlage für den Bericht an das Abgeordnetenhaus und dienen darüber hinaus dazu, Entwicklungen im Bereich der Gleichstellung im öffentlichen Dienst Berlins für Verwaltung, Politik, Gleichstellungsakteurinnen und -akteure sowie die interessierte Öffentlichkeit sichtbar zu machen.
 
-## Das Problem
+## Aktuelle Herausforderungen
 
 In der Vergangenheit wurden die Daten für den LGG-Bericht manuell erhoben. Datenerhebung und -aufbereitung banden erhebliche personelle und zeitliche Ressourcen und bargen ein erhöhtes Fehlerrisiko. Dieser Prozess wurde mittlerweile digitalisiert. Aktuell werden die Daten bei den Einrichtungen und Dienststellen des Landes über die Umfragesoftware LimeSurvey erhoben.
 
@@ -43,7 +43,7 @@ Durch die Digitalisierung und die damit einhergehende Standardisierung der Daten
 
 Der Data Hub Berlin wird eingesetzt, um die im Rahmen der LGG-Berichterstattung erhobenen Daten nutzendenfreundlicher bereitzustellen und interaktiv auswertbar zu machen. Ziel ist es, aus den vorhandenen Daten eine strukturierte, verständliche und flexibel nutzbare Informationsgrundlage zu schaffen.
 
-Über Apache Superset sollen die Daten der LGG-Berichterstattung in Form von Dashboards aufbereitet und veröffentlicht werden. Nutzende können dadurch Daten nach ausgewählten Merkmalen filtern, Entwicklungen nachvollziehen und Themenbereiche gezielt betrachten.
+Über [Apache Superset](/docs/bausteine/2_3_datenvisualisierung/Superset) sollen die Daten der LGG-Berichterstattung in Form von Dashboards aufbereitet und veröffentlicht werden. Nutzende können dadurch Daten nach ausgewählten Merkmalen filtern, Entwicklungen nachvollziehen und Themenbereiche gezielt betrachten.
 
 Die Daten sollen so nicht nur im Bericht selbst, sondern ergänzend in einer zeitgemäßen, webbasierten Form bereitgestellt werden. Unterschiedliche Zielgruppen – etwa Verwaltung, Politik, Gleichstellungsbeauftragte, Wissenschaft, Presse und Öffentlichkeit – sollen dadurch schneller Antworten auf ihre jeweiligen Fragestellungen finden können.
 
@@ -142,9 +142,7 @@ Die technische Umsetzung im Rahmen des Data Hub konzentriert sich zunächst auf 
 ></iframe>
 <figcaption className={styles.imgcaption}>Schematische Abbildung der Datenpipeline für das Monitoring der Landesgleichstellung im Data Hub</figcaption>
 
-## Wie geht’s weiter?
-
-### Nächste Schritte
+### Status Quo
 
 Aktuell wird der Bericht an das Abgeordnetenhaus erstellt und das Dashboard zum 17. LGG-Bericht finalisiert. Im nächsten Schritt sollen die fachlich geprüften und veröffentlichungsfähigen Daten im Data Hub Berlin aufbereitet und über Apache Superset als ergänzendes digitales Angebot zur LGG-Berichterstattung veröffentlicht werden.
 

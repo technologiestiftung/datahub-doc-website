@@ -30,7 +30,7 @@ Im Bezirk Berlin-Neukölln pulsiert das Großstadtleben mit all seinen Facetten 
 Die Stadtteilkoordinationen haben sich vertraglich daran gebunden Daten über Akteure, Träger und Netzwerke regelmäßig zu erfassen und halbjährlich zu aktualisieren. Dies gewährleistet eine konsistente und aktuelle Datenbasis, die eine Übersicht über die bestehenden sozialräumlichen Strukturen im Bezirk ermöglicht. Dadurch können blinde Flecken im Sozialraum identifiziert und Lösungsansätze erarbeitet werden.
 
 
-## Das Problem
+## Aktuelle Herausforderungen
 
 Die bisher erprobten Prozesse – zuletzt über das CMS Imperia des Landes Berlin – zur Erfassung der Akteure, Träger und Netzwerke in den Neuköllner Kiezen stießen in der Vergangenheit immer wieder an ihre Grenzen. 
 
@@ -47,7 +47,7 @@ Die bisher erprobten Prozesse – zuletzt über das CMS Imperia des Landes Berli
 
 Der Data Hub wird eingesetzt, um den Erfassungsprozess zu vereinfachen, zu systematisieren und nutzendenfreundlich zu gestalten. Dadarauf aufbauend kann eine zuverlässige Datenbasis über Akteure im Sozialraum generiert werden.
 
-•	**Ein Erfassungsformular auf Basis des Softwarebausteins Appsmith** regelt, standardisiert und steuert die Eingabe der Informationen über Akteure, Träger und Netzwerke. Das Erfassungsformular ist auf den Use Case zugeschnitten und bietet ein intuitives Interface sowie klare Bearbeitungsoptionen, um den Arbeitsaufwand schlank zu halten und die Effizienz zu erhöhen. Eine Integration der Erfassung in eine Kartenansicht auf Basis des Softwarebausteins Masterportal ermöglicht dabei eine adressgenaue Eintragung eines Akteurs.
+•	**Ein Erfassungsformular auf Basis des Softwarebausteins [Appsmith](/docs/bausteine/2_2_datenverarbeitung/Appsmith)** regelt, standardisiert und steuert die Eingabe der Informationen über Akteure, Träger und Netzwerke. Das Erfassungsformular ist auf den Use Case zugeschnitten und bietet ein intuitives Interface sowie klare Bearbeitungsoptionen, um den Arbeitsaufwand schlank zu halten und die Effizienz zu erhöhen. Eine Integration der Erfassung in eine Kartenansicht auf Basis des Softwarebausteins [Masterportal](/docs/bausteine/2_3_datenvisualisierung/Masterportal) ermöglicht dabei eine adressgenaue Eintragung eines Akteurs.
 
 • **Ein Rollen- und Zugangssystem** regelt, dass verwaltungsexterne Akteure wie die Stadtteilkoordination unabhängig von der Zugehörigkeit zum Bezirksamt Informationen eintragen und anpassen können. Die Regionalkoordination kann in ihrer Rolle Updates kontrollieren und freigeben oder selbstständig Anpassungen am Formular vornehmen und behält die Kontrolle über die vertraglich geregelten Daten-Updates.
 
@@ -65,7 +65,7 @@ Der Data Hub wird eingesetzt, um den Erfassungsprozess zu vereinfachen, zu syste
     <figcaption className={styles.imgcaption}>Die Erfassung neuer Akteure kann georeferenziert über die Kartenansicht und einem Formular erfolgen. </figcaption>
   </div>
 
-## Die Umsetzung 
+## Die Umsetzung
 
 ### Der Rahmen des Pilotprojekts
 
@@ -145,9 +145,9 @@ Der Data Hub wird eingesetzt, um den Erfassungsprozess zu vereinfachen, zu syste
 
 </Tabs>
 
-### Technische Lösung im Data Hub
+### Technische Umsetzung
 - **Erfassung und Kontrolle der Daten**: In **Appsmith** wurde ein Formular erstellt, dass intuitiv zu bedienen ist und alle im Datenmodell definierten Informationen eintragen lässt. Die Kontrolle der Eintragung erfolgt ebenfalls direkt in Appsmith durch das Bezirksamt. Unterstützt wird die georeferenzierte Datenerfassung durch das Kartentool **Masterportal**.
-- Parallel zur Dateneingabe werden die Daten in einer relationellen **Datenbank (Postgres)** im Data Hub erfasst.
+- Parallel zur Dateneingabe werden die Daten in einer relationellen **Datenbank ([Postgres](/docs/bausteine/2_1_datenverwaltung/pgAdmin))** im Data Hub erfasst.
 - Das **Rechte- und Rollensystem** wird direkt in der Anwendung Appsmith gestaltet. 
 
 
@@ -159,7 +159,7 @@ Der Data Hub wird eingesetzt, um den Erfassungsprozess zu vereinfachen, zu syste
   allowFullScreen
 ></iframe>
 
-### Organisatorisch und methodische Begleitung
+### Organisatorische und methodische Begleitung
 Zur Umsetzung wurden Methoden eingesetzt, um den aktuellen Datenerfassungsprozess zu durchdringen sowie Bedarfe und Lösungswege zu diskutieren und zu erproben. 
 
 - Workshops mit dem Bezirksamt Neukölln zur Analyse des Ist-Zustands und Entwicklung von Bedarfen mithilfe der Methoden *Blueprint* und [Entwicklungsmatrix](https://www.oeffentliches-gestalten.de/buch/vorbereiten/ist-zustand-betrachten) 
@@ -168,9 +168,7 @@ Zur Umsetzung wurden Methoden eingesetzt, um den aktuellen Datenerfassungsprozes
 - Testphase und kontinuierliche Iteration des Datenerfassungsprozess mit der OESPK
 
 
-## Wie geht's weiter?
-
-### Zentrale Erkenntnisse 
+### Zentrale Erkenntnisse
 Ein entscheidender Erfolgsfaktor des Projekts war die konzeptionelle Vorarbeit der Daten- und Regionalkoordination der OESPK für ein Datenmodell. Dieses Datenmodell legt klare Feldnamen und Feldtypen fest und bildet so die Grundlage für die Umsetzung des Formulars in Appsmith. Beim iterativen Aufbau des Formulars wurden auftretende Hürden oder Unklarheiten immer wieder mit der Daten- und Regionalkoordination der OESPK gespiegelt und gelöst. Auch die zu Beginn eingesetzten Methoden, um den bisherigen komplexen Erfassungsprozess zu skizzieren und Bedarfe abzuleiten hat sich als wichtige Vorarbeit herauskristallisiert. So konnten zu Beginn des Projekts Bedarfe und Ziele erarbeitet und ein Minimum Valiable Product (MVP) definiert werden. 
 
 Die Erfahrungen aus der Umsetzung mit Postgres, Appsmith und Masterportal liefern wichtige Erkenntnisse für den gesamten Data Hub-Prototypen: Sie zeigen:
@@ -186,8 +184,8 @@ Die Erfahrungen aus der Umsetzung mit Postgres, Appsmith und Masterportal liefer
 - Das Masterportal eignet sich sehr gut als Ergänzung zur Erfassung von Geodaten. Allerdings wäre es sinnvoll, zusätzlich Zeit zu investieren, um das von uns übernommene Plugin insbesondere im Hinblick auf UI und UX weiter zu optimieren. Dadurch ließe sich die Bedienbarkeit verbessern und der Workflow für Nutzende noch effizienter gestalten.
 
 
-###  Nächste Schritte 
+### Status Quo
 
-Anfang 2026 hat die Stadtteilkoordination die entwickelte Lösung im Data Hub Berlin erstmals angewendet. Für 2026 planen die OESPK Neukölln und das Data Hub Team die Visualisierung der erfassten Daten voranzutreiben und erste Ideen für (interne) Dashboards in Superset oder die Darstellung von Netzwerkstrukturen zu erarbeiten und sukzessive umsetzen. Als Pilotprojekt ist der Datenerfassungsprozess der Akteure im Sozialraum anschlussfähig zu den übrigen 11 Bezirken im Land Berlin sowie weiteren Projekten der Verwaltung, in denen die Eingabe und Verwaltung von verwaltungsexternen Daten im Mittelpunkt stehen.
+Anfang 2026 hat die Stadtteilkoordination die entwickelte Lösung im Data Hub Berlin erstmals angewendet. Für 2026 planen die OESPK Neukölln und das Data Hub Team die Visualisierung der erfassten Daten voranzutreiben und erste Ideen für (interne) Dashboards in [Superset](/docs/bausteine/2_3_datenvisualisierung/Superset) oder die Darstellung von Netzwerkstrukturen zu erarbeiten und sukzessive umsetzen. Als Pilotprojekt ist der Datenerfassungsprozess der Akteure im Sozialraum anschlussfähig zu den übrigen 11 Bezirken im Land Berlin sowie weiteren Projekten der Verwaltung, in denen die Eingabe und Verwaltung von verwaltungsexternen Daten im Mittelpunkt stehen.
 
 </div>
