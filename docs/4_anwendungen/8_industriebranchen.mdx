@@ -1,0 +1,165 @@
+---
+title: Monitoring der Berliner Industrie
+sidebar_position: 8
+hide_title: true
+---
+
+import styles from '../docs.module.css';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { CircleStackIcon, BuildingOffice2Icon, UsersIcon } from '@heroicons/react/24/solid';
+
+<div className={styles.doccontainer}>
+
+  <div className="flex flex-col xl:flex-row items-center gap-4 xl:gap-12 xl:pl-2 pt-16 -mb-8">
+    <div>
+      <h1>Monitoring der Berliner Industrie</h1>
+      <p className="text-lg">
+        Wie steht es um die Berliner Industrie - und wie lassen sich Beschäftigung, Umsatz und Betriebe zwischen einzelnen Branchen und über die Jahre hinweg vergleichen? Um diese und weitere Fragen zu beantworten, entsteht im Data Hub ein interaktives Dashboard mit automatisierter Datenfortschreibung.
+      </p>
+    </div>
+    <div className="w-[250px] xl:flex-[0_0_250px]">
+      <img className="w-full max-w-[250px]" src="/img/industriebranchen_os.svg" alt="Monitoring der Berliner Industrie" />
+    </div>
+  </div>
+
+## Die Industrie als Standbein der Berliner Wirtschaft
+
+Bundesweit sank die Wirtschaftsleistung des verarbeitenden Gewerbes 2025 preisbereinigt um 1,3 %, in Berlin stieg die Wertschöpfung dagegen um 0,9 %. Die Industrie der Hauptstadt liegt somit bereits im vierten Jahr in Folge über dem Bundesdurchschnitt. Trotz des Wachstums geht der Industrieanteil an der Berliner Wertschöpfung aufgrund des in den letzten Jahren signifikant wachsenden Dienstleistungssektors langsam zurück (7,3 % in 2019; 6,6 % in 2025).
+
+Dennoch bleibt die Berliner Industrie ein relevanter und wachsender Sektor mit hoher Forschungsnähe, der Wohlstand in Berlin schafft und die Wirtschaft der Stadt durch seine Branchenvielfalt resilient aufstellt.
+
+## Aktuelle Herausforderungen
+
+In der industriepolitischen Arbeit ist eine evidenzbasierte Vorgehensweise essenziell. Informationen zur Berliner Industrie und ihren Branchen wurden bislang in der Senatsverwaltung für Wirtschaft, Energie und Betriebe (SenWEB) in aufwendiger Handarbeit gesammelt und ausgewertet. Auch bei konkreten Fragestellungen – etwa zu Umsatz- und Beschäftigtenzahlen, FuE-Aktivitäten oder der Nutzung von Daten, KI und erneuerbaren Energien in den Berliner Industriebranchen – sind wiederholte, zeitintensive Recherchen nötig.
+Gründe dafür sind u.a.:
+
+- **Heterogene Daten:** Aktuell sind Informationen zur Berliner Industrie jedoch auf mehrere, oft schwer zugängliche Datenquellen verstreut: z.B. beim Amt für Statistik Berlin-Brandenburg, dem Statistischen Bundesamt oder auch bei der Bundesagentur für Arbeit. Die Daten sind unterschiedlich aggregiert und sind z.T. nicht immer deckungsgleich mit der gewünschten Einteilung in Branchen oder kleinteiligen Wirtschaftszweigen, was die Vergleichbarkeit erschwert.
+- **Statische Veröffentlichung:** Die Ergebnisse erschienen bislang nur als schriftliche Branchenportraits auf der SenWEB-Website. Eigene Fragen an die Daten - etwa der direkte Vergleich mehrerer Branchen über mehrere Jahre - lassen sich darüber hinaus bislang nicht dynamisch beantworten.
+
+> „Mit dem Berliner Industrie-Dashboard schaffen wir einen objektiven, datenbasierten Überblick über die Berliner Industrie und ihre Branchen. Unsere Daten beziehen wir automatisiert aus öffentlichen Quellen. Sie bilden das Fundament für die evidenzbasierte Arbeit des Fachgebiets Industrie – von der schnellen Vorbereitung von Hausleitungsterminen bis hin zur Umsetzung zentraler strategischer Rahmenprogramme. Die gute Zusammenarbeit mit dem CityLAB ist dabei ein zentraler Erfolgsfaktor."
+>
+> — **Konstantin Lux**, Senatsverwaltung für Wirtschaft, Energie und Betriebe
+
+## Zielsetzung
+
+Ziel der Pilotanwendung ist es, die Erstellung von Berichten zu Berlins Industriebranchen auf eine nachhaltige, automatisierte Datengrundlage zu stellen und zugleich Informationen zugänglich zu machen, um eine wirksame, evidenzbasierte und zielgerichtete Industrie- und Standortpolitik zu ermöglichen.
+
+Der Einsatz des Data Hub bietet dafür mehrere Vorteile:
+
+- **Datenfortschreibung:** bestehende Datenverarbeitungsskripte werden in den DataHub überführt. Datenquellen werden direkt aus der Plattform heraus abgefragt, so dass ein manueller Upload weitgehend entfällt. Perspektivisch laufen die Aktualisierungen in festen Intervallen oder per Klick, womit das Dashboard automatisch immer auf dem neuesten Stand ist.
+- **Datenqualität:** ein abgestimmtes Datenmodell, ein Mapping der Klassifikationen über die Quellen hinweg sowie Prüfmechanismen z.B. zum Aktualisierungsrhythmus sorgen dafür, dass Datenlücken im Arbeitsalltag früher auffallen und ggf. behoben werden können.
+- **Vergleichbarkeit der Daten:** Ein interaktives Dashboard erlaubt es, gezielt nach Jahr, Branche und Wirtschaftszweig zu filtern und Branchen unmittelbar gegenüberzustellen. Entscheidungsträger:innen können damit auch eigene Fragen an die Daten stellen, z.B. in Vorbereitung auf Abstimmungstermine.
+- **Automatisierte Branchenportraits:** Dieselbe Datengrundlage kann perspektivisch auch die Branchenportraits auf der SenWEB-Website z.B. mithilfe von ergänzenden, KI-gestützten Textbausteinen speisen.
+
+## Die Umsetzung
+
+### Der Rahmen des Pilotprojekts
+
+<Tabs
+  defaultValue="daten"
+  values={[
+    { label: 'Daten', value: 'daten' },
+    { label: 'Zielgruppen', value: 'zielgruppen' },
+    { label: 'Beteiligte', value: 'beteiligte' },
+  ]}>
+
+<TabItem value="daten">
+
+<div className="tabs__content">
+
+<div className="mb-4">
+  <CircleStackIcon className="w-5 h-5 text-green-600" />
+  <h3 className="inline pl-2">Die Daten</h3>
+</div>
+
+Die Grundlage bilden amtliche Statistiken, ergänzt um eigene Erhebungen. Verbindendes Element über alle Quellen hinweg ist die Klassifikation der Wirtschaftszweige (WZ), auf deren Basis Aggregationen und Branchenvergleiche gebildet werden können.
+
+Konkret bilden folgende Quellen die Datengrundlage für das Industrie- und Branchen-Dashboard:
+
+- **Bundesagentur für Arbeit (BA):** Beschäftigungsstatistiken
+- **Statistisches Bundesamt (Destatis):** Informationen zur Kostenstruktur, Umsatzentwicklung, Import- und Exportanteile, Gründungen, Auftragseingänge und Energieverwendung
+- **Technologiestiftung Berlin:** Innovationserhebung zu Innovations- und FuE Ausgaben, FuE-Intensität, Kompetenz der Datennutzung
+- **Amt für Statistik Berlin-Brandenburg:** Investitionen in Industriezweige
+- **Branchenpuls:** Gewerbedaten der IHK Berlin bspw. zur Altersstruktur von Firmen und Anzahl von Beschäftigten
+
+</div>
+
+</TabItem>
+
+<TabItem value="zielgruppen">
+
+<div className="tabs__content">
+
+<div className="mb-4">
+  <UsersIcon className="w-5 h-5 text-green-600" />
+  <h3 className="inline pl-2">Die Zielgruppen</h3>
+</div>
+
+Das Dashboard richtet sich in erster Linie an Verwaltungsmitarbeitende innerhalb der Senatsverwaltung für Wirtschaft, Energie und Betriebe, so z.B. dem Fachpersonal aus den Wirtschafts- und Industriereferaten wie auch Entscheidungsträger:innen aus der Politik.
+
+Zudem ist perspektivisch angedacht, das Dashboard externen Interessierten zugänglich zu machen.
+
+</div>
+
+</TabItem>
+
+<TabItem value="beteiligte">
+
+<div className="tabs__content">
+
+<div className="mb-4">
+  <BuildingOffice2Icon className="w-5 h-5 text-green-600" />
+  <h3 className="inline pl-2">Die Beteiligten</h3>
+</div>
+
+- Senatsverwaltung für Wirtschaft, Energie und Betriebe: Referat III C Industrie und Innovation / III C 1 (Fachverantwortung, Datenlieferung, Betrieb)
+- Technologiestiftung Berlin / Data Hub Team (Gesamtkoordination sowie Konzeption und technische Umsetzung im Data Hub)
+
+</div>
+
+</TabItem>
+
+</Tabs>
+
+### Technische Umsetzung
+
+- **Manueller Dateiupload:** Nicht öffentlich verfügbare Datensätze werden bei Bedarf manuell im Objektspeicher ([MinIO](/docs/bausteine/2_1_datenverwaltung/Minio)) des Data Hub abgelegt.
+- **Datenanbindung und ETL:** Öffentlich verfügbare Daten werden von den bestehenden Datenverarbeitungsskripten automatisiert abgerufen, ebenfalls unverändert gespeichert und mit den Komponenten des Data Hub ausgeführt und orchestriert.
+- **Datenhaltung und Datenmodell:** Die transformierten Daten werden in der relationalen Datenbank ([pgAdmin](/docs/bausteine/2_1_datenverwaltung/pgAdmin)) des Data Hub abgelegt. Über ein Mapping der Wirtschaftszweig-Klassifikationen entsteht ein gemeinsames Datenmodell, das Auswertungen über Quellen hinweg ermöglicht.
+- **Aufbereitung für die Analyse:** Auf dieser Basis werden in [Superset](/docs/bausteine/2_3_datenvisualisierung/Superset) virtuelle Datensätze angelegt. Dies sind per SQL definierte Sichten, die die Kennzahlen in der für das Dashboard benötigten Form bereitstellen, ohne die zugrunde liegenden Tabellen zu verändern.
+- **Interaktives Dashboard:** [Superset](/docs/bausteine/2_3_datenvisualisierung/Superset) stellt die Daten in verschiedenen Diagrammen dar. Nutzer:innen können nach Jahr, Branche und Wirtschaftszweig filtern und zwischen drei Reitern wechseln: Beschäftigungsstruktur, zentrale wirtschaftliche Kennzahlen und weitere Betriebsstatistiken.
+- Schematische Abbildung Datenpipeline:
+
+<iframe
+  src="https://data-hub-flow-designer.lovable.app/?flow=JTdCJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAwMyUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzb3VyY2UlMjIlMkMlMjJwb3NpdGlvbiUyMiUzQSU3QiUyMnglMjIlM0EtMzM0LjI1NjA2NTczNDg4MzM1JTJDJTIyeSUyMiUzQTE5Ny44MjY4NzAxMzI3NjcxNyU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMm1hbnVlbGxlciUyMERhdGVpdXBsb2FkJTIyJTJDJTIyc3VidGl0bGUlMjIlM0ElMjJOaWNodCUyMCVDMyVCNmZmZW50bGljaCUyMHZlcmYlQzMlQkNnYmFyZSUyMERhdGVucyVDMyVBNHR6ZSUyMHdlcmRlbiUyMGJlaSUyMEJlZGFyZiUyMGVyZyVDMyVBNG56dCUyMiUyQyUyMmN1c3RvbUxhYmVsJTIyJTNBZmFsc2UlN0QlMkMlMjJtZWFzdXJlZCUyMiUzQSU3QiUyMndpZHRoJTIyJTNBNDQzJTJDJTIyaGVpZ2h0JTIyJTNBNzIlN0QlMkMlMjJzZWxlY3RlZCUyMiUzQWZhbHNlJTJDJTIyZHJhZ2dpbmclMjIlM0FmYWxzZSU3RCUyQyU3QiUyMmlkJTIyJTNBJTIybm9kZS0xMDAyJTIyJTJDJTIydHlwZSUyMiUzQSUyMnNvdXJjZSUyMiUyQyUyMnBvc2l0aW9uJTIyJTNBJTdCJTIyeCUyMiUzQTI0MC45Mzk1MTkzNjIzODEzJTJDJTIyeSUyMiUzQTE5OS43NzA2Mzc1MDc1ODUzNSU3RCUyQyUyMmRhdGElMjIlM0ElN0IlMjJsYWJlbCUyMiUzQSUyMkFtdGxpY2hlJTIwU3RhdGlzdGlrZW4lMjB1bmQlMjBlaWdlbmUlMjBFcmhlYnVuZ2VuJTIwenUlMjBCZXJsaW5zJTIwSW5kdXN0cmllJTIyJTJDJTIyc3VidGl0bGUlMjIlM0ElMjJCdW5kZXNhZ2VudHVyJTIwZiVDMyVCQ3IlMjBBcmJlaXQlMkMlMjBTdGF0aXN0aXNjaGVzJTIwQnVuZGVzYW10JTJDJTIwU3RhdGlzdGlrcG9ydGFsJTJDJTIwQW10JTIwZiVDMyVCQ3IlMjBTdGF0aXN0aWslMjBCZXJsaW4tQnJhbmRlbmJ1cmclMkMlMjBHZXdlcmJlZGF0ZW4lMjBkZXIlMjBJSEslMjBldGMuJTIyJTJDJTIyY3VzdG9tTGFiZWwlMjIlM0F0cnVlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTgxOSUyQyUyMmhlaWdodCUyMiUzQTcyJTdEJTJDJTIyc2VsZWN0ZWQlMjIlM0FmYWxzZSUyQyUyMmRyYWdnaW5nJTIyJTNBZmFsc2UlN0QlMkMlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAwMCUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwcm9jZXNzaW5nJTIyJTJDJTIycG9zaXRpb24lMjIlM0ElN0IlMjJ4JTIyJTNBNDYxJTJDJTIyeSUyMiUzQTMyMy4xMDkwNTg0MjczNDQ0JTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIyTm90ZSUyMFJlZCUyMiUyQyUyMnRpdGxlJTIyJTNBJTIyQWlyRmxvdyUyMiUyQyUyMmRlc2NyaXB0aW9uJTIyJTNBJTIyRGVyJTIwRVRMLVByb3plc3MlMjB3aXJkJTIwbWl0aGlsZmUlMjB2b24lMjBTa3JpcHRlbiUyMG9yY2hlc3RyaWVydCUzQSUyMERhdGVuJTIwd2VyZGVuJTIwaGVydW50ZXJnZWxhZGVuJTJDJTIwenVuJUMzJUE0Y2hzdCUyMGluJTIwZGVuJTIwT2JqZWt0c3BlaWNoZXIlMjBnZXNjaHJpZWJlbiUyQyUyMHRyYW5zZm9ybWllcnQlMjB1bmQlMjBhbnNjaGxpZSVDMyU5RmVuZCUyMGluJTIwZGllJTIwRGF0ZW5iYW5rJTIwJUMzJUJDYmVyZiVDMyVCQ2hydCUyMiUyQyUyMmN1c3RvbVRpdGxlJTIyJTNBZmFsc2UlN0QlMkMlMjJtZWFzdXJlZCUyMiUzQSU3QiUyMndpZHRoJTIyJTNBMzgwJTJDJTIyaGVpZ2h0JTIyJTNBMTYyJTdEJTJDJTIyc2VsZWN0ZWQlMjIlM0FmYWxzZSUyQyUyMmRyYWdnaW5nJTIyJTNBZmFsc2UlN0QlMkMlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAxMCUyMiUyQyUyMnR5cGUlMjIlM0ElMjJjb21wb25lbnQlMjIlMkMlMjJwb3NpdGlvbiUyMiUzQSU3QiUyMnglMjIlM0EtMjU0LjgwNTcyMjk5NDQ3OTYyJTJDJTIyeSUyMiUzQTU0My4yNDI0NzcwNTQ1MzEyJTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIyS29tcG9uZW50ZSUyMiUyQyUyMnRpdGxlJTIyJTNBJTIyTWluSU8lMjIlMkMlMjJkZXNjcmlwdGlvbiUyMiUzQSUyMlJvaGRhdGVuJTIwYXVzJTIwYmVpZGVuJTIwUXVlbGxlbiUyMHdlcmRlbiUyMHp1biVDMyVBNGNoc3QlMjB1bnZlciVDMyVBNG5kZXJ0JTIwaW0lMjBPYmpla3RzcGVpY2hlciUyMGFiZ2VsZWd0JTIyJTJDJTIyY3VzdG9tVGl0bGUlMjIlM0FmYWxzZSU3RCUyQyUyMm1lYXN1cmVkJTIyJTNBJTdCJTIyd2lkdGglMjIlM0EyODAlMkMlMjJoZWlnaHQlMjIlM0ExMDklN0QlMkMlMjJzZWxlY3RlZCUyMiUzQWZhbHNlJTJDJTIyZHJhZ2dpbmclMjIlM0FmYWxzZSU3RCUyQyU3QiUyMmlkJTIyJTNBJTIybm9kZS0xMDA0JTIyJTJDJTIydHlwZSUyMiUzQSUyMmNvbXBvbmVudCUyMiUyQyUyMnBvc2l0aW9uJTIyJTNBJTdCJTIyeCUyMiUzQTUxMS42NTA2ODY1OTI3ODc5JTJDJTIyeSUyMiUzQTUzNS4xODI5ODI1NDIyMjU0JTdEJTJDJTIyZGF0YSUyMiUzQSU3QiUyMmxhYmVsJTIyJTNBJTIyS29tcG9uZW50ZSUyMiUyQyUyMnRpdGxlJTIyJTNBJTIycGdBZG1pbiUyRkRhdGVuYmFuayUyMiUyQyUyMmRlc2NyaXB0aW9uJTIyJTNBJTIyRGF0ZW5zJUMzJUE0dHplJTIwd2VyZGVuJTIwYWJnZWxlZ3QlMjB1bmQlMjB1bSUyMGVpbiUyME1hcHBpbmclMjBkZXIlMjBXaXJ0c2NoYWZ0c3p3ZWlnLUtsYXNzaWZpa2F0aW9uZW4lMjBlcmclQzMlQTRuenQlMjIlMkMlMjJjdXN0b21UaXRsZSUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTI4MCUyQyUyMmhlaWdodCUyMiUzQTE0NCU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBdHJ1ZSUyQyUyMmRyYWdnaW5nJTIyJTNBZmFsc2UlN0QlMkMlN0IlMjJpZCUyMiUzQSUyMm5vZGUtMTAwNSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJkYXNoYm9hcmQlMjIlMkMlMjJwb3NpdGlvbiUyMiUzQSU3QiUyMnglMjIlM0E1MTElMkMlMjJ5JTIyJTNBNzIxLjExMjI4NTc5MDM1MjYlN0QlMkMlMjJkYXRhJTIyJTNBJTdCJTIybGFiZWwlMjIlM0ElMjJEYXNoYm9hcmQlMjIlMkMlMjJ0aXRsZSUyMiUzQSUyMlN1cGVyc2V0JTIyJTJDJTIyZGVzY3JpcHRpb24lMjIlM0ElMjJJbnRlcmFrdGl2ZXMlMjBEYXNoYm9hcmQlM0ElMjBLZW5uemFobGVuJTIwd2VyZGVuJTIwJUMzJUJDYmVyc2ljaHRsaWNoJTIwdW5kJTIwbWl0JTIwRmlsdGVybSVDMyVCNmdsaWNoa2VpdGVuJTIwbmFjaCUyMEphaHIlMkMlMjBCcmFuY2hlJTIwdW5kJTIwV2lydHNjaGFmdHN6d2VpZyUyMHByJUMzJUE0c2VudGllcnQlMjIlMkMlMjJjdXN0b21UaXRsZSUyMiUzQWZhbHNlJTdEJTJDJTIybWVhc3VyZWQlMjIlM0ElN0IlMjJ3aWR0aCUyMiUzQTI4MCUyQyUyMmhlaWdodCUyMiUzQTE2MiU3RCUyQyUyMnNlbGVjdGVkJTIyJTNBZmFsc2UlMkMlMjJkcmFnZ2luZyUyMiUzQWZhbHNlJTdEJTVEJTJDJTIyZWRnZXMlMjIlM0ElNUIlN0IlMjJzdHlsZSUyMiUzQSU3QiUyMnN0cm9rZVdpZHRoJTIyJTNBMiUyQyUyMnN0cm9rZSUyMiUzQSUyMiUyMzAwMCUyMiUyQyUyMnN0cm9rZURhc2hhcnJheSUyMiUzQSUyMjUlMkM1JTIyJTdEJTJDJTIyY2xhc3NOYW1lJTIyJTNBJTIyYW5pbWF0ZWQtZWRnZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzbW9vdGhzdGVwJTIyJTJDJTIyc291cmNlJTIyJTNBJTIybm9kZS0xMDAyJTIyJTJDJTIydGFyZ2V0JTIyJTNBJTIybm9kZS0xMDAwJTIyJTJDJTIyaWQlMjIlM0ElMjJ4eS1lZGdlX19ub2RlLTEwMDItbm9kZS0xMDAwJTIyJTdEJTJDJTdCJTIyc3R5bGUlMjIlM0ElN0IlMjJzdHJva2VXaWR0aCUyMiUzQTIlMkMlMjJzdHJva2UlMjIlM0ElMjIlMjMwMDAlMjIlMkMlMjJzdHJva2VEYXNoYXJyYXklMjIlM0ElMjI1JTJDNSUyMiU3RCUyQyUyMmNsYXNzTmFtZSUyMiUzQSUyMmFuaW1hdGVkLWVkZ2UlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc21vb3Roc3RlcCUyMiUyQyUyMnNvdXJjZSUyMiUzQSUyMm5vZGUtMTAwNCUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMm5vZGUtMTAwNSUyMiUyQyUyMmlkJTIyJTNBJTIyeHktZWRnZV9fbm9kZS0xMDA0LW5vZGUtMTAwNSUyMiU3RCUyQyU3QiUyMnN0eWxlJTIyJTNBJTdCJTIyc3Ryb2tlV2lkdGglMjIlM0EyJTJDJTIyc3Ryb2tlJTIyJTNBJTIyJTIzMDAwJTIyJTJDJTIyc3Ryb2tlRGFzaGFycmF5JTIyJTNBJTIyNSUyQzUlMjIlN0QlMkMlMjJjbGFzc05hbWUlMjIlM0ElMjJhbmltYXRlZC1lZGdlJTIyJTJDJTIydHlwZSUyMiUzQSUyMnNtb290aHN0ZXAlMjIlMkMlMjJzb3VyY2UlMjIlM0ElMjJub2RlLTEwMDMlMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJub2RlLTEwMTAlMjIlMkMlMjJpZCUyMiUzQSUyMnh5LWVkZ2VfX25vZGUtMTAwMy1ub2RlLTEwMTAlMjIlN0QlMkMlN0IlMjJzdHlsZSUyMiUzQSU3QiUyMnN0cm9rZVdpZHRoJTIyJTNBMiUyQyUyMnN0cm9rZSUyMiUzQSUyMiUyMzAwMCUyMiUyQyUyMnN0cm9rZURhc2hhcnJheSUyMiUzQSUyMjUlMkM1JTIyJTdEJTJDJTIyY2xhc3NOYW1lJTIyJTNBJTIyYW5pbWF0ZWQtZWRnZSUyMiUyQyUyMnR5cGUlMjIlM0ElMjJzbW9vdGhzdGVwJTIyJTJDJTIyc291cmNlJTIyJTNBJTIybm9kZS0xMDAwJTIyJTJDJTIydGFyZ2V0JTIyJTNBJTIybm9kZS0xMDA0JTIyJTJDJTIyaWQlMjIlM0ElMjJ4eS1lZGdlX19ub2RlLTEwMDAtbm9kZS0xMDA0JTIyJTdEJTJDJTdCJTIyc3R5bGUlMjIlM0ElN0IlMjJzdHJva2VXaWR0aCUyMiUzQTIlMkMlMjJzdHJva2UlMjIlM0ElMjIlMjMwMDAlMjIlMkMlMjJzdHJva2VEYXNoYXJyYXklMjIlM0ElMjI1JTJDNSUyMiU3RCUyQyUyMmNsYXNzTmFtZSUyMiUzQSUyMmFuaW1hdGVkLWVkZ2UlMjIlMkMlMjJ0eXBlJTIyJTNBJTIyc21vb3Roc3RlcCUyMiUyQyUyMnNvdXJjZSUyMiUzQSUyMm5vZGUtMTAwMCUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMm5vZGUtMTAxMCUyMiUyQyUyMmlkJTIyJTNBJTIyeHktZWRnZV9fbm9kZS0xMDAwLW5vZGUtMTAxMCUyMiU3RCU1RCUyQyUyMnZlcnNpb24lMjIlM0ExJTdE"
+  width="100%"
+  height="400"
+  style={{ border: "1px solid #ccc", borderRadius: "8px", marginTop: "2em" }}
+  allowFullScreen
+></iframe>
+<figcaption className={styles.imgcaption}>Schematische Abbildung der Datenpipeline für das Industrie- und Branchen-Dashboard im Data Hub</figcaption>
+
+### Organisatorische und methodische Begleitung
+
+Für die Anforderungserhebung und die Einbindung der Beteiligten wurden unter anderem eingesetzt:
+
+- **Kick-Off** vor Ort zum Projektstart mit allen Beteiligten
+- **Regelmäßige Abstimmungstermine** zwischen SenWEB und Data Hub Team
+- **Workshops** zur Bedarfserhebung und Konzeption des Dashboards
+- **Ticketing-System** zur Koordinierung der Umsetzung in Asana
+- **Aufbau der Datenpipeline** [MinIO](/docs/bausteine/2_1_datenverwaltung/Minio), [pgAdmin](/docs/bausteine/2_1_datenverwaltung/pgAdmin) und [Apache Airflow](/docs/bausteine/2_2_datenverarbeitung/Airflow)
+- **Entwicklung des Dashboards** in [Superset](/docs/bausteine/2_3_datenvisualisierung/Superset)
+- **Onboarding** der künftigen Verantwortlichen zur Inbetriebnahme des Dashboards
+
+### Zentrale Erkenntnisse
+
+- **Data Hub als zentrale Dateninfrastruktur:** Das Projekt hat hohes Potenzial für eine Weiterentwicklung und ein Folgeprojekt ist bereits in Planung. Dies ist eine enorme Bestätigung der Rolle vom Data Hub als zukünftig zentrales System für Daten und Datenmanangement im Land Berlin
+- **Verlässlichkeit und Nutzbarkeit von Daten:** Die Daten liegen an den Quellen unstrukturiert und uneinheitlich vor (wechselnde Tabellenaufbauten, Formatbrüche, fehlende APIs), ein stabiler automatisierter Import ist daher ohne laufende Pflege und Programmierkenntnisse nicht immer möglich
+- **Vergleichbarkeit braucht Qualitätssicherung und fachliche Einordnung:** Die Beschaffung und Zusammenführung der Daten aus unterschiedlichen Quellen (z. B. unterschiedliche Grundgesamtheiten und Erhebungsgrenzen) erfordert ein höheres Maß an Qualitätssicherung und Nachvollziehbarkeit und für das richtige Einordnen und Vergleichen der Zahlen ist die fachliche Perspektive zentral
+
+### Status Quo
+
+Nach der Inbetriebnahme des Dashboards 2026 ist 2027 ein Folgeprojekt geplant.
+
+</div>
