@@ -42,7 +42,7 @@ const slides = [
       'Was verraten ungenutzte Sensordaten im Berliner Bezirk Tempelhof-Schöneberg, die in erster Linie der Verkehrsberuhigung dienen? Mithilfe von einem interaktiven Dashboard und einem innovativen Rechte-Rollen-Management konnten die dynamischen Daten erstmalig ausgewertet werden.',
     image: '/img/verkehrssensorik_os.svg',
     slug: '/docs/anwendungen/monitoring_verkehrsberuhigung',
-  },  
+  },
   {
     id: 6,
     title: 'Wirkungsanalyse digitaler Bürgerdienste',
@@ -50,15 +50,15 @@ const slides = [
       'Wie häufig werden Berliner Verwaltungsleistungen tatsächlich online genutzt und warum entscheiden sich Menschen weiterhin für den Weg ins Bürgeramt? Ein Wirkungsanalyse-Dashboard schafft die Grundlage für gezieltere Maßnahmen.',
     image: '/img/digitale_buergerdienste_os.svg',
     slug: '/docs/anwendungen/digitale_buergerdienste',
-  },  
-  {
+  },
+  /*   {
     id: 7,
     title: 'Datenbasierte Personalpolitik',
     description:
       'Wie steht es in Zeiten von Fachkräftemangel um die Berliner Personalstatistik? Open Data und eigens betriebene Dashboard-Lösungen unterstützen und ergänzen bestehende Infrastrukturen für eine datenbasierte, vorausschauende Personalpolitik.',
     image: '/img/datenbasierte_personalstatistiken_os.svg',
     slug: '/docs/anwendungen/datenbasierte_personalstatistik',
-  },
+  }, */
   {
     id: 8,
     title: 'Monitoring der Berliner Industrie',
@@ -237,7 +237,7 @@ function SlideCard({ data }) {
           </p>
           <div className="flex justify-center">
             <Button label="Mehr erfahren" slug={data.slug} />
-          </div>  
+          </div>
         </div>
       </div>
     </div>
