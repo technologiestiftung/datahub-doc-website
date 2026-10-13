@@ -29,6 +29,10 @@ Das Landesgleichstellungsgesetz sieht ein zweijähriges Controlling zur Umsetzun
 
 Die Daten bilden die Grundlage für den Bericht an das Abgeordnetenhaus und dienen darüber hinaus dazu, Entwicklungen im Bereich der Gleichstellung im öffentlichen Dienst Berlins für Verwaltung, Politik, Gleichstellungsakteurinnen und -akteure sowie die interessierte Öffentlichkeit sichtbar zu machen.
 
+> „Der größte Mehrwert liegt darin, die bereits digital erhobenen Landesgleichstellungsgesetz-Daten nicht nur für den Bericht aufzubereiten, sondern sie interaktiv und nutzendenfreundlich sichtbar zu machen. Dabei wird deutlich, wie wichtig ein klares Datenmodell und gut durchdachte Aggregations- und Filterlogiken für eine verständliche Veröffentlichung sind."
+>
+> — **Josephine Lichteblau**, Senatsverwaltung für Arbeit, Soziales, Gleichstellung, Integration, Vielfalt und Antidiskriminierung
+
 ## Aktuelle Herausforderungen
 
 In der Vergangenheit wurden die Daten für den LGG-Bericht manuell erhoben. Datenerhebung und -aufbereitung banden erhebliche personelle und zeitliche Ressourcen und bargen ein erhöhtes Fehlerrisiko. Dieser Prozess wurde mittlerweile digitalisiert. Aktuell werden die Daten bei den Einrichtungen und Dienststellen des Landes über die Umfragesoftware LimeSurvey erhoben.
@@ -141,6 +145,22 @@ Die technische Umsetzung im Rahmen des Data Hub konzentriert sich zunächst auf 
   allowFullScreen
 ></iframe>
 <figcaption className={styles.imgcaption}>Schematische Abbildung der Datenpipeline für das Monitoring der Landesgleichstellung im Data Hub</figcaption>
+
+### Organisatorische und methodische Begleitung
+
+Der Use Case wurde in enger Abstimmung zwischen der SenASGIVA, dem Data Hub Team und einem externen Dienstleister umgesetzt. Der Dienstleister verantwortet die Datenaufbereitung und Dashboard-Entwicklung in Superset.
+
+Ein wesentlicher Teil des Projekts bestand darin, im Data Hub Rollen und Rechte so einzurichten, dass der externe Dienstleister von außerhalb und auf den jeweiligen Use Case beschränkt arbeiten kann.
+
+- **Kick-off** vor Ort zum Projektstart mit allen Beteiligten
+- **Vergabe der Rollen und Rechte** für externe Mitarbeit
+- **Onboarding** zu den Zugängen, zu Superset und zum Data Hub allgemein
+- **Abstimmung mit dem Dienstleister** bei Bedarf, zum Beispiel zu technischen Fragen
+
+### Zentrale Erkenntnisse
+
+- **Granulares Rechte- und Rollensystem erlaubt externe Mitarbeit:** Im Data Hub lässt sich das Rechte- und Rollenmodell so konfigurieren, dass sichergestellt wird, dass verwaltungsexterne Akteure (Dienstleister) isoliert auf einzelne Datenräume (Data Spaces) und Komponenten zugreifen können. Dadurch wird diesen Akteuren eine Prozesskette von der Datenaufbereitung bis zur Erstellung von Dashboards ermöglicht, ohne andere Projekte oder produktive Systeme zu berühren.
+- **Mit interaktiven Dashboards werden Datenerhebungen lebendig und anschaulich:** Die entstandenen Dashboards ermöglichen erweiterte, individuelle Auswertungen der Daten: Statt einer manuell kuratierten, statischen Auswahl können in interaktiven Dashboard-Grafiken alle LGG-Daten filterbar bereitgestellt werden, sodass unterschiedliche Zielgruppen eigenständig ihre jeweiligen Fragen beantworten können. Zusätzliche Vorteile ergeben sich aus einer Standardisierung der Datenerhebung als Voraussetzung für eine aussagekräftige Datengrundlage des Dashboards. Dadurch wird die Pflege von aktuellen Daten sowie der Veröffentlichungsprozess vereinfacht, da erneute Einzelanfertigungen vermieden werden.
 
 ### Status Quo
 
