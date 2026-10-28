@@ -51,14 +51,14 @@ const slides = [
     image: '/img/digitale_buergerdienste_os.svg',
     slug: '/docs/anwendungen/digitale_buergerdienste',
   },
-  /*   {
+  {
     id: 7,
     title: 'Datenbasierte Personalpolitik',
     description:
       'Wie steht es in Zeiten von Fachkräftemangel um die Berliner Personalstatistik? Open Data und eigens betriebene Dashboard-Lösungen unterstützen und ergänzen bestehende Infrastrukturen für eine datenbasierte, vorausschauende Personalpolitik.',
     image: '/img/datenbasierte_personalstatistiken_os.svg',
-    slug: '/docs/anwendungen/datenbasierte_personalstatistik',
-  }, */
+    slug: '/docs/anwendungen/datenbasierte_personalpolitik',
+  },
   {
     id: 8,
     title: 'Monitoring der Berliner Industrie',
